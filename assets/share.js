@@ -1,0 +1,20 @@
+(function(){"use strict";
+  var confirmation=document.getElementById("share-confirmation"),hideTimer=0,fallbackToken="vlshare-"+randomId();
+  function randomId(){try{var bytes=new Uint8Array(16);crypto.getRandomValues(bytes);return Array.from(bytes,function(byte){return byte.toString(16).padStart(2,"0")}).join("")}catch(err){return String(Date.now())+"-"+Math.random().toString(36).slice(2)}}
+  function api(){return window.VOTERLENS_ANALYTICS||null}
+  function taggedUrl(){var analytics=api();if(analytics&&typeof analytics.makeShareUrl==="function")return analytics.makeShareUrl();var params=new URLSearchParams(window.location.search),source=(params.get("src")||"direct").slice(0,100),chain=(params.get("via")||"").split(">").map(function(value){return value.trim().slice(0,100)}).filter(Boolean).slice(0,12),depth=Math.max(0,Number(params.get("depth"))||(source==="share"?Math.max(1,chain.length):0));chain.push(fallbackToken.slice(0,100));return"https://muse.ai/s/oregon-constitutional-scorecard-xkl6kxaxin4xhxkxa?src="+encodeURIComponent(source)+"&depth="+(depth+1)+"&via="+encodeURIComponent(chain.join(">"))}
+  function showStatus(message){if(!confirmation)return;window.clearTimeout(hideTimer);confirmation.textContent=message;confirmation.classList.add("show");hideTimer=window.setTimeout(function(){confirmation.classList.remove("show")},3200)}
+  function recordCopy(ok,entry){var analytics=api();if(analytics&&typeof analytics.recordCopyStatus==="function")analytics.recordCopyStatus(ok,entry)}
+  function copyLink(url,entry){function done(ok){recordCopy(ok,entry);showStatus(ok?"Link copied — paste it anywhere to share":"Copy was blocked — press and hold the link at the bottom of the page to copy it.")}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(url).then(function(){done(true)},function(){fallback()});return}
+    fallback();
+    function fallback(){var helper=document.createElement("textarea");helper.value=url;helper.setAttribute("readonly","");helper.style.position="fixed";helper.style.opacity="0";helper.style.pointerEvents="none";document.body.appendChild(helper);helper.focus();helper.select();var ok=false;try{ok=document.execCommand("copy")}catch(err){}helper.remove();done(ok)}
+  }
+  function share(entry){var url=taggedUrl(),text="See your full Oregon ballot in plain English:",analytics=api(),nativeAvailable=typeof navigator.share==="function";if(analytics&&typeof analytics.recordShare==="function")analytics.recordShare(entry,nativeAvailable?"native":"clipboard");if(nativeAvailable){navigator.share({title:"VoterLens — Oregon Constitutional Scorecard",text:text,url:url}).catch(function(err){if(!err||err.name!=="AbortError")copyLink(url,entry)});return}copyLink(url,entry)}
+  document.addEventListener("click",function(event){var button=event.target.closest("[data-share-action]");if(!button)return;share(button.dataset.shareEntry||"unknown")});
+  function trackPrompt(node){if(node.dataset.shareTracked)return;node.dataset.shareTracked="waiting";function fire(){if(node.dataset.shareTracked==="shown")return;node.dataset.shareTracked="shown";var analytics=api();if(analytics&&typeof analytics.recordPrompt==="function")analytics.recordPrompt(node.dataset.shareContext||"unknown")}
+    if("IntersectionObserver" in window){var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){fire();observer.disconnect()}})},{threshold:.25});observer.observe(node)}else fire()}
+  function scan(root){if(root.nodeType!==1&&root.nodeType!==9)return;if(root.matches&&root.matches("[data-share-prompt]"))trackPrompt(root);root.querySelectorAll&&root.querySelectorAll("[data-share-prompt]").forEach(trackPrompt)}
+  scan(document);
+  new MutationObserver(function(records){records.forEach(function(record){record.addedNodes.forEach(scan)})}).observe(document.body,{childList:true,subtree:true});
+}());
