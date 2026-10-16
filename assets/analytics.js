@@ -1,12 +1,13 @@
 (function(){"use strict";
   /* Owner configuration: set the public Apps Script /exec endpoint before publishing analytics. Keep the admin token only in Apps Script; the dashboard collects it from the in-page sign-in form and never stores it. */
   var ANALYTICS_ENDPOINT_URL="https://script.google.com/macros/s/AKfycbwkO6pzkGEMG489WJLG0d-KOC6WO05wMvT-BqaEpIkO0GnymJmi3uukIGLe9btRo0I/exec";
-  var SITE_BASE_URL="https://muse.ai/s/oregon-constitutional-scorecard-xkl6kxaxin4xhxkxa";
+  var SITE_BASE_URL=window.location.origin+window.location.pathname;
   var ELECTION_DATE="2026-11-03T20:00:00-08:00";
   var params=new URLSearchParams(window.location.search);
   var adminParam=params.get("admin")||"";
   var isAdminRequest=!!adminParam;
   var sourceTag=(params.get("src")||"direct").slice(0,100);
+  var orgTag=(params.get("org")||"").slice(0,100);
   var viaChain=(params.get("via")||"").split(">").map(function(v){return v.trim().slice(0,100)}).filter(Boolean).slice(0,12);
   var incomingShareDepth=Math.max(0,Number(params.get("depth"))||(sourceTag==="share"?Math.max(1,viaChain.length):0));
   var memoryToken="vl-session-"+randomId();
@@ -51,7 +52,7 @@
   function deriveDistrict(button){if(button.dataset.ward)return"Lebanon Ward "+button.dataset.ward;if(button.dataset.albanyArea)return"Albany Ward "+(button.dataset.albanyArea==="north"?"1 North":button.dataset.albanyArea);if(button.dataset.cottageScope)return button.dataset.cottageScope==="city"?"Cottage Grove city":"Lane County unincorporated";return""}
   function uniquePush(array,value){if(value&&array.indexOf(value)===-1)array.push(value)}
   function shareAttribution(){var chain=viaChain.slice();chain.push(String(tokenState.token||memoryToken).slice(0,100));return{src:sourceTag||"direct",via:chain,depth:incomingShareDepth+1}}
-  function makeShareUrl(){var attribution=shareAttribution();return SITE_BASE_URL+"?src="+encodeURIComponent(attribution.src)+"&depth="+attribution.depth+"&via="+encodeURIComponent(attribution.via.join(">"))}
+  function makeShareUrl(){var attribution=shareAttribution(),url=SITE_BASE_URL+"?src="+encodeURIComponent(attribution.src)+"&depth="+attribution.depth+"&via="+encodeURIComponent(attribution.via.join(">"));if(orgTag)url+="&org="+encodeURIComponent(orgTag);return url}
   function shareDetail(attribution,detail){var result={outbound_src:attribution.src,outbound_via_chain:attribution.via.join(">"),outbound_share_depth:attribution.depth};if(detail)Object.keys(detail).forEach(function(key){result[key]=detail[key]});return result}
   function copyShare(node){var attribution=shareAttribution(),url=makeShareUrl();state.shareOuts++;post("share_generated",shareDetail(attribution,{url_tagged:true,entry_point:"link"}),attribution);node.textContent=url;function copyStatus(copied){post("share_copy_status",shareDetail(attribution,{copied:copied,entry_point:"link"}),attribution);if(copied)node.setAttribute("title","Tagged share link copied")}
     if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(url).then(function(){copyStatus(true)},function(){copyStatus(false)})}else{var t=document.createElement("textarea");t.value=url;t.style.position="fixed";t.style.opacity="0";document.body.appendChild(t);t.select();var copied=false;try{copied=document.execCommand("copy")}catch(err){}document.body.removeChild(t);copyStatus(!!copied)}}
