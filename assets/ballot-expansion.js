@@ -480,5 +480,65 @@ window.EXPANDED_BALLOTS = {
       {group:"City of The Dalles",office:"Councilor — Position 1",candidates:[{name:"Kim Morgan",bio:"Community-college and library-board leader. A profile lists economic growth, public safety, transparent government, and quality of life as priorities.",positions:{safety:1}},{name:"Tristan Sheppard",bio:"Community advocate and former gubernatorial-primary candidate. His survey emphasizes housing stability, economic opportunity, resource stewardship, emergency-service volunteering, and accountability.",positions:{housing:1,rural:1}}]},
       {group:"City of The Dalles",office:"Councilor — Position 3",candidates:[{name:"Scott Randall",status:"Incumbent · effectively unopposed",bio:"Supported the city’s Google data-center agreements."}]}
     ]
+  },
+  southaven: {
+    label:"Southaven · DeSoto County, Mississippi",chips:["U.S. Senate","U.S. House MS-01","DeSoto County judges","School board"],summary:"13 races: 2 federal, 10 judicial, 1 school board. No state, county, or city offices — Mississippi elects those in odd years. No ballot measures confirmed.",
+    coverage:"This pathway covers Southaven, Mississippi (ZIP 38671) in DeSoto County for the November 3, 2026 general election. Federal races and countywide judicial races apply to all Southaven voters. Two judicial subdistrict races and the school-board race depend on precinct — check the printed ballot.",
+    caveats:["Mississippi elects state legislators, statewide officers, county officers, and city officers in odd years (last 2023, next 2027), so none appear on this ballot.","Chancery Court Place 3 (Subdistrict 17-1) and Circuit Court Place 4 (Subdistrict 21-1) apply only to voters in those subdistricts — confirm on the printed ballot.","The DeSoto County Board of Education District 5 race applies only to voters in that board district.","Celeste Embrey Wilson was appointed to the Mississippi Supreme Court effective August 1, 2026; her status on the circuit-court ballot could not be verified — confirm on the printed ballot.","No statewide or local ballot measures were confirmed for November 2026; the Mississippi Secretary of State's sample ballot is the final authority.","Public biographical information was not found for several judicial candidates; compare the printed ballot before voting."],
+    sources:[{label:"DeSoto County 2026 candidate announcement",url:"https://nwmissnews.com/desoto-county-announces-candidates-for-november-3-2026-general-election/"},{label:"Clarion Ledger Mississippi voter guide",url:"https://www.clarionledger.com/story/news/politics/2026/08/31/statewide-voter-guide-for-mississippi-midterm-elections/91457453007/"},{label:"MS Free Press: Colom challenges Hyde-Smith",url:"https://www.mississippifreepress.org/mississippi-democrats-nominate-prosecutor-scott-colom-to-challenge-cindy-hyde-smith-for-us-senate/"},{label:"MS Free Press: MS-01 candidates",url:"https://www.mississippifreepress.org/meet-the-candidates-for-mississippis-first-congressional-district-in-the-nov-3-elections/"},{label:"Ballotpedia: Mississippi 2026 elections",url:"https://ballotpedia.org/Mississippi_elections,_2026"}],
+    noMeasuresTitle:"No ballot measures confirmed for this pathway.",
+    noMeasuresText:"No statewide or DeSoto County local measures were confirmed for the November 3, 2026 ballot. Mississippi has had no citizen-initiative process since 2021. The Secretary of State's official sample ballot is the final authority.",
+    races:[
+      {group:"Federal offices",office:"U.S. Senator — 6-year term",does:"Votes on federal laws, confirms federal judges, ratifies treaties, and controls federal spending.",candidates:[
+        {name:"Cindy Hyde-Smith",party:"Republican",status:"Incumbent",bio:"Appointed to the Senate in 2018 and elected to a full term in 2020; previously Mississippi Commissioner of Agriculture and Commerce and a state senator. The first woman to represent Mississippi in Congress."},
+        {name:"Scott Colom",party:"Democrat",bio:"District Attorney for the 16th Circuit Court District (Lowndes, Oktibbeha, Clay, and Noxubee counties); unseated a nearly 30-year incumbent in 2015. Nominated by President Biden in 2022 for a federal judgeship."},
+        {name:"Ty Pinkins",party:"Independent",bio:"Delta attorney; ran for U.S. Senate as a Democrat in 2024 and was the substitute Democratic nominee for Secretary of State in 2023."}
+      ]},
+      {group:"Federal offices",office:"U.S. House — District 1 — 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Trent Kelly",party:"Republican",status:"Incumbent",bio:"In Congress since a 2015 special election; retired as a Major General after 39 years in the Mississippi Army National Guard; former district attorney. Serves on the Armed Services and Agriculture committees."},
+        {name:"Cliff Johnson",party:"Democrat",bio:"Civil-rights attorney and director of the MacArthur Justice Center at the University of Mississippi School of Law; former Assistant U.S. Attorney who prosecuted health-care fraud cases."},
+        {name:"Johnny Baucom",party:"Libertarian",bio:"Health and safety technician and U.S. Army National Guard veteran; platform emphasizes deregulation and eliminating income and property taxes."}
+      ]},
+      {group:"Mississippi judiciary",office:"Court of Appeals — District 1, Place 1 (special election)",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court.",candidates:[
+        {name:"John D. Weddle",status:"Incumbent · appointed 2024",bio:"Appointed to the Court of Appeals in 2024; running in a special election."},
+        {name:"Derek Hopson Jr.",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Mississippi judiciary",office:"Court of Appeals — District 1, Place 2",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court.",candidates:[
+        {name:"Donna M. Barnes",status:"Incumbent · unopposed",bio:"Court of Appeals judge since 2004."}
+      ]},
+      {group:"Mississippi judiciary",office:"Chancery Court — 17th District, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[
+        {name:"Vicki Daniels",status:"Incumbent · unopposed",bio:"Sitting chancery judge in DeSoto County."}
+      ]},
+      {group:"Mississippi judiciary",office:"Chancery Court — 17th District, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[
+        {name:"Elizabeth “Beth” Owens",bio:"",note:"No public biographical information was found in this research."},
+        {name:"William “Ty” Scott",bio:"Served as staff attorney to a chancery judge in Hernando."}
+      ]},
+      {group:"Mississippi judiciary",office:"Chancery Court — 17th District, Place 3 (Subdistrict 17-1)",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 17-1 vote in this race.",candidates:[
+        {name:"Gwendolyn Baptist",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Malenda Harris Meacham",bio:"Intervened as a defendant in the federal lawsuit over the DeSoto County judicial subdistricts."}
+      ]},
+      {group:"Mississippi judiciary",office:"Circuit Court — 21st District, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[
+        {name:"Gordon Shaw Jr.",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Joseph “Jody” Neyman",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Mississippi judiciary",office:"Circuit Court — 21st District, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[
+        {name:"Celeste Embrey Wilson",status:"Listed unopposed · status uncertain",bio:"Circuit court judge in DeSoto County since 2017 (previously county judge and assistant district attorney). Appointed to the Mississippi Supreme Court effective August 1, 2026 — confirm ballot status on the printed ballot.",note:"Her continued presence on the circuit-court ballot could not be verified."}
+      ]},
+      {group:"Mississippi judiciary",office:"Circuit Court — 21st District, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[
+        {name:"W. Douglas Hollowell III",status:"Listed unopposed",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Mississippi judiciary",office:"Circuit Court — 21st District, Place 4 (Subdistrict 21-1)",does:"Handles felony criminal cases and major civil cases. Only voters in Subdistrict 21-1 vote in this race.",candidates:[
+        {name:"Lucius Edwards",bio:"",note:"No public biographical information was found in this research."},
+        {name:"John Hughes",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Mississippi judiciary",office:"County Court Judge — vote for two",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[
+        {name:"Allen Couch",status:"Incumbent",bio:"Sitting DeSoto County court judge."},
+        {name:"H. “Craig” Treadway",status:"Incumbent",bio:"Sitting DeSoto County court judge."}
+      ]},
+      {group:"DeSoto County schools",office:"Board of Education — District 5",does:"Sets policy and budgets for DeSoto County public schools. Only voters in Board District 5 vote in this race.",candidates:[
+        {name:"Charles Barton",status:"Incumbent",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Rebeca Tello",bio:"",note:"No public biographical information was found in this research."}
+      ]}
+    ]
   }
 };
