@@ -16,5 +16,22 @@ function moneyTrail(name) {
   return "<details class=\"candidate-money\"><summary>Follow the money (FEC)</summary>"
     + totals
     + (h ? "<p><strong>Top individual donors:</strong></p><ol>" + h + "</ol>" : "")
+    + nonprofitHtml(d, name)
     + "<p class=\"footnote\">Source: <a href=\"" + d.fec_url + "\" target=\"_blank\" rel=\"noopener\">Federal Election Commission</a>, 2026 cycle. Individual contributions to the principal campaign committee.</p></details>";
+}
+
+function nonprofitHtml(d, name) {
+  var conns = (window.NONPROFIT_LAYER || {})[name];
+  if (!conns || !conns.length) return "";
+  function fmt(n) {
+    return n == null ? "\u2014" : "$" + Math.round(n).toLocaleString("en-US");
+  }
+  var items = conns.map(function (c) {
+    return "<li><strong>" + c.n + "</strong> (" + c.sub + ")<br>"
+      + c.rel + ": " + c.donor + " gave " + fmt(c.amt) + ".<br>"
+      + "Latest 990 (" + c.yr + "): revenue " + fmt(c.rev) + ", expenses " + fmt(c.exp) + ". "
+      + "<a href=\"" + c.url + "\" target=\"_blank\" rel=\"noopener\">View 990</a></li>";
+  }).join("");
+  return "<p><strong>Nonprofit connections:</strong></p><ol>" + items + "</ol>"
+    + "<p class=\"footnote\">Nonprofit data: IRS Form 990 via ProPublica Nonprofit Explorer. Each connection individually verified.</p>";
 }
