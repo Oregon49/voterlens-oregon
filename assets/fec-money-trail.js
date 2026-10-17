@@ -17,7 +17,8 @@ function moneyTrail(name) {
     + totals
     + (h ? "<p><strong>Top individual donors:</strong></p><ol>" + h + "</ol>" : "")
     + nonprofitHtml(d, name)
-    + "<p class=\"footnote\">Source: <a href=\"" + d.fec_url + "\" target=\"_blank\" rel=\"noopener\">Federal Election Commission</a>, 2026 cycle. Individual contributions to the principal campaign committee.</p></details>";
+    + spendingHtml(name)
+    + "<p class=\"footnote\">Source: <a href=\"" + d.fec_url + "\" target=\"_blank\" rel=\"noopener\">Federal Election Commission</a>, 2026 cycle. Individual contributions and committee disbursements.</p></details>";
 }
 
 function nonprofitHtml(d, name) {
@@ -34,4 +35,19 @@ function nonprofitHtml(d, name) {
   }).join("");
   return "<p><strong>Nonprofit connections:</strong></p><ol>" + items + "</ol>"
     + "<p class=\"footnote\">Nonprofit data: IRS Form 990 via ProPublica Nonprofit Explorer. Each connection individually verified.</p>";
+}
+
+function spendingHtml(name) {
+  var payees = (window.FEC_SPENDING || {})[name];
+  if (!payees || !payees.length) return "";
+  var shared = window.FEC_SHARED_VENDORS || {};
+  function fmt(n) {
+    return n == null ? "\u2014" : "$" + Math.round(n).toLocaleString("en-US");
+  }
+  var items = payees.map(function (p) {
+    var others = (shared[p.n] || []).filter(function (c) { return c !== name; });
+    var flag = others.length ? " <em>(also works for " + others.join(", ") + ")</em>" : "";
+    return "<li><strong>" + p.n + "</strong>: " + fmt(p.a) + (p.p ? " — " + p.p : "") + flag + "</li>";
+  }).join("");
+  return "<p><strong>Where the money goes (top payees):</strong></p><ol>" + items + "</ol>";
 }
