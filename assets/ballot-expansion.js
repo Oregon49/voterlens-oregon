@@ -540,5 +540,180 @@ window.EXPANDED_BALLOTS = {
         {name:"Rebeca Tello",bio:"",note:"No public biographical information was found in this research."}
       ]}
     ]
+  },
+
+  layton: {
+    label:"Layton · Davis County, Utah",chips:["U.S. House UT-02","State Senate 7","State House 16","Davis County"],summary:"12 races and 2 statewide measures: 1 federal, 2 state-legislative, 1 state school board, 6 county offices, 1 local school board, 15 judicial retentions, and 2 constitutional amendments. No Layton city races — Utah holds municipal elections in odd years.",
+    coverage:"This pathway covers Layton, Utah (ZIP 84041) in Davis County for the November 3, 2026 general election. Layton's core districts are U.S. House CD-2, State Senate District 7, State House District 16, and Davis School Board District 6. Addresses near city borders may fall in adjacent districts — confirm at vote.utah.gov.",
+    caveats:["Utah holds municipal elections in odd-numbered years, so no Layton mayor or city-council races appear on this ballot.","Addresses near the Clearfield, Syracuse, or Kaysville borders may fall in adjacent legislative or school-board districts — confirm the exact address at vote.utah.gov.","Jon Atkin's status as the sitting Davis County Sheriff could not be confirmed from primary sources.","Scott Parke is marked as the incumbent County Controller on a 2024-cycle source; confirm current officeholder status.","The 2025 court-ordered congressional redistricting placed Davis County in CD-2; some third-party sites still show stale district numbers.","Biographical details for several candidates were not found in primary sources; compare the printed ballot before voting."],
+    sources:[{label:"Davis County Clerk certification of candidates (Aug 31, 2026)",url:"https://www.daviscountyutah.gov/clerk-auditor/elections"},{label:"UEA-PAC Ballot Box (district coverage)",url:"https://myuea.org/pac"},{label:"Weber County Hive: HD-16 race coverage",url:"https://webercountyhive.substack.com/"},{label:"Ballotpedia: Utah 2026 ballot measures",url:"https://ballotpedia.org/Utah_2026_ballot_measures"}],
+    races:[
+      {group:"Federal offices",office:"U.S. House — District 2 — 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Blake D. Moore",party:"Republican",status:"Incumbent",bio:"Sitting U.S. representative; defeated Karianne Lisonbee in the June 23, 2026 Republican primary."},
+        {name:"Peter Crosby",party:"Democrat",bio:"Per localcandidates.org: family history of public service with parents and grandfathers in the military; lists Medicaid and Medicare as issue focus.",note:"Bio from a secondary source; treat as unverified."},
+        {name:"Daniel Cottam",party:"Libertarian",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Robert M. Moesinger",party:"Unaffiliated",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Carlton E. Bowen",party:"Independent American",bio:"Air Force veteran and former American Fork City Council member; state chair of the Independent American Party of Utah.",note:"Bio from a secondary source; treat as unverified."}
+      ]},
+      {group:"Utah Legislature",office:"State Senator — District 7",does:"Votes on Utah laws, the state budget, and taxes.",candidates:[
+        {name:"Stephanie Hollist",party:"Republican",bio:"Won the June 23 Republican primary over incumbent Senate President J. Stuart Adams and Braden Hess; open seat.",note:"Biographical details beyond the primary result were not found in primary sources."},
+        {name:"Garret Rushforth",party:"Democrat",bio:"UEA-PAC recommended.",note:"Biographical details were not found in primary sources."},
+        {name:"Jeffrey Ostler",party:"Constitution",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Utah Legislature",office:"State Representative — District 16",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Bob J. Stevenson",party:"Republican",bio:"Former Layton mayor and sitting Davis County commissioner who vacated his commission seat to run. Defeated incumbent Rep. Trevor Lee 66.1% to 33.9% in the June 23 Republican primary.",note:"Fundraising figures reported by the Weber County Hive were not independently verified."},
+        {name:"Abigail Treasure",party:"Democrat",bio:"First-time candidate; UEA-PAC recommended (dual recommendation with Stevenson).",note:"Bio from secondary coverage; treat as unverified."}
+      ]},
+      {group:"Utah State Board of Education",office:"State Board of Education — District 4",does:"Sets statewide education policy, standards, and budgets.",candidates:[
+        {name:"LeAnn Wood",party:"Republican",status:"Incumbent · unopposed",bio:"Board member since January 2023; has served in board leadership. Won the Republican primary; the Democratic challenger was eliminated at convention."}
+      ]},
+      {group:"Davis County offices",office:"County Commissioner — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+        {name:"Kendalyn Harris",party:"Republican",status:"Unopposed",bio:"Won the June 23 Republican primary; seat vacated by Bob Stevenson."}
+      ]},
+      {group:"Davis County offices",office:"County Commissioner — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+        {name:"Susan Lee",party:"Republican",bio:"Won the June 23 Republican primary over incumbent commissioner Lorene Kamalu; was the party's endorsed candidate. Campaigned on fiscal restraint and county spending outpacing growth.",note:"Coverage from secondary sources; treat as unverified."},
+        {name:"Bret Millburn",party:"Unaffiliated",bio:"Former county commissioner. Platform includes long-range budgeting, coordination with cities, and named infrastructure projects; endorsed fellow Republican Harris for Seat A.",note:"Bio from secondary coverage; treat as unverified."}
+      ]},
+      {group:"Davis County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+        {name:"Troy Rawlings",party:"Republican",status:"Incumbent · unopposed",bio:"Sitting county attorney; described his office as award-winning in October 2026 coverage of a proposed Justice Center."}
+      ]},
+      {group:"Davis County offices",office:"County Controller",does:"Oversees county finances, auditing, and payroll.",candidates:[
+        {name:"Scott Parke",party:"Republican",status:"Incumbent · verify",bio:"Marked as the incumbent on a 2024-cycle source; current officeholder status should be confirmed.",note:"Incumbency could not be confirmed from a current primary source."},
+        {name:"Stephanie Wayment",party:"Democrat",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Davis County offices",office:"County Clerk",does:"Runs county elections and maintains public records.",candidates:[
+        {name:"Brian McKenzie",party:"Republican",status:"Incumbent · unopposed",bio:"Sitting county clerk; signed the August 31, 2026 candidate certification. Defeated Jona Whitesides in the June 23 Republican primary."}
+      ]},
+      {group:"Davis County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+        {name:"Jon Atkin",party:"Republican",status:"Unopposed",bio:"Won a four-way June 23 Republican primary; was the party-endorsed candidate.",note:"Whether Atkin is the sitting sheriff could not be confirmed from primary sources."}
+      ]},
+      {group:"Davis County schools",office:"Davis School Board — District 6",does:"Sets policy and budgets for Davis School District public schools.",candidates:[
+        {name:"Kristen Hogan",status:"Incumbent",bio:"Sitting board member for Precinct 6, term January 2023 to January 2027."},
+        {name:"Jane Neal",bio:"Challenger.",note:"Biographical details were not found in primary sources."}
+      ]},
+      {group:"Utah judiciary — retention",office:"Utah Supreme Court — retention",does:"Retention vote: vote YES to keep the justice in office or NO to remove.",candidates:[
+        {name:"Jill M. Pohlman",status:"Retention vote",bio:"Justice of the Supreme Court of Utah.",note:"The ballot directs voters to Judges.Utah.gov for the Judicial Performance Evaluation Commission's recommendations."}
+      ]},
+      {group:"Utah judiciary — retention",office:"Utah Court of Appeals — retention (6 judges)",does:"Retention vote: vote YES to keep each judge in office or NO to remove.",candidates:[
+        {name:"Amy Jo Oliver",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"David Ned Mortensen",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"Gregory Keith Orme",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"John David Luthy",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"Michele M. Christiansen Forster",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"Ryan M. Harris",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."}
+      ]},
+      {group:"Utah judiciary — retention",office:"District Court, 2nd District — retention (3 judges)",does:"Retention vote: vote YES to keep each judge in office or NO to remove. The 2nd District covers Davis County.",candidates:[
+        {name:"Eldred Blaine Rawson",status:"Retention vote",bio:"Judge of the District Court of the Second Judicial District.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"Jason Craig Nelson",status:"Retention vote",bio:"Judge of the District Court of the Second Judicial District.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"Jennifer Lyn Valencia",status:"Retention vote",bio:"Judge of the District Court of the Second Judicial District.",note:"See Judges.Utah.gov for JPEC recommendations."}
+      ]},
+      {group:"Utah judiciary — retention",office:"Juvenile Court, 2nd District — retention (3 judges)",does:"Retention vote: vote YES to keep each judge in office or NO to remove.",candidates:[
+        {name:"Rick Westmoreland",status:"Retention vote",bio:"Judge of the Juvenile Court of the Second Juvenile Court District.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"Robert Garrett Neill",status:"Retention vote",bio:"Judge of the Juvenile Court of the Second Juvenile Court District.",note:"See Judges.Utah.gov for JPEC recommendations."},
+        {name:"Jeffrey J. Noland",status:"Retention vote",bio:"Judge of the Juvenile Court of the Second Juvenile Court District.",note:"See Judges.Utah.gov for JPEC recommendations."}
+      ]},
+      {group:"Utah judiciary — retention",office:"Davis County Justice Court — retention",does:"Retention vote: vote YES to keep the judge in office or NO to remove.",candidates:[
+        {name:"John Carl Ynchausti",status:"Retention vote",bio:"Judge of the Davis County Justice Court.",note:"See Judges.Utah.gov for JPEC recommendations."}
+      ]}
+    ],
+    measures:[
+      {code:"Constitutional Amendment A",title:"Publication of constitutional amendments",text:"Shall the Utah Constitution be amended to change how proposed constitutional amendments are published, requiring publication for 60 days immediately before the general election in a manner established by state law instead of in newspapers? If approved, state statute would require the Lieutenant Governor to publish the full text of all proposed constitutional amendments and other ballot questions on the Utah Public Notice Website and on the Lieutenant Governor's website for 60 days immediately before the general election.",yes:"Require amendments to be published online (Utah Public Notice Website and Lieutenant Governor's website) for 60 days before the election instead of in newspapers.",no:"Keep the current constitutional requirement of newspaper publication."},
+      {code:"Constitutional Amendment B",title:"60% threshold for citizen tax initiatives",text:"Shall the Utah Constitution be amended to require that citizen-proposed laws that increase taxes compared to existing law be approved by at least 60% of voters, instead of a simple majority?",yes:"Require citizen ballot initiatives that create new taxes, expand taxes, raise tax rates, or adjust property taxes to win 60% voter approval instead of a simple majority. Legislature-referred measures are unaffected.",no:"Keep the current simple-majority threshold for citizen tax initiatives."}
+    ]
+  },
+  stgeorge: {
+    label:"St. George \u00b7 Washington County, Utah",chips:["U.S. House UT-03","State Senate 28","State House 72-75","Washington County"],summary:"26 races and 2 statewide measures: 1 federal, 5 state-legislative, 5 county offices, 4 school-board districts, 11 judicial retentions, and 2 constitutional amendments. No St. George city races \u2014 Utah holds municipal elections in odd years.",
+    coverage:"This pathway covers St. George, Utah (ZIP 84770) in Washington County for the November 3, 2026 general election. All of Washington County votes in U.S. House CD-3 and State Senate District 28. State House districts (72, 73, 74, 75) and school-board districts (4, 5, 6, 7) depend on street address \u2014 confirm at vote.utah.gov.",
+    caveats:["Utah holds municipal elections in odd-numbered years (St. George last voted for mayor and council in August 2025), so no city races appear on this ballot.","State House districts 72, 73, 74, and 75 and school-board districts 4, 5, 6, and 7 are address-dependent \u2014 only the district covering your address appears on your ballot. Confirm at vote.utah.gov.","School Board District 6 candidates could not be verified from available sources; the seat is open (Burke Staheli is running for County Commission instead). Confirm on the printed ballot.","Propositions 3, 4, and 5 on the Washington County ballot are for Santa Clara, Virgin, and Washington City respectively \u2014 St. George voters do not vote on them.","Judge Matthew L. Bell is listed as WITHDRAWN on the Fifth District Court retention ballot.","Public biographical information was not found for several candidates; compare the printed ballot before voting."],
+    sources:[{label:"Washington County publication ballot (Nov 3, 2026)",url:"https://www.washco.utah.gov/wp-content/uploads/2026/09/26-General-SAMPLE-rvsd.pdf"},{label:"Washington County elections page",url:"https://www.washco.utah.gov/departments/clerk/elections/"},{label:"theballotbrief: Washington County candidates",url:"https://theballotbrief.com/state/utah/washington-county"},{label:"DixieVotes.org county voter guide",url:"https://www.dixievotes.org/"},{label:"Ballotpedia: Utah 2026 ballot measures",url:"https://ballotpedia.org/Utah_2026_ballot_measures"}],
+    measuresTitle:"Statewide ballot measures",
+    measuresText:"Two proposed constitutional amendments are on every Utah ballot. Vote For or Against each.",
+    measures:[
+      {title:"Constitutional Amendment A",text:"Shall the Utah Constitution be amended to change how proposed constitutional amendments are published, requiring publication for 60 days immediately before the general election in a manner established by state law instead of in newspapers? A YES vote moves publication online (Utah Public Notice Website + Lt. Governor\u2019s website); a NO vote keeps the newspaper requirement."},
+      {title:"Constitutional Amendment B",text:"Shall the Utah Constitution be amended to require that citizen-proposed laws that increase taxes compared to existing law be approved by at least 60% of voters, instead of a simple majority? A YES vote raises the threshold for citizen tax initiatives to 60%; a NO vote keeps the simple-majority rule."}
+    ],
+    noMeasuresTitle:"",
+    noMeasuresText:"",
+    races:[
+      {group:"Federal offices",office:"U.S. House \u2014 District 3 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. All of Washington County votes in CD-3 (redrawn by court order in 2025).",candidates:[
+        {name:"Celeste Maloy",party:"Republican",status:"Incumbent",bio:"Represented Utah\u2019s 2nd District since late 2023; running in redrawn CD-3. Defeated former state Rep. Phil Lyman in the June 2026 Republican primary. Debated Kent Udell at Utah Tech University in St. George on Oct 2, 2026."},
+        {name:"Kent S. Udell",party:"Democrat",bio:"Retired mechanical engineering professor at the University of Utah; ran uncontested in the Democratic primary."},
+        {name:"Cassie Easley",party:"Constitution",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Michael R. Stoddard",party:"Libertarian",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Ayden Scott",party:"Unaffiliated",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Adonis Hooslyn",party:"Unaffiliated",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"State legislature",office:"State Senate \u2014 District 28 \u2014 4-year term",does:"Votes on state laws, the state budget, and confirms gubernatorial appointments. District 28 covers Beaver, Iron, Juab, Millard, and Washington counties.",candidates:[
+        {name:"Evan J. Vickers",party:"Republican",status:"Incumbent",bio:"Utah Senate Majority Leader. Pharmacist and business owner; B.S. in pharmacy from the University of Utah; served in the Utah House 2009\u20132012 and on the Cedar City Council 1987\u20131999."},
+        {name:"Richard S. Robillard",party:"Democrat",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Kristin N. Isham",party:"Constitution",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"State legislature",office:"State House \u2014 District 72 \u2014 2-year term",does:"Votes on state laws and the state budget. District-dependent \u2014 only the district covering your address appears on your ballot.",candidates:[
+        {name:"Joseph Elison",party:"Republican",status:"Incumbent",bio:"Sitting member of the Utah House of Representatives."},
+        {name:"Eva M. Weldon",party:"Democrat",bio:"",note:"No public biographical information was found in this research."},
+        {name:"April A. Pinkston",party:"Constitution",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"State legislature",office:"State House \u2014 District 73 \u2014 2-year term",does:"Votes on state laws and the state budget. District-dependent \u2014 only the district covering your address appears on your ballot.",candidates:[
+        {name:"Colin W. Jack",party:"Republican",status:"Incumbent",bio:"Sitting member of the Utah House of Representatives."},
+        {name:"Glenn D. Webb",party:"Democrat",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"State legislature",office:"State House \u2014 District 74 \u2014 2-year term",does:"Votes on state laws and the state budget. District-dependent \u2014 only the district covering your address appears on your ballot.",candidates:[
+        {name:"R. Neil Walter",party:"Republican",status:"Incumbent",bio:"Southern Utah native; served on public charter school boards for 11 years and as adjunct faculty at Dixie State University for 9 years. Finance degrees from BYU and Carnegie Mellon; Chartered Financial Analyst. Campaign priorities: parent rights in education, individual liberty."},
+        {name:"Jeffrey N. Lipe",party:"Democrat",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"State legislature",office:"State House \u2014 District 75 \u2014 2-year term",does:"Votes on state laws and the state budget. District-dependent \u2014 only the district covering your address appears on your ballot.",candidates:[
+        {name:"Walt Brooks",party:"Republican",status:"Incumbent",bio:"St. George native; B.S. in Business Administration from Dixie State University; managing member of software company RxTrax. Campaign priorities: lower tax burden, Second Amendment rights, parental rights."},
+        {name:"Rebecca Winsor",party:"Democrat",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Washington County",office:"County Commission \u2014 Seat A \u2014 4-year term",does:"Sets county policy, budget, and land use for all of Washington County. Elected countywide.",candidates:[
+        {name:"Gil Almquist",party:"Republican",status:"Incumbent",bio:"County commissioner since 2018; former St. George City Council member; owner of Gil Almquist Landscaping (35+ years). Defeated Bill Hoster in the June 2026 primary. Campaign highlights: water projects (Warner Valley Reservoir land, Chief Toquer Reservoir), no property-tax mil-levy increase for 16 years."},
+        {name:"Gail Koske",party:"Democrat",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Burke Staheli",party:"Unaffiliated",bio:"Sitting Washington County School Board District 6 member (term 2023\u20132026); running for commission instead of school-board re-election."}
+      ]},
+      {group:"Washington County",office:"County Commission \u2014 Seat B \u2014 4-year term",does:"Sets county policy, budget, and land use for all of Washington County. Elected countywide.",candidates:[
+        {name:"Troy G. Belliston",party:"Republican",status:"Open seat",bio:"Defeated incumbent commissioner Victor Iverson in the June 2026 Republican primary."},
+        {name:"Sarah N. Anderson",party:"Democrat",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Washington County",office:"County Attorney \u2014 4-year term",does:"Prosecutes criminal cases for the county and advises county government on legal matters.",candidates:[
+        {name:"Jerry D. Jaeger",party:"Republican",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Edward Flint",party:"Democrat",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Washington County",office:"County Clerk / Auditor \u2014 4-year term",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+        {name:"Ryan Sullivan",party:"Republican",status:"Incumbent \u00b7 unopposed",bio:"Signed the 2026 Notice of Election as Washington County Clerk/Auditor."}
+      ]},
+      {group:"Washington County",office:"County Sheriff \u2014 4-year term",does:"Chief law-enforcement officer for Washington County.",candidates:[
+        {name:"Johnny Heppler",party:"Republican",status:"Unopposed",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"School board",office:"Local School Board \u2014 District 4 \u2014 4-year term",does:"Sets policy and budgets for Washington County public schools. Nonpartisan; district-dependent.",candidates:[
+        {name:"Larene Cox",status:"Unopposed",bio:"Sitting board member; term 2023\u20132026."}
+      ]},
+      {group:"School board",office:"Local School Board \u2014 District 5 \u2014 4-year term",does:"Sets policy and budgets for Washington County public schools. Nonpartisan; district-dependent.",candidates:[
+        {name:"Dan C. Zaleski",bio:"",note:"No public biographical information was found in this research."},
+        {name:"David B. Stirland",status:"Incumbent",bio:"Sitting board member; term 2023\u20132026."}
+      ]},
+      {group:"School board",office:"Local School Board \u2014 District 6 \u2014 4-year term",does:"Sets policy and budgets for Washington County public schools. Nonpartisan; district-dependent. Open seat \u2014 Burke Staheli is running for County Commission.",candidates:[
+        {name:"Candidates not verified",bio:"",note:"District 6 candidates could not be verified from available sources. Confirm on the printed ballot."}
+      ]},
+      {group:"School board",office:"Local School Board \u2014 District 7 \u2014 4-year term",does:"Sets policy and budgets for Washington County public schools. Nonpartisan; district-dependent.",candidates:[
+        {name:"N. Craig Hammer",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Kristyn Decker",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Judicial retentions",office:"Utah Supreme Court \u2014 retention",does:"Shall the justice be retained? Visit judges.utah.gov for the Judicial Performance Evaluation Commission\u2019s recommendations.",candidates:[{name:"Jill M. Pohlman",bio:"Vote YES to retain, NO to remove."}]},
+      {group:"Judicial retentions",office:"Utah Court of Appeals \u2014 retention (6 judges)",does:"Shall each judge be retained? Visit judges.utah.gov for JPEC recommendations.",candidates:[
+        {name:"Michele M. Christiansen Forster",bio:"Vote YES to retain, NO to remove."},
+        {name:"David Ned Mortensen",bio:"Vote YES to retain, NO to remove."},
+        {name:"John David Luthy",bio:"Vote YES to retain, NO to remove."},
+        {name:"Ryan M. Harris",bio:"Vote YES to retain, NO to remove."},
+        {name:"Amy Jo Oliver",bio:"Vote YES to retain, NO to remove."},
+        {name:"Gregory Keith Orme",bio:"Vote YES to retain, NO to remove."}
+      ]},
+      {group:"Judicial retentions",office:"Fifth District Court \u2014 retention",does:"Shall each judge be retained? Washington County is in the Fifth Judicial District.",candidates:[
+        {name:"Matthew L. Bell",status:"WITHDRAWN",bio:"Listed as withdrawn on the publication ballot."},
+        {name:"Jay Winward",bio:"Vote YES to retain, NO to remove."},
+        {name:"Eric Russell Gentry",bio:"Vote YES to retain, NO to remove."}
+      ]},
+      {group:"Judicial retentions",office:"Justice Court \u2014 retention",does:"Shall the judge be retained?",candidates:[{name:"K. Jake Graff",bio:"Justice Court Judge, Santa Clara Justice Court. Vote YES to retain, NO to remove."}]}
+    ]
   }
+
 };
