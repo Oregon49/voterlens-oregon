@@ -9,7 +9,9 @@
    candidate's pamphlet statement and campaign bio was checked; NO qualifying
    quotes were found, so this map is intentionally empty for now.
    Research: voterlens-deploy/faith-quotes-phase1-research.md */
-window.FAITH_QUOTES = {};
+window.FAITH_QUOTES = {
+  "David Russ": "My highest priorities are God, the Constitution, and You."
+};
 
 function faithHtml(name) {
   var q = (window.FAITH_QUOTES || {})[name];
