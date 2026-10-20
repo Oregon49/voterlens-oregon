@@ -714,6 +714,271 @@ window.EXPANDED_BALLOTS = {
       ]},
       {group:"Judicial retentions",office:"Justice Court \u2014 retention",does:"Shall the judge be retained?",candidates:[{name:"K. Jake Graff",bio:"Justice Court Judge, Santa Clara Justice Court. Vote YES to retain, NO to remove."}]}
     ]
+  },
+  multnomah: {
+    label:"Portland · Multnomah County",chips:["U.S. Senate","Governor","County Chair — ranked-choice","Portland Council Districts 3 & 4","Circuit Court"],summary:"Up to 16 races depending on your districts and city: federal and statewide offices, your state Senate and House races, the Multnomah County Chair race (ranked-choice), county auditor and sheriff, circuit-court judges, Portland city auditor and council, and east-county city races — plus local measures for Portland, Troutdale, and Reynolds School District voters.",
+    coverage:"This pathway covers Multnomah County, Oregon for the November 3, 2026 general election. ZIP codes cross district lines here, so the guide asks you to confirm your congressional, legislative, council, and commission districts from your voter record or printed ballot instead of guessing from a ZIP. County Chair, Commissioner District 2, and Portland races use ranked-choice voting. Several races were decided in the May primary and do not appear in November — including Metro Council and County Commission Districts 1, 3, and 4 — and the Portland mayor is not on the 2026 ballot.",
+    caveats:["Portland City Council Districts 3 and 4 each elect three councilors in 2026 by ranked-choice voting; District 1 and 2 seats are not on the 2026 ballot.","The Reynolds School District bond (Measure 26-268) is shown on east-county city pathways; parts of Gresham and Portland (Rockwood) inside the district may not be flagged here — compare the printed ballot.","Two small-district measures could not be reliably assigned by ZIP and are not shown: Burlington Water District Measure 26-269 and Hillsboro School District Measure 34-355 (a small number of Multnomah voters near the county line). Check the printed ballot.","Lake Oswego and Maywood Park council races reach a small number of Multnomah County voters; the number of seats up in 2026 could not be verified, so they are not shown — compare the printed ballot.","Soil and water conservation district and public utility district director races appear on some ballots; position-level fields could not be verified and are not shown.","Candidate order follows the county voters' pamphlet candidate index and may differ from the printed ballot order.","There are no Oregon statewide measures on the November 2026 ballot."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 13 (Multnomah County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book13_web.pdf"},{label:"Multnomah County Elections — November 3, 2026 General Election",url:"https://multco.us/info/november-3-2026-general-election"},{label:"Multnomah County Voters' Pamphlet — November 2026",url:"https://multco.us/file/_large_print_multnomah_county_voters'_pamphlet_-_november_2026_general_election/download"},{label:"Gresham Outlook — 2026 east-county election guide",url:"https://theoutlookonline.com/2026/10/19/election-2026-gresham-sandy-estacada-guide-to-the-november-vote/"}],
+    races:[{use:"senate"},
+      {group:"Federal offices",office:"U.S. House — District 1",when:"cd1",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Suzanne Bonamici",party:"Democrat / Working Families",status:"Incumbent",bio:"Attorney and former Oregon legislator who has represented OR-01 since 2012."},
+        {name:"Barbara J. Kahl",party:"Republican",bio:"Veterinarian and first-time federal candidate."}]},
+      {group:"Federal offices",office:"U.S. House — District 3",when:"cd3",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Maxine Dexter",party:"Democrat",status:"Incumbent",bio:"Emergency-medicine physician and former Oregon state representative, elected to Congress in 2024."},
+        {name:"Loran Ayles",party:"Republican",bio:""}]},
+      {group:"Federal offices",office:"U.S. House — District 5",when:"cd5",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Janelle Bynum",party:"Democrat",status:"Incumbent",bio:"Former Oregon state representative, elected to Congress in 2024."},
+        {name:"Patti Adair",party:"Republican / Libertarian",bio:"Deschutes County commissioner."},
+        {name:"Andrea Townsend",party:"Pacific Green",bio:""}]},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Senator — District 16",when:"sd16",does:"Open seat. Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Courtney Bangs",party:"Republican",bio:"Clatsop County commissioner and former agriculture teacher."},
+        {name:"Rachel Armitage",party:"Democrat",bio:"Held this seat by appointment in 2022–2023."},
+        {name:"Melisa Finkle",party:"Independent",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 17",when:"sd17",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Lisa Reynolds",party:"Democrat",status:"Incumbent",bio:"Appointed to the Senate in 2025 after serving in the Oregon House."},
+        {name:"John A. N. Chee",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 19",when:"sd19",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Rob Wagner",party:"Democrat",status:"Incumbent",bio:"President of the Oregon Senate."},
+        {name:"Mary Dirksen",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 24",when:"sd24",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Kayse Jama",party:"Democrat / Working Families",status:"Incumbent · unopposed",bio:"State senator since 2021."}]},
+      {group:"Oregon Legislature",office:"State Senator — District 26",when:"sd26",does:"Open seat — the incumbent is running for Governor.",candidates:[
+        {name:"Jeff Helfrich",party:"Republican",bio:"State representative for District 52 and a retired Portland police sergeant."},
+        {name:"Nicole Bassett",party:"Democrat / Independent / Working Families",bio:"Co-founder of The Renewal Workshop, a sustainable-business company."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 28",when:"hd28",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Dacia Grayber",party:"Democrat / Independent / Working Families",status:"Incumbent",bio:"Portland firefighter and state representative since 2021."},
+        {name:"Randall Fryer",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 31",when:"hd31",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Darcey Edwards",party:"Republican",status:"Incumbent",bio:""},
+        {name:"Tom L. Forest",party:"Democrat",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 33",when:"hd33",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Shannon Jones Isadore",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Ciatta R. Thompson",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 34",when:"hd34",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Mari Watanabe",party:"Democrat",status:"Appointed incumbent",bio:"Appointed to the House in January 2025."},
+        {name:"Shaunie Cousins",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 38",when:"hd38",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Daniel Loc Nguyen",party:"Democrat / Republican",status:"Incumbent · unopposed",bio:"Cross-nominated by both the Democratic and Republican parties."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 41",when:"hd41",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Mark Gamba",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Elvis Clark",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 42",when:"hd42",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Rob Nosse",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Morey Straus",party:"Libertarian",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 43",when:"hd43",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Tawna Sanchez",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Tim LeMaster",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 44",when:"hd44",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Travis Nelson",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Margo Logan",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 45",when:"hd45",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Thuy Tran",party:"Democrat / Independent / Working Families",status:"Incumbent",bio:""},
+        {name:"Jason Boyce",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 46",when:"hd46",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Willy Chotzen",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Leo Morley",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 47",when:"hd47",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Andrea Valderrama",party:"Democrat",status:"Incumbent · unopposed",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 48",when:"hd48",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Lamar Wise",party:"Democrat / Independent / Working Families",status:"Incumbent",bio:""},
+        {name:"Andrew Morrison",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 49",when:"hd49",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Zach Hudson",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Ann Walker",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 50",when:"hd50",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Ricki Ruiz",party:"Democrat / Independent",status:"Incumbent",bio:""},
+        {name:"Brian Gray",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 52",when:"hd52",does:"Open seat — the incumbent is running for State Senate.",candidates:[
+        {name:"Hank Sanders",party:"Democrat / Independent",bio:"Former journalist and legislative aide."},
+        {name:"Scott Hege",party:"Republican",bio:"Former Wasco County commissioner and Port of The Dalles economic-development executive."}]},
+      {group:"Multnomah County",office:"County Chair — ranked-choice",does:"Leads the Multnomah County Board of Commissioners and county government. Ranked-choice voting: rank candidates in order of preference.",candidates:[
+        {name:"Shannon Singleton",status:"District 2 Commissioner",bio:"Current District 2 county commissioner."},
+        {name:"Julia Brim-Edwards",status:"District 3 Commissioner",bio:"Current District 3 county commissioner."},
+        {name:"Sharon Meieran",bio:"Former District 1 county commissioner and emergency-room physician."}]},
+      {group:"Multnomah County",office:"County Commissioner — District 2 — ranked-choice",when:"com2",does:"Represents North and Northeast Portland on the county board. Ranked-choice voting: rank candidates in order of preference.",candidates:[
+        {name:"Bruce Broussard",bio:""},{name:"Herman Greene",bio:""},{name:"Serena Cruz",bio:""},{name:"Bri Williams",bio:""},{name:"Nabil Zaghloul",bio:""},{name:"Nathan Ong Norris",bio:""},{name:"Tony Robertson",bio:""}]},
+      {group:"Multnomah County",office:"County Auditor",does:"Audits county programs and finances for the Board of Commissioners and the public.",candidates:[
+        {name:"Nicole Pexton",status:"Unopposed",bio:""}]},
+      {group:"Multnomah County",office:"County Sheriff",does:"Runs the county jail, corrections, and law-enforcement services.",candidates:[
+        {name:"Nicole Morrisey O'Donnell",status:"Incumbent · unopposed",bio:"Multnomah County sheriff since 2023."}]},
+      {group:"City of Portland",office:"City Auditor — ranked-choice",when:"portland",does:"Portland's independent auditor: audits city government and oversees city elections and campaign finance.",candidates:[
+        {name:"Simone Rede",status:"Incumbent · unopposed",bio:""}]},
+      {group:"City of Portland",office:"City Councilor — District 3 — ranked-choice · 3 seats",when:"pd3",does:"Three councilors are elected from District 3 (Southeast Portland). Rank up to six candidates in order of preference.",candidates:[
+        {name:"Tiffany Koyama Lane",status:"Incumbent"},{name:"Angelita Morillo",status:"Incumbent"},{name:"Steve Novick",status:"Incumbent"},
+        {name:"Ali Beaudoin"},{name:"Joel Corcoran"},{name:"Darren McCormick"},{name:"Guy Frankenstein"},{name:"Matthias Hallett"},{name:"Patrick Hilton"},{name:"Larry Kelly"},{name:"Kenneth (Kent) R. Landgraver III"},{name:"Keir Legree"},{name:"Esther León"},{name:"Cristal Otero"},{name:"Heart Free Pham"},{name:"John Sweeney"},{name:"Tom Sollitt"},{name:"Kellie Torres"},{name:"Kimberly Tucker"},{name:"Martin Ward"},{name:"Terry Parker"}]},
+      {group:"City of Portland",office:"City Councilor — District 4 — ranked-choice · 3 seats",when:"pd4",does:"Three councilors are elected from District 4 (downtown, the west side, and Southwest Portland). Rank up to six candidates in order of preference.",candidates:[
+        {name:"Olivia Clark",status:"Incumbent"},{name:"Mitch Green",status:"Incumbent"},{name:"Eric Zimmerman",status:"Incumbent"},
+        {name:"Eli Arnold"},{name:"Jeremy Beausoleil Smith"},{name:"Jayne Cronlund"},{name:"Jamey Evenstar"},{name:"Timothy (TJ) Anderson"},{name:"John J. Goldsmith"},{name:"Josh Leake"},{name:"John McDonald"},{name:"Matt Schulte"}]},
+      {group:"Judicial office",office:"Circuit Court Judge — 4th District, Position 2",does:"Handles state trial-court cases in Multnomah County, including criminal, civil, family, and juvenile matters. Open seat.",candidates:[
+        {name:"Laura Maurer Rowan",bio:"Senior assistant attorney general at the Oregon Department of Justice and a former Multnomah County mental-health prosecutor."},
+        {name:"Diane S. Sykes",bio:"Civil litigator and former public defender."}]},
+      {group:"Judicial office",office:"Circuit Court Judge — 4th District, Position 6",does:"Handles state trial-court cases in Multnomah County.",candidates:[
+        {name:"Sonia A. Montalbano",status:"Appointed incumbent · unopposed",bio:"Appointed to the court in August 2026."}]},
+      {group:"Judicial office",office:"Circuit Court Judge — 4th District, Position 14",does:"Handles state trial-court cases in Multnomah County; this position hears family-law cases. Open seat.",candidates:[
+        {name:"Joseph Hagedorn",bio:""},{name:"Elizabeth Savage",bio:""}]},
+      {group:"City of Gresham",office:"Mayor",when:"gresham",does:"Leads the Gresham City Council and city government.",candidates:[
+        {name:"Travis Stovall",status:"Incumbent",bio:""},{name:"Sue Piazza",bio:""}]},
+      {group:"City of Gresham",office:"Councilor — Position 2",when:"gresham",candidates:[
+        {name:"Heather Coleman-Cox",bio:""},{name:"Will DelPlato",bio:""}]},
+      {group:"City of Gresham",office:"Councilor — Position 4",when:"gresham",candidates:[
+        {name:"Gregory Schroeder",bio:""},{name:"Krestina Aziz",bio:""},{name:"Joshua Al-jaouni",bio:""},{name:"Teo Ramirez",bio:""}]},
+      {group:"City of Gresham",office:"Councilor — Position 6",when:"gresham",candidates:[
+        {name:"Janine Gladfelter",status:"Incumbent",bio:""},{name:"Dan Miller",bio:""}]},
+      {group:"City of Troutdale",office:"Councilor — at-large · 3 seats",when:"troutdale",does:"Three at-large council seats are on the ballot; the top three vote-getters win.",candidates:[
+        {name:"Zach Andrews",status:"Incumbent"},{name:"Geoffrey Wunn",status:"Incumbent"},{name:"Sandy Glantz"},{name:"Randy Lauer"},{name:"Sheri Winters"}]},
+      {group:"City of Fairview",office:"Mayor",when:"fairview",candidates:[
+        {name:"Keith A. Kudrna",status:"Incumbent · unopposed",bio:""}]},
+      {group:"City of Fairview",office:"Councilor — Position 4",when:"fairview",candidates:[
+        {name:"Jenni Weber",status:"Incumbent · unopposed",bio:""}]},
+      {group:"City of Fairview",office:"Councilor — Position 5",when:"fairview",candidates:[
+        {name:"Ted Tosterud",status:"Unopposed",bio:""}]},
+      {group:"City of Fairview",office:"Councilor — Position 6",when:"fairview",candidates:[
+        {name:"Adam Bird",bio:""},{name:"Steven Haschke",bio:""}]},
+      {group:"City of Wood Village",office:"Councilor — Position 1",when:"woodvillage",candidates:[
+        {name:"Charlene Gothard",status:"Unopposed",bio:""}]},
+      {group:"City of Wood Village",office:"Councilor — Position 4",when:"woodvillage",candidates:[
+        {name:"Christine Bierman",status:"Unopposed",bio:""}]}
+    ],
+    measures:[
+      {code:"Measure 26-267",when:"portland",title:"Portland participatory-budgeting charter amendment",text:"Amends the Portland City Charter to create a participatory-budgeting program: at least 2% of the city's annual General Fund discretionary spending (about $16.4 million in FY 2027-28) would be allocated through a binding process in which residents propose projects and choose what gets funded. It creates no new tax and would begin operating in July 2027.",yes:"Amend the charter and create the participatory-budgeting program.",no:"Do not amend the charter; the existing mayor-and-council budget process continues."},
+      {code:"Measure 26-265",when:"troutdale",title:"Troutdale five-year local option levy for police, fire & 911",text:"A five-year levy of $1.60 per $1,000 of assessed value (about $428 a year on the average Troutdale home) to offset police, fire, and 911 contract costs. If it passes, the city council would eliminate the current $25/month public safety utility fee, so the net increase for the average homeowner is about $128 a year.",yes:"Adopt the levy and eliminate the monthly public safety utility fee.",no:"Do not adopt the levy; the utility fee remains and is projected to rise."},
+      {code:"Measure 26-266",when:"troutdale",title:"Advisory vote: should Troutdale create a municipal police department?",text:"A non-binding advisory question. Troutdale dissolved its police department in 2015 and contracts with the Multnomah County Sheriff's Office. This vote authorizes no tax, fee, or spending; the council takes the result as guidance.",yes:"Signal support for planning a city police department.",no:"Signal opposition to creating a city police department."},
+      {code:"Measure 26-268",when:"reynolds",title:"Reynolds School District bonds",text:"$162.5 million in bonds to replace Glenfair Elementary, repair roofs, HVAC, plumbing, and electrical systems districtwide, add fire-alarm, security, and accessibility upgrades, and build a turf field and bleachers at Reynolds High School. The district projects the current bond tax rate of $1.62 per $1,000 of assessed value will stay the same, and passage would unlock about $8.2 million in state matching funds.",yes:"Issue the bonds and receive the state matching funds.",no:"Do not issue the bonds; the state match is not received."}
+    ]
+  },
+  washington: {
+    label:"Washington County · Beaverton–Hillsboro–Tigard",chips:["U.S. Senate","Governor","County Chair runoff","Commission District 4 runoff","Circuit Court"],summary:"Up to 15 races depending on your districts and city: federal and statewide offices, your state Senate and House races, the county chair runoff, circuit court, soil & water conservation district seats, and city races — plus local measures in Banks, Forest Grove, King City, the Hillsboro School District, and Wilsonville. Several county races were decided in the May primary and are not on the November ballot.",
+    coverage:"This pathway covers Washington County, Oregon for the November 3, 2026 general election. The county is split between U.S. House Districts 1 and 6 and ZIP codes do not follow the line, so the guide asks you to confirm your districts from your voter record or printed ballot. The county commission races on this ballot are November runoffs between the top two finishers from the May primary. The district attorney, county auditor, sheriff, Metro Council, and Commission District 2 were resolved in May or are not up this year, so they do not appear.",
+    caveats:["The sheriff is not on the 2026 ballot (the current term runs to 2028), and the district attorney and county auditor were re-elected unopposed in the May 2026 primary.","Sherwood's council field, Tualatin council opponents, and the Cornelius and Gaston council fields could not be fully verified from official lists, so only their verified mayoral races are shown — compare the printed ballot.","Durham, Lake Oswego, and Rivergrove council races reach small parts of the county but could not be verified against an official source and are not shown.","The Hillsboro School District bond (Measure 34-355) is shown on the Hillsboro pathway; district voters who live outside Hillsboro city limits should compare the printed ballot.","Candidate order follows official voters' pamphlet listings and may differ from the printed ballot order.","There are no Oregon statewide measures and no Washington County county-wide measures on the November 2026 ballot."],
+    sources:[{label:"Washington County Elections — current election & candidate filings",url:"https://www.washingtoncountyor.gov/elections/current-election"},{label:"Washington County Voters' Pamphlet — November 3, 2026 (official PDF)",url:"https://www.washingtoncountyor.gov/elections/documents/november-3-2026-voters-pamphlet/download?inline"},{label:"Oregon Secretary of State — Voters' Pamphlet Book 12 (Washington County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book12_web.pdf"},{label:"City of Hillsboro certified candidate list (filed with county elections)",url:"https://www.washingtoncountyor.gov/elections/documents/city-hillsboro-certified-candidates-nov-2026/download?inline"}],
+    races:[{use:"senate"},
+      {group:"Federal offices",office:"U.S. House — District 1",when:"cd1",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Suzanne Bonamici",party:"Democrat / Working Families",status:"Incumbent",bio:"Attorney and former Oregon legislator who has represented OR-01 since 2012."},
+        {name:"Barbara J. Kahl",party:"Republican",bio:"Veterinarian and first-time federal candidate."}]},
+      {group:"Federal offices",office:"U.S. House — District 6",when:"cd6",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Andrea Salinas",party:"Democrat / Independent",status:"Incumbent",bio:"Former Oregon state representative, congressional aide, and policy adviser, seeking a third term. She serves on the House Agriculture and Science committees."},
+        {name:"David Russ",party:"Republican",bio:"Former mayor of Dundee. A documented response opposes DEI programs."}]},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Senator — District 13",when:"sd13",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Courtney Neron Misslin",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Glenn Lancaster",party:"Republican",bio:""},
+        {name:"Tim E. Nelson",party:"Libertarian",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 15",when:"sd15",does:"Open seat. Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Myrna A. Munoz",party:"Democrat / Working Families",bio:""},
+        {name:"Harold Hutchison",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 16",when:"sd16",does:"Open seat. Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Rachel Armitage",party:"Democrat",bio:"Held this seat by appointment in 2022–2023."},
+        {name:"Courtney Bangs",party:"Republican",bio:"Clatsop County commissioner and former agriculture teacher."},
+        {name:"Melisa Finkle",party:"Independent",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 17",when:"sd17",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Lisa Reynolds",party:"Democrat",status:"Incumbent",bio:"Appointed to the Senate in 2025 after serving in the Oregon House."},
+        {name:"John A. N. Chee",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 19",when:"sd19",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Rob Wagner",party:"Democrat",status:"Incumbent",bio:"President of the Oregon Senate."},
+        {name:"Mary Dirksen",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 25",when:"hd25",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Ben Bowman",party:"Democrat / Working Families",status:"Incumbent",bio:"Majority Leader of the Oregon House."},
+        {name:"Bob Niemeyer",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 26",when:"hd26",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Sue R. Rieke Smith",party:"Democrat / Independent",status:"Incumbent",bio:""},
+        {name:"Stephanie Carkin",party:"Republican / Libertarian",bio:""},
+        {name:"Steph Terrio",party:"Pacific Green / Progressive",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 27",when:"hd27",does:"Open seat.",candidates:[
+        {name:"Tammy Carpenter",party:"Democrat / Progressive / Working Families",bio:""},
+        {name:"G. Mark Norman",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 28",when:"hd28",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Dacia Grayber",party:"Democrat / Independent / Working Families",status:"Incumbent",bio:"Portland firefighter and state representative since 2021."},
+        {name:"Randall Fryer",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 29",when:"hd29",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Susan McLain",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Brian Schimmel",party:"Independent / Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 30",when:"hd30",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Nathan Sosa",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Charles A. Ross",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 31",when:"hd31",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Darcey Edwards",party:"Republican",status:"Incumbent",bio:""},
+        {name:"Tom L. Forest",party:"Democrat",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 33",when:"hd33",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Shannon Jones Isadore",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Ciatta R. Thompson",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 34",when:"hd34",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Mari Watanabe",party:"Democrat",status:"Appointed incumbent",bio:"Appointed to the House in January 2025."},
+        {name:"Shaunie Cousins",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 35",when:"hd35",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Farrah Chaichi",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Dan Martin",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 36",when:"hd36",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Hai Pham",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Michael Orth",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 37",when:"hd37",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Jules Walters",party:"Democrat / Independent / Working Families",status:"Incumbent",bio:"Former mayor of West Linn."},
+        {name:"Chad Parker",party:"Republican",bio:""}]},
+      {group:"Washington County",office:"Board Chair — countywide runoff",does:"Leads the Washington County Board of Commissioners and county government. This is a runoff between the top two finishers from the May primary; the incumbent chair is not running.",candidates:[
+        {name:"Nafisa Fai",bio:"County commissioner for District 1 since 2021."},
+        {name:"Pam Treece",bio:"County commissioner for District 2."}]},
+      {group:"Washington County",office:"Commissioner — District 4 — runoff",when:"com4",does:"Represents western Washington County — Banks, Forest Grove, Cornelius, North Plains, Gaston, and part of Hillsboro. Runoff between the top two finishers from the May primary.",candidates:[
+        {name:"Steve Callaway",bio:"Former mayor of Hillsboro (2017–2024)."},
+        {name:"Kipperlyn Sinclair",bio:"Hillsboro city councilor."}]},
+      {group:"Judicial office",office:"Circuit Court Judge — 20th District, Position 1",does:"Handles state trial-court cases in Washington County, including criminal, civil, family, and juvenile matters.",candidates:[
+        {name:"Zohra Tourville",status:"Incumbent · unopposed",bio:"Sitting Washington County circuit court judge."}]},
+      {group:"Tualatin Soil & Water Conservation District",office:"Director — At-Large Position 2",does:"Helps set policy and budgets for soil and water conservation programs across the district.",candidates:[
+        {name:"Dean Moberg",status:"Incumbent · unopposed",bio:""}]},
+      {group:"Tualatin Soil & Water Conservation District",office:"Director — Zone 4",does:"Helps set policy and budgets for soil and water conservation programs across the district.",candidates:[
+        {name:"Olivia Duren",status:"Incumbent · unopposed",bio:""}]},
+      {group:"Tualatin Soil & Water Conservation District",office:"Director — Zone 5",does:"Helps set policy and budgets for soil and water conservation programs across the district.",candidates:[
+        {name:"Laura Graham",bio:""},{name:"Ethan VanderZanden",bio:""}]},
+      {group:"City of Beaverton",office:"Councilor — Position 1 — runoff",when:"beaverton",does:"Runoff between the top two finishers from the May primary; this is the only Beaverton seat on the November ballot. The mayor is not on the 2026 ballot.",candidates:[
+        {name:"Evelyn Kocher",bio:""},{name:"Rachel Philip",bio:""}]},
+      {group:"City of Hillsboro",office:"Councilor — Ward 1, Position A",when:"hillsboro",does:"Hillsboro council candidates run by ward but are elected citywide — every Hillsboro voter votes in each ward race.",candidates:[
+        {name:"Diana Jackson",bio:"Hillsboro planning commissioner."},{name:"Luis Garcia",bio:""},{name:"Cristian Salgado",status:"Appointed incumbent",bio:"Appointed to the council in January 2025."},{name:"Sarah Marugg",bio:""}]},
+      {group:"City of Hillsboro",office:"Councilor — Ward 2, Position A",when:"hillsboro",does:"Hillsboro council candidates run by ward but are elected citywide. Open seat.",candidates:[
+        {name:"Ivette Pantoja",bio:"Hillsboro School District board member."},{name:"Karim Delgado",bio:""}]},
+      {group:"City of Hillsboro",office:"Councilor — Ward 3, Position A",when:"hillsboro",does:"Hillsboro council candidates run by ward but are elected citywide — every Hillsboro voter votes in each ward race.",candidates:[
+        {name:"Titonian Wallace Sr.",bio:""},{name:"Dorian Russell",bio:""},{name:"Kimberly Culbertson",bio:""}]},
+      {group:"City of Tigard",office:"Mayor",when:"tigard",does:"Leads the Tigard City Council and city government.",candidates:[
+        {name:"Yi-Kang Hu",status:"Incumbent",bio:""},{name:"Bill Monahan",bio:"Former Tigard city manager."}]},
+      {group:"City of Tigard",office:"Councilor — at-large · vote for 3",when:"tigard",does:"Eight candidates for three at-large seats; the top three vote-getters win.",candidates:[
+        {name:"Yousef K. Allouzi"},{name:"Tom Anderson",status:"Appointed incumbent"},{name:"Jeff Darland"},{name:"Sue Garino"},{name:"John Goodhouse",bio:"Former Tigard councilor and council president."},{name:"Shawne Martinez"},{name:"Kate Ristau"},{name:"Gabriel Elijio Velásquez"}]},
+      {group:"City of Tualatin",office:"Mayor",when:"tualatin",does:"Open seat — the current mayor is not running.",candidates:[
+        {name:"Octavio Gonzalez",bio:"Current Tualatin city councilor."},{name:"Valerie Pratt",bio:"Current Tualatin council president."}]},
+      {group:"City of Tualatin",office:"Councilor — Position 1",when:"tualatin",does:"Only one candidate could be verified for this seat in this research — compare the printed ballot for the full field.",candidates:[
+        {name:"Maria Antonieta Reyes",status:"Incumbent",bio:""}]},
+      {group:"City of Tualatin",office:"Councilor — Position 5",when:"tualatin",does:"Only one candidate could be verified for this seat in this research — compare the printed ballot for the full field.",candidates:[
+        {name:"Beth Dittman",bio:""}]},
+      {group:"City of Forest Grove",office:"Mayor",when:"forestgrove",candidates:[
+        {name:"Malynda Wenzl",status:"Incumbent · unopposed",bio:""}]},
+      {group:"City of Forest Grove",office:"Councilor — at-large · vote for 3",when:"forestgrove",does:"Seven candidates for three at-large seats; the top three vote-getters win.",candidates:[
+        {name:"Mallory Hiefield"},{name:"Matthew S. Knight"},{name:"John LePari"},{name:"Karen Martinez",status:"Incumbent"},{name:"Chris Mejia"},{name:"Sandra Pereyda"},{name:"Mariana E. Valenzuela",status:"Incumbent · Council President"}]},
+      {group:"City of Sherwood",office:"Mayor",when:"sherwood",does:"The full Sherwood council field could not be verified from official lists and is not shown — compare the printed ballot.",candidates:[
+        {name:"Tim Rosener",status:"Incumbent · only verified candidate",bio:""}]},
+      {group:"City of Banks",office:"Mayor",when:"banks",candidates:[
+        {name:"Marsha Kirk",status:"Incumbent",bio:""},{name:"Jimmy Bogroff",bio:""}]},
+      {group:"City of Banks",office:"Councilor — Position 1",when:"banks",candidates:[
+        {name:"Stephanie Jones",status:"Appointed incumbent",bio:""},{name:"Stewart Terrall",bio:""}]},
+      {group:"City of Banks",office:"Councilor — Position 3",when:"banks",candidates:[
+        {name:"Debra Berry",bio:""},{name:"Cody Kollar",bio:""}]},
+      {group:"City of Banks",office:"Councilor — Position 5",when:"banks",candidates:[
+        {name:"Pearcia Bogroff",status:"Appointed incumbent",bio:""},{name:"Megan Blake",bio:""}]},
+      {group:"City of North Plains",office:"Councilor — at-large · vote for 3",when:"northplains",does:"Six candidates; the top three vote-getters win.",candidates:[
+        {name:"Matt Blancas"},{name:"Don Weber"},{name:"Anna Warrington"},{name:"Tera VanDyke"},{name:"Melody Axe"},{name:"Lisa Ferrari-Harwood"}]},
+      {group:"City of Cornelius",office:"Mayor",when:"cornelius",does:"The Cornelius council field could not be fully verified from official lists and is not shown — compare the printed ballot.",candidates:[
+        {name:"Jeffrey Dalin",status:"Incumbent · only verified candidate",bio:"Mayor since 2011."}]},
+      {group:"City of Gaston",office:"Mayor",when:"gaston",does:"The Gaston council field could not be verified from official lists and is not shown — compare the printed ballot.",candidates:[
+        {name:"William “Bill” Martin",status:"Incumbent · only verified candidate",bio:""}]},
+      {group:"City of King City",office:"Councilor",when:"kingcity",does:"King City's mayor is chosen by the council, so there is no mayoral race. The number of council seats on the 2026 ballot could not be verified — compare the printed ballot.",candidates:[
+        {name:"Howard Suesserman"},{name:"Gretchen Buehner"},{name:"Steve Gearhart"},{name:"Sandy Cunningham"},{name:"James Minor Sr."},{name:"Craig Dirksen"}]},
+      {group:"City of Wilsonville",office:"Councilor — at-large · vote for 2",when:"wilsonville",does:"Four candidates for two at-large seats; the top two vote-getters win. Most of Wilsonville is in Clackamas County; this pathway covers the Washington County portion.",candidates:[
+        {name:"Katie Dunwell"},{name:"Jennie Hill"},{name:"Adrienne Scritsmier"},{name:"Sam Scull",status:"Incumbent"}]}
+    ],
+    measures:[
+      {code:"Measure 34-352",when:"banks",title:"Banks law-enforcement levy renewal",text:"Renews Banks' existing local option levy of $2.50 per $1,000 of assessed value for five years (about $250 a year on a $100,000-assessed home) to fund the city's contract with the Washington County Sheriff's Office for dedicated, round-the-clock local police coverage.",yes:"Renew the levy and keep dedicated sheriff coverage.",no:"Let the levy expire June 30, 2027; Banks returns to shared, emergency-only response."},
+      {code:"Measure 34-353",when:"forestgrove",title:"Forest Grove police facility bonds",text:"Authorizes up to $29.5 million in general obligation bonds to replace Forest Grove's 1977 police station with a new facility of about 21,500 square feet. The estimated tax rate is $0.69 per $1,000 of assessed value — about $193 a year for the average assessed home — and the bonds would mature within 21 years.",yes:"Issue the bonds and build the new police facility.",no:"Do not issue the bonds; the current facility stays."},
+      {code:"Measure 34-354",when:"kingcity",title:"King City charter modernization amendment",text:"Amends and restates King City's 2006 charter with plain-language updates modeled on the League of Oregon Cities model charter: clarified vacancies and duties, removal of the ban on councilor compensation, and moving City Manager, Judge, and City Attorney duties into ordinance. It does not change how the mayor is selected — the council still chooses.",yes:"Adopt the modernized charter.",no:"Keep the 2006 charter unchanged."},
+      {code:"Measure 34-355",when:"hillsboro",title:"Hillsboro School District bonds",text:"$430 million in bonds to repair failing and aging infrastructure (roofs, HVAC, and plumbing), improve safety and security, and expand vocational and STEM classroom space. The projected bond rate is $1.84 per $1,000 of assessed value, and passage would unlock $6.1 million in state matching funds, with a community oversight committee and independent audits.",yes:"Issue the bonds and receive the state matching funds.",no:"Do not issue the bonds; the state match is lost."},
+      {code:"Measure 3-641",when:"wilsonville",title:"Wilsonville Town Center Development District",text:"Creates an urban-renewal (tax-increment) district of about 150 acres around Town Center Loop and Wilsonville Road to fund streets, parking, plazas, utilities, and small-business incentives. It is not a new tax or rate increase — it diverts future growth in property-tax revenue inside the district, with maximum indebtedness of $152 million over about 28 years.",yes:"Create the Town Center Development District.",no:"Do not create the district; no funding source is identified for Town Center public infrastructure."}
+    ]
   }
 
 };
