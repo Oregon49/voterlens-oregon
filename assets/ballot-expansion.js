@@ -851,7 +851,7 @@ window.EXPANDED_BALLOTS = {
   washington: {
     label:"Washington County · Beaverton–Hillsboro–Tigard",chips:["U.S. Senate","Governor","County Chair runoff","Commission District 4 runoff","Circuit Court"],summary:"Up to 15 races depending on your districts and city: federal and statewide offices, your state Senate and House races, the county chair runoff, circuit court, soil & water conservation district seats, and city races — plus local measures in Banks, Forest Grove, King City, the Hillsboro School District, and Wilsonville. Several county races were decided in the May primary and are not on the November ballot.",
     coverage:"This pathway covers Washington County, Oregon for the November 3, 2026 general election. The county is split between U.S. House Districts 1 and 6 and ZIP codes do not follow the line, so the guide asks you to confirm your districts from your voter record or printed ballot. The county commission races on this ballot are November runoffs between the top two finishers from the May primary. The district attorney, county auditor, sheriff, Metro Council, and Commission District 2 were resolved in May or are not up this year, so they do not appear.",
-    caveats:["The sheriff is not on the 2026 ballot (the current term runs to 2028), and the district attorney and county auditor were re-elected unopposed in the May 2026 primary.","Sherwood's council field, Tualatin council opponents, and the Cornelius and Gaston council fields could not be fully verified from official lists, so only their verified mayoral races are shown — compare the printed ballot.","Durham, Lake Oswego, and Rivergrove council races reach small parts of the county but could not be verified against an official source and are not shown.","The Hillsboro School District bond (Measure 34-355) is shown on the Hillsboro pathway; district voters who live outside Hillsboro city limits should compare the printed ballot.","Candidate order follows official voters' pamphlet listings and may differ from the printed ballot order.","There are no Oregon statewide measures and no Washington County county-wide measures on the November 2026 ballot."],
+    caveats:["The sheriff is not on the 2026 ballot (the current term runs to 2028), and the district attorney and county auditor were re-elected unopposed in the May 2026 primary.","Sherwood's council field and the Cornelius and Gaston council fields could not be fully verified from official lists, so only their verified mayoral races are shown — compare the printed ballot.","Durham, Lake Oswego, and Rivergrove council races reach small parts of the county but could not be verified against an official source and are not shown.","The Hillsboro School District bond (Measure 34-355) is shown on the Hillsboro pathway; district voters who live outside Hillsboro city limits should compare the printed ballot.","Candidate order follows official voters' pamphlet listings and may differ from the printed ballot order.","There are no Oregon statewide measures and no Washington County county-wide measures on the November 2026 ballot."],
     sources:[{label:"Washington County Elections — current election & candidate filings",url:"https://www.washingtoncountyor.gov/elections/current-election"},{label:"Washington County Voters' Pamphlet — November 3, 2026 (official PDF)",url:"https://www.washingtoncountyor.gov/elections/documents/november-3-2026-voters-pamphlet/download?inline"},{label:"Oregon Secretary of State — Voters' Pamphlet Book 12 (Washington County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book12_web.pdf"},{label:"City of Hillsboro certified candidate list (filed with county elections)",url:"https://www.washingtoncountyor.gov/elections/documents/city-hillsboro-certified-candidates-nov-2026/download?inline"}],
     races:[{use:"senate"},
       {group:"Federal offices",office:"U.S. House — District 1",when:"cd1",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
@@ -943,10 +943,12 @@ window.EXPANDED_BALLOTS = {
         {name:"Yousef K. Allouzi"},{name:"Tom Anderson",status:"Appointed incumbent"},{name:"Jeff Darland"},{name:"Sue Garino"},{name:"John Goodhouse",bio:"Former Tigard councilor and council president."},{name:"Shawne Martinez"},{name:"Kate Ristau"},{name:"Gabriel Elijio Velásquez"}]},
       {group:"City of Tualatin",office:"Mayor",when:"tualatin",does:"Open seat — the current mayor is not running.",candidates:[
         {name:"Octavio Gonzalez",bio:"Current Tualatin city councilor."},{name:"Valerie Pratt",bio:"Current Tualatin council president."}]},
-      {group:"City of Tualatin",office:"Councilor — Position 1",when:"tualatin",does:"Only one candidate could be verified for this seat in this research — compare the printed ballot for the full field.",candidates:[
-        {name:"Maria Antonieta Reyes",status:"Incumbent",bio:""}]},
-      {group:"City of Tualatin",office:"Councilor — Position 5",when:"tualatin",does:"Only one candidate could be verified for this seat in this research — compare the printed ballot for the full field.",candidates:[
-        {name:"Beth Dittman",bio:""}]},
+      {group:"City of Tualatin",office:"Councilor — Position 1",when:"tualatin",candidates:[
+        {name:"Maria Antonieta Reyes",status:"Incumbent · unopposed",bio:""}]},
+      {group:"City of Tualatin",office:"Councilor — Position 5",when:"tualatin",candidates:[
+        {name:"Beth Dittman",status:"Unopposed",bio:""}]},
+      {group:"City of Tualatin",office:"Councilor — Position 3",when:"tualatin",candidates:[
+        {name:"Bridget Brooks",status:"Incumbent · unopposed",bio:""}]},
       {group:"City of Forest Grove",office:"Mayor",when:"forestgrove",candidates:[
         {name:"Malynda Wenzl",status:"Incumbent · unopposed",bio:""}]},
       {group:"City of Forest Grove",office:"Councilor — at-large · vote for 3",when:"forestgrove",does:"Seven candidates for three at-large seats; the top three vote-getters win.",candidates:[
@@ -1040,6 +1042,520 @@ window.EXPANDED_BALLOTS = {
       {code:"Measure 2-159",when:"city",title:"Corvallis charter amendment: fewer councilors, longer terms, term limits",text:"Amends the Corvallis City Charter to shrink the City Council from nine wards to six, change councilor terms from two years to four years with staggered elections (only half the council up at a time), and impose term limits of three consecutive terms (12 years) for councilors and the mayor. It was referred to voters by the City Council on the unanimous recommendation of a citizen Charter Review Task Force, and the changes would first take effect with the 2028 election cycle.",yes:"Amend the charter: six councilors, four-year staggered terms, three-term limits.",no:"Keep the current charter: nine councilors elected every two years, with no term limits."},
       {code:"Measure 2-160",title:"Corvallis School District local option levy renewal",text:"Renews the Corvallis School District's existing local option tax at the same rate — $1.50 per $1,000 of assessed value — for five more years starting 2027-28. It is a renewal, not a new tax: the current levy (first passed in 2006 and renewed in 2010, 2016, and 2022) expires June 30, 2027. The levy is about 10% of the district's operating budget — roughly 67 teaching positions — and pays for classroom teachers, elementary music, PE and art teachers, vocational and technical programs, counselors, and athletics. It is projected to raise about $61.8 million over the five years.",yes:"Renew the levy at the current rate for five years.",no:"Let the levy expire; the district estimates it would cut about 10% of its operating budget starting in 2027-28."}
     ]
+  },
+clackamas: {
+    label:"Clackamas County · Lake Oswego–Oregon City–West Linn",chips:["U.S. Senate","Governor","Commissioner Positions 2 & 4","Sheriff vacancy election","Circuit Court"],summary:"Up to 16 races depending on your districts and city: federal and statewide offices, your state Senate and House races, county commissioner, clerk, treasurer, and sheriff races, a circuit-court judge, a soil & water conservation district seat, and city races for Lake Oswego, Oregon City, West Linn, Happy Valley, and Wilsonville — plus local measures for Wilsonville, the North Clackamas School District, and the Gladstone School District. Several offices were decided in the May primary and are not on the November ballot.",
+    coverage:"This pathway covers Clackamas County, Oregon for the November 3, 2026 general election. The county is split among U.S. House Districts 2, 3, 5, and 6 and ZIP codes do not follow the lines, so the guide asks you to confirm your districts from your voter record or printed ballot instead of guessing from a ZIP. County commissioner races here are countywide positions, not districts. The sheriff race is a special vacancy election for a full four-year term. There is no Metro Council race and no county measure on the November ballot.",
+    caveats:["Lake Oswego and Wilsonville both extend into neighboring counties — Lake Oswego into Multnomah and Washington counties, Wilsonville into Washington County. This pathway covers their Clackamas County ballots; the same city races appear in those counties' pamphlets.","County Commissioner Position 5 was filled in the May 2026 primary and does not appear in November; Positions 1 and 3 and the County Chair are not up in 2026.","The North Clackamas School District bond (Measure 3-639) is shown on the Happy Valley pathway; district voters in Milwaukie, Oak Grove, and other communities who use the “other” city option should compare the printed ballot.","The Gladstone School District bond (Measure 3-644) is shown on the “other” city pathway, which Gladstone voters use; the district also reaches small areas outside Gladstone city limits — compare the printed ballot.","Canby, Estacada, Gladstone, Milwaukie, Molalla, Sandy, Tualatin, and other Clackamas County cities have their own city races and measures in the county voters' pamphlet (including Measures 3-638, 3-642, 3-643, and 3-640) that are not shown in this pathway — compare the printed ballot.","Clackamas Soil & Water Conservation District zone director seats (Zones 1, 4, and 5) appear on district ballots but are not shown; only the countywide at-large seat is listed.","Candidate order follows official voters' pamphlet listings and may differ from the printed ballot order.","There are no Oregon statewide measures and no Clackamas County county-wide measures on the November 2026 ballot."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 14 (Clackamas County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book14_web.pdf"},{label:"Clackamas County Elections — November 3, 2026 General Election & candidate filings",url:"https://www.clackamas.us/elections/november-3-2026-general-election"},{label:"Clackamas County Voters' Pamphlet — November 3, 2026 (official PDF)",url:"https://docs.clackamas.us/documents/drupal/03f4f9db-a1ab-4a1f-9ce1-16059d49a513"},{label:"City of Lake Oswego certified candidate list — November 3, 2026",url:"https://multco.us/file/lake_oswego_certified_candidates.pdf/download"},{label:"City of West Linn — Municipal Court Judge 2026 election & filing",url:"https://westlinnoregon.gov/elections/municipal-court-judge-candidate-qualifications"}],
+    races:[{use:"senate"},
+      {"group":"Federal offices","office":"U.S. House — District 2","when":"cd2","does":"Votes on federal legislation; the House initiates tax and spending bills.","candidates":[{"name":"Cliff Bentz","party":"Republican","status":"Incumbent","bio":"Former Oregon state senator and representative, seeking a fourth U.S. House term."},{"name":"Chris Beck","party":"Democrat / Independent","bio":"Former Oregon state representative and rural-policy adviser. Documented priorities include rural hospital stability, health access, affordable Main Street housing, and national vote-by-mail.","positions":{"health":1,"housing":1}}]},
+      {group:"Federal offices",office:"U.S. House — District 3",when:"cd3",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Maxine Dexter",party:"Democrat",status:"Incumbent",bio:"Emergency-medicine physician and former Oregon state representative, elected to Congress in 2024."},
+        {name:"Loran Ayles",party:"Republican",bio:""}]},
+      {group:"Federal offices",office:"U.S. House — District 5",when:"cd5",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Janelle Bynum",party:"Democrat",status:"Incumbent",bio:"Former Oregon state representative, elected to Congress in 2024."},
+        {name:"Patti Adair",party:"Republican / Libertarian",bio:"Deschutes County commissioner."},
+        {name:"Andrea Townsend",party:"Pacific Green",bio:""}]},
+      {"group":"Federal offices","office":"U.S. House — District 6","when":"cd6","does":"Votes on federal legislation; the House initiates tax and spending bills.","candidates":[{"name":"Andrea Salinas","party":"Democrat / Independent","status":"Incumbent","bio":"Former Oregon state representative, congressional aide, and policy adviser, seeking a third term. She serves on the House Agriculture and Science committees."},{"name":"David Russ","party":"Republican","bio":"Former mayor of Dundee. A documented response opposes DEI programs."}]},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Senator — District 13",when:"sd13",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Courtney Neron Misslin",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Glenn Lancaster",party:"Republican",bio:""},
+        {name:"Tim E. Nelson",party:"Libertarian",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 19",when:"sd19",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Rob Wagner",party:"Democrat",status:"Incumbent",bio:"President of the Oregon Senate."},
+        {name:"Mary Dirksen",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 20",when:"sd20",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Mark Meek",party:"Democrat",status:"Incumbent",bio:""},
+        {name:"Michele Stroh",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 24",when:"sd24",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Kayse Jama",party:"Democrat / Working Families",status:"Incumbent · unopposed",bio:"State senator since 2021."}]},
+      {group:"Oregon Legislature",office:"State Senator — District 26",when:"sd26",does:"Open seat — the incumbent is running for Governor.",candidates:[
+        {name:"Jeff Helfrich",party:"Republican",bio:"State representative for District 52 and a retired Portland police sergeant."},
+        {name:"Nicole Bassett",party:"Democrat / Independent / Working Families",bio:"Co-founder of The Renewal Workshop, a sustainable-business company."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 18",when:"hd18",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Amanda Staehely",party:"Republican",bio:""},
+        {name:"Roy Kaufmann",party:"Independent / Working Families / Democrat",bio:""},
+        {name:"Patrick Marnell",party:"Libertarian",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 26",when:"hd26",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Sue R. Rieke Smith",party:"Democrat / Independent",status:"Incumbent",bio:""},
+        {name:"Stephanie Carkin",party:"Republican / Libertarian",bio:""},
+        {name:"Steph Terrio",party:"Pacific Green / Progressive",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 37",when:"hd37",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Jules Walters",party:"Democrat / Independent / Working Families",status:"Incumbent",bio:"Former mayor of West Linn."},
+        {name:"Chad Parker",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 38",when:"hd38",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Daniel Loc Nguyen",party:"Democrat / Republican",status:"Incumbent · unopposed",bio:"Cross-nominated by both the Democratic and Republican parties."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 39",when:"hd39",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"April Dobson",party:"Democrat / Republican / Independent",status:"Incumbent · unopposed",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 40",when:"hd40",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Michael W Sugar",party:"Democrat / Working Families",bio:""},
+        {name:"Adam Baker",party:"Republican",bio:""},
+        {name:"Pat Hubbell",party:"Independent",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 41",when:"hd41",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Mark Gamba",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Elvis Clark",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 48",when:"hd48",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Lamar Wise",party:"Democrat / Independent / Working Families",status:"Incumbent",bio:""},
+        {name:"Andrew Morrison",party:"Republican",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 51",when:"hd51",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Matt Bunch",party:"Republican",bio:""},
+        {name:"Darla Mead",party:"Democrat / Working Families",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 52",when:"hd52",does:"Open seat — the incumbent is running for State Senate.",candidates:[
+        {name:"Hank Sanders",party:"Democrat / Independent",bio:"Former journalist and legislative aide."},
+        {name:"Scott Hege",party:"Republican",bio:"Former Wasco County commissioner and Port of The Dalles economic-development executive."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 57",when:"hd57",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Greg Smith",party:"Republican",status:"Incumbent",bio:""},
+        {name:"Josiah Dean",party:"Pacific Green",bio:""}]},
+      {group:"Clackamas County",office:"County Commissioner — Position 2",does:"Represents the whole county on the Board of County Commissioners; Clackamas commissioners are elected countywide by position, not by district.",candidates:[
+        {name:"Paul Savas",status:"Incumbent",bio:"County commissioner and small-business owner."},
+        {name:"Mark Shull",bio:"Former county commissioner and retired U.S. military officer."}]},
+      {group:"Clackamas County",office:"County Commissioner — Position 4",does:"Represents the whole county on the Board of County Commissioners; Clackamas commissioners are elected countywide by position, not by district.",candidates:[
+        {name:"Diana Helm",status:"Appointed incumbent",bio:"Environmental consultant and former mayor of Damascus."},
+        {name:"R W Smith",bio:"Business owner."}]},
+      {group:"Clackamas County",office:"County Clerk",does:"Runs county elections and keeps county public records.",candidates:[
+        {name:"Catherine McMullen",status:"Incumbent",bio:"County clerk since 2023; worked in election administration since 2015 and previously as a public librarian."},
+        {name:"Mark Reaksecker",bio:""}]},
+      {group:"Clackamas County",office:"County Treasurer",does:"Manages the county's cash, investments, and tax collections.",candidates:[
+        {name:"Brian T Nava",status:"Unopposed",bio:""}]},
+      {group:"Clackamas County",office:"County Sheriff",does:"Runs the county jail, corrections, and law-enforcement services. This is a special vacancy election for a full four-year term after the previous sheriff retired mid-term.",candidates:[
+        {name:"James Rhodes",status:"Appointed incumbent",bio:"Appointed sheriff in 2026 after Sheriff Angela Brandenburg retired during her second term."},
+        {name:"Brad O'Neil",bio:""}]},
+      {group:"Clackamas County",office:"Justice of the Peace",does:"Presides over the county justice court, which handles traffic, small claims, and misdemeanor matters.",candidates:[
+        {name:"Kathleen Rastetter",status:"Unopposed",bio:""}]},
+      {group:"Judicial office",office:"Circuit Court Judge — 5th District, Position 5",does:"Handles state trial-court cases in Clackamas County, including criminal, civil, family, and juvenile matters.",candidates:[
+        {name:"Kara A Brooks",status:"Appointed incumbent · unopposed",bio:"Former prosecutor who served on the Oregon Board of Parole and Post-Prison Supervision."}]},
+      {group:"Clackamas Soil & Water Conservation District",office:"Director — At-Large Position 2",does:"Helps set policy and budgets for soil and water conservation programs across the district. Zone director seats also appear on district ballots and are not shown here.",candidates:[
+        {name:"Roger Fantz",status:"Unopposed",bio:""}]},
+      {group:"City of Lake Oswego",office:"Councilor — at-large · vote for 4",when:"lakeoswego",does:"Six candidates for four at-large seats; vote for four. The top three finishers serve four-year terms, and the fourth-place finisher serves the two years remaining in a vacant seat. No incumbents filed for re-election.",candidates:[
+        {name:"Bryan Guiney",bio:"Oregon field office director for the U.S. Department of Housing and Urban Development, a former U.S. Marine Corps infantry officer, and a Lake Oswego planning commissioner."},
+        {name:"Patrick Walsh",bio:"Nonprofit executive and chair of the Lake Oswego Library Advisory Board."},
+        {name:"Suzanne Miles",bio:"Attorney and law professor; former assistant U.S. attorney for the District of Oregon."},
+        {name:"Peren Tiemann",bio:"Law clerk and chair of Lake Oswego's Diversity, Equity and Inclusion Advisory Board."},
+        {name:"Neil Tunmore",bio:"Retired business executive after 37 years at Intel."},
+        {name:"Heather Ramsey",bio:"Executive coach and leadership-development consultant who chaired the Lake Oswego School District's 2025 citizens' bond campaign."}]},
+      {group:"City of Oregon City",office:"Mayor",when:"oregoncity",does:"Leads the Oregon City Commission and city government. Open seat — the incumbent mayor is not running.",candidates:[
+        {name:"Damon Mabee",bio:"Former Oregon City commissioner."},
+        {name:"Adam Marl",status:"City Commissioner",bio:"Current Oregon City commissioner."},
+        {name:"Rodney La Barr",bio:"Facilities safety technician."}]},
+      {group:"City of Oregon City",office:"Commissioner — at-large · vote for 2",when:"oregoncity",does:"Four candidates for two at-large seats; the top two vote-getters win.",candidates:[
+        {name:"Betty Mumm",bio:"Former Oregon City commissioner."},
+        {name:"James Nicita",bio:"Historian and retired attorney; former Oregon City commissioner."},
+        {name:"Paul Espe",bio:"Urban planner and chair of the Oregon City Planning Commission."},
+        {name:"Gordon J Lawrence",bio:"Owner of a specialty contracting and business-development firm."}]},
+      {group:"City of West Linn",office:"Councilor — at-large · vote for 2",when:"westlinn",does:"Three candidates for two at-large seats; the top two vote-getters win.",candidates:[
+        {name:"Michael Kapigian",bio:"Community activist and small-business owner who served three earlier terms on the West Linn council."},
+        {name:"Kevin J Bonnington",status:"Incumbent",bio:"West Linn city councilor since 2024 and a real estate broker."},
+        {name:"Kate Nelson",bio:"Chair of the West Linn Planning Commission, with a background in law, finance, and publishing."}]},
+      {group:"City of West Linn",office:"Municipal Court Judge",when:"westlinn",does:"Presides over West Linn's municipal court, which handles city ordinance, traffic, and misdemeanor cases. Elected to a four-year term.",candidates:[
+        {name:"Rhett L Bernstein",status:"Unopposed",bio:""}]},
+      {group:"City of Happy Valley",office:"Mayor",when:"happyvalley",does:"Leads the Happy Valley City Council and city government. Sole candidate filed.",candidates:[
+        {name:"Joshua V Callahan",status:"Unopposed",bio:"Happy Valley city council president; trial lawyer and small-business owner."}]},
+      {group:"City of Happy Valley",office:"Councilor — Position 1",when:"happyvalley",candidates:[
+        {name:"David Sharyan",bio:""},
+        {name:"Marchelle Paholsky",bio:"Nonprofit director and community organizer; former U.S. Department of Energy official."}]},
+      {group:"City of Happy Valley",office:"Councilor — Position 3",when:"happyvalley",candidates:[
+        {name:"Brett M Sherman",status:"Incumbent · unopposed",bio:"Happy Valley city councilor for twelve years; principal at a wealth-management firm."}]},
+      {group:"City of Wilsonville",office:"Councilor — at-large · vote for 2",when:"wilsonville",does:"Four candidates for two at-large seats; the top two vote-getters win. Most of Wilsonville is in Clackamas County; this pathway covers the Clackamas County portion.",candidates:[
+        {name:"Katie Dunwell"},{name:"Jennie Hill"},{name:"Adrienne Scritsmier"},{name:"Sam Scull",status:"Incumbent"}]}
+    ],
+    measures:[
+      {code:"Measure 3-641",when:"wilsonville",title:"Wilsonville Town Center Development District",text:"Creates an urban-renewal (tax-increment) district of about 150 acres around Town Center Loop and Wilsonville Road to fund streets, parking, plazas, utilities, and small-business incentives. It is not a new tax or rate increase — it diverts future growth in property-tax revenue inside the district, with maximum indebtedness of $152 million over about 28 years.",yes:"Create the Town Center Development District.",no:"Do not create the district; no funding source is identified for Town Center public infrastructure."},
+      {code:"Measure 3-639",when:"happyvalley",title:"North Clackamas School District bonds",text:"$245 million in bonds to strengthen safety and security (cameras, access controls, lockdown systems, and cybersecurity), add ventilation, HVAC, and cooling upgrades to prevent heat closures, modernize career and technical education spaces, and repair roofs, siding, plumbing, windows, and electrical systems, plus field and athletic-facility repairs. Because existing bonds are maturing, the district estimates the current bond rate of $2.37 per $1,000 of assessed value will stay the same, and passage would unlock $6.126 million in state matching funds. The bonds mature within 21 years and require a community oversight committee and regular audits.",yes:"Issue the bonds and receive the state matching funds.",no:"Do not issue the bonds; the state match is not received."},
+      {code:"Measure 3-644",when:"other",title:"Gladstone School District bonds",text:"$55.3 million in bonds to replace fire and emergency alert systems, upgrade security cameras, access controls, and lockdown systems, secure entryways, complete asbestos and mold abatement, repair roofs, siding, plumbing, flooring, windows, electrical, HVAC, and boiler systems, and improve accessibility, fields, and playgrounds. Because existing bonds are maturing, the district estimates the bond levy rate will fall from $4.28 to $2.83 per $1,000 of assessed value, and passage would unlock $10.2 million in state matching funds. The bonds mature within 21 years and require a community oversight committee and regular audits.",yes:"Issue the bonds, lower the bond levy rate, and receive the state matching funds.",no:"Do not issue the bonds; the state match is not received."}
+    ]
+  },
+springfield: {
+    label:"Springfield · Lane County",chips:["U.S. Senate","Governor","U.S. House OR-04","County Commissioner — Springfield district","City Council Ward 4 (citywide vote)","Springfield Utility Board"],summary:"Up to 16 races depending on your districts and city limits: federal and statewide offices, your state Senate and House races, your Lane County commissioner district, countywide assessor, sheriff, and circuit-court races, and — inside Springfield city limits — the Ward 4 city council race and three Springfield Utility Board seats. There are no measures on the Springfield-area November 2026 ballot.",
+    coverage:"This pathway covers Springfield, Oregon (ZIPs 97477 and 97478) in Lane County for the November 3, 2026 general election. Everywhere in these ZIPs votes in U.S. House District 4. Most Springfield addresses are in State Senate District 4 and State House District 7; rural addresses on the eastern and northern fringe (toward the McKenzie and Mohawk valleys) are in Senate District 6 and House District 12 — the guide asks you to confirm from your voter record or printed ballot instead of guessing from a ZIP. Springfield's only city council race this cycle, Ward 4, is nominated by ward but elected at-large, so every Springfield city voter votes in it; no ward picker is needed. There is no Springfield, county, school-district, or Willamalane measure on this ballot.",
+    caveats:["There are no Oregon statewide measures and no Lane County, City of Springfield, Springfield School District, or Willamalane measures on the November 2026 ballot. The four Lane County measures that did qualify (20-386 Dunes City, 20-387 Oakridge, 20-388 Eugene, 20-389 Western Lane Ambulance District) belong to other parts of the county and are not shown.","Willamalane Park & Recreation District's levy (Measure 20-384) was decided in the May 19, 2026 primary, where it passed — it is not on the November ballot. A Springfield School District local option levy was publicly proposed for November 2026, but no Springfield school measure appears on Lane County Elections' November filing list, so none is shown — compare the printed ballot.","The Springfield mayor is not on the November 2026 ballot, and Wards 1, 2, 3, 5, and 6 have no council race this cycle; Ward 4 — a seat left vacant earlier in 2026 and filled by appointment — is the only council seat up, for a term expiring December 31, 2028.","Lane County Commissioner District 2 (Springfield) and District 1 (West Lane) were effectively decided in the May primary: Sean VanGordon won a majority in May and appears uncontested in November. Only District 5 (East Lane) has a contested November runoff.","Emerald People's Utility District director seats (Subdivisions 2 and 3) and soil & water conservation district director seats appear on some rural ballots in these ZIPs; subdivision and zone lines cannot be assigned by ZIP and verified position-level fields are not shown — compare the printed ballot.","Candidate order follows the state voters' pamphlet candidate list and may differ from the printed ballot order."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 4 (Lane County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book4_web.pdf"},{label:"Lane County Elections — November 3, 2026 General Election",url:"https://www.lanecounty.org/cms/One.aspx?portalId=3585881&pageId=21341379"},{label:"City of Springfield — 2026 Candidate Information Packet (offices open, Ward 4 elected at-large, SUB positions)",url:"https://springfield-or.gov/wp-content/uploads/2026/07/Springfield_Candidate_Packet_2026-General-Revised3.pdf"},{label:"City of Springfield — Council Wards map (January 2019)",url:"https://springfield-or.gov/wp-content/uploads/2019/01/council_wards_2019.pdf"}],
+    races:[{use:"senate"},
+      {group:"Federal offices",office:"U.S. House — District 4",when:"cd4",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Val Hoyle",party:"Democrat / Working Families",status:"Incumbent",bio:"U.S. representative since 2023 and Oregon's former labor commissioner."},
+        {name:"Monique DeSpain",party:"Republican / Libertarian",bio:"Attorney and retired U.S. Air Force colonel who served 30 years as a JAG officer. She was the Republican nominee for this seat in 2024."},
+        {name:"Justin Filip",party:"Pacific Green / Progressive",bio:"Statistician."}]},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Senator — District 4",when:"sd4",does:"Votes on Oregon laws, the state budget, and taxes. District 4 covers Springfield and central Eugene. The incumbent is the nominee of both major parties and is unopposed in November.",candidates:[
+        {name:"Floyd Prozanski",party:"Democrat / Republican",status:"Incumbent · unopposed",bio:"State senator since 2004 and a municipal prosecutor; he chairs the Senate Judiciary Committee."}]},
+      {group:"Oregon Legislature",office:"State Senator — District 6",when:"sd6",does:"Votes on Oregon laws, the state budget, and taxes. District 6 covers rural eastern Lane County and parts of Linn County. Open seat — the incumbent was barred from running again.",candidates:[
+        {name:"Sierrah Williams",party:"Democrat / Working Families",bio:"Registered dietitian nutritionist with the WIC nutrition program."},
+        {name:"Jack Tibbetts",party:"Republican",bio:"Cottage Grove-area farmer and small-business owner; former Lane County planning commissioner."},
+        {name:"Caleb Ticer",party:"Libertarian",bio:"Retail manager at Dexter Market."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 7",when:"hd7",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills. District 7 covers Springfield. Open seat — the incumbent is retiring.",candidates:[
+        {name:"Kori Rodley",party:"Democrat / Working Families",bio:"Springfield city councilor who works at Lane County Developmental Disabilities Services; she previously directed a local food pantry."},
+        {name:"Adam Wilson",party:"Republican / Libertarian",bio:"Financial adviser and wealth manager at LPL Financial."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 12",when:"hd12",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills. District 12 covers rural eastern Lane County, including the McKenzie River valley.",candidates:[
+        {name:"Darin Harbick",party:"Republican",status:"Incumbent",bio:"McKenzie Bridge business owner who has owned a country store, restaurant, and logging and trucking companies in the upper McKenzie valley."},
+        {name:"Amber Smith",party:"Democrat",bio:"Service coordinator from Cottage Grove. She did not submit a voters' pamphlet statement."}]},
+      {group:"Lane County",office:"County Commissioner — Position 2, Springfield District",when:"com2",does:"Represents the Springfield district on the five-member Lane County Board of Commissioners, which sets the county budget and policies for roads, public health, land use, and the sheriff's office. The winner of the May primary appears uncontested in November.",candidates:[
+        {name:"Sean VanGordon",status:"Unopposed",bio:"Mayor of Springfield and a former Springfield city councilor; he works as a forecasting director at Optum Insights. He won a majority in the May primary over the incumbent commissioner."}]},
+      {group:"Lane County",office:"County Commissioner — Position 5, East Lane District — runoff",when:"com5",does:"Represents eastern Lane County — Cottage Grove, Creswell, Oakridge, the McKenzie valley, and the rural fringe east and north of Springfield. Runoff between the top two finishers from the May primary; no candidate won a majority in May.",candidates:[
+        {name:"Heather Buch",status:"Incumbent",bio:"County commissioner seeking a third term; a former small-business owner and projects director at St. Vincent de Paul Society of Lane County."},
+        {name:"Jake Pelroy",bio:"Policy analyst and small-business owner; a former U.S. Marine and former legislative staffer."}]},
+      {group:"Lane County",office:"County Assessor",does:"Runs the county office that values property for taxation and maintains property records. Elected countywide.",candidates:[
+        {name:"Mary Vuksich-Shafer",status:"Unopposed",bio:""}]},
+      {group:"Lane County",office:"County Sheriff",does:"Runs the county jail, corrections, and law-enforcement services in Lane County. Elected countywide.",candidates:[
+        {name:"Carl E. Wilkerson III",status:"Unopposed",bio:"Lane County sheriff."}]},
+      {group:"Judicial office",office:"Circuit Court Judge — 2nd District, Position 14",does:"Handles state trial-court cases in Lane County, including criminal, civil, family, and juvenile matters.",candidates:[
+        {name:"Nathan J. Lichvarcik",status:"Appointed incumbent · unopposed",bio:"Appointed to the court in 2026 after serving as a supervisory assistant U.S. attorney in Eugene."}]},
+      {group:"City of Springfield",office:"City Councilor — Ward 4 — elected citywide",when:"springfield",does:"Represents Ward 4 on the six-member Springfield City Council, for the rest of a term expiring December 31, 2028. Councilors are nominated by ward but elected at-large, so every Springfield city voter votes in this race.",candidates:[
+        {name:"Jill Cuadros",status:"Appointed incumbent",bio:"Appointed to the council in April 2026 to fill the vacant Ward 4 seat. She is a support services director for Eugene School District 4J and a former Willamalane recreation manager."},
+        {name:"Callee Ackland",bio:"Springfield planning commissioner and a tenant support specialist with the Springfield Eugene Tenant Association; she is also an on-call library assistant at Springfield Public Library and a former U.S. Navy cryptologic technician."}]},
+      {group:"Springfield Utility Board",office:"Director — Position 2",when:"springfield",does:"One of five elected directors who govern the Springfield Utility Board, the city's publicly owned electric and water utility. Elected at-large by Springfield voters to a four-year term.",candidates:[
+        {name:"Teresa “Terri” Dillon",status:"Incumbent · unopposed",bio:""}]},
+      {group:"Springfield Utility Board",office:"Director — Position 3",when:"springfield",does:"One of five elected directors who govern the Springfield Utility Board, the city's publicly owned electric and water utility. Elected at-large by Springfield voters to a four-year term.",candidates:[
+        {name:"Lee Beyer",status:"Appointed incumbent · unopposed",bio:"Former Oregon state senator."}]},
+      {group:"Springfield Utility Board",office:"Director — Position 4",when:"springfield",does:"One of five elected directors who govern the Springfield Utility Board, the city's publicly owned electric and water utility. Elected at-large by Springfield voters to a four-year term.",candidates:[
+        {name:"Ryan Thomas",status:"Incumbent · unopposed",bio:""}]}
+    ],
+    measures:[]
+  },
+yamhill: {
+    label:"Yamhill County · McMinnville–Newberg",chips:["U.S. Senate","Governor","County Clerk","Measure 36-241 — Yamhelas Trail","McMinnville Wards 1–3","Newberg Mayor & Council"],summary:"Up to 11 races depending on your districts and city: federal and statewide offices, your state Senate and House races, the county clerk, a conservation-district seat, McMinnville council races in Wards 1, 2, and 3, and Newberg's mayor and council races — plus one countywide measure. Both county commissioner races were decided in the May primary and are not on the November ballot.",
+    coverage:"This pathway covers Yamhill County, Oregon for the November 3, 2026 general election, routed from McMinnville (97128) and Newberg (97132). The whole county is in U.S. House District 6, but state Senate and House districts split the county and ZIP codes cross those lines, so the guide asks you to confirm your legislative districts from your voter record or printed ballot instead of guessing from a ZIP. McMinnville elects councilors by ward; Newberg councilors must live in their district but are elected citywide, so every Newberg voter votes in every Newberg race.",
+    caveats:["County Commissioner Positions 1 and 3 were decided in the May 19, 2026 primary — Kit Johnston (Position 1, 56.3%) and Jason Fields (Position 3, 51.1%) each won more than 50% and were elected outright — so no commissioner race appears in November. The sheriff is not on the 2026 ballot (the current term runs to 2029).","The McMinnville mayor is not on the 2026 ballot; only the Ward 1, Ward 2, and Ward 3 council seats are. Confirm your McMinnville ward on the city's official interactive ward map (linked in the confirm step) or on your printed ballot — ward boundaries cannot be told from a ZIP code.","Newberg's other council districts (1, 3, and 5) are not up in 2026; their terms run to 2028.","No judicial race could be verified for the November ballot from the official state or county pamphlet candidate lists, so none is shown — compare the printed ballot.","Yamhill Soil & Water Conservation District Zone 1, Zone 5, and At-Large 2 director fields could not be verified from an official November list and are not shown; only the verified At-Large 1 candidate is shown — compare the printed ballot.","Three measures on other Yamhill County ballots are not shown here because they belong to other cities or districts: City of Lafayette Measure 36-242 (Canyon View Pump Station spending approval), City of Dayton Measure 36-243 (five-year public-safety levy renewal), and Hillsboro School District Measure 34-355 (bonds), which a small number of county voters may see.","Candidate order follows the official voters' pamphlet listings and may differ from the printed ballot order.","There are no Oregon statewide measures on the November 2026 ballot."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 10 (Yamhill County candidate list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book10_web.pdf"},{label:"Yamhill County Elections — November 3, 2026 General Election",url:"https://www.yamhillcounty.gov/1301/November-3-2026-General-Election"},{label:"Yamhill County Voters' Pamphlet — November 2026 (county insert)",url:"https://www.yamhillcounty.gov/DocumentCenter/View/21147"},{label:"City of McMinnville — 2026 elections & certified candidates",url:"https://www.mcminnvilleoregon.gov/citycouncil/page/elections"},{label:"City of Newberg — 2026 elections & validated candidates",url:"https://newbergoregon.gov/government/city_council/elections.php"}],
+    races:[{use:"senate"},
+      {use:"house6"},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Senator — District 13",when:"sd13",does:"Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Courtney Neron Misslin",party:"Democrat / Working Families",status:"Incumbent",bio:""},
+        {name:"Glenn Lancaster",party:"Republican",bio:""},
+        {name:"Tim E. Nelson",party:"Libertarian",bio:""}]},
+      {group:"Oregon Legislature",office:"State Senator — District 16",when:"sd16",does:"Open seat. Votes on Oregon laws, the state budget, and taxes.",candidates:[
+        {name:"Courtney Bangs",party:"Republican",bio:"Clatsop County commissioner and former agriculture teacher."},
+        {name:"Rachel Armitage",party:"Democrat",bio:"Held this seat by appointment in 2022–2023."},
+        {name:"Melisa Finkle",party:"Independent",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 23",when:"hd23",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Anna M. Scharf",party:"Republican",status:"Incumbent",bio:"State representative and office manager."},
+        {name:"Kriss Wright",party:"Democrat",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 24",when:"hd24",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Lucetta A. Elmer",party:"Republican",status:"Incumbent · unopposed",bio:"State representative and small-business owner."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 26",when:"hd26",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Sue R. Rieke Smith",party:"Democrat / Independent",status:"Incumbent",bio:""},
+        {name:"Stephanie Carkin",party:"Republican / Libertarian",bio:""},
+        {name:"Steph Terrio",party:"Pacific Green / Progressive",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 31",when:"hd31",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Darcey Edwards",party:"Republican",status:"Incumbent",bio:""},
+        {name:"Tom L. Forest",party:"Democrat",bio:""}]},
+      {group:"Yamhill County",office:"County Clerk",does:"Runs county elections, recording, and licensing. This is the only county office on the November ballot — both commissioner races were decided in the May primary.",candidates:[
+        {name:"Keri Hinton",status:"Incumbent",bio:"Yamhill County Clerk with more than 12 years in public service; she has overseen 13 elections as Clerk and is a certified county clerk."},
+        {name:"Cindy Johnson",bio:"Retired software engineer and project manager with a 30-year technology career; degree in computer information science and mathematics from George Fox University."}]},
+      {group:"Yamhill Soil & Water Conservation District",office:"Director — At-Large 1",does:"Helps set policy and budgets for soil and water conservation programs across the district. Only one candidate could be verified for this seat in this research — compare the printed ballot for the full field.",candidates:[
+        {name:"Shauna Sherick",status:"Only verified candidate",bio:"Licensed veterinary technician and a fourth-generation Chehalem Valley farmer, currently serving as a district director at-large."}]},
+      {group:"City of McMinnville",office:"Councilor — Ward 1",when:"w1",does:"Represents Ward 1 on the McMinnville City Council. McMinnville councilors are elected by the voters of their own ward to four-year terms.",candidates:[
+        {name:"Abigail Neilan",status:"Unopposed",bio:"Works in direct sales for a Yamhill County winery after 20 years in hospitality and 5 years in county government."}]},
+      {group:"City of McMinnville",office:"Councilor — Ward 2",when:"w2",does:"Represents Ward 2 on the McMinnville City Council. McMinnville councilors are elected by the voters of their own ward to four-year terms.",candidates:[
+        {name:"Zack Geary",status:"Incumbent · unopposed",bio:"Co-owner of a local design-build firm; on the City Council since 2018 and previously on the Planning Commission."}]},
+      {group:"City of McMinnville",office:"Councilor — Ward 3",when:"w3",does:"Represents Ward 3 on the McMinnville City Council. McMinnville councilors are elected by the voters of their own ward to four-year terms.",candidates:[
+        {name:"Carson Benner",status:"Appointed incumbent",bio:"Owner of a local construction company; appointed to this Ward 3 seat in 2026."},
+        {name:"Katie Russ",bio:"Realtor and business owner with 12 years in real estate in McMinnville and Yamhill County."},
+        {name:"Richard Smith Savage",bio:"Small-business owner of a McMinnville tea shop."}]},
+      {group:"City of Newberg",office:"Mayor",when:"newberg",does:"Leads the Newberg City Council and city government to a four-year term.",candidates:[
+        {name:"William (Bill) Rosacker",status:"Incumbent",bio:"Retired general contractor and president of SPARK Newberg, a housing and community-support organization."},
+        {name:"Elise Yarnell Hollamon",bio:"Newberg city councilor for District 1 since 2018 and a former council president, with a background in public healthcare administration."}]},
+      {group:"City of Newberg",office:"Councilor — District 2 (elected citywide)",when:"newberg",does:"Open seat. Candidates must live in District 2, but all Newberg voters vote in this race.",candidates:[
+        {name:"Britta Mansfield",bio:"Executive director of the Willamette Falls & Landings Heritage Area Coalition and a local-history author."},
+        {name:"Leisha Adams",bio:"Finance analyst."}]},
+      {group:"City of Newberg",office:"Councilor — District 4 (elected citywide)",when:"newberg",does:"Candidates must live in District 4, but all Newberg voters vote in this race.",candidates:[
+        {name:"Robyn Wheatley",status:"Incumbent",bio:"Small-business owner, first elected in 2022."},
+        {name:"Larry Hampton",bio:"Retired educator and Newberg-Dundee School District administrator."}]},
+      {group:"City of Newberg",office:"Councilor — District 6 (elected citywide)",when:"newberg",does:"Candidates must live in District 6, but all Newberg voters vote in this race.",candidates:[
+        {name:"Derek Carmon",status:"Incumbent · unopposed",bio:"Council president and a Portland Police Bureau sergeant, in law enforcement since 1999; served in the U.S. Navy as an intelligence specialist."}]}
+    ],
+    measures:[
+      {code:"Measure 36-241",title:"Referendum on Ordinance 948: Yamhelas Westsider Trail",text:"Asks whether Yamhill County Board Ordinance 948 (passed March 19, 2026) should be repealed. Ordinance 948 removed the Yamhelas Westsider Trail — a proposed trail on the county-owned, abandoned railway corridor first added to the County Transportation System Plan in 2012 — from that plan. The trail was never built. The measure itself builds nothing, approves no development, sells no land, and raises no tax.",yes:"Repeal Ordinance 948 and restore the Yamhelas Westsider Trail to the County Transportation System Plan.",no:"Uphold Ordinance 948; the trail stays removed from the Transportation System Plan."}
+    ]
+  },
+deschutes: {
+    label:"Bend · Redmond · Deschutes County",chips:["U.S. Senate","Governor","County Commission Positions 3 & 5","Sheriff, Clerk & Treasurer","Circuit Court","Bend & Redmond city races"],summary:"Up to 24 races depending on your districts and city: federal and statewide offices, your state House race, county commission, clerk, sheriff, and treasurer races, a circuit-court judge race, soil & water conservation district directors, and Bend or Redmond city races — plus two local measures. There is no state Senate race on the Deschutes County ballot in 2026.",
+    coverage:"This pathway covers Deschutes County, Oregon for the November 3, 2026 general election. The county is split between U.S. House Districts 5 (Bend and Redmond) and 2 (southern Deschutes — the Sunriver and La Pine area), and ZIP codes do not follow the line, so the guide asks you to confirm your congressional district, state House district, and city from your voter record or printed ballot. County commissioners are elected countywide by position in 2026. County Commission Positions 1 and 4 were decided in the May primary and do not appear in November.",
+    caveats:["No State Senate district in Deschutes County is on the November 2026 ballot, and there are no Oregon statewide measures.","County Commission Positions 1 and 4 were elected outright in the May 2026 primary (Jamie Collins and Rick Russell each won more than 50%) and do not appear on the November ballot.","City races for La Pine and Sisters appear on those cities' ballots but are not shown in this pathway — compare the printed ballot. The number of La Pine and Sisters council seats up in 2026 could not be verified from an official list.","Deschutes Soil & Water Conservation District Zone 3 drew no candidate filing and is not shown.","Candidate order follows the voters' pamphlet listings; on the printed ballot, candidate names appear in random alphabetical order, so the order will differ.","Measure 9-186 is a City of Redmond measure only, even though it carries a county measure number."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 17 (Deschutes County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book17_web.pdf"},{label:"Deschutes County Clerk — November 3, 2026 General Election (filed candidates & measures)",url:"https://www.deschutescounty.gov/1593/November-3-2026-General-Election"},{label:"Deschutes County Voters' Pamphlet — November 2026",url:"https://www.deschutescounty.gov/DocumentCenter/View/8934/DESCHUTES-NOV26-VP_WEB-Color"},{label:"City of Bend — Elections (certified candidates, November 2026)",url:"https://bendoregon.gov/city-council/elections/"},{label:"Oregon Dept. of Agriculture — Deschutes SWCD certified candidate list",url:"https://www.deschutescounty.gov/DocumentCenter/View/8646/Department-of-Agriculture-Deschutes-Soil-and-Water-Conservation-District-Certified-List-of-Candidates"}],
+    races:[{use:"senate"},
+      {group:"Federal offices",office:"U.S. House — District 5",when:"cd5",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Janelle Bynum",party:"Democrat",status:"Incumbent",bio:"Former Oregon state representative, elected to Congress in 2024."},
+        {name:"Patti Adair",party:"Republican / Libertarian",bio:"Deschutes County commissioner."},
+        {name:"Andrea Townsend",party:"Pacific Green",bio:""}]},
+      {"group":"Federal offices","office":"U.S. House — District 2","when":"cd2","does":"Votes on federal legislation; the House initiates tax and spending bills.","candidates":[{"name":"Cliff Bentz","party":"Republican","status":"Incumbent","bio":"Former Oregon state senator and representative, seeking a fourth U.S. House term."},{"name":"Chris Beck","party":"Democrat / Independent","bio":"Former Oregon state representative and rural-policy adviser. Documented priorities include rural hospital stability, health access, affordable Main Street housing, and national vote-by-mail.","positions":{"health":1,"housing":1}}]},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Representative — District 53",when:"hd53",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Emerson Levy",party:"Democrat / Independent",status:"Incumbent",bio:"State representative and adjunct professor; former Redmond School Board chair."},
+        {name:"Michael Summers",party:"Republican / Libertarian",bio:"Third-generation Central Oregon small-business owner and Redmond School Board member; previously represented this district in the Oregon House."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 54",when:"hd54",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Jason Kropf",party:"Democrat",status:"Incumbent · unopposed",bio:"State representative and attorney; former deputy district attorney and Bend Park and Recreation District board member."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 55",when:"hd55",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"E Werner Reschke",party:"Republican",status:"Incumbent",bio:""},
+        {name:"Colby M Simmons",party:"Democrat",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 59",when:"hd59",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills. District 59 covers Crook and Jefferson counties and the northern portion of Deschutes County.",candidates:[
+        {name:"Vikki Breese-Iverson",party:"Republican",status:"Incumbent",bio:"Real-estate principal broker and cattle rancher from Prineville; House minority leader."},
+        {name:"Lawrence Jones",party:"Democrat",bio:"Elementary teacher, landscape designer, and musician."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 60",when:"hd60",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Mark Owens",party:"Republican",status:"Incumbent · unopposed",bio:"Farmer and small-business owner; former Harney County commissioner."}]},
+      {group:"Deschutes County",office:"County Commissioner — Position 3 · 4-year term",does:"Serves on the three-to-five-member Board of Commissioners that runs county government, sets the county budget, and oversees land use, roads, public health, and the sheriff's budget. Elected countywide.",candidates:[
+        {name:"Lauren Connally",bio:"Administrator at Deschutes Defenders; former nonprofit executive director, small-business owner, and land-use planner."},
+        {name:"Amy Sabbadini",bio:"Educator — National Board Certified social-studies teacher and senior manager at the Civics Learning Project."}]},
+      {group:"Deschutes County",office:"County Commissioner — Position 5 · 2-year term",does:"Serves on the Board of Commissioners that runs county government. This is a two-year term for one of the seats added when voters expanded the board from three to five members in 2024. Elected countywide.",candidates:[
+        {name:"Rob Imhoff",bio:"Small-business owner (Broken Top Window Coverings) in Bend."},
+        {name:"Morgan Schmidt",bio:"Executive Director of the Red Cross of Central and Eastern Oregon."}]},
+      {group:"Deschutes County",office:"County Clerk · 4-year term",does:"Runs every election in Deschutes County and keeps the county's public records, including property records and marriage licenses.",candidates:[
+        {name:"Steve Dennison",status:"Incumbent",bio:"Deschutes County clerk since 2021; previously the county's elections supervisor and a San Mateo County elections systems analyst."},
+        {name:"Jonathan Curtis",bio:"Bend native and small-business owner who ran for Bend City Council in 2024."}]},
+      {group:"Deschutes County",office:"County Sheriff · 4-year term",does:"Runs the county jail and law-enforcement services across Deschutes County.",candidates:[
+        {name:"James (Mac) McLaughlin",bio:"Detective lieutenant with the Deschutes County Sheriff's Office, which he joined in 2007; U.S. Marine Corps veteran."},
+        {name:"Ty Rupert",status:"Interim Sheriff",bio:"21-year veteran of the Deschutes County Sheriff's Office, serving at every rank from reserve deputy through captain before becoming sheriff."}]},
+      {group:"Deschutes County",office:"County Treasurer · 4-year term",does:"Safeguards and invests county funds and oversees county financial operations.",candidates:[
+        {name:"Jana Cain",bio:"Deschutes County controller since 2021 and a CPA; former audit manager and auditor."},
+        {name:"Cam Sparks",bio:"Deschutes County budget and financial planning manager; county accountant and budget analyst since 2019."}]},
+      {group:"Judicial office",office:"Circuit Court Judge — 11th District, Position 3",does:"Handles state trial-court cases in Deschutes County, including criminal, civil, family, and juvenile matters.",candidates:[
+        {name:"Thaddeus Betz",bio:"Attorney and director of the Youth Justice Project at the Oregon Justice Resource Center; former public-defender attorney."},
+        {name:"Sonia Huntsman",bio:"Public defender; former deputy district attorney, family-law attorney, and Bend-La Pine elementary school teacher."},
+        {name:"Raun Atkinson",bio:"Attorney and small-business owner; Crook County deputy and chief deputy district attorney, 2014–2021."},
+        {name:"Keith A Leitz",bio:"City Attorney for Redmond; former Coos County counsel, special assistant U.S. attorney, and U.S. Air Force JAG officer."}]},
+      {group:"Deschutes Soil & Water Conservation District",office:"Director — Zone 1 · 4-year term",does:"Helps set policy and budgets for soil and water conservation programs across the district. All district voters vote for every director position.",candidates:[
+        {name:"Peter Thayer",bio:""},{name:"Adam J. Huemoller",bio:""}]},
+      {group:"Deschutes Soil & Water Conservation District",office:"Director — Zone 2 · 2-year term",does:"Helps set policy and budgets for soil and water conservation programs across the district. All district voters vote for every director position.",candidates:[
+        {name:"Martha A. Meeker",status:"Incumbent · unopposed",bio:"District director for Zone 2 (Sisters) since January 2025; served 28 years in the U.S. Air Force, retiring as a brigadier general."}]},
+      {group:"Deschutes Soil & Water Conservation District",office:"Director — Zone 4 · 4-year term",does:"Helps set policy and budgets for soil and water conservation programs across the district. All district voters vote for every director position.",candidates:[
+        {name:"Brian Lepore",status:"Unopposed",bio:""}]},
+      {group:"Deschutes Soil & Water Conservation District",office:"Director — At-Large 2 · 4-year term",does:"Helps set policy and budgets for soil and water conservation programs across the district. All district voters vote for every director position.",candidates:[
+        {name:"Grant Traynor",status:"Unopposed",bio:""}]},
+      {group:"City of Bend",office:"Mayor — Position 7",when:"bend",does:"Leads the Bend City Council and city government; Bend's mayor and councilors are elected at-large to four-year terms.",candidates:[
+        {name:"Melanie Kebler",status:"Incumbent",bio:"Mayor of Bend; victims' rights attorney and former deputy district attorney; Bend city councilor 2020–2022."},
+        {name:"Bernadette Strome",bio:"Small-business owner (The Denim Dealer) in Bend."}]},
+      {group:"City of Bend",office:"Councilor — Position 5",when:"bend",candidates:[
+        {name:"Ariel Méndez",status:"Incumbent · unopposed",bio:"Bend city councilor for Position 5 and associated faculty at OSU-Cascades."}]},
+      {group:"City of Bend",office:"Councilor — Position 6",when:"bend",does:"Open seat — the incumbent is not running.",candidates:[
+        {name:"Elana Reinholtz",status:"Unopposed",bio:"Communications and strategic-partnerships professional who began her career in finance at Bloomberg L.P.; served on the City of Bend Budget Committee."}]},
+      {group:"City of Redmond",office:"Mayor",when:"redmond",does:"Leads the Redmond City Council and city government; the mayor and six councilors serve four-year terms.",candidates:[
+        {name:"Ed Fitch",status:"Incumbent",bio:"Attorney; mayor of Redmond 2023–present and previously 1999–2001; former Redmond city attorney."},
+        {name:"Jay Patrick",bio:"Redmond city councilor for 26 years; Jefferson County ESD employee."},
+        {name:"Charles Webster Baer",bio:""}]},
+      {group:"City of Redmond",office:"Councilor — at-large · vote for 3",when:"redmond",does:"Five candidates for three at-large seats; the top three vote-getters win.",candidates:[
+        {name:"Tobias Colvin",bio:"General manager of the SCP Redmond Hotel; Redmond city councilor 2022–2024 and current planning commission chair."},
+        {name:"Raven Hansen",bio:"Critical-care certified nursing assistant with St. Charles Health System."},
+        {name:"Kathryn Osborne",status:"Incumbent",bio:"Marketing professional and Redmond city councilor."},
+        {name:"Paul M Povey",bio:"Surveyor and lifelong Redmond resident."},
+        {name:"Barb Tate",bio:"Retired co-owner of Tate and Tate Catering (2000–2020); 32-year Redmond resident."}]}
+    ],
+    measures:[
+      {code:"Measure 9-185",title:"Establishes five Deschutes County commissioner districts",text:"Changes how Deschutes County commissioners are elected. Commissioners are now elected countywide at-large, so every county voter votes for all five positions. If approved, beginning with the 2028 election one commissioner would be elected from each of five geographic districts on the map included with the measure; voters could vote only for the commissioner position in their own district, and candidates would have to be registered and resident in their district for one year before the primary election. The proposed districts are generally District 1, East Bend; District 2, West Bend; District 3, Redmond and surrounding areas; District 4, southern Deschutes County including southeast Bend, Sunriver, and La Pine; and District 5, northern Deschutes County including Sisters, Terrebonne, Tumalo, and Black Butte Ranch.",yes:"Elect commissioners by the five geographic districts on the included map, starting in 2028.",no:"Keep electing all five commissioners countywide at-large."},
+      {code:"Measure 9-186",when:"redmond",title:"Redmond extension of the two-year moratorium on psilocybin service centers",text:"Extends the City of Redmond's moratorium on psilocybin service centers. Voters approved a two-year moratorium in 2024 that ends December 31, 2026. If approved, the prohibition on establishing psilocybin service centers within the City of Redmond would be extended until December 31, 2028. If not approved, the moratorium ends December 31, 2026, and the Oregon Health Authority would begin accepting applications for service centers in Redmond in January 2027.",yes:"Extend the moratorium on psilocybin service centers in Redmond through December 31, 2028.",no:"Let the moratorium end December 31, 2026; service-center applications could be accepted starting in 2027."}
+    ]
+  },
+josephine: {
+    label:"Grants Pass · Josephine County",chips:["U.S. House OR-02","State House 3 & 4","County Commission","Jail levy renewal","School District 7 bond"],summary:"12 races and 3 measures: federal and statewide offices, your state House race, five Josephine County offices, Grants Pass council races in Wards 1 and 2, the countywide jail and juvenile levy renewal, the Grants Pass School District 7 bond, and the Williams fire district levy. The whole county is in U.S. House District 2, and its state Senate seat is not up in 2026.",
+    coverage:"This pathway covers Josephine County, Oregon for the November 3, 2026 general election. Grants Pass addresses split between State House Districts 3 and 4 and ZIP codes do not follow the line, so the guide asks you to confirm your House district and, for city voters, your council ward from your voter record or printed ballot. County offices were nominated in the May 19, 2026 primary under a top-two/majority rule and are nonpartisan on the November ballot.",
+    caveats:["There is no State Senate race on the Josephine County ballot in 2026 — the county's Senate district seat is not up this cycle.","Grants Pass Mayor Clint Scherf is not on the 2026 ballot; his term runs to 2028. One council seat per ward is up.","Grants Pass Ward 3 and Ward 4 council seats are also up in 2026, but their November candidate fields could not be verified from the city or county certified lists, so those races are not shown — compare the printed ballot.","The Grants Pass School District 7 bond (Measure 17-130) is shown to voters who confirm they live in Grants Pass; the district extends beyond city limits, so district voters outside the city should compare the printed ballot.","Cave Junction city races and soil & water conservation district races in the county are not covered by this pathway.","Candidate order follows official voters' pamphlet listings and may differ from the printed ballot order.","There are no Oregon statewide measures on the November 2026 ballot."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 2 (Josephine County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book2_web.pdf"},{label:"Josephine County Clerk — local races & measures, November 3, 2026",url:"https://www.Josephinecounty.gov/government/county_clerk___recorder/election_voter_registration/local_races___measures.php"},{label:"City of Grants Pass — qualifying and filing for candidacy",url:"https://grantspassoregon.gov/832/Qualifying-and-Filing-for-Candidacy"},{label:"KAJO 99.7 FM — May 19, 2026 Josephine County primary results",url:"http://kajo.com/news/news_story.php?subaction=showfull&id=1779218442&ucat=2&template=KAJO17Column&"}],
+    races:[{use:"senate"},{use:"house2"},{use:"governor"},
+      {group:"Oregon Legislature",office:"State Representative — District 3",when:"hd3",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Dwayne Yunker",party:"Republican",status:"Incumbent",bio:"State representative and real estate principal broker. Served 21 years in the U.S. military and previously served on the Grants Pass City Council."},
+        {name:"Susan Fischer-Maki",party:"Democrat",bio:"Founder and principal consultant at Common Thread Consulting. Former health and education manager at AllCare Health and early-learning facilitator with Southern Oregon ESD; served on the Three Rivers School Board."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 4",when:"hd4",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Alek Skarlatos",party:"Republican",status:"Incumbent · unopposed",bio:"State representative and deputy House Republican leader; small-business owner and rancher. Oregon Army National Guard veteran and author who in 2015 helped stop a gunman on a Paris-bound train and received the Army Soldier's Medal."}]},
+      {group:"Josephine County",office:"County Commissioner — Position 1",does:"The Board of Commissioners runs county government: budget, roads, land use, and county services.",candidates:[
+        {name:"John West",bio:"Former Josephine County commissioner, elected in 2022. Background in forestry, land development, and business."},
+        {name:"Colene Martin",status:"Appointed incumbent",bio:"Appointed to the Board of Commissioners in February 2026. Led the May 2026 primary field with about 48% of the vote."}]},
+      {group:"Josephine County",office:"County Commissioner — Position 2 (2-year unexpired term)",does:"A two-year unexpired term on the Board of Commissioners.",candidates:[
+        {name:"Chad Hansen",bio:"Background in construction and residential development and service on local government committees."},
+        {name:"Mark Jones",bio:""}]},
+      {group:"Josephine County",office:"County Clerk & Recorder",does:"Runs county elections and keeps county records.",candidates:[
+        {name:"Rhiannon Henkels",status:"Incumbent · unopposed",bio:"Incumbent county clerk. Received a majority in the May 2026 primary and advances to November alone under county rules."}]},
+      {group:"Josephine County",office:"Sheriff",does:"The county's chief law-enforcement officer; runs the jail and patrol services.",candidates:[
+        {name:"Dave Daniel",status:"Incumbent",bio:""},
+        {name:"Jonathan Knapp",bio:""}]},
+      {group:"Josephine County",office:"County Treasurer",does:"Manages county funds and investments.",candidates:[
+        {name:"Dustin Calvo",bio:""},
+        {name:"Simon Hare",bio:"Former Josephine County treasurer, first elected in 2010."}]},
+      {group:"City of Grants Pass",office:"City Councilor — Ward 1",when:"w1",does:"One of two Ward 1 seats on the eight-member Grants Pass City Council. Councilors are elected citywide from their ward of residence.",candidates:[
+        {name:"Rob Pell",status:"Incumbent",bio:""},
+        {name:"Michael O'Coyne",bio:"Co-founded Main Street Grants Pass and launched the Cruise the Rogue event. Serves on the City Tourism Advisory Committee and the Development Code Task Force."}]},
+      {group:"City of Grants Pass",office:"City Councilor — Ward 2",when:"w2",does:"One of two Ward 2 seats on the eight-member Grants Pass City Council. Councilors are elected citywide from their ward of residence.",candidates:[
+        {name:"Rick Riker",status:"Incumbent",bio:""},
+        {name:"Candy Rosenberg",bio:""},
+        {name:"Erin Cook",bio:""}]}
+    ],
+    measures:[{code:"Measure 17-129",title:"Renewal of Current Five-Year Jail and Juvenile Local Option Tax",text:"Renews Josephine County's existing five-year local option tax at its current rate of $0.93 per $1,000 of assessed value — about $0.89 of the rate funds the adult jail and about $0.04 funds juvenile detention services.",yes:"Renew the jail and juvenile detention levy at the current rate for five more years.",no:"Do not renew; let the current levy expire."},
+      {code:"Measure 17-130",when:"grantspass",title:"Grants Pass School District 7 — bonds to update school facilities, increase safety; receive grant",text:"$10,890,000 in general obligation bonds for facility updates and safety projects at all six District 7 elementary schools, both middle schools, Grants Pass High School, and the Gladiola campus, including air conditioning, roofing, plumbing, electrical, and restroom work. Passage also unlocks an $8,168,000 Oregon OSCIM state matching grant. The district estimates a cost of about $0.10 per $1,000 of assessed value.",yes:"Issue the bonds and receive the state matching grant.",no:"Do not issue the bonds; the state matching grant would not be received."},
+      {code:"Measure 17-128",when:"williams",title:"Williams Rural Fire Protection District — five-year local option levy for fire and emergency services",text:"A five-year local option levy of $1.35 per $1,000 of assessed value beginning July 1, 2027, replacing the district's expiring levy. Revenue maintains the district's 24-hour two-person staffing, training, equipment, and facilities. The district states that if the levy fails, all paid staffing will be discontinued and response will return to volunteers.",yes:"Impose the levy and maintain 24-hour paid staffing.",no:"Do not impose the levy; paid staffing would be discontinued."}]
+  },
+ashland: {
+    label:"Ashland · Jackson County",chips:["U.S. House OR-02","State Senate 3","State House 5","Jackson County","City of Ashland"],summary:"10 races and 2 measures: federal and statewide offices, State Senate District 3, State House District 5, four Jackson County offices, the Ashland Parks and Recreation Commission, the City of Ashland fee-and-tax charter measure, and the Jackson County vector control levy. Ashland's at-large City Council race is listed in the caveats — its 12-candidate field could not be verified name-by-name from an official list.",
+    coverage:"This pathway covers Ashland (ZIP 97520), Oregon for the November 3, 2026 general election. All of Ashland is in U.S. House District 2, State Senate District 3, and State House District 5; the guide still asks you to confirm, because districts are never assigned from a ZIP code alone. County races are shared with the rest of Jackson County. New this cycle: Ashland elects its City Council and Park Commission at large, with no position numbers.",
+    caveats:["Ashland's mayor is not on the 2026 ballot. Only City Council and Park Commission seats appear in the city's 2026 election materials.","Ashland City Council — vote for four: 12 candidates filed for the four at-large seats, but the full certified field could not be verified from an official source, so the race is not shown with a partial list — compare the printed ballot.","An Ashland municipal judge contest may also appear; the single filed name seen in secondary listings could not be confirmed against the county's certified list, so it is not shown.","Ashland School District 5's levy renewal (Measure 15-241) was decided in May 2026 and is not on the November ballot.","Measure 15-244 (vector control) applies only inside the Jackson County Vector Control District; confirm district membership on the printed ballot.","Candidate order follows official voters' pamphlet listings and may differ from the printed ballot order.","There are no Oregon statewide measures on the November 2026 ballot."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 3 (Jackson County candidate & measure list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book3_web.pdf"},{label:"Jackson County Elections — November 3, 2026 general election",url:"https://jacksoncountyor.gov/departments/elections/general___primary_elections/general_election_-_november_3,_2026.php"},{label:"City of Ashland — elections",url:"https://www.ashlandoregon.gov/elections"},{label:"The Ashland Chronicle — Parks Commission candidate interviews summary (October 2026)",url:"https://theashlandchronicle.com/guest-opinion-which-parks-commission-candidates-would-address-the-issues-facing-ashlands-parks-by-ric-holt/"}],
+    races:[{use:"senate"},{use:"house2"},{use:"governor"},
+      {group:"Oregon Legislature",office:"State Senator — District 3",does:"Open seat covering all of Ashland.",candidates:[{name:"Brad Hicks",party:"Republican / Libertarian",bio:"Former longtime Medford and Jackson County Chamber executive. Campaign themes include lower taxes, less regulation, trades training, and tougher criminal penalties."},{name:"Denise Krause",party:"Democrat",bio:"Health-care consultant, small-business owner, and RVTD board member. Her platform supports universal health care, rural providers, mental-health and addiction care, affordable housing, education, and climate resilience."},{name:"Clay Bearnson",party:"Independent / Pacific Green",bio:"Former Medford councilor and bar owner."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 5",when:"hd5",candidates:[{name:"Pam Marsh",party:"Democrat / Independent",status:"Incumbent",bio:"House Housing and Homelessness chair. Documented priorities include affordable housing, climate resilience, wildfire response, higher education, and broadband."},{name:"Alexander Krigsvold",party:"Republican",bio:""}]},
+      {group:"Jackson County",office:"County Clerk",candidates:[{name:"Chris Walker",status:"Incumbent · unopposed",bio:"County clerk and county elections officer."}]},
+      {group:"Jackson County",office:"County Commissioner — Position 1",candidates:[{name:"Rick Dyer",party:"Republican",status:"Incumbent",bio:""},{name:"Lyndi Reichenbach",party:"Democrat",bio:""}]},
+      {group:"Jackson County",office:"County Commissioner — Position 3",candidates:[{name:"Colleen Roberts",party:"Republican",status:"Incumbent",bio:"Commissioner since 2015 and former small-business owner."},{name:"Isabella Lee Tibbetts",party:"Democrat / Working Families",bio:"Community organizer, advisory-committee member, and Phoenix High School graduate."}]},
+      {group:"Jackson County",office:"Sheriff",candidates:[{name:"Nathan Sickler",status:"Incumbent · unopposed",bio:"Law-enforcement officer since 1999. He has supported continued enforcement funding against illegal marijuana grows."}]},
+      {group:"City of Ashland",office:"Parks and Recreation Commission — vote for three",when:"ashland",does:"Three at-large seats, all four-year terms. All three commissioners whose terms expire are not seeking re-election. Stefani Seffinger has withdrawn but remains on the printed ballot.",candidates:[
+        {name:"Jeff Bonnington",bio:""},
+        {name:"Michael Dotson",bio:""},
+        {name:"Brian Long",bio:""},
+        {name:"David Young",bio:""},
+        {name:"Alison Wren",bio:""},
+        {name:"Russell Feingold",bio:""},
+        {name:"Stefani Seffinger",status:"Withdrawn — remains on the printed ballot",bio:""}]}
+    ],
+    measures:[{code:"Measure 15-243",when:"ashland",title:"City of Ashland — requiring voter approval for new or increased fee or tax",text:"A City of Ashland charter measure that would require voter approval before the city imposes a new fee or tax or increases an existing fee or tax.",yes:"Amend the charter to require voter approval for new or increased city fees and taxes.",no:"Do not amend the charter; the City Council keeps its current authority to set city fees and taxes."},
+      {code:"Measure 15-244",when:"vector",title:"Jackson County Vector Control District levy",text:"A $0.05 per $1,000 assessed-value local option levy for mosquito surveillance, disease testing, source reduction, storm-drain treatment, mosquitofish, and tire-recycling drives. The district estimates about $15 per year for an average property.",yes:"Impose the levy and fund the additional vector-control work.",no:"Do not impose the proposed levy."}]
+  },
+douglas: {
+    label:"Roseburg · Douglas County",chips:["U.S. Senate","Governor","U.S. House OR-04 / OR-02","County Commissioner runoff","Roseburg Mayor + Wards","4 Local Measures"],summary:"Up to 43 races depending on your districts and city: federal and statewide offices, your state House race, the Douglas County Commissioner Position 3 runoff, soil & water directors, and city races in Roseburg and ten other Douglas County cities — plus local measures for Reedsport, Sutherlin, and Glide School District voters. No state Senate race and no county-wide measure are on Douglas County's November 2026 ballot.",
+    coverage:"This pathway covers Douglas County, Oregon for the November 3, 2026 general election. Douglas County is split between U.S. House Districts 4 and 2 and among State House Districts 1, 2, 4, and 9, and ZIP codes do not follow those lines, so the guide asks you to confirm your congressional and House districts from your voter record or printed ballot instead of guessing from a ZIP. Roseburg elects its council by ward; the official city ward map labels Ward 1 as the northeast quadrant, Ward 2 northwest, Ward 3 southwest, and Ward 4 southeast. The county commissioner race on this ballot is a November runoff between the top two finishers from the May primary.",
+    caveats:["No Oregon State Senate race appears on Douglas County's November 2026 ballot — Senate Districts 1, 2, and 5 are not up this year.","County Commissioner Positions 1 and 2 and the County Surveyor were decided in the May 2026 primary (Tom Kress and Tim J. Freeman each won a majority for commissioner; Ron Quimby was re-elected surveyor) and do not appear in November. The sheriff, clerk, and other county offices are not on the 2026 ballot.","There are no judicial races and no Douglas County county-wide measures on the November 2026 ballot, and there are no Oregon statewide measures.","Elkton's council race had no candidate file, so it is not shown. Glendale and Yoncalla each have three separate single-candidate council position contests; they are combined into one entry each — compare the printed ballot.","Douglas Soil & Water Conservation District at-large seats are shown; the separate Umpqua Soil & Water Conservation District, which covers part of northern and coastal Douglas County, has its own director races (including an at-large seat) that are not shown — compare the printed ballot.","City races for Green, Dillard-area, and other small or unincorporated communities not listed in the confirm form are not covered here — compare the printed ballot.","Candidate order follows the Douglas County Clerk's official ballot-content report and the state voters' pamphlet list and may differ from the printed ballot order."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 1 (Douglas County candidate list)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book1_web.pdf"},{label:"Douglas County Clerk — November 2026 Proof Ballot Content Report (E-019)",url:"https://www.douglascountyor.gov/DocumentCenter/View/30712/Nov-2026-Ballot-Content-Report-E-019"},{label:"City of Roseburg — Election Information (certified candidate filings)",url:"https://roseburgor.gov/your-government/election-information"},{label:"City of Roseburg — Official Ward Map (PDF)",url:"https://roseburgor.gov/storage/app/media/Council/Ward-Map.pdf"},{label:"Douglas County — May 19, 2026 Official Final Results (certified abstract)",url:"https://www.douglascountyor.gov/DocumentCenter/View/29129/May-19-2026-Official-Final-Results-Abstract-Certified-PDF"}],
+    races:[{use:"senate"},
+      {group:"Federal offices",office:"U.S. House — District 4",when:"cd4",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Val Hoyle",party:"Democrat / Working Families",status:"Incumbent",bio:"U.S. representative since 2023 and Oregon's former labor commissioner."},
+        {name:"Monique DeSpain",party:"Republican / Libertarian",bio:"Attorney and retired U.S. Air Force colonel who served 30 years as a JAG officer. She was the Republican nominee for this seat in 2024."},
+        {name:"Justin Filip",party:"Pacific Green / Progressive",bio:"Statistician."}]},
+      {group:"Federal offices",office:"U.S. House — District 2",when:"cd2",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Cliff Bentz",party:"Republican",status:"Incumbent",bio:"Former Oregon state senator and representative, seeking a fourth U.S. House term."},
+        {name:"Chris Beck",party:"Democrat / Independent",bio:"Former Oregon state representative and rural-policy adviser. Documented priorities include rural hospital stability, health access, affordable Main Street housing, and national vote-by-mail."}]},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Representative — District 1",when:"hd1",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Court Boice",party:"Republican",status:"Incumbent",bio:"State representative since 2023 and a former Douglas County commissioner."},
+        {name:"Bret Cecil",party:"Democrat",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 2",when:"hd2",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills. District 2 covers the Roseburg area.",candidates:[
+        {name:"Virgle J Osborne",party:"Republican / Democrat",status:"Incumbent · unopposed",bio:"Cross-nominated by both the Republican and Democratic parties."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 4",when:"hd4",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[
+        {name:"Alek Skarlatos",party:"Republican",status:"Incumbent · unopposed",bio:""}]},
+      {group:"Oregon Legislature",office:"State Representative — District 9",when:"hd9",does:"Open seat — the incumbent is retiring. Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills. District 9 covers the Douglas County coast, including Reedsport.",candidates:[
+        {name:"John Ezra Scheirman",party:"Democrat",bio:"School bus driver from North Bend."},
+        {name:"Claire Lynn",party:"Republican",bio:"Legislative director and policy staff for Oregon House Republicans; endorsed by the retiring incumbent."}]},
+      {group:"Douglas County",office:"County Commissioner — Position 3 — runoff",does:"One of three commissioners who run Douglas County government: the county budget, land use, roads, and public health. This is a runoff between the top two finishers from the May primary, in which no candidate won a majority.",candidates:[
+        {name:"Chris Boice",status:"Incumbent",bio:""},
+        {name:"Steve Hammerson",bio:"School board member."}]},
+      {group:"Douglas Soil & Water Conservation District",office:"Director — At Large Position 1",does:"Helps set policy and budgets for soil and water conservation programs in the district, which covers much of Douglas County. If your printed ballot shows the Umpqua Soil & Water Conservation District instead, this race is not yours.",candidates:[
+        {name:"Joe Blanchard",bio:""},{name:"Ashley Hicks",bio:""}]},
+      {group:"Douglas Soil & Water Conservation District",office:"Director — At Large Position 2 — unexpired term",does:"Helps set policy and budgets for soil and water conservation programs in the district. This seat fills the remainder of an unexpired term.",candidates:[
+        {name:"Steve Denney",status:"Unopposed",bio:""}]},
+      {group:"City of Roseburg",office:"Mayor",when:"roseburg",does:"Leads the Roseburg City Council and city government. Two-year term.",candidates:[
+        {name:"Max Smoot",bio:""},{name:"David Bolhuis",bio:""},{name:"Steve Loosley",bio:""}]},
+      {group:"City of Roseburg",office:"Councilor — Ward 1, Position 1",when:"w1",does:"Represents Ward 1 (northeast Roseburg) on the city council. Four-year term. Open seat.",candidates:[
+        {name:"R.J. Mills",status:"Unopposed",bio:""}]},
+      {group:"City of Roseburg",office:"Councilor — Ward 2, Position 1",when:"w2",does:"Represents Ward 2 (northwest Roseburg) on the city council. Four-year term.",candidates:[
+        {name:"Mike Baker",status:"Unopposed",bio:""}]},
+      {group:"City of Roseburg",office:"Councilor — Ward 3, Position 1",when:"w3",does:"Represents Ward 3 (southwest Roseburg) on the city council. Four-year term. Open seat.",candidates:[
+        {name:"Matt Kowal",bio:""},{name:"Samuel Denney",bio:""}]},
+      {group:"City of Roseburg",office:"Councilor — Ward 4, Position 1",when:"w4",does:"Represents Ward 4 (southeast Roseburg) on the city council. Four-year term.",candidates:[
+        {name:"Ruth Smith",status:"Incumbent",bio:""},{name:"Tiffany Fouse",bio:""}]},
+      {group:"City of Sutherlin",office:"Mayor",when:"sutherlin",does:"Leads the Sutherlin City Council and city government. Two-year term.",candidates:[
+        {name:"Michelle Sumner",bio:""},{name:"Shawn New",bio:""}]},
+      {group:"City of Sutherlin",office:"Councilor — at-large · vote for 3",when:"sutherlin",does:"Four candidates for three at-large council seats; the top three vote-getters win. Four-year terms.",candidates:[
+        {name:"Terry Brock"},{name:"Lisa L Woods"},{name:"Debbie Hamilton"},{name:"Brent Hunsaker"}]},
+      {group:"City of Reedsport",office:"Mayor",when:"reedsport",does:"Leads the Reedsport City Council and city government. Two-year term.",candidates:[
+        {name:"Rob Wright",bio:""},{name:"John Carter",bio:""},{name:"Allen D Teitzel",bio:""}]},
+      {group:"City of Reedsport",office:"Councilor — Position 4",when:"reedsport",candidates:[
+        {name:"Scott Kent",status:"Unopposed",bio:""}]},
+      {group:"City of Reedsport",office:"Councilor — Position 5",when:"reedsport",candidates:[
+        {name:"Cindy Wegner",bio:""},{name:"Jef Walls",bio:""}]},
+      {group:"City of Reedsport",office:"Councilor — Position 6",when:"reedsport",candidates:[
+        {name:"Rick Gilliland",bio:""},{name:"Debby Turner",bio:""}]},
+      {group:"City of Myrtle Creek",office:"Mayor",when:"myrtlecreek",does:"Leads the Myrtle Creek City Council and city government. Four-year term.",candidates:[
+        {name:"Luke Dillon",status:"Unopposed",bio:""}]},
+      {group:"City of Myrtle Creek",office:"Councilor — Position 2",when:"myrtlecreek",candidates:[
+        {name:"Jamie McElmurry",status:"Unopposed",bio:""}]},
+      {group:"City of Myrtle Creek",office:"Councilor — Position 4",when:"myrtlecreek",candidates:[
+        {name:"Tyson Duncan",bio:""},{name:"Diana Larson",bio:""}]},
+      {group:"City of Canyonville",office:"Mayor",when:"canyonville",does:"Leads the Canyonville City Council and city government. Two-year term.",candidates:[
+        {name:"Christine Morgan",bio:""},{name:"Jeremy Mayfield",bio:""}]},
+      {group:"City of Canyonville",office:"Councilor — at-large · vote for 3",when:"canyonville",does:"Nine candidates for three at-large council seats; the top three vote-getters win. Four-year terms.",candidates:[
+        {name:"Michael Sprague"},{name:"Luke Suhr"},{name:"Louise Barton"},{name:"Craig M Gully"},{name:"Jeannie Louise Weakley"},{name:"Paige McMahon"},{name:"Stephen Morgan"},{name:"Mike Hogue"},{name:"Sean Tomlinson"}]},
+      {group:"City of Drain",office:"Mayor",when:"drain",does:"Leads the Drain City Council and city government. Two-year term.",candidates:[
+        {name:"Benjamin M Simons",bio:""},{name:"Rusty Savage",bio:""}]},
+      {group:"City of Drain",office:"Councilor — Position 2",when:"drain",candidates:[
+        {name:"Jennifer Trotter",status:"Unopposed",bio:""}]},
+      {group:"City of Drain",office:"Councilor — Position 4",when:"drain",candidates:[
+        {name:"Rance Pilley",status:"Unopposed",bio:""}]},
+      {group:"City of Oakland",office:"Mayor",when:"oakland",does:"Leads the Oakland City Council and city government. Two-year term.",candidates:[
+        {name:"Bette Keehley",bio:""},{name:"Ron Pike",bio:""}]},
+      {group:"City of Oakland",office:"Councilor — at-large · vote for 2",when:"oakland",does:"Three candidates for two at-large council seats; the top two vote-getters win. Four-year terms.",candidates:[
+        {name:"Sky Ironplow"},{name:"Jan Wier"},{name:"Tom Hasvold"}]},
+      {group:"City of Riddle",office:"Mayor",when:"riddle",does:"Leads the Riddle City Council and city government. Two-year term.",candidates:[
+        {name:"Aaron W Christensen",status:"Unopposed",bio:""}]},
+      {group:"City of Riddle",office:"Councilor — Position 1",when:"riddle",candidates:[
+        {name:"Debbie Sue Carnes",status:"Unopposed",bio:""}]},
+      {group:"City of Riddle",office:"Councilor — Position 4",when:"riddle",candidates:[
+        {name:"Shira Randall",status:"Unopposed",bio:""}]},
+      {group:"City of Riddle",office:"Councilor — Position 5",when:"riddle",candidates:[
+        {name:"Jane Z Mitchell",status:"Unopposed",bio:""}]},
+      {group:"City of Glendale",office:"Mayor",when:"glendale",does:"Leads the Glendale City Council and city government. Two-year term.",candidates:[
+        {name:"Crystal Martin",status:"Unopposed",bio:""}]},
+      {group:"City of Glendale",office:"Councilor — three separate positions",when:"glendale",does:"Glendale has three separate council position contests on this ballot, each vote-for-one with a single candidate; they are combined here — compare the printed ballot for the position numbers.",candidates:[
+        {name:"Audina Jephson",status:"Unopposed"},{name:"Ginger White",status:"Unopposed"},{name:"William (Bill) Woodard",status:"Unopposed"}]},
+      {group:"City of Winston",office:"Mayor",when:"winston",does:"Leads the Winston City Council and city government. Two-year term.",candidates:[
+        {name:"Christie Glen-Knutson",status:"Unopposed",bio:""}]},
+      {group:"City of Winston",office:"Councilor — Ward 1, Position 2",when:"winston",candidates:[
+        {name:"Dolores (Dorie) White",status:"Unopposed",bio:""}]},
+      {group:"City of Winston",office:"Councilor — Ward 2, Position 2",when:"winston",candidates:[
+        {name:"Nicholas J Wiggins",status:"Unopposed",bio:""}]},
+      {group:"City of Yoncalla",office:"Mayor",when:"yoncalla",does:"Leads the Yoncalla City Council and city government. Two-year term.",candidates:[
+        {name:"Pauline Kingery",status:"Unopposed",bio:""}]},
+      {group:"City of Yoncalla",office:"Councilor — three separate positions",when:"yoncalla",does:"Yoncalla has three separate council position contests on this ballot, each vote-for-one with a single candidate (one fills an unexpired two-year term); they are combined here — compare the printed ballot for the position numbers.",candidates:[
+        {name:"Mike Grimes",status:"Unopposed"},{name:"Thomas R McDonald",status:"Unopposed"},{name:"Harold M Gilpin",status:"Unopposed"}]}
+    ],
+    measures:[
+      {code:"Measure 10-216",when:"glide",title:"Glide School District bonds",text:"Authorizes up to $16,515,000 in bonds for school safety, security, and capacity — a single point of entry and safety upgrades, new classrooms and multipurpose/cafeteria space at the elementary school, a new middle-school classroom building, and athletic and community facilities — with public oversight. The district has been awarded a $6,126,000 state matching grant that is only available if the bonds pass. Because existing bonds are retiring, the estimated tax rate is not expected to rise above the district's current bond levy rate of $0.91 per $1,000 of assessed value; bonds would mature within 21 years.",yes:"Issue the bonds and receive the state matching grant.",no:"Do not issue the bonds; the state matching grant goes to another district."},
+      {code:"Measure 10-215",when:"reedsport",title:"Reedsport ban on psilocybin-related businesses",text:"Asks Reedsport voters to ban the establishment of psilocybin-related businesses (state-licensed psilocybin product manufacturers and service centers) in the city. Reedsport voters enacted a temporary two-year ban in November 2022, and the city council adopted an ordinance in December 2024 to make the ban permanent, which state law requires be referred to the voters at a general election.",yes:"Establish the ban on psilocybin-related businesses in Reedsport.",no:"Allow psilocybin-related businesses to operate in Reedsport under state licensing."},
+      {code:"Measure 10-217",when:"sutherlin",title:"Sutherlin repeal of the ban on marijuana facilities",text:"Repeals Chapter 8.18 of the Sutherlin municipal code, adopted by voters in 2016, which prohibits state-registered and state-licensed marijuana facilities in the city. If it passes, licensed medical and recreational marijuana producers, processors, wholesalers, dispensaries, and retailers could operate in Sutherlin subject to state law and local zoning, the facilities would be subject to taxation, and the city would be eligible for a share of state marijuana tax revenue.",yes:"Repeal the ban and permit state-licensed marijuana facilities in Sutherlin.",no:"Keep the 2016 ban on marijuana facilities in place."},
+      {code:"Measure 10-218",when:"sutherlin",title:"Sutherlin 3% local tax on retail marijuana sales",text:"Authorizes the City of Sutherlin to impose a 3% local tax on retail sales of marijuana items by licensed retailers inside the city, in addition to state taxes. The tax becomes effective only if the city's ban on marijuana facilities is repealed (Measure 10-217) and retail sales are authorized; otherwise it stays inactive.",yes:"Impose the 3% local tax on retail marijuana sales in Sutherlin.",no:"Do not impose the local tax."}
+    ]
+  },
+klamath: {
+    label:"Klamath Falls · Klamath County",chips:["U.S. Senate","Governor","U.S. House OR-02","County Clerk","Klamath Falls Council Wards 3–5","1 Local Measure"],summary:"Up to 20 races depending on your House district and city: federal and statewide offices, your state House race, county clerk and treasurer, a soil & water at-large seat, and city races in Klamath Falls, Bonanza, Malin, and Merrill — plus one local measure for Chemult Rural Fire Protection District voters. There is no state Senate race, no county commissioner race, and no Klamath Falls mayoral race on the November 2026 ballot.",
+    coverage:"This pathway covers Klamath County, Oregon for the November 3, 2026 general election. The whole county is in U.S. House District 2. State House District 56 covers Klamath Falls, while District 55 covers the rest of the county (and parts of Lake County); ZIP codes cross that line, so the guide asks you to confirm your House district from your voter record or printed ballot. Klamath Falls elects its council by five wards, and only the Ward 3, 4, and 5 seats are up in 2026 — the mayor is not on this ballot. Plain-English geographic descriptions of the Klamath Falls wards could not be verified against the city's ward map in this research, so the ward picker uses ward numbers only — check your ward on the printed ballot or the official city ward map before continuing.",
+    caveats:["State Senate District 28 is not up in 2026, so there is no state Senate race on Klamath County's November ballot.","County Commissioner Position 2 and the County Assessor were decided in the May 19, 2026 primary — the commissioner race's leader won a majority of the vote outright and the two-candidate assessor race was likewise resolved — so neither appears in November. The sheriff and district attorney are not on the 2026 ballot.","The Klamath Falls mayor is not on the 2026 ballot, and Council Wards 1 and 2 are not up this year.","Chiloquin's three council positions on this ballot (Positions 2, 4, and 6) and Merrill Council Position 4 had no candidate file, so they are not shown — those seats will be filled by write-in votes or later appointment.","Klamath Soil & Water Conservation District zone director seats follow zone lines and mostly had no candidate file, so they are not shown; only the countywide At-Large 1 seat appears here.","The only measure in Klamath County is the Chemult Rural Fire Protection District levy (Measure 18-145), which appears only inside that fire district in northern Klamath County. There are no Klamath County county-wide measures and no Oregon statewide measures on the November 2026 ballot.","Candidate order follows the Klamath County Clerk's official sample ballots and the state voters' pamphlet list and may differ from the printed ballot order."],
+    sources:[{label:"Oregon Secretary of State — Voters' Pamphlet Book 3 (southern Oregon candidate list, incl. OR-02 and District 56)",url:"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book3_web.pdf"},{label:"Klamath County Clerk — official sample ballots, November 3, 2026 general election (House District 56 ballot)",url:"https://em.klamathcounty.org/DocumentCenter/View/63778/House-District-56-pdf"},{label:"Klamath County Clerk — official sample ballot, City of Klamath Falls Ward 5",url:"https://em.klamathcounty.org/DocumentCenter/View/63783/City-of-Klamath-Falls-Ward-5-pdf"},{label:"Klamath County Clerk — official sample ballot with the Chemult RFPD measure (18-145)",url:"https://em.klamathcounty.org/DocumentCenter/View/63775/Chemult-RFPD-Measure-pdf"},{label:"City of Klamath Falls — press release: candidate filings as of August 25, 2026 (Wards 3, 4, 5)",url:"https://www.klamathfalls.city/DocumentCenter/View/5412"},{label:"Klamath County — Candidate Filings (primary and general)",url:"https://publichealth.klamathcounty.org/692/Election-Calendar-Candidates"}],
+    races:[{use:"senate"},
+      {use:"house2"},
+      {use:"governor"},
+      {group:"Oregon Legislature",office:"State Representative — District 55",when:"hd55",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills. District 55 covers Klamath County outside Klamath Falls, plus part of Lake County.",candidates:[
+        {name:"Colby M Simmons",party:"Democrat",bio:""},
+        {name:"E Werner Reschke",party:"Republican",status:"Incumbent",bio:"State representative since 2017."}]},
+      {group:"Oregon Legislature",office:"State Representative — District 56",when:"hd56",does:"Votes on Oregon laws, the state budget, and taxes; the House initiates revenue bills. District 56 covers Klamath Falls and part of Jackson County.",candidates:[
+        {name:"Emily G McIntire",party:"Republican",status:"Incumbent · unopposed",bio:"State representative since 2023."}]},
+      {group:"Klamath County",office:"County Clerk",does:"Runs county elections, keeps official county records, and issues marriage licenses and passports. Open seat.",candidates:[
+        {name:"Sally-Ann Palcovich",bio:"Longtime executive director of the Merle West Medical Center Foundation, now the Sky Lakes Medical Center Foundation, in Klamath Falls."},
+        {name:"Rejeana Jackson",bio:"Trained in the Klamath County Clerk's Office in 2025 and observed the full 2026 primary election process there."}]},
+      {group:"Klamath County",office:"County Treasurer",does:"Manages Klamath County's money: collects and distributes property taxes and invests county funds.",candidates:[
+        {name:"Vickie Noel",status:"Unopposed",bio:""}]},
+      {group:"Klamath Soil & Water Conservation District",office:"Director — At Large 1 — unexpired term",does:"Helps set policy and budgets for soil and water conservation programs across the district. This seat fills the remainder of a two-year unexpired term.",candidates:[
+        {name:"Charles Dehlinger",status:"Unopposed",bio:""}]},
+      {group:"City of Klamath Falls",office:"City Council — Ward 3",when:"w3",does:"Represents Ward 3 on the Klamath Falls City Council. Council members are elected by ward; the mayor, who is elected citywide, is not on the 2026 ballot.",candidates:[
+        {name:"Terra C Russo",status:"Incumbent · unopposed",bio:""}]},
+      {group:"City of Klamath Falls",office:"City Council — Ward 4",when:"w4",does:"Represents Ward 4 on the Klamath Falls City Council. Council members are elected by ward.",candidates:[
+        {name:"Abbie McClung",status:"Incumbent · unopposed",bio:""}]},
+      {group:"City of Klamath Falls",office:"City Council — Ward 5",when:"w5",does:"Represents Ward 5 on the Klamath Falls City Council. This seat has been vacant since February 2026, when the previous councilor resigned, and is filled by this election.",candidates:[
+        {name:"Marc D Cross",bio:""},{name:"Cliff Foster",bio:""}]},
+      {group:"Town of Bonanza",office:"Mayor",when:"bonanza",does:"Leads the Bonanza Town Council and town government.",candidates:[
+        {name:"Ashlie Pence (Petersen)",status:"Unopposed",bio:""}]},
+      {group:"Town of Bonanza",office:"Council — Position 2",when:"bonanza",candidates:[
+        {name:"Honey Banegas",status:"Unopposed",bio:""}]},
+      {group:"Town of Bonanza",office:"Council — Position 3 — unexpired term",when:"bonanza",does:"This seat fills the remainder of a two-year unexpired term.",candidates:[
+        {name:"Bob Scott",status:"Unopposed",bio:""}]},
+      {group:"Town of Bonanza",office:"Council — Position 4",when:"bonanza",candidates:[
+        {name:"Tiffany M Totten",status:"Unopposed",bio:""}]},
+      {group:"Town of Bonanza",office:"Council — Position 5",when:"bonanza",candidates:[
+        {name:"Roland Scott",status:"Unopposed",bio:""}]},
+      {group:"City of Malin",office:"Mayor",when:"malin",does:"Leads the Malin City Council and city government.",candidates:[
+        {name:"Ryan T Bartholomew",status:"Unopposed",bio:""}]},
+      {group:"City of Malin",office:"Councilor — at-large · vote for 3",when:"malin",does:"Three candidates for three at-large council seats.",candidates:[
+        {name:"Brandon Zieg"},{name:"Heath L Haywood"},{name:"John A Hughto"}]},
+      {group:"City of Merrill",office:"Council — Position 2",when:"merrill",candidates:[
+        {name:"Brian P Bicknell",bio:""},{name:"Joanne Johnson",bio:""}]},
+      {group:"City of Merrill",office:"Council — Position 3 — unexpired term",when:"merrill",does:"This seat fills the remainder of a two-year unexpired term.",candidates:[
+        {name:"Isaac Nunn",status:"Unopposed",bio:""}]}
+    ],
+    measures:[
+      {code:"Measure 18-145",when:"chemult",title:"Chemult Rural Fire Protection District five-year local option tax",text:"A new five-year local option tax of $1.25 per $1,000 of assessed value for fire and EMS operations and maintenance, beginning in fiscal year 2027-28. The district says its permanent tax rate is not sufficient to add needed EMS personnel or maintain fire and ambulance equipment; the levy would fund two more full-time EMTs, medications, equipment maintenance, protective gear, and continuing education. It would raise about $94,596 in 2027-28, rising to about $106,464 in 2031-32.",yes:"Approve the five-year levy for fire and EMS operations.",no:"Do not approve the levy; the district continues on its permanent tax rate."}
+    ]
   }
-
 };
