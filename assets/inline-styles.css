@@ -10,3 +10,15 @@
 html.vl-es .lang-note-es{display:block}
 .lang-footnote{max-width:760px;margin:.9rem auto 0;font-size:.85em;color:var(--muted);line-height:1.5}
 .lang-footnote span{display:block;margin-top:.35rem}
+
+/* Install CTA (Oct 2026): labeled home-screen buttons, top of page + footer */
+.install-cta-wrap{width:min(1180px,calc(100% - 2rem));margin:0 auto;padding:.85rem 0 0;text-align:center}
+.install-cta{display:inline-block;min-height:48px;padding:.6rem 1.1rem;border:2px solid #16265c;border-radius:.35rem;background:#16265c;color:#fff;font-weight:800;font-size:1rem;cursor:pointer}
+.install-cta:active{transform:translateY(1px)}
+.install-hint-cta{display:block;margin-top:.45rem;font-weight:700;color:#16265c}
+.footer-install{margin:0 0 .75rem}
+/* Rep Tracker announcement banner (Oct 2026) */
+.rep-tracker-banner{width:min(1180px,calc(100% - 2rem));margin:0 auto 2.75rem;padding:1rem 1.25rem;border:2px solid #16265c;border-radius:.5rem;background:#eef1f8;text-align:center}
+.rep-tracker-banner h2{margin:.1rem 0 .45rem;color:#16265c}
+.rep-tracker-banner p{margin:.25rem 0}
+.rep-tracker-banner .banner-when{font-style:italic;font-size:.92em}

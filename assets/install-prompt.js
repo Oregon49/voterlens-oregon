@@ -1,33 +1,51 @@
 (function(){
-  var btn = document.getElementById('install-btn');
-  var hint = document.getElementById('install-hint');
-  if (!btn) return;
-  // Already running as installed app — hide the button
+  var headerBtn = document.getElementById('install-btn');
+  var headerHint = document.getElementById('install-hint');
+  var ctaBtns = Array.prototype.slice.call(document.querySelectorAll('.install-cta'));
+  var allBtns = [];
+  if (headerBtn) allBtns.push(headerBtn);
+  allBtns = allBtns.concat(ctaBtns);
+  if (!allBtns.length) return;
+  function hideAll(){
+    allBtns.forEach(function(b){ b.style.display = 'none'; });
+    document.querySelectorAll('.install-cta-wrap').forEach(function(w){ w.style.display = 'none'; });
+    document.querySelectorAll('.footer-install').forEach(function(w){ w.style.display = 'none'; });
+  }
+  // Already running as installed app — hide the buttons
   if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
-    btn.style.display = 'none';
+    hideAll();
     return;
   }
-  try { if (localStorage.getItem('vl-install-dismissed')) { btn.style.display = 'none'; return; } } catch(e){}
+  try { if (localStorage.getItem('vl-install-dismissed')) { hideAll(); return; } } catch(e){}
   var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
   var deferredPrompt = null;
   window.addEventListener('beforeinstallprompt', function(e){
     e.preventDefault();
     deferredPrompt = e;
   });
-  btn.addEventListener('click', function(){
+  function hintFor(btn){
+    if (btn === headerBtn && headerHint) return headerHint;
+    var el = btn.parentElement ? btn.parentElement.querySelector('.install-hint-cta') : null;
+    return el;
+  }
+  function onClick(btn){
     if (deferredPrompt) {
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
       try { localStorage.setItem('vl-install-dismissed','1'); } catch(e){}
-      btn.style.display = 'none';
+      hideAll();
     } else {
+      var hint = hintFor(btn);
       if (hint) {
         hint.hidden = false;
         hint.textContent = isIOS
           ? 'Tap Share, then "Add to Home Screen".'
-          : 'Tap \u22ee (menu), then "Add to Home screen".';
+          : 'Tap ⋮ (menu), then "Add to Home screen".';
         setTimeout(function(){ hint.hidden = true; }, 10000);
       }
     }
+  }
+  allBtns.forEach(function(b){
+    b.addEventListener('click', function(){ onClick(b); });
   });
 })();
