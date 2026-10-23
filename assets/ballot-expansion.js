@@ -715,6 +715,45 @@ window.EXPANDED_BALLOTS = {
       {group:"Judicial retentions",office:"Justice Court \u2014 retention",does:"Shall the judge be retained?",candidates:[{name:"K. Jake Graff",bio:"Justice Court Judge, Santa Clara Justice Court. Vote YES to retain, NO to remove."}]}
     ]
   },
+  utah: {
+    label:"Utah · Statewide ballot",chips:["U.S. House \u2014 all 4 districts","Amendments A & B","No Governor or Senate race in 2026"],summary:"Utah's statewide layer for November 3, 2026: all four U.S. House districts under the court-ordered 2025 map, and constitutional Amendments A and B. Utah elects its Governor and other statewide officers in presidential years, and has no U.S. Senate race in 2026. Layton and St. George voters also have full VoterLens pathways in this app \u2014 enter ZIP 84041 or 84770.",
+    coverage:"This pathway covers what appears on ballots across Utah for the November 3, 2026 general election: your U.S. House race (all four districts are listed; you vote in only one) and the two constitutional amendments. District lines were redrawn by court order in 2025, so your district number may differ from 2024 \u2014 confirm yours at vote.utah.gov. State legislative, county, school-board, and judicial-retention races are covered for Layton and St. George in their own pathways; other voters should check their official sample ballot at vote.utah.gov.",
+    caveats:["Three of Utah's four U.S. House members are running in districts with new numbers under the 2025 court-ordered map (Moore in District 2, Maloy in District 3, Kennedy in District 4). District 1 is an open seat \u2014 the sitting representative retired.","Statewide judicial retention questions (Utah Supreme Court and Court of Appeals) also appear on every Utah ballot; they are listed in the Layton and St. George pathways in this app.","Candidate lists are from the Lieutenant Governor's official 2026 candidate filings (vote.utah.gov, updated October 5, 2026); amendment texts are the official ballot titles. One CD-1 write-in candidate is not listed \u2014 write-in names do not appear on the printed ballot."],
+    sources:[{label:"Utah elections \u2014 2026 candidate filings (official)",url:"https://vote.utah.gov/2026-candidate-filings/"},{label:"Utah Legislature \u2014 2026 constitutional amendments (official text)",url:"https://le.utah.gov/constitutionalAmendment/2026/constitutionalamendments.pdf"}],
+    measures:[
+      {code:"Constitutional Amendment A",title:"Publication of constitutional amendments",text:"Shall the Utah Constitution be amended to change how proposed constitutional amendments are published, requiring publication for 60 days immediately before the general election in a manner established by state law instead of in newspapers? If approved, state statute would require the Lieutenant Governor to publish the full text of all proposed constitutional amendments and other ballot questions on the Utah Public Notice Website and on the Lieutenant Governor's website for 60 days immediately before the general election.",yes:"Require amendments to be published online (Utah Public Notice Website and Lieutenant Governor's website) for 60 days before the election instead of in newspapers.",no:"Keep the current constitutional requirement of newspaper publication."},
+      {code:"Constitutional Amendment B",title:"60% threshold for citizen tax initiatives",text:"Shall the Utah Constitution be amended to require that citizen-proposed laws that increase taxes compared to existing law be approved by at least 60% of voters, instead of a simple majority?",yes:"Require citizen ballot initiatives that create new taxes, expand taxes, raise tax rates, or adjust property taxes to win 60% voter approval instead of a simple majority. Legislature-referred measures are unaffected.",no:"Keep the current simple-majority threshold for citizen tax initiatives."}
+    ],
+    races:[
+      {group:"Federal offices",office:"U.S. House \u2014 District 1 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Open seat \u2014 the sitting representative retired, and the district was redrawn under the 2025 court-ordered map.",candidates:[
+        {name:"Ben McAdams",party:"Democrat"},
+        {name:"Riley Owen",party:"Republican"},
+        {name:"Jesse West",party:"Libertarian"},
+        {name:"Elias Henry Montgomery",party:"Unaffiliated"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 2 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Full candidate details for this district are also in the Layton pathway in this app.",candidates:[
+        {name:"Blake D. Moore",party:"Republican",status:"Incumbent",bio:"Sitting U.S. Representative, running in redrawn District 2 under the 2025 court-ordered map."},
+        {name:"Peter Crosby",party:"Democrat"},
+        {name:"Daniel Cottam",party:"Libertarian"},
+        {name:"Robert M. Moesinger",party:"Unaffiliated"},
+        {name:"Carlton E. Bowen",party:"Independent American"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 3 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Full candidate details for this district are also in the St. George pathway in this app.",candidates:[
+        {name:"Celeste Maloy",party:"Republican",status:"Incumbent",bio:"Sitting U.S. Representative, running in redrawn District 3 under the 2025 court-ordered map."},
+        {name:"Kent S. Udell",party:"Democrat"},
+        {name:"Cassie Easley",party:"Constitution Party"},
+        {name:"Michael R. Stoddard",party:"Libertarian"},
+        {name:"Ayden Scott",party:"Unaffiliated"},
+        {name:"Adonis Hooslyn",party:"Unaffiliated"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 4 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Mike Kennedy",party:"Republican",status:"Incumbent",bio:"Sitting U.S. Representative, running in redrawn District 4 under the 2025 court-ordered map."},
+        {name:"Jonny Larsen",party:"Democrat"},
+        {name:"Taylor Wright",party:"Libertarian"},
+        {name:"Steven Burt",party:"Unaffiliated"}
+      ]}
+    ]
+  },
   arizona: {
     label:"Arizona · Statewide ballot",chips:["Governor & Lt. Governor","6 statewide offices","U.S. House \u2014 9 districts","Corporation Commission","8 propositions"],summary:"Arizona's statewide races for November 3, 2026: Governor and the new Lieutenant Governor (elected together on one ticket), Secretary of State, Attorney General, Treasurer, Superintendent of Public Instruction, Corporation Commission (2 seats), Mine Inspector, all nine U.S. House districts, and 8 statewide propositions. There is no U.S. Senate race in Arizona in 2026. Phoenix and Tucson voters also have full VoterLens city guides, linked under Sources below.",
     coverage:"This pathway covers the races that appear on ballots across Arizona for the November 3, 2026 general election. You vote in only one U.S. House district; all nine are listed so you can find yours. State legislative, county, city, school-district, and judicial races are not included here \u2014 for Phoenix and Tucson, use the full VoterLens city guides linked under Sources; other voters should check their official sample ballot at apps.arizona.vote.",
