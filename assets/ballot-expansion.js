@@ -715,6 +715,74 @@ window.EXPANDED_BALLOTS = {
       {group:"Judicial retentions",office:"Justice Court \u2014 retention",does:"Shall the judge be retained?",candidates:[{name:"K. Jake Graff",bio:"Justice Court Judge, Santa Clara Justice Court. Vote YES to retain, NO to remove."}]}
     ]
   },
+  nevada: {
+    label:"Nevada · Statewide ballot",chips:["Governor","6 statewide offices","U.S. House NV-01\u2013NV-04","Supreme Court","Questions 6 & 7"],summary:"Nevada's statewide races for November 3, 2026: Governor, five more statewide offices, all four U.S. House districts, two Supreme Court seats, and ballot Questions 6 and 7. There is no U.S. Senate race in Nevada in 2026. Las Vegas and Reno voters also have full VoterLens city guides, linked under Sources below.",
+    coverage:"This pathway covers the races that appear on ballots across Nevada for the November 3, 2026 general election. You vote in only one U.S. House district; all four are listed so you can find yours. State legislative, county, city, and local court races are not included here \u2014 for Las Vegas and Reno, use the full VoterLens city guides linked under Sources; other voters should check the sample ballot from their county election department.",
+    caveats:["Nevada ballots also offer 'None of These Candidates' on partisan races \u2014 a Nevada-only ballot option, not listed per race here.","Aaron D. Ford and Danielle Ford are both candidates for Governor; sources checked do not show them to be related.","Candidate lists were verified against the Clark County Election Department's official 2026 contests list and post-primary listings drawn from the Secretary of State's certified candidate list. Compare your county sample ballot before voting.","The two Supreme Court races are nonpartisan and uncontested in 2026 \u2014 only the incumbent justice filed for each seat."],
+    sources:[{label:"Clark County Election Department \u2014 2026 contests and candidates (official)",url:"https://www.clarkcountynv.gov/adobe/assets/urn%3Aaaid%3Aaem%3Afe5dbe41-e2b2-402e-a651-cbe5e6ea53bc/original/as/Contests-Candidates-All-26.pdf"},{label:"Nevada Secretary of State \u2014 2026 statewide ballot questions (via Lander County booklet)",url:"https://www.landercountynv.org/2026 Ballot Question Booklet vFINAL.pdf?t=202610011717120"},{label:"VoterLens Las Vegas city ballot guide",url:"https://muse.ai/s/las-vegas-ballot-guide-2026-kxu6poevyxylxy"},{label:"VoterLens Reno city ballot guide",url:"https://muse.ai/s/reno-ballot-guide-2026-xexu6poei1xndxq"}],
+    measures:[
+      {code:"Question 6 \u2014 Constitutional Amendment",title:"Abortion rights",text:"Should the Nevada Constitution be amended to create an individual's fundamental right to an abortion, without interference by state or local governments, whenever the abortion is performed by a qualified healthcare professional until fetal viability or when necessary to protect the health or life of the pregnant individual at any point during the pregnancy? Voters first approved this citizen initiative in 2024; Nevada's constitution requires initiatives to pass twice, so it returns in 2026.",yes:"Amend the Nevada Constitution to create the abortion right described above.",no:"Do not amend the Constitution."},
+      {code:"Question 7 \u2014 Constitutional Amendment",title:"Voter ID",text:"Should the Nevada Constitution be amended to require voters to either present photo identification to verify their identity when voting in-person or to provide certain personal information to verify their identity when voting by mail ballot? Voters first approved this citizen initiative in 2024; Nevada's constitution requires initiatives to pass twice, so it returns in 2026.",yes:"Amend the Nevada Constitution to require the voter identification described above.",no:"Do not amend the Constitution."}
+    ],
+    races:[
+      {group:"Statewide offices",office:"Governor \u2014 4-year term",does:"Nevada's chief executive: carries out state laws, signs or vetoes legislation, prepares the state budget, and appoints agency officials.",candidates:[
+        {name:"Joe Lombardo",party:"Republican",status:"Incumbent",bio:"Governor since 2023; former Clark County sheriff."},
+        {name:"Aaron D. Ford",party:"Democrat",bio:"Nevada Attorney General since 2019; term-limited in that office."},
+        {name:"Danielle Ford",party:"No Political Party",bio:"Member of the Nevada State Board of Education."}
+      ]},
+      {group:"Statewide offices",office:"Lieutenant Governor \u2014 4-year term",does:"Presides over the State Senate and casts tie-breaking votes there, works on tourism and economic development, and succeeds the Governor if the office becomes vacant.",candidates:[
+        {name:"Stavros Anthony",party:"Republican",status:"Incumbent",bio:"Lieutenant Governor since 2023."},
+        {name:"Sandra Jauregui",party:"Democrat",bio:"Majority Leader of the Nevada Assembly."},
+        {name:"Janine Hansen",party:"Independent American"}
+      ]},
+      {group:"Statewide offices",office:"Secretary of State \u2014 4-year term",does:"Nevada's chief elections officer: oversees elections and voter registration statewide and administers business filings.",candidates:[
+        {name:"Cisco Aguilar",party:"Democrat",status:"Incumbent",bio:"Secretary of State since 2023."},
+        {name:"Jim Marchant",party:"Republican",bio:"Former state assemblyman (2016\u20132018); the 2022 Republican nominee for this office."},
+        {name:"Brad Lee Barnhill",party:"Independent American"},
+        {name:"John T. Kennedy",party:"Libertarian"}
+      ]},
+      {group:"Statewide offices",office:"Attorney General \u2014 4-year term",does:"The state's chief legal and law-enforcement officer: represents the state in court, advises state government, and enforces consumer-protection laws. Open seat \u2014 the incumbent is term-limited and running for Governor.",candidates:[
+        {name:"Nicole Cannizzaro",party:"Democrat",bio:"Majority Leader of the Nevada State Senate."},
+        {name:"Adriana Guzman Fralick",party:"Republican",bio:"Chair of the Nevada Cannabis Compliance Board."}
+      ]},
+      {group:"Statewide offices",office:"State Treasurer \u2014 4-year term",does:"Invests state money, manages college-savings plans, and makes sure the state pays its bills. Open seat \u2014 the incumbent is term-limited.",candidates:[
+        {name:"Tya Mathis-Coleman",party:"Democrat",bio:"Nevada's Deputy Treasurer."},
+        {name:"Drew Johnson",party:"Republican"}
+      ]},
+      {group:"Statewide offices",office:"State Controller \u2014 4-year term",does:"The state's chief fiscal officer: accounts for state money, prepares the annual financial statements, and reports to lawmakers and the public.",candidates:[
+        {name:"Andy Matthews",party:"Republican",status:"Incumbent",bio:"State Controller since 2023."},
+        {name:"Michael MacDougall",party:"Democrat",bio:"Teacher."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 1 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Dina Titus",party:"Democrat",status:"Incumbent"},
+        {name:"Carrie Buck",party:"Republican",bio:"State senator."},
+        {name:"Afzal \"Bobby\" Khan",party:"No Political Party"},
+        {name:"Steven \"Chap\" St John",party:"No Political Party"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 2 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Open seat \u2014 Rep. Mark Amodei is retiring.",candidates:[
+        {name:"Teresa Benitez-Thompson",party:"Democrat",bio:"Former Assembly majority floor leader; chief of staff to Attorney General Aaron Ford."},
+        {name:"David Flippo",party:"Republican",bio:"Retired Air Force lieutenant colonel."},
+        {name:"Lynn Chapman",party:"Independent American"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 3 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Susie Lee",party:"Democrat",status:"Incumbent"},
+        {name:"Marty O'Donnell",party:"Republican"},
+        {name:"Jon Kamerath",party:"Independent American"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 4 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Steven Horsford",party:"Democrat",status:"Incumbent"},
+        {name:"Cody Whipple",party:"Republican"},
+        {name:"Russell Best",party:"Independent American"},
+        {name:"William Johnson",party:"No Political Party"}
+      ]},
+      {group:"State courts",office:"Supreme Court \u2014 Seat B \u2014 6-year term",does:"Nevada's highest court: final appeals from district courts. Judicial races are nonpartisan. Only the incumbent filed for this seat, so it is uncontested.",candidates:[
+        {name:"Kristina Pickering",party:"Nonpartisan",status:"Incumbent"}
+      ]},
+      {group:"State courts",office:"Supreme Court \u2014 Seat D \u2014 6-year term",does:"Nevada's highest court: final appeals from district courts. Judicial races are nonpartisan. Only the incumbent filed for this seat, so it is uncontested.",candidates:[
+        {name:"Douglas W. Herndon",party:"Nonpartisan",status:"Incumbent"}
+      ]}
+    ]
+  },
   newhampshire: {
     label:"New Hampshire · Statewide ballot",chips:["Governor","U.S. Senate","U.S. House NH-01 & NH-02","Executive Council","2 ballot questions"],summary:"New Hampshire's statewide races for November 3, 2026: Governor, an open U.S. Senate seat, both U.S. House districts, all five Executive Council districts, and 2 ballot questions. Nashua and Manchester voters also have full VoterLens city guides, linked under Sources below.",
     coverage:"This pathway covers the races that appear on ballots across New Hampshire for the November 3, 2026 general election. You vote in only one U.S. House district and only one Executive Council district; both sets are listed here so you can find yours. State Senate, State House, county, and town races are not included here \u2014 for Nashua and Manchester, use the full VoterLens city guides linked under Sources; everywhere else, check your official sample ballot at sos.nh.gov.",
