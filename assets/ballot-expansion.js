@@ -968,6 +968,57 @@ window.EXPANDED_BALLOTS = {
       ]}
     ]
   },
+  mississippi: {
+    label:"Mississippi \u00b7 Statewide ballot",chips:["U.S. Senate","U.S. House \u2014 all 4 districts","Court of Appeals \u2014 5 seats","No statewide offices or measures in 2026"],summary:"Mississippi's statewide layer for November 3, 2026: the U.S. Senate race, all four U.S. House districts, and five Court of Appeals seats. Mississippi elects its Governor, state legislators, and other statewide officers in odd years, so none appear in 2026, and no Supreme Court seats are on this ballot (see caveats). There are no statewide ballot measures. Southaven and DeSoto County voters also have a full VoterLens pathway in this app \u2014 enter ZIP 38671.",
+    coverage:"This pathway covers what appears on ballots across Mississippi for the November 3, 2026 general election. You vote in only one U.S. House district and one Court of Appeals district; all of them are listed so you can find yours. Chancery, circuit, and county-court races are also on the 2026 ballot statewide, but they are elected by county and judicial district and are not listed here \u2014 except DeSoto County's, which are covered in the Southaven pathway in this app (enter ZIP 38671). Other voters should check their official sample ballot at sos.ms.gov.",
+    caveats:["No Mississippi Supreme Court seats appear on the November 2026 ballot: the Secretary of State's 2026 elections calendar states that the regularly scheduled Supreme Court election is currently enjoined due to a federal court order concerning the districts used to elect justices.","Mississippi elects its Governor, state legislators, statewide officers, and county officers in odd years (last 2023, next 2027), so none appear on this ballot.","2026 is a judicial election year for Mississippi's trial courts: chancery, circuit, and county-court judges across the state are on the ballot by district and county. Only the Court of Appeals seats are listed in this pathway; DeSoto County's trial-court races are in the Southaven pathway. Judicial races are nonpartisan, and a judicial race in which no candidate wins a majority goes to a runoff on December 1, 2026.","A few single-district special elections share the November 3 ballot \u2014 State Senate District 34, State House Districts 70 and 77, and District Attorney District 7, per the Secretary of State's candidate list. They appear only on those districts' ballots and are not listed here.","Four of the five Court of Appeals races drew a single candidate, shown as unopposed. Candidate lists are from the Mississippi Secretary of State's official candidate qualifying list for the November 3, 2026 general election \u2014 compare your official sample ballot before voting."],
+    sources:[{label:"Mississippi Secretary of State \u2014 official candidate qualifying list, 2026 general election",url:"https://www.sos.ms.gov/content/CandidateQualifying/default.aspx"},{label:"Mississippi Secretary of State \u2014 elections and voting",url:"https://www.sos.ms.gov/elections-voting"},{label:"Mississippi Independent: no Supreme Court election in 2026 (analysis)",url:"https://msindy.org/p/mississippi-voters-get-no-say-on"}],
+    noMeasuresTitle:"No ballot measures on the statewide ballot.",
+    noMeasuresText:"No statewide measures were certified for Mississippi's November 3, 2026 ballot, and Mississippi has had no citizen-initiative process since 2021. Any county or local question appears on the official sample ballot from the Secretary of State.",
+    races:[
+      {group:"Federal offices",office:"U.S. Senator \u2014 6-year term",does:"Votes on federal laws, confirms federal judges, ratifies treaties, and controls federal spending.",candidates:[
+        {name:"Cindy Hyde-Smith",party:"Republican",status:"Incumbent",bio:"Appointed to the Senate in 2018 and elected to a full term in 2020; previously Mississippi Commissioner of Agriculture and Commerce and a state senator. The first woman to represent Mississippi in Congress."},
+        {name:"Scott Colom",party:"Democrat",bio:"District Attorney for the 16th Circuit Court District (Lowndes, Oktibbeha, Clay, and Noxubee counties); unseated a nearly 30-year incumbent in 2015. Nominated by President Biden in 2022 for a federal judgeship."},
+        {name:"Ty Pinkins",party:"Independent",bio:"Delta attorney; ran for U.S. Senate as a Democrat in 2024 and was the substitute Democratic nominee for Secretary of State in 2023."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 1 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Full candidate details for this district are also in the Southaven pathway in this app.",candidates:[
+        {name:"Trent Kelly",party:"Republican",status:"Incumbent",bio:"In Congress since a 2015 special election; retired as a Major General after 39 years in the Mississippi Army National Guard; former district attorney. Serves on the Armed Services and Agriculture committees."},
+        {name:"Cliff Johnson",party:"Democrat",bio:"Civil-rights attorney and director of the MacArthur Justice Center at the University of Mississippi School of Law; former Assistant U.S. Attorney who prosecuted health-care fraud cases."},
+        {name:"Johnny Baucom",party:"Libertarian",bio:"Health and safety technician and U.S. Army National Guard veteran; platform emphasizes deregulation and eliminating income and property taxes."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 2 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Bennie G. Thompson",party:"Democrat",status:"Incumbent",bio:"In Congress since 1993; the longest-serving member of Mississippi's congressional delegation. Former chairman of the House Homeland Security Committee."},
+        {name:"Ron Eller",party:"Republican",bio:"Was also the Republican nominee for this seat in 2024."},
+        {name:"Bennie Foster",party:"Independent",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 3 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Michael Guest",party:"Republican",status:"Incumbent",bio:"In Congress since 2019; former district attorney for Madison and Rankin counties; chairs the House Ethics Committee."},
+        {name:"Michael A. Chiaradio",party:"Democrat",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Erik Kiehle",party:"Libertarian",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 4 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Mike Ezell",party:"Republican",status:"Incumbent",bio:"In Congress since 2023; former Jackson County sheriff."},
+        {name:"Jeffrey Hulum III",party:"Democrat",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Carl Boyanton",party:"Independent",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Mississippi judiciary",office:"Court of Appeals \u2014 District 1, Place 1 (special election)",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court. Nonpartisan race \u2014 no party labels on the ballot. Only voters in District 1 (northern Mississippi, including DeSoto County) vote in this race.",candidates:[
+        {name:"John D. Weddle",status:"Incumbent \u00b7 appointed 2024",bio:"Appointed to the Court of Appeals in 2024; running in a special election."},
+        {name:"Derek Hopson Jr.",bio:"",note:"No public biographical information was found in this research."}
+      ]},
+      {group:"Mississippi judiciary",office:"Court of Appeals \u2014 District 1, Place 2",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court. Nonpartisan race \u2014 no party labels on the ballot. Only voters in District 1 (northern Mississippi, including DeSoto County) vote in this race.",candidates:[
+        {name:"Donna M. Barnes",status:"Incumbent \u00b7 unopposed",bio:"Court of Appeals judge since 2004."}
+      ]},
+      {group:"Mississippi judiciary",office:"Court of Appeals \u2014 District 2, Place 1",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court. Nonpartisan race \u2014 no party labels on the ballot. Only voters in District 2 vote in this race.",candidates:[
+        {name:"Deborah A. McDonald",status:"Incumbent \u00b7 unopposed",bio:"Sitting Court of Appeals judge, first elected in 2018; the only candidate who qualified for this seat in 2026."}
+      ]},
+      {group:"Mississippi judiciary",office:"Court of Appeals \u2014 District 4, Place 2",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court. Nonpartisan race \u2014 no party labels on the ballot. Only voters in District 4 vote in this race.",candidates:[
+        {name:"David McCarty",status:"Incumbent \u00b7 unopposed",bio:"Sitting Court of Appeals judge, first elected in 2018; the only candidate who qualified for this seat in 2026."}
+      ]},
+      {group:"Mississippi judiciary",office:"Court of Appeals \u2014 District 5, Place 1",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court. Nonpartisan race \u2014 no party labels on the ballot. Only voters in District 5 vote in this race.",candidates:[
+        {name:"Anthony \u201cTony\u201d Lawrence",status:"Incumbent \u00b7 unopposed",bio:"Sitting Court of Appeals judge, first elected in 2018; the only candidate who qualified for this seat in 2026."}
+      ]}
+    ]
+  },
   multnomah: {
     label:"Portland · Multnomah County",chips:["U.S. Senate","Governor","County Chair — ranked-choice","Portland Council Districts 3 & 4","Circuit Court"],summary:"Up to 16 races depending on your districts and city: federal and statewide offices, your state Senate and House races, the Multnomah County Chair race (ranked-choice), county auditor and sheriff, circuit-court judges, Portland city auditor and council, and east-county city races — plus local measures for Portland, Troutdale, and Reynolds School District voters.",
     coverage:"This pathway covers Multnomah County, Oregon for the November 3, 2026 general election. ZIP codes cross district lines here, so the guide asks you to confirm your congressional, legislative, council, and commission districts from your voter record or printed ballot instead of guessing from a ZIP. County Chair, Commissioner District 2, and Portland races use ranked-choice voting. Several races were decided in the May primary and do not appear in November — including Metro Council and County Commission Districts 1, 3, and 4 — and the Portland mayor is not on the 2026 ballot.",
