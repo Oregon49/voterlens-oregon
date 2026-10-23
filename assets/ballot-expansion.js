@@ -715,6 +715,57 @@ window.EXPANDED_BALLOTS = {
       {group:"Judicial retentions",office:"Justice Court \u2014 retention",does:"Shall the judge be retained?",candidates:[{name:"K. Jake Graff",bio:"Justice Court Judge, Santa Clara Justice Court. Vote YES to retain, NO to remove."}]}
     ]
   },
+  newhampshire: {
+    label:"New Hampshire · Statewide ballot",chips:["Governor","U.S. Senate","U.S. House NH-01 & NH-02","Executive Council","2 ballot questions"],summary:"New Hampshire's statewide races for November 3, 2026: Governor, an open U.S. Senate seat, both U.S. House districts, all five Executive Council districts, and 2 ballot questions. Nashua and Manchester voters also have full VoterLens city guides, linked under Sources below.",
+    coverage:"This pathway covers the races that appear on ballots across New Hampshire for the November 3, 2026 general election. You vote in only one U.S. House district and only one Executive Council district; both sets are listed here so you can find yours. State Senate, State House, county, and town races are not included here \u2014 for Nashua and Manchester, use the full VoterLens city guides linked under Sources; everywhere else, check your official sample ballot at sos.nh.gov.",
+    caveats:["New Hampshire does not elect its Secretary of State or Attorney General by popular vote: the legislature chooses the Secretary of State and State Treasurer, and the Governor appoints the Attorney General with Executive Council approval \u2014 that is why those offices do not appear on this ballot.","Executive Council pairings for Districts 1, 3, 4, and 5, and the NH-01 candidate list, are drawn from New Hampshire Secretary of State candidate filings as reported in October 2026; the District 2 pairing, and the Governor, Senate, NH-02, and ballot-question listings, were confirmed on an official sample ballot. Compare your printed ballot before voting.","Question 2 (the school-district tax cap) is decided separately in each school district; the wording on your ballot applies to your own district."],
+    sources:[{label:"NH Secretary of State \u2014 sample ballots",url:"https://www.sos.nh.gov/elections/sample-ballots"},{label:"NH Secretary of State \u2014 2026 election details",url:"https://www.sos.nh.gov/2026-election-details"},{label:"VoterLens Nashua city ballot guide",url:"https://muse.ai/s/nashua-ballot-guide-2026-xim6poepfm5xm"},{label:"VoterLens Manchester city ballot guide",url:"https://muse.ai/s/manchester-ballot-guide-2026-tm6poezoxjxwn"}],
+    measures:[
+      {code:"Question 1 \u2014 Constitutional Amendment (CACR 13)",title:"Eliminate the Register of Probate office",text:"Amends Articles 71 and 81 of Part II of the New Hampshire Constitution to eliminate the elected county office of Register of Probate. The office has had only archival duties since a 2011 court reorganization moved its work to court clerks. Needs a two-thirds (66.67%) YES vote to pass.",yes:"Eliminate the Register of Probate office.",no:"Keep the Register of Probate office."},
+      {code:"Question 2 \u2014 School-District Tax Cap (HB 1300)",title:"Cap school-district taxes and SAU central-office spending",text:"Voted on separately in each town and city for its own school district. For two years, a YES vote limits the local property tax levy to the prior year's amount, adjusted for inflation and new construction; limits SAU central-office spending to 6% of total school-district appropriations; and excludes bonded capital costs from both limits. The caps apply to SAU central-office administrative operations only \u2014 not classroom instruction or school-based services \u2014 and can be overridden as provided in RSA 32:5-i. Needs a three-fifths (60%) YES vote in the district to pass.",yes:"Adopt the two-year tax and SAU central-office spending caps for your school district.",no:"Do not adopt the caps."}
+    ],
+    races:[
+      {group:"Statewide offices",office:"Governor \u2014 2-year term",does:"New Hampshire's chief executive: signs or vetoes bills, proposes the state budget, and directs state agencies.",candidates:[
+        {name:"Kelly Ayotte",party:"Republican",status:"Incumbent",bio:"Elected in 2024 and seeking a second two-year term."},
+        {name:"Cinde Warmington",party:"Democrat",bio:"Former member of the New Hampshire Executive Council."},
+        {name:"Stephen Villee",party:"Libertarian",bio:"Software developer; the Libertarian nominee for governor in 2024."}
+      ]},
+      {group:"Federal offices",office:"U.S. Senator \u2014 6-year term",does:"Votes on federal laws, confirms federal judges, ratifies treaties, and controls federal spending. Senator Jeanne Shaheen is not seeking re-election, so this seat is open.",candidates:[
+        {name:"Chris Pappas",party:"Democrat",bio:"U.S. Representative for New Hampshire's 1st District since 2019."},
+        {name:"John E. Sununu",party:"Republican",bio:"Represented NH-01 in the U.S. House from 1997 to 2003 and served in the U.S. Senate from 2003 to 2009."},
+        {name:"Edmond Laplante",party:"Constitution Party",bio:"Member of the Monadnock Regional School Board and chairman of the Constitution Party of New Hampshire."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 1 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. This seat is open \u2014 Rep. Chris Pappas is running for U.S. Senate.",candidates:[
+        {name:"Stefany Shaheen",party:"Democrat",bio:"Former Portsmouth city councilor and Portsmouth Police Commission member."},
+        {name:"Anthony DiLorenzo",party:"Republican",bio:"Portsmouth car dealer; owner of Key Auto Group."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 2 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Maggie Goodlander",party:"Democrat",status:"Incumbent",bio:"First elected in 2024."},
+        {name:"Lily Tang Williams",party:"Republican",bio:"Also the Republican nominee for this seat in 2024 \u2014 a rematch."},
+        {name:"Robbie Mahrou",party:"Independent",bio:"Entrepreneur who qualified for the ballot by petition."}
+      ]},
+      {group:"Executive Council",office:"Executive Council \u2014 District 1 \u2014 2-year term",does:"One of five councilors, elected by district, who approve major state contracts and confirm the Governor's appointments of department heads and judges. You vote only in your own district.",candidates:[
+        {name:"Joseph Kenney",party:"Republican",status:"Incumbent"},
+        {name:"Luz Bay",party:"Democrat",bio:"State representative from Strafford District 21 since 2022."}
+      ]},
+      {group:"Executive Council",office:"Executive Council \u2014 District 2 \u2014 2-year term",does:"One of five councilors, elected by district, who approve major state contracts and confirm the Governor's appointments of department heads and judges. You vote only in your own district.",candidates:[
+        {name:"Karen Liot Hill",party:"Democrat",status:"Incumbent",bio:"Executive Councilor since January 2025; former mayor of Lebanon, New Hampshire."},
+        {name:"Tobin Menard",party:"Republican",bio:"Ran for state representative in 2020 and 2022."}
+      ]},
+      {group:"Executive Council",office:"Executive Council \u2014 District 3 \u2014 2-year term",does:"One of five councilors, elected by district, who approve major state contracts and confirm the Governor's appointments of department heads and judges. You vote only in your own district.",candidates:[
+        {name:"Janet Stevens",party:"Republican",status:"Incumbent",bio:"Seeking a fourth term."},
+        {name:"Lisa Kennedy Sheldon",party:"Democrat",bio:"Nurse and nurse consultant from Portsmouth."}
+      ]},
+      {group:"Executive Council",office:"Executive Council \u2014 District 4 \u2014 2-year term",does:"One of five councilors, elected by district, who approve major state contracts and confirm the Governor's appointments of department heads and judges. You vote only in your own district.",candidates:[
+        {name:"John Stephen",party:"Republican",status:"Incumbent",bio:"Seeking a second term."},
+        {name:"Jim O'Connell",party:"Democrat",bio:"At-large Manchester School Board member and vice chair."}
+      ]},
+      {group:"Executive Council",office:"Executive Council \u2014 District 5 \u2014 2-year term",does:"One of five councilors, elected by district, who approve major state contracts and confirm the Governor's appointments of department heads and judges. You vote only in your own district.",candidates:[
+        {name:"Dave Wheeler",party:"Republican",status:"Incumbent"},
+        {name:"Melanie Levesque",party:"Democrat",bio:"Former state senator (District 12, 2018\u20132020)."}
+      ]}
+    ]
+  },
   multnomah: {
     label:"Portland · Multnomah County",chips:["U.S. Senate","Governor","County Chair — ranked-choice","Portland Council Districts 3 & 4","Circuit Court"],summary:"Up to 16 races depending on your districts and city: federal and statewide offices, your state Senate and House races, the Multnomah County Chair race (ranked-choice), county auditor and sheriff, circuit-court judges, Portland city auditor and council, and east-county city races — plus local measures for Portland, Troutdale, and Reynolds School District voters.",
     coverage:"This pathway covers Multnomah County, Oregon for the November 3, 2026 general election. ZIP codes cross district lines here, so the guide asks you to confirm your congressional, legislative, council, and commission districts from your voter record or printed ballot instead of guessing from a ZIP. County Chair, Commissioner District 2, and Portland races use ranked-choice voting. Several races were decided in the May primary and do not appear in November — including Metro Council and County Commission Districts 1, 3, and 4 — and the Portland mayor is not on the 2026 ballot.",
