@@ -715,6 +715,101 @@ window.EXPANDED_BALLOTS = {
       {group:"Judicial retentions",office:"Justice Court \u2014 retention",does:"Shall the judge be retained?",candidates:[{name:"K. Jake Graff",bio:"Justice Court Judge, Santa Clara Justice Court. Vote YES to retain, NO to remove."}]}
     ]
   },
+  arizona: {
+    label:"Arizona · Statewide ballot",chips:["Governor & Lt. Governor","6 statewide offices","U.S. House \u2014 9 districts","Corporation Commission","8 propositions"],summary:"Arizona's statewide races for November 3, 2026: Governor and the new Lieutenant Governor (elected together on one ticket), Secretary of State, Attorney General, Treasurer, Superintendent of Public Instruction, Corporation Commission (2 seats), Mine Inspector, all nine U.S. House districts, and 8 statewide propositions. There is no U.S. Senate race in Arizona in 2026. Phoenix and Tucson voters also have full VoterLens city guides, linked under Sources below.",
+    coverage:"This pathway covers the races that appear on ballots across Arizona for the November 3, 2026 general election. You vote in only one U.S. House district; all nine are listed so you can find yours. State legislative, county, city, school-district, and judicial races are not included here \u2014 for Phoenix and Tucson, use the full VoterLens city guides linked under Sources; other voters should check their official sample ballot at apps.arizona.vote.",
+    caveats:["2026 is Arizona's first election with a Lieutenant Governor, an office created by Proposition 131 (2022): each candidate for Governor names a running mate, and a single vote elects the ticket. The Lieutenant Governor replaces the Secretary of State as first in line to succeed the Governor.","In U.S. House District 3, no Republican name is printed on the ballot; the listings we relied on show a registered Republican write-in, Jacob Parkman. One secondary guide listed a different Republican name for this district \u2014 if you vote in District 3, confirm on your official sample ballot.","Some October coverage describes Corporation Commission candidate Mike Cease as a write-in; multiple candidate listings drawn from the Secretary of State's official list include him among the general-election candidates for the two seats.","Candidate lists were cross-checked against independent reproductions of the Arizona Secretary of State's official 2026 general-election candidate list; proposition texts are from the Secretary of State's official 2026 Ballot Language document. Compare your sample ballot before voting."],
+    sources:[{label:"Arizona Secretary of State \u2014 2026 general election candidates (official)",url:"https://apps.arizona.vote/electioninfo/Election/69"},{label:"Arizona Secretary of State \u2014 2026 ballot language (official)",url:"https://azsos.gov/sites/default/files/docs/2026-Ballot-Language-English-2026-0819.pdf"},{label:"VoterLens Phoenix city ballot guide",url:"https://muse.ai/s/phoenix-ballot-guide-2026-xjxt6poexl81xr1"},{label:"VoterLens Tucson city ballot guide",url:"https://muse.ai/s/tucson-ballot-guide-2026-mm6poexe8s8w"}],
+    measures:[
+      {code:"Proposition 141 \u2014 Constitutional Amendment",title:"No taxes based on miles traveled",text:"Prohibits taxes or fees based on vehicle miles traveled, and laws monitoring or limiting vehicle miles traveled without consent. Referred by the Legislature (SCR 1004, 2025).",yes:"Adopt this amendment.",no:"Reject it; keep current law."},
+      {code:"Proposition 142 \u2014 Constitutional Amendment",title:"Preferential treatment and discrimination",text:"Adds further details to the state constitution's prohibition against preferential treatment or discrimination by the state based on race, ethnicity, or other classes. Referred by the Legislature (HCR 2044, 2026).",yes:"Adopt this amendment.",no:"Reject it; keep current law."},
+      {code:"Proposition 144 \u2014 Constitutional Amendment",title:"Voter ID for every voter",text:"Requires all voters, including voters who vote by mail, to show government-issued ID to vote in each election; makes other changes to election administration and campaign finance prohibitions. Referred by the Legislature (HCR 2001, 2026).",yes:"Adopt this amendment.",no:"Reject it; keep current law."},
+      {code:"Proposition 316 \u2014 Statute",title:"Grocery taxes need voter approval",text:"Retroactively prohibits local governments from adopting or increasing a tax on groceries without voter approval, and sets a maximum rate of 2%. Referred by the Legislature (HCR 2021, 2025).",yes:"Adopt this law.",no:"Reject it; keep current law."},
+      {code:"Proposition 317 \u2014 Statute",title:"Drug cartels as terrorist organizations",text:"Declares that drug cartels are terrorist organizations and directs the Arizona Department of Homeland Security to do everything in its authority to address drug cartels. Referred by the Legislature (HCR 2055, 2025).",yes:"Adopt this law.",no:"Reject it; keep current law."},
+      {code:"Proposition 318 \u2014 Statute",title:"School sports teams by biological sex",text:"Requires all schools and athletic associations to designate athletic teams as male, female, or coed based on the biological sex of the athletes as defined at birth, and prohibits these entities from authorizing use of private spaces not designated for a person's sex. Referred by the Legislature (HCR 2003, 2026).",yes:"Adopt this law.",no:"Reject it; keep current law."},
+      {code:"Proposition 319 \u2014 Statute",title:"Photo traffic enforcement limits",text:"Prohibits state agencies and local governments from using photo enforcement systems for traffic enforcement unless provided by contract as of December 31, 2026, and requires local governments to obtain voter approval to continue their use (at the next regular general election and every 10 years after). Referred by the Legislature (SCR 1004, 2026).",yes:"Adopt this law.",no:"Reject it; keep current law."},
+      {code:"Proposition 320 \u2014 Statute",title:"60% of school spending on instruction",text:"Requires certain school districts (7,500+ students, or in counties of 500,000+ people) to spend at least 60% of operational spending on direct instructional expenses as defined by the Auditor General; non-compliant districts lose 25% per year from the state Classroom Site Fund, subject to waivers. Referred by the Legislature (SCR 1032, 2026).",yes:"Adopt this law.",no:"Reject it; keep current law."}
+    ],
+    races:[
+      {group:"Statewide offices",office:"Governor & Lieutenant Governor \u2014 4-year term (one ticket, one vote)",does:"The Governor runs Arizona's executive branch: signs or vetoes legislation, appoints agency heads and judges, and proposes the state budget. The Lieutenant Governor \u2014 a new office in 2026 \u2014 is first in line to succeed the Governor. Each ticket below is elected together with a single vote.",candidates:[
+        {name:"Katie Hobbs & John Giles",party:"Democrat",status:"Incumbent (Hobbs)",bio:"Hobbs: Governor since 2023, seeking a second term. Giles, her pick for Lieutenant Governor, is the former mayor of Mesa (2014\u20132025)."},
+        {name:"Andy Biggs & Sine Kerr",party:"Republican",bio:"Biggs: U.S. Representative for District 5, running for Governor. Kerr, his pick for Lieutenant Governor, is a former state senator and Buckeye dairy farmer."},
+        {name:"Teri Ann Hourihan & Angela Harrolle Mohan",party:"No Labels",bio:"Hourihan for Governor; Harrolle Mohan, a former federal special agent and former CEO of the 100 Club of Arizona, for Lieutenant Governor."},
+        {name:"Risa Lombardo & Lisa Castillo",party:"Green",bio:"Lombardo for Governor; Castillo, an intensive-care-unit coordinator, for Lieutenant Governor."}
+      ]},
+      {group:"Statewide offices",office:"Secretary of State \u2014 4-year term",does:"Arizona's chief elections officer; also handles business filings and state records.",candidates:[
+        {name:"Adrian Fontes",party:"Democrat",status:"Incumbent"},
+        {name:"Alexander Kolodin",party:"Republican",bio:"State representative, elected to the Arizona House in 2022."},
+        {name:"Duwayne Collier",party:"Green"}
+      ]},
+      {group:"Statewide offices",office:"Attorney General \u2014 4-year term",does:"Arizona's chief legal officer: represents the state in court and enforces state law.",candidates:[
+        {name:"Kris Mayes",party:"Democrat",status:"Incumbent"},
+        {name:"Warren Petersen",party:"Republican"}
+      ]},
+      {group:"Statewide offices",office:"State Treasurer \u2014 4-year term",does:"Manages and invests Arizona's state funds. Open seat \u2014 the incumbent is term-limited.",candidates:[
+        {name:"Elijah Norton",party:"Republican"},
+        {name:"Nick Mansour",party:"Democrat"}
+      ]},
+      {group:"Statewide offices",office:"Superintendent of Public Instruction \u2014 4-year term",does:"Leads the Arizona Department of Education and oversees public schools statewide. Open seat \u2014 the incumbent lost his party's primary.",candidates:[
+        {name:"Kimberly Yee",party:"Republican",bio:"Outgoing State Treasurer; defeated the incumbent Superintendent in the Republican primary."},
+        {name:"Teresa Leyba Ruiz",party:"Democrat"}
+      ]},
+      {group:"Statewide offices",office:"Corporation Commission \u2014 2 seats (vote for up to 2) \u2014 4-year terms",does:"Five-member elected commission that regulates private utilities (electric, gas, and water rates), securities, and pipeline and railroad safety. Two of the five seats are up in 2026.",candidates:[
+        {name:"Kevin Thompson",party:"Republican",status:"Incumbent"},
+        {name:"Ralph Heap",party:"Republican"},
+        {name:"Jonathon Hill",party:"Democrat"},
+        {name:"Clara Pratte",party:"Democrat"},
+        {name:"Mike Cease",party:"Green",bio:"Secretary of the Arizona Green Party; the party's 2024 nominee for this office."}
+      ]},
+      {group:"Statewide offices",office:"State Mine Inspector \u2014 4-year term",does:"Oversees mine safety and the regulation of mines in Arizona.",candidates:[
+        {name:"Walter \"Les\" Presmyk",party:"Republican",status:"Incumbent",bio:"Appointed to the office in September 2025 after the elected incumbent resigned."},
+        {name:"Brian Matlock",party:"Democrat"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 1 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Open seat \u2014 the incumbent ran for Governor.",candidates:[
+        {name:"Amish Shah",party:"Democrat",bio:"Former state lawmaker."},
+        {name:"Thomas \"Jay\" Feely IV",party:"Republican",bio:"Former NFL kicker, including for the Arizona Cardinals."},
+        {name:"Monica Alponte",party:"Libertarian"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 2 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Eli Crane",party:"Republican",status:"Incumbent"},
+        {name:"Jonathan Nez",party:"Democrat"},
+        {name:"Curtis Goodwin",party:"Libertarian"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 3 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. No Republican name is printed on this ballot; a Republican write-in is listed below.",candidates:[
+        {name:"Yassamin Ansari",party:"Democrat",status:"Incumbent"},
+        {name:"David Redkey",party:"Green"},
+        {name:"Alan Aversa",party:"No Labels",bio:"Teacher and University of Arizona graduate."},
+        {name:"Jacob Parkman",party:"Republican",bio:"Registered write-in candidate \u2014 his name is not printed on the ballot; write it in for the vote to count."}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 4 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Greg Stanton",party:"Democrat",status:"Incumbent"},
+        {name:"Zuhdi Jasser",party:"Republican"},
+        {name:"Tisha Benoit",party:"No Labels"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 5 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Open seat \u2014 the incumbent is running for Governor.",candidates:[
+        {name:"Mark Lamb",party:"Republican",bio:"Former Pinal County sheriff."},
+        {name:"Elizabeth Lee",party:"Democrat"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 6 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Juan Ciscomani",party:"Republican",status:"Incumbent",bio:"Seeking a third term."},
+        {name:"JoAnna Mendoza",party:"Democrat",bio:"Marine Corps veteran."},
+        {name:"Jereme Lance Peters",party:"Libertarian"},
+        {name:"Gary Swing",party:"Green"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 7 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Adelita Grijalva",party:"Democrat",status:"Incumbent",bio:"Won the September 2025 special election to succeed her late father, Rep. Ra\u00fal Grijalva."},
+        {name:"Daniel Francis Butierez Sr.",party:"Republican"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 8 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Abraham \"Abe\" Hamadeh",party:"Republican",status:"Incumbent"},
+        {name:"Bernadette Greene-Placentia",party:"Democrat"}
+      ]},
+      {group:"Federal offices",office:"U.S. House \u2014 District 9 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[
+        {name:"Paul Gosar",party:"Republican",status:"Incumbent"},
+        {name:"Danielle \"Dani\" Sterbinsky",party:"Democrat"}
+      ]}
+    ]
+  },
   nevada: {
     label:"Nevada · Statewide ballot",chips:["Governor","6 statewide offices","U.S. House NV-01\u2013NV-04","Supreme Court","Questions 6 & 7"],summary:"Nevada's statewide races for November 3, 2026: Governor, five more statewide offices, all four U.S. House districts, two Supreme Court seats, and ballot Questions 6 and 7. There is no U.S. Senate race in Nevada in 2026. Las Vegas and Reno voters also have full VoterLens city guides, linked under Sources below.",
     coverage:"This pathway covers the races that appear on ballots across Nevada for the November 3, 2026 general election. You vote in only one U.S. House district; all four are listed so you can find yours. State legislative, county, city, and local court races are not included here \u2014 for Las Vegas and Reno, use the full VoterLens city guides linked under Sources; other voters should check the sample ballot from their county election department.",
