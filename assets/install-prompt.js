@@ -41,7 +41,7 @@
         hint.textContent = isIOS
           ? 'Tap Share, then "Add to Home Screen".'
           : 'Tap ⋮ (menu), then "Add to Home screen".';
-        setTimeout(function(){ hint.hidden = true; }, 10000);
+        setTimeout(function(){ hint.hidden = true; }, 30000);
       }
     }
   }
