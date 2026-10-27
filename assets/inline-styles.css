@@ -23,3 +23,15 @@ html.vl-es .lang-note-es{display:block}
 .rep-tracker-banner p{margin:.25rem 0}
 .rep-tracker-banner .banner-when{font-style:italic;font-size:.92em}
 @media(max-width:640px){.install-btn-text{display:none}.header-actions{gap:.35rem}.header-share-button,.header-exit-button,.header-install-button{padding:.45rem .55rem}}
+
+/* iPhone save guide dialog (iphone-save-guide.js) */
+.iphone-guide-overlay{position:fixed;z-index:200;inset:0;display:flex;align-items:flex-start;justify-content:center;padding:8vh 1rem 1rem;background:rgba(0,0,0,.55);overflow-y:auto}
+.iphone-guide-box{width:min(94vw,560px);padding:1.25rem 1.25rem 1.5rem;background:#fff;color:#16265c;border:3px solid #16265c;border-radius:12px;text-align:left}
+.iphone-guide-box h2{margin-top:0;font-size:1.35rem}
+.iphone-guide-alert{padding:.75rem 1rem;background:#fff3cd;border:2px solid #b58900;border-radius:8px}
+.iphone-guide-steps{padding-left:1.4rem;line-height:1.55}
+.iphone-guide-steps li{margin-bottom:.7rem}
+.iphone-guide-fix{margin:1rem 0;padding:.75rem 1rem;background:#eef2fb;border-radius:8px}
+.iphone-guide-fix summary{cursor:pointer}
+.iphone-guide-close{display:block;width:100%;min-height:52px;margin-top:1rem;border:2px solid #16265c;border-radius:.35rem;background:#16265c;color:#fff;font-weight:800;font-size:1rem;cursor:pointer}
+#iphone-guide-link{display:inline-block;font-weight:700;color:#16265c;text-decoration:underline}

@@ -29,6 +29,9 @@
     return el;
   }
   function onClick(btn){
+    // iOS: the dedicated iPhone save guide (iphone-save-guide.js) handles
+    // this click with a full step-by-step dialog. Do not also flash a hint.
+    if (isIOS) return;
     if (deferredPrompt) {
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
