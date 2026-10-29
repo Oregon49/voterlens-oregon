@@ -484,7 +484,7 @@ window.EXPANDED_BALLOTS = {
   southaven: {
     label:"Southaven · DeSoto County, Mississippi",chips:["U.S. Senate","U.S. House MS-01","DeSoto County judges","School board"],summary:"13 races: 2 federal, 10 judicial, 1 school board. No state, county, or city offices — Mississippi elects those in odd years. No ballot measures confirmed.",
     coverage:"This pathway covers Southaven, Mississippi (ZIP 38671) in DeSoto County for the November 3, 2026 general election. Federal races and countywide judicial races apply to all Southaven voters. Two judicial subdistrict races and the school-board race depend on precinct — check the printed ballot.",
-    caveats:["Mississippi elects state legislators, statewide officers, county officers, and city officers in odd years (last 2023, next 2027), so none appear on this ballot.","Chancery Court Place 3 (Subdistrict 17-1) and Circuit Court Place 4 (Subdistrict 21-1) apply only to voters in those subdistricts — confirm on the printed ballot.","The DeSoto County Board of Education District 5 race applies only to voters in that board district.","Celeste Embrey Wilson was appointed to the Mississippi Supreme Court effective August 1, 2026; her status on the circuit-court ballot could not be verified — confirm on the printed ballot.","No statewide or local ballot measures were confirmed for November 2026; the Mississippi Secretary of State's sample ballot is the final authority.","Public biographical information was not found for several judicial candidates; compare the printed ballot before voting."],
+    caveats:["Mississippi elects state legislators, statewide officers, county officers, and city officers in odd years (last 2023, next 2027), so none appear on this ballot.","Chancery Court Place 3 (Subdistrict 17-1) and Circuit Court Place 4 (Subdistrict 21-1) apply only to voters in those subdistricts — confirm on the printed ballot.","The DeSoto County Board of Education District 5 race applies only to voters in that board district.","Celeste Embrey Wilson was appointed to the Mississippi Supreme Court effective August 1, 2026; Circuit 21 Place 2 is now Craig Treadway (appointed Sep. 1, 2026, unopposed). DeSoto County Court: Treadway moved to the circuit, and Russell B. Jordan was appointed to the county-court vacancy from Nov. 1, 2026 — confirm whether a second county-court seat is on the Nov. 3 ballot.","No statewide or local ballot measures were confirmed for November 2026; the Mississippi Secretary of State's sample ballot is the final authority.","Public biographical information was not found for several judicial candidates; compare the printed ballot before voting."],
     sources:[{label:"DeSoto County 2026 candidate announcement",url:"https://nwmissnews.com/desoto-county-announces-candidates-for-november-3-2026-general-election/"},{label:"Clarion Ledger Mississippi voter guide",url:"https://www.clarionledger.com/story/news/politics/2026/08/31/statewide-voter-guide-for-mississippi-midterm-elections/91457453007/"},{label:"MS Free Press: Colom challenges Hyde-Smith",url:"https://www.mississippifreepress.org/mississippi-democrats-nominate-prosecutor-scott-colom-to-challenge-cindy-hyde-smith-for-us-senate/"},{label:"MS Free Press: MS-01 candidates",url:"https://www.mississippifreepress.org/meet-the-candidates-for-mississippis-first-congressional-district-in-the-nov-3-elections/"},{label:"Ballotpedia: Mississippi 2026 elections",url:"https://ballotpedia.org/Mississippi_elections,_2026"}],
     noMeasuresTitle:"No ballot measures confirmed for this pathway.",
     noMeasuresText:"No statewide or DeSoto County local measures were confirmed for the November 3, 2026 ballot. Mississippi has had no citizen-initiative process since 2021. The Secretary of State's official sample ballot is the final authority.",
@@ -514,7 +514,7 @@ window.EXPANDED_BALLOTS = {
         {name:"William “Ty” Scott",bio:"Served as staff attorney to a chancery judge in Hernando."}
       ]},
       {group:"Mississippi judiciary",office:"Chancery Court — 17th District, Place 3 (Subdistrict 17-1)",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 17-1 vote in this race.",candidates:[
-        {name:"Gwendolyn Baptist",bio:"",note:"No public biographical information was found in this research."},
+        {name:"Gwen Baptist",bio:"",note:"Ballot name; qualifying list gives Gwendolyn Baptist. No public biographical information was found in this research."},
         {name:"Malenda Harris Meacham",bio:"Intervened as a defendant in the federal lawsuit over the DeSoto County judicial subdistricts."}
       ]},
       {group:"Mississippi judiciary",office:"Circuit Court — 21st District, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[
@@ -522,7 +522,7 @@ window.EXPANDED_BALLOTS = {
         {name:"Joseph “Jody” Neyman",bio:"",note:"No public biographical information was found in this research."}
       ]},
       {group:"Mississippi judiciary",office:"Circuit Court — 21st District, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[
-        {name:"Celeste Embrey Wilson",status:"Listed unopposed · status uncertain",bio:"Circuit court judge in DeSoto County since 2017 (previously county judge and assistant district attorney). Appointed to the Mississippi Supreme Court effective August 1, 2026 — confirm ballot status on the printed ballot.",note:"Her continued presence on the circuit-court ballot could not be verified."}
+        {name:"Craig Treadway",status:"Appointed Sep. 1, 2026 · unopposed",bio:"Former DeSoto County Court judge, appointed to Circuit 21 Place 2 after Celeste Embrey Wilson was appointed to the Mississippi Supreme Court effective August 1, 2026."}
       ]},
       {group:"Mississippi judiciary",office:"Circuit Court — 21st District, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[
         {name:"W. Douglas Hollowell III",status:"Listed unopposed",bio:"",note:"No public biographical information was found in this research."}
@@ -531,9 +531,8 @@ window.EXPANDED_BALLOTS = {
         {name:"Lucius Edwards",bio:"",note:"No public biographical information was found in this research."},
         {name:"John Hughes",bio:"",note:"No public biographical information was found in this research."}
       ]},
-      {group:"Mississippi judiciary",office:"County Court Judge — vote for two",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[
-        {name:"Allen Couch",status:"Incumbent",bio:"Sitting DeSoto County court judge."},
-        {name:"H. “Craig” Treadway",status:"Incumbent",bio:"Sitting DeSoto County court judge."}
+      {group:"Mississippi judiciary",office:"County Court Judge",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings. Note: Craig Treadway moved to Circuit 21 Place 2; Russell B. Jordan was appointed to the county-court vacancy from Nov. 1, 2026 — confirm the Nov. 3 county-court ballot on the printed ballot.",candidates:[
+        {name:"Allen Couch",status:"Incumbent",bio:"Sitting DeSoto County court judge."}
       ]},
       {group:"DeSoto County schools",office:"Board of Education — District 5",does:"Sets policy and budgets for DeSoto County public schools. Only voters in Board District 5 vote in this race.",candidates:[
         {name:"Charles Barton",status:"Incumbent",bio:"",note:"No public biographical information was found in this research."},
@@ -716,10 +715,10 @@ window.EXPANDED_BALLOTS = {
     ]
   },
   utah: {
-    label:"Utah · Statewide ballot",chips:["U.S. House \u2014 all 4 districts","Amendments A & B","No Governor or Senate race in 2026"],summary:"Utah's statewide layer for November 3, 2026: all four U.S. House districts under the court-ordered 2025 map, and constitutional Amendments A and B. Utah elects its Governor and other statewide officers in presidential years, and has no U.S. Senate race in 2026. Layton and St. George voters also have full VoterLens pathways in this app \u2014 enter ZIP 84041 or 84770.",
-    coverage:"This pathway covers what appears on ballots across Utah for the November 3, 2026 general election: your U.S. House race (all four districts are listed; you vote in only one) and the two constitutional amendments. District lines were redrawn by court order in 2025, so your district number may differ from 2024 \u2014 confirm yours at vote.utah.gov. State legislative, county, school-board, and judicial-retention races are covered for Layton and St. George in their own pathways; other voters should check their official sample ballot at vote.utah.gov.",
-    caveats:["Three of Utah's four U.S. House members are running in districts with new numbers under the 2025 court-ordered map (Moore in District 2, Maloy in District 3, Kennedy in District 4). District 1 is an open seat \u2014 the sitting representative retired.","Statewide judicial retention questions (Utah Supreme Court and Court of Appeals) also appear on every Utah ballot; they are listed in the Layton and St. George pathways in this app.","Candidate lists are from the Lieutenant Governor's official 2026 candidate filings (vote.utah.gov, updated October 5, 2026); amendment texts are the official ballot titles. One CD-1 write-in candidate is not listed \u2014 write-in names do not appear on the printed ballot."],
-    sources:[{label:"Utah elections \u2014 2026 candidate filings (official)",url:"https://vote.utah.gov/2026-candidate-filings/"},{label:"Utah Legislature \u2014 2026 constitutional amendments (official text)",url:"https://le.utah.gov/constitutionalAmendment/2026/constitutionalamendments.pdf"}],
+    label:"Utah · Statewide ballot",chips:["U.S. House \u2014 all 4 districts","Amendments A & B","State Legislature \u2014 75 House + 15 Senate","18 of 29 counties","Statewide judicial retentions"],summary:"Utah's statewide layer for November 3, 2026: all four U.S. House districts under the court-ordered 2025 map, and constitutional Amendments A and B. Utah elects its Governor and other statewide officers in presidential years, and has no U.S. Senate race in 2026. Plus all 75 State House districts, the 15 State Senate districts up in 2026, county races in 18 of 29 counties, and statewide judicial retentions. Layton and St. George voters also have full VoterLens pathways in this app \u2014 enter ZIP 84041 or 84770.",
+    coverage:"This pathway covers what appears on ballots across Utah for the November 3, 2026 general election: your U.S. House race (all four districts are listed; you vote in only one) and the two constitutional amendments. District lines were redrawn by court order in 2025, so your district number may differ from 2024 \u2014 confirm yours at vote.utah.gov. State legislative races (75 House districts and the 15 Senate districts up in 2026), county races in 18 of 29 counties, and statewide judicial retentions are now included below. City races beyond Layton and St. George, school-board races beyond the large-county boards listed, district/justice-court retentions, and 11 counties (Beaver, Daggett, Emery, Juab, Morgan, Piute, San Juan, Sanpete, Summit, Tooele, Wayne) are not included \u2014 check your official sample ballot at vote.utah.gov.",
+    caveats:["Three of Utah's four U.S. House members are running in districts with new numbers under the 2025 court-ordered map (Moore in District 2, Maloy in District 3, Kennedy in District 4). District 1 is an open seat \u2014 the sitting representative retired.","Statewide judicial retention questions (Utah Supreme Court Justice Jill M. Pohlman and six Court of Appeals judges) are now included below; Justice Diana Hagen resigned in May 2026 and is NOT on the ballot.","Candidate lists are from the Lieutenant Governor's official 2026 candidate filings (vote.utah.gov, updated October 5, 2026); amendment texts are the official ballot titles. One CD-1 write-in candidate is not listed \u2014 write-in names do not appear on the printed ballot.","State Legislature and county races were added Oct 28, 2026 from the Lieutenant Governor\u2019s official 2026 candidate filings, Ballotpedia, and county certification/sample-ballot sources; confirm every name, party, and district against your official sample ballot at vote.utah.gov before voting.","County coverage is partial: 11 counties are missing (see coverage), Cache County Attorney is omitted (primary winner unconfirmed), Washington County Sheriff lists Heppler alone (a Blevins general-election claim is unresolved), and several candidates in the smaller counties have no verified party field \u2014 see the utah draft files for per-county gap lists.","Write-in candidates are not listed; write-in names do not appear on the printed Utah ballot."],
+    sources:[{label:"Utah elections \u2014 2026 candidate filings (official)",url:"https://vote.utah.gov/2026-candidate-filings/"},{label:"Utah Legislature \u2014 2026 constitutional amendments (official text)",url:"https://le.utah.gov/constitutionalAmendment/2026/constitutionalamendments.pdf"},{label:"Ballotpedia \u2014 Utah State Senate and House elections, 2026",url:"https://ballotpedia.org/Utah_State_Senate_elections,_2026"},{label:"County certification and sample-ballot sources (see utah draft files)",url:"https://vote.utah.gov/2026-candidate-filings/"}],
     measures:[
       {code:"Constitutional Amendment A",title:"Publication of constitutional amendments",text:"Shall the Utah Constitution be amended to change how proposed constitutional amendments are published, requiring publication for 60 days immediately before the general election in a manner established by state law instead of in newspapers? If approved, state statute would require the Lieutenant Governor to publish the full text of all proposed constitutional amendments and other ballot questions on the Utah Public Notice Website and on the Lieutenant Governor's website for 60 days immediately before the general election.",yes:"Require amendments to be published online (Utah Public Notice Website and Lieutenant Governor's website) for 60 days before the election instead of in newspapers.",no:"Keep the current constitutional requirement of newspaper publication."},
       {code:"Constitutional Amendment B",title:"60% threshold for citizen tax initiatives",text:"Shall the Utah Constitution be amended to require that citizen-proposed laws that increase taxes compared to existing law be approved by at least 60% of voters, instead of a simple majority?",yes:"Require citizen ballot initiatives that create new taxes, expand taxes, raise tax rates, or adjust property taxes to win 60% voter approval instead of a simple majority. Legislature-referred measures are unaffected.",no:"Keep the current simple-majority threshold for citizen tax initiatives."}
@@ -751,14 +750,525 @@ window.EXPANDED_BALLOTS = {
         {name:"Jonny Larsen",party:"Democrat"},
         {name:"Taylor Wright",party:"Libertarian"},
         {name:"Steven Burt",party:"Unaffiliated"}
-      ]}
+      ]},
+      {group:"State Legislature",office:"State Senate — District 1 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Claudia Bigler",party:"Democrat"},{name:"Scott Sandall",party:"Republican",status:"Incumbent"},{name:"Julie Quinlan",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State Senate — District 5 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms. Open seat — the sitting senator retired.",candidates:[{name:"CJ Hernandez",party:"Democrat"},{name:"Jill Koford",party:"Republican"}]},
+  {group:"State Legislature",office:"State Senate — District 6 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms. Open seat — the sitting senator retired.",candidates:[{name:"Jared Neal",party:"Democrat"},{name:"Tami Tran",party:"Republican"},{name:"Josh Smith",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State Senate — District 7 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms. Open seat — the sitting Senate president lost the June primary.",candidates:[{name:"Garret Rushforth",party:"Democrat"},{name:"Stephanie Hollist",party:"Republican"},{name:"Jeffrey Ostler",party:"Constitution Party"}]},
+  {group:"State Legislature",office:"State Senate — District 9 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Jennifer Plumb",party:"Democrat",status:"Incumbent"},{name:"Thaddeus A. Evans",party:"Republican"},{name:"J. Lowry Snow",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State Senate — District 11 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Brooks Benson",party:"Republican"},{name:"Emily Buss",party:"Utah Forward Party",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 12 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Karen Kwan",party:"Democrat",status:"Incumbent"},{name:"Deidre Tyler",party:"Republican"}]},
+  {group:"State Legislature",office:"State Senate — District 13 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms. Open seat — the sitting senator retired.",candidates:[{name:"Silvia Catten",party:"Democrat"},{name:"Ryan L. Mahoney",party:"Republican"},{name:"Colin Smith",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State Senate — District 14 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms. Unopposed in the general election.",candidates:[{name:"Stephanie Pitcher",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 18 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms. Open seat — the sitting senator lost the June primary.",candidates:[{name:"A. Dane Anderson",party:"Democrat"},{name:"Doug Fiefia",party:"Republican"}]},
+  {group:"State Legislature",office:"State Senate — District 19 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Shana Anderson",party:"Democrat"},{name:"Kirk Cullimore",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 20 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Annette McRae",party:"Utah Forward Party"},{name:"Ronald Winterton",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 21 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Kandee Myers",party:"Democrat"},{name:"Brady Brammer",party:"Republican",status:"Incumbent"},{name:"Wayne Woodfield",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State Senate — District 23 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Tucker Smith",party:"Democrat"},{name:"Keith Grover",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 28 — 4-year term",does:"Votes on Utah laws, the state budget, and taxes. Senators serve staggered four-year terms.",candidates:[{name:"Richard S. Robillard",party:"Democrat"},{name:"Evan Vickers",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 1 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Chris Reid",party:"Democrat"},{name:"Thomas Peterson",party:"Republican",status:"Incumbent"},{name:"Jason O'Dell",party:"Constitution Party"}]},
+  {group:"State Legislature",office:"State House — District 2 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Barbara Haggerty",party:"Democrat"},{name:"Mike Petersen",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 3 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jason Thompson",party:"Republican",status:"Incumbent"},{name:"Patrick Belmont",party:"Unaffiliated"}]},
+  {group:"State Legislature",office:"State House — District 4 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Zane Woolstenhulme",party:"Democrat"},{name:"Tiara Auxier",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 5 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kendra Penry",party:"Democrat"},{name:"Casey Snider",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 6 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Robert Bishop",party:"Republican",status:"Incumbent"},{name:"James Rich",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 7 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Bianca Mittendorf",party:"Democrat"},{name:"Ryan Wilcox",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 8 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kim James",party:"Democrat"},{name:"Jason Kyle",party:"Republican",status:"Incumbent"},{name:"Libby Shelton",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 9 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Angela Choberka",party:"Democrat"},{name:"Jake Sawyer",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 10 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rosemary Lesser",party:"Democrat"},{name:"Jim Alvey",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 11 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Dave Calder",party:"Democrat"},{name:"Katy Hall",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 12 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Anna Graff",party:"Democrat"},{name:"Mike Schultz",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 13 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jeffrey Anderson",party:"Democrat"},{name:"Erik Craythorne",party:"Republican"},{name:"Tony De Mille",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 14 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Brandon Young",party:"Democrat"},{name:"John Taylor",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 15 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Anne Berbert",party:"Democrat"},{name:"Ariel Defay",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 16 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Abigail Treasure",party:"Democrat"},{name:"Bob Stevenson",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 17 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Eric Last",party:"Democrat"},{name:"Lili Bitner",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 18 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Scott Troxel",party:"Democrat"},{name:"Paul Cutler",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 19 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed in the general election.",candidates:[{name:"Raymond Ward",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 20 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Phil Graves",party:"Democrat"},{name:"Melissa Ballard",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 21 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed in the general election.",candidates:[{name:"Stephen Otterstrom",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — District 22 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jen Dailey-Provost",party:"Democrat",status:"Incumbent"},{name:"Char Varga",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 23 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Hoang Nguyen",party:"Democrat",status:"Incumbent"},{name:"Franklin Robinson",party:"Republican"},{name:"Cabot Nelson",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 24 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Grant Amjad Miller",party:"Democrat",status:"Incumbent"},{name:"Braeden Oswald",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 25 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Angela Romero",party:"Democrat",status:"Incumbent"},{name:"Richard Nowak",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 26 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Michael Finch",party:"Democrat"},{name:"Matt MacPherson",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 27 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Liz Oates",party:"Democrat"},{name:"Anthony Loubet",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 28 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Anita Dalrymple",party:"Democrat"},{name:"Nicholeen Peck",party:"Republican",status:"Incumbent"},{name:"Wales Nematollahi",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 29 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Sara Snow",party:"Democrat"},{name:"Sheldon Birch",party:"Republican"},{name:"Tynley Bean",party:"Utah Forward Party"},{name:"Jonathan Garrard",party:"Constitution Party"}]},
+  {group:"State Legislature",office:"State House — District 30 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jake Fitisemanu",party:"Democrat",status:"Incumbent"},{name:"Dave Parke",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 31 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Verona Mauga",party:"Democrat",status:"Incumbent"},{name:"Melody Jones",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 32 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Sahara Hayes",party:"Democrat",status:"Incumbent"},{name:"Aileen Hampton",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 33 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Doug Owens",party:"Democrat",status:"Incumbent"},{name:"Anna Reeves",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 34 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed in the general election.",candidates:[{name:"Julie Jackson",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — District 35 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rosalba Dominguez",party:"Democrat",status:"Incumbent"},{name:"Monique Ketcham",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 36 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Blake Townsend",party:"Democrat"},{name:"Jim Dunnigan",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 37 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Ashlee Matthews",party:"Democrat",status:"Incumbent"},{name:"Casey Saxton",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 38 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Chris McConnehey",party:"Republican"},{name:"Sergio Sotelo",party:"Unaffiliated"}]},
+  {group:"State Legislature",office:"State House — District 39 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Drew Howells",party:"Democrat"},{name:"Ken Ivory",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 40 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed in the general election.",candidates:[{name:"Andrew Stoddard",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 41 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"John Arthur",party:"Democrat",status:"Incumbent"},{name:"Darren Croft",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 42 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Iva Williams",party:"Democrat"},{name:"Clint Okerlund",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 43 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Ofa Matagi",party:"Democrat"},{name:"Steven Eliason",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 44 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jess Birtcher",party:"Democrat"},{name:"Jordan Teuscher",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 45 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rod Moser",party:"Democrat"},{name:"Tracy Miller",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 46 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Braxten Rutherford",party:"Democrat"},{name:"Cal Roberts",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 47 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed in the general election.",candidates:[{name:"Mark Strong",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 48 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Benyde Walker",party:"Democrat"},{name:"Jake Hunsaker",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 49 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Lillian Bowles",party:"Democrat"},{name:"Candice Pierucci",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 50 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kristin Meyer",party:"Democrat"},{name:"Stephanie Gricius",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 51 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Brett Nielsen",party:"Democrat"},{name:"Leah Hansen",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 52 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Nicole Melling",party:"Democrat"},{name:"Cory Maloy",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 53 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kevin Slater",party:"Democrat"},{name:"Kay Christofferson",party:"Republican",status:"Incumbent"},{name:"John Boyd",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 54 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kristina Robinson",party:"Democrat"},{name:"Kristen Chevrier",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 55 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Travis Hysell",party:"Democrat"},{name:"Jon Hawkins",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 56 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Natassja Grossman",party:"Democrat"},{name:"Val Peterson",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 57 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed on the printed ballot (a certified write-in candidate is not printed).",candidates:[{name:"Nelson Abbott",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 58 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Karli Black",party:"Democrat"},{name:"David Shallenberger",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 59 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Celeste Johnson",party:"Democrat"},{name:"Luke Searle",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 60 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed in the general election.",candidates:[{name:"Grant Pace",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 61 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Alan Jimenez",party:"Democrat"},{name:"Lisa Shepherd",party:"Republican",status:"Incumbent"},{name:"Jennifer Doud",party:"Constitution Party"}]},
+  {group:"State Legislature",office:"State House — District 62 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"David Chappell",party:"Democrat"},{name:"Norm Thurston",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 63 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Mark Youngquist",party:"Democrat"},{name:"Stephen Whyte",party:"Republican",status:"Incumbent"},{name:"Julie Smith",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 64 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jackie Larson",party:"Republican",status:"Incumbent"},{name:"Alan Wessman",party:"Unaffiliated"}]},
+  {group:"State Legislature",office:"State House — District 65 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills. Unopposed in the general election.",candidates:[{name:"Doug Welton",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 66 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Breanne Mashek",party:"Democrat"},{name:"Troy Shelley",party:"Republican",status:"Incumbent"},{name:"Russ Hatch",party:"Constitution Party"}]},
+  {group:"State Legislature",office:"State House — District 67 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Carl Ingwell",party:"Democrat"},{name:"JR Bird",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — District 68 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Scott H. Chew",party:"Republican",status:"Incumbent"},{name:"Sonya Ray",party:"Constitution Party"}]},
+  {group:"State Legislature",office:"State House — District 69 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Tracie Yellowman Tso",party:"Democrat"},{name:"Logan Monson",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 70 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Stacey Pendergraft",party:"Democrat"},{name:"Carl R. Albrecht",party:"Republican",status:"Incumbent"},{name:"Zeno Parry",party:"Utah Forward Party"}]},
+  {group:"State Legislature",office:"State House — District 71 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Thomas Loveheart",party:"Democrat"},{name:"Rex Shipp",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 72 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Eva Weldon",party:"Democrat"},{name:"Joseph Elison",party:"Republican",status:"Incumbent"},{name:"April Pinkston",party:"Constitution Party"}]},
+  {group:"State Legislature",office:"State House — District 73 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Glenn Webb",party:"Democrat"},{name:"Colin Jack",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 74 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jeffrey Lipe",party:"Democrat"},{name:"Neil Walter",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — District 75 — 2-year term",does:"Votes on Utah laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rebecca Winsor",party:"Democrat"},{name:"Walt Brooks",party:"Republican",status:"Incumbent"}]},
+      {group:"Salt Lake County — County offices",office:"Salt Lake County Council — At-Large A — 4-year term",does:"One of nine council seats, elected countywide. The council sets the county budget and county policy. Open seat — incumbent Laurie Stringham was eliminated at convention.",candidates:[
+    {name:"Kathleen Anderson",party:"Republican"},
+    {name:"Zach Robinson",party:"Democrat",bio:"Former Sandy City Council member."},
+    {name:"Gregory Beglarian",party:"Constitution Party"},
+    {name:"Maleah Bliss Caulford",party:"Forward"}
+  ]},
+  {group:"Salt Lake County — County offices",office:"Salt Lake County Council — District 1 — 4-year term",does:"District seat on the county council; only District 1 voters vote in this race.",candidates:[
+    {name:"Jiro Johnson",party:"Democrat",status:"Incumbent",bio:"Attorney with the Salt Lake County public defender office."},
+    {name:"Casey Poe",party:"Libertarian"}
+  ]},
+  {group:"Salt Lake County — County offices",office:"Salt Lake County Council — District 3 — 4-year term",does:"District seat on the county council; only District 3 voters vote in this race. Open seat — incumbent Aimee Winder Newton declined to run.",candidates:[
+    {name:"Mike Bird",party:"Republican"},
+    {name:"Luke Maynes",party:"Democrat"}
+  ]},
+  {group:"Salt Lake County — County offices",office:"Salt Lake County Council — District 5 — 4-year term",does:"District seat on the county council; only District 5 voters vote in this race. Open seat — incumbent Sheldon Stewart withdrew.",candidates:[
+    {name:"Traci Crockett",party:"Republican"},
+    {name:"Sara Cimmers",party:"Democrat"}
+  ]},
+  {group:"Salt Lake County — County offices",office:"Salt Lake County Auditor — 4-year term",does:"The county's chief accountant: prepares and administers accounting records for county funds, oversees audits of county departments, and regulates the budget.",candidates:[
+    {name:"Chris Harding",party:"Republican",status:"Incumbent"},
+    {name:"Ali Cloward",party:"Democrat",bio:"Certified Internal Auditor; accounting degrees from the University of Utah."}
+  ]},
+  {group:"Salt Lake County — County offices",office:"Salt Lake County Clerk — 4-year term",does:"Runs county elections and keeps county records, including birth, marriage, and death certificates.",candidates:[
+    {name:"Lannie Chapman",party:"Democrat",status:"Incumbent"}
+  ]},
+  {group:"Salt Lake County — County offices",office:"Salt Lake County District Attorney — 4-year term",does:"Chief prosecutor for Salt Lake County; decides felony charging and prosecutes county cases.",candidates:[
+    {name:"Sim Gill",party:"Democrat",status:"Incumbent"},
+    {name:"Kent Davis",party:"Republican",bio:"Attorney."}
+  ]},
+  {group:"Salt Lake County — County offices",office:"Salt Lake County Sheriff — 4-year term",does:"Runs law enforcement in unincorporated Salt Lake County, the county jail, court security, and search and rescue.",candidates:[
+    {name:"Rosie Rivera",party:"Democrat",status:"Incumbent"},
+    {name:"Shane Manwaring",party:"Republican"}
+  ]},
+  {group:"Utah County — County offices",office:"Utah County Commission — Seat A — 4-year term",does:"One of three commissioners, elected countywide; the commission is both the county's legislative and executive body. Open seat.",candidates:[
+    {name:"Michelle Kaufusi",party:"Republican",bio:"Former Provo mayor."},
+    {name:"Jeanne Marie Bowen",party:"Democrat"},
+    {name:"Jacob D. Oaks",party:"Independent American"}
+  ]},
+  {group:"Utah County — County offices",office:"Utah County Commission — Seat B — 4-year term",does:"One of three commissioners, elected countywide. Open seat — incumbent Brandon Gordon stepped down.",candidates:[
+    {name:"David M. Spencer",party:"Republican",bio:"Former Orem City Council member."},
+    {name:"J. Allen",party:"Democrat"},
+    {name:"David Hinckley",party:"Forward"}
+  ]},
+  {group:"Utah County — County offices",office:"Utah County Attorney — 4-year term",does:"Chief prosecutor for Utah County; also gives legal advice to county government.",candidates:[
+    {name:"Jeff Gray",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Utah County — County offices",office:"Utah County Sheriff — 4-year term",does:"Policing in unincorporated Utah County and contracting cities, plus the county jail, court security, and search and rescue.",candidates:[
+    {name:"Mike Smith",party:"Republican",status:"Incumbent",bio:"Former Pleasant Grove police chief; first elected sheriff in 2018."}
+  ]},
+  {group:"Utah County — County offices",office:"Utah County Auditor — 4-year term",does:"County budget officer and internal audit function: countywide financial administration, budget preparation, and checking county spending. Open seat — incumbent Rod Mann did not seek reelection.",candidates:[
+    {name:"Gina Tanner",party:"Republican",bio:"Budget manager in the Utah County Auditor's Office; master's degree in accounting."},
+    {name:"Hans V. Andersen",party:"Independent American"}
+  ]},
+  {group:"Utah County — County offices",office:"Utah County Clerk — 4-year term",does:"Runs Utah County elections and keeps county records. Open seat — incumbent Aaron Davidson lost the June Republican primary.",candidates:[
+    {name:"Corey K. Astill",party:"Republican"},
+    {name:"Russ J. Rampton",party:"Forward"}
+  ]},
+  {group:"Davis County — County offices",office:"Davis County Commission — Seat A — 4-year term",does:"One of three commissioners, elected countywide. Open seat — incumbent Bob Stevenson did not file for reelection and is running for Utah House District 16.",candidates:[
+    {name:"Kendalyn Harris",party:"Republican",bio:"Former Bountiful mayor; served 12 years in Bountiful city government."}
+  ]},
+  {group:"Davis County — County offices",office:"Davis County Commission — Seat B — 4-year term",does:"One of three commissioners, elected countywide. Open seat — incumbent Lorene Kamalu lost the June Republican primary to Susan Lee.",candidates:[
+    {name:"Susan Lee",party:"Republican",bio:"Former Kaysville City Council member."},
+    {name:"Bret Millburn",party:"Unaffiliated",bio:"Former Davis County commissioner (2007–2018)."}
+  ]},
+  {group:"Davis County — County offices",office:"Davis County Attorney — 4-year term",does:"Chief prosecutor for Davis County; also gives legal advice to county government.",candidates:[
+    {name:"Troy Rawlings",party:"Republican",status:"Incumbent",bio:"County Attorney since 2007; previously a criminal defense attorney."}
+  ]},
+  {group:"Davis County — County offices",office:"Davis County Controller — 4-year term",does:"Independent financial controller for the county: accounting and checks on county spending.",candidates:[
+    {name:"Scott Parke",party:"Republican",bio:"Has served as Davis County Controller since July 2025, per his campaign site."},
+    {name:"Stephanie Wayment",party:"Democrat"}
+  ]},
+  {group:"Davis County — County offices",office:"Davis County Clerk — 4-year term",does:"Runs Davis County elections and keeps county records.",candidates:[
+    {name:"Brian McKenzie",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Davis County — County offices",office:"Davis County Sheriff — 4-year term",does:"Policing in unincorporated Davis County and contracting cities, plus the county jail and court security.",candidates:[
+    {name:"Jon Atkin",party:"Republican",bio:"Law-enforcement officer and supervisor; captain in the Utah Air National Guard, per his campaign site."}
+  ]},
+  {group:"Davis County — School board",office:"Davis School Board — District 3 — 4-year term",does:"District seat on the Davis School Board; only District 3 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Julie Powell"},
+    {name:"Alison R. Dunn"}
+  ]},
+  {group:"Davis County — School board",office:"Davis School Board — District 5 — 4-year term",does:"District seat on the Davis School Board; only District 5 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Michelle Barber"}
+  ]},
+  {group:"Davis County — School board",office:"Davis School Board — District 6 — 4-year term",does:"District seat on the Davis School Board; only District 6 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Jane Neal"},
+    {name:"Kristen Hogan"}
+  ]},
+  {group:"Davis County — School board",office:"Davis School Board — District 7 — 4-year term",does:"District seat on the Davis School Board; only District 7 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Emily Price"}
+  ]},
+  {group:"Weber County — County offices",office:"Weber County Commission — Seat A — 4-year term",does:"One of three commissioners, elected countywide; the commission oversees county government in both legislative and administrative roles.",candidates:[
+    {name:"Duane D. Kearsley",party:"Republican"},
+    {name:"Alvin Thurgood",party:"Democrat"},
+    {name:"Gary C. New",party:"Forward"}
+  ]},
+  {group:"Weber County — County offices",office:"Weber County Commission — Seat B — 4-year term",does:"One of three commissioners, elected countywide. Open seat — incumbent Sharon Bolos lost the June Republican primary to Jon Beesley.",candidates:[
+    {name:"Jon D. Beesley",party:"Republican",bio:"Former Plain City mayor."}
+  ]},
+  {group:"Weber County — County offices",office:"Weber County Assessor — special election, remainder of term",does:"Values property for taxation. This is a special election to fill the remainder of the term after the prior assessor resigned; the winner was appointed interim assessor in January 2025.",candidates:[
+    {name:"Jared L. Preisler",party:"Republican",status:"Incumbent",bio:"Appointed interim county assessor in January 2025."}
+  ]},
+  {group:"Weber County — County offices",office:"Weber County Attorney — 4-year term",does:"Chief prosecutor for Weber County; also gives legal advice to county government.",candidates:[
+    {name:"Chris F. Allred",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Weber County — County offices",office:"Weber County Clerk/Auditor — 4-year term",does:"Combined clerk/auditor office: runs Weber County elections and keeps county financial records.",candidates:[
+    {name:"Ricky Hatch",party:"Republican",status:"Incumbent",bio:"Weber County Clerk/Auditor since 2011."}
+  ]},
+  {group:"Weber County — County offices",office:"Weber County Sheriff — 4-year term",does:"Policing in unincorporated Weber County and contracting cities, plus the county jail and court security.",candidates:[
+    {name:"Ryan Arbon",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Weber County — School board",office:"Ogden School Board — District 2 — 4-year term",does:"District seat on the Ogden School Board; only District 2 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Stacy Bernal"}
+  ]},
+  {group:"Weber County — School board",office:"Ogden School Board — District 4 — 4-year term",does:"District seat on the Ogden School Board; only District 4 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Amber Allred"}
+  ]},
+  {group:"Weber County — School board",office:"Ogden School Board — District 6 — 4-year term",does:"District seat on the Ogden School Board; only District 6 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Jamie Nunley"},
+    {name:"Zach Thomas"}
+  ]},
+  {group:"Weber County — School board",office:"Ogden School Board — District 7 — 4-year term",does:"District seat on the Ogden School Board; only District 7 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Oscar L. Mata"}
+  ]},
+  {group:"Weber County — School board",office:"Weber School Board — District 1 — 4-year term",does:"District seat on the Weber School Board; only District 1 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Kelly Larson"}
+  ]},
+  {group:"Weber County — School board",office:"Weber School Board — District 2 — 4-year term",does:"District seat on the Weber School Board; only District 2 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Jan Burrell"},
+    {name:"Jodi B. Kennedy"}
+  ]},
+  {group:"Weber County — School board",office:"Weber School Board — District 3 — 4-year term",does:"District seat on the Weber School Board; only District 3 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Katie Wahlquist"}
+  ]},
+  {group:"Weber County — School board",office:"Weber School Board — District 6 — 4-year term",does:"District seat on the Weber School Board; only District 6 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Karen L. Miller"}
+  ]},
+  {group:"Washington County — County offices",office:"Washington County Commission — Seat A — 4-year term",does:"One of three commissioners, elected countywide.",candidates:[
+    {name:"Gil Almquist",party:"Republican",status:"Incumbent",bio:"Former St. George City Council member; landscaping business owner."},
+    {name:"Gail Koske",party:"Democrat"}
+  ]},
+  {group:"Washington County — County offices",office:"Washington County Commission — Seat B — 4-year term",does:"One of three commissioners, elected countywide. Open seat — incumbent Victor Iverson lost the June Republican primary to Troy Belliston.",candidates:[
+    {name:"Troy G. Belliston",party:"Republican",bio:"Washington City Council member."},
+    {name:"Sarah N. Anderson",party:"Democrat"},
+    {name:"Kristin N. Isham",party:"Constitution Party"}
+  ]},
+  {group:"Washington County — County offices",office:"Washington County Attorney — 4-year term",does:"Chief prosecutor for Washington County; also gives legal advice to county government.",candidates:[
+    {name:"Jerry D. Jaeger",party:"Republican",status:"Incumbent",bio:"Filled the office mid-term; term ends December 31, 2026."},
+    {name:"Edward Flint",party:"Democrat"}
+  ]},
+  {group:"Washington County — County offices",office:"Washington County Clerk/Auditor — 4-year term",does:"Combined clerk/auditor office: runs Washington County elections and keeps county financial records.",candidates:[
+    {name:"Ryan Sullivan",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Washington County — County offices",office:"Washington County Sheriff — 4-year term",does:"Policing in unincorporated Washington County, plus the county jail and court security. Open seat — incumbent Nate Brooksby's term ends December 31, 2026.",candidates:[
+    {name:"Johnny Heppler",party:"Republican"}
+  ]},
+  {group:"Washington County — School board",office:"Washington County School Board — District 4 — 4-year term",does:"District seat on the Washington County School Board; only District 4 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"LaRene Cox",status:"Incumbent"}
+  ]},
+  {group:"Washington County — School board",office:"Washington County School Board — District 5 — 4-year term",does:"District seat on the Washington County School Board; only District 5 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"David B. Stirland",status:"Incumbent"},
+    {name:"Dan C. Zaleski"}
+  ]},
+  {group:"Washington County — School board",office:"Washington County School Board — District 6 — 4-year term",does:"District seat on the Washington County School Board; only District 6 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"Burke Staheli",status:"Incumbent"}
+  ]},
+  {group:"Washington County — School board",office:"Washington County School Board — District 7 — 4-year term",does:"District seat on the Washington County School Board; only District 7 voters vote in this race. School board races are nonpartisan.",candidates:[
+    {name:"N. Craig Hammer",status:"Incumbent"},
+    {name:"Kristyn Decker"}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Executive — 4-year term",does:"Chief executive of Cache County government, elected countywide.",candidates:[
+    {name:"N. George Daines",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Clerk — 4-year term",does:"Runs Cache County elections and keeps county records.",candidates:[
+    {name:"Bryson Behm",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Auditor — 4-year term",does:"County budget officer and internal audit function.",candidates:[
+    {name:"Matthew Funk",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Sheriff — 4-year term",does:"Policing in unincorporated Cache County, plus the county jail and court security.",candidates:[
+    {name:"D. Chad Jensen",party:"Republican",status:"Incumbent"}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Council — Logan District 2 — 4-year term",does:"District seat on the Cache County Council; only Logan District 2 voters vote in this race. No opposing candidate was verified in sources searched — confirm on a sample ballot.",candidates:[
+    {name:"JoAnn Bennett",party:"Republican",status:"Incumbent",bio:"Appointed interim Logan District 2 council member in January 2026."}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Council — Logan District 3 — 4-year term",does:"District seat on the Cache County Council; only Logan District 3 voters vote in this race.",candidates:[
+    {name:"Sandi R. Goodlander",party:"Republican",status:"Incumbent",bio:"Cache County Council chair."},
+    {name:"Mark Nafziger",party:"Democrat"}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Council — Northeast District 5 — 4-year term",does:"District seat on the Cache County Council; only Northeast District 5 voters vote in this race.",candidates:[
+    {name:"Mark R. Hurd",party:"Republican",status:"Incumbent"},
+    {name:"Lizette Villegas",party:"Democrat"}
+  ]},
+  {group:"Cache County — County offices",office:"Cache County Council — Southeast District 7 — 4-year term",does:"District seat on the Cache County Council; only Southeast District 7 voters vote in this race. No opposing candidate was verified in sources searched — confirm on a sample ballot.",candidates:[
+    {name:"Kathryn A. Beus",party:"Republican",status:"Incumbent",bio:"Cache County Council vice chair."}
+  ]},
+      {group:"Box Elder County offices",office:"County Clerk",does:"Runs county elections and maintains public records.",candidates:[
+    {name:"Marla Young",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Box Elder County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Douglas H Christensen",party:"Unaffiliated",bio:""},
+    {name:"Mike Allred",party:"Republican",bio:""},
+    {name:"Allan L Shinney",party:"Unaffiliated",bio:""},
+    {name:"Chad Hayman",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Box Elder County offices",office:"County Commissioner — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Alan Williams",party:"Unaffiliated",bio:""},
+    {name:"Vance Smith",party:"Republican",bio:""}
+  ]},
+  {group:"Box Elder County offices",office:"County Commissioner — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Nathan Tueller",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Box Elder County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Blair Wardle",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Box Elder County offices",office:"County Auditor",does:"Oversees county finances, auditing, and payroll.",candidates:[
+    {name:"Shirlene Larsen",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Carbon County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Seth Marsing",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Carbon County offices",office:"County Commissioner",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Daniel Campbell",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Carbon County offices",office:"County Commissioner/Surveyor",does:"Sets county policy, budgets, and property-tax rates; oversees county surveying.",candidates:[
+    {name:"Kourtney Cox",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Carbon County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Christian B. Bryner",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Carbon County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Frankie Tapia",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Duchesne County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Stephen Foote",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+  {group:"Duchesne County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Chelise Curtis",status:"Incumbent",bio:"",note:"Party unverified from available sources; a secondary listing gives the surname as Jessen — confirm against the printed ballot."}
+  ]},
+  {group:"Duchesne County offices",office:"County Commission",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Tracy Killian",party:"Republican",status:"Incumbent",bio:"",note:"Seat letter (A/B) unverified — see header gaps."}
+  ]},
+  {group:"Duchesne County offices",office:"County Commission",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Gregory Miles",party:"Republican",status:"Incumbent",bio:"",note:"Seat letter (A/B) unverified — see header gaps."}
+  ]},
+  {group:"Duchesne County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Rick Coil",status:"Unopposed",bio:"",note:"Party unverified from available sources."}
+  ]},
+  {group:"Garfield County offices",office:"County Commission — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Richard G Birch",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Garfield County offices",office:"County Commission — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"David Burnes Tebbs",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Garfield County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Jared Patrick Brems",bio:"",note:"Party not shown in the ballot extract — verify before merging."},
+    {name:"Barry L. Huntington",party:"Republican",bio:""}
+  ]},
+  {group:"Garfield County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Kylee Orton",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Garfield County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Eric Houston",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Grand County offices",office:"County Commission — At-Large",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Rory Paxman",party:"Unaffiliated",bio:""},
+    {name:"Neal D. Herbert",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Grand County offices",office:"County Commission — District 4",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Diego Velasquez",party:"Unaffiliated",bio:""},
+    {name:"Shalee Holland",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Grand County offices",office:"County Commission — District 5",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Mike McCurdy",party:"Republican",bio:""},
+    {name:"Everett Hildenbrandt",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Grand County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Jamison Tyler Wiggins",party:"Unaffiliated",bio:""},
+    {name:"Jim Winder",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Grand County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Gabriel Woytek",party:"Unaffiliated",bio:""},
+    {name:"Kenneth G. Minor",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Grand County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Stephen J. Stocks",party:"Unaffiliated",status:"Unopposed",bio:""}
+  ]},
+  {group:"Iron County offices",office:"County Commission — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Mike Bleak",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+  {group:"Iron County offices",office:"County Commission — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"K. Rand Bettridge",party:"Republican",bio:""},
+    {name:"Wesley B. Curtis",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Iron County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Ken Carpenter",status:"Unopposed",bio:"",note:"Party unverified from available sources."}
+  ]},
+  {group:"Iron County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Chad Dotson",status:"Unopposed",bio:"",note:"Party unverified from available sources."}
+  ]},
+  {group:"Iron County offices",office:"County Clerk",does:"Runs county elections and maintains public records.",candidates:[
+    {name:"Jonathan Whittaker",status:"Unopposed",bio:"",note:"Party unverified from available sources."}
+  ]},
+  {group:"Iron County offices",office:"County Auditor",does:"Oversees county finances, auditing, and payroll.",candidates:[
+    {name:"Lucas A. Little",status:"Unopposed",bio:"",note:"Party unverified from available sources."}
+  ]},
+  {group:"Kane County offices",office:"County Commission — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Matthew Fisher",bio:"",note:"Party not shown in the sample-ballot extract — verify before merging."},
+    {name:"Patty Kubeja",party:"Republican",bio:""}
+  ]},
+  {group:"Kane County offices",office:"County Commission — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Celeste Meyeres",party:"Republican",bio:""},
+    {name:"Bo Folsom",party:"Democrat",bio:""}
+  ]},
+  {group:"Kane County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Jeff Stott",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Kane County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Chameill Lamb",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Kane County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Tracy Glover",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Millard County offices",office:"County Commission — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Kevin Morris",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Millard County offices",office:"County Commission — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Louis Howard Quackenbush II",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Millard County offices",office:"County Assessor — 2-year term",does:"Values taxable property, administers exemptions and appeals, and helps collect and distribute property taxes.",candidates:[
+    {name:"Hollie Miller",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Millard County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Elise W. A. Harris",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Millard County offices",office:"County Auditor",does:"Oversees county finances, auditing, and payroll.",candidates:[
+    {name:"Bonnie L Pfaff",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Millard County offices",office:"County Clerk",does:"Runs county elections and maintains public records.",candidates:[
+    {name:"Marki Rowley",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Millard County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Steve O'Camb",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Rich County offices",office:"County Commissioner — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Bill Cox",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Rich County offices",office:"County Commissioner — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Simeon B Weston",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Rich County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Anneliesa Peart",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Rich County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Thomas Keith Wahlberg",bio:"",note:"Party not shown in the certification extract — verify before merging."},
+    {name:"Dale Stacey",party:"Republican",bio:""}
+  ]},
+  {group:"Sevier County offices",office:"County Commission — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Jed J Maxwell",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Sevier County offices",office:"County Commission — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Greg L Jensen",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Sevier County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"S Casey W. Jewkes",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Sevier County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Steven C Wall",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Sevier County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Nathan J. Curtis",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Uintah County offices",office:"County Commission — Seat A",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Keith G. Campbell",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Uintah County offices",office:"County Commission — Seat B",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Joe McKea",party:"Republican",bio:""},
+    {name:"Ronald K Richards",party:"Constitution",bio:""}
+  ]},
+  {group:"Uintah County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Nathan Rawlings",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Uintah County offices",office:"County Clerk-Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Margie Shewell",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Uintah County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Steve Labrum",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Wasatch County offices",office:"County Council — Seat A (at-large)",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Rachel Kahler",party:"Republican",bio:""},
+    {name:"Robert Duncan McNeill",party:"Democrat",bio:""}
+  ]},
+  {group:"Wasatch County offices",office:"County Council — Seat C",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Erik K. Rowland",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Wasatch County offices",office:"County Council — Seat F",does:"Sets county policy, budgets, and property-tax rates.",candidates:[
+    {name:"Michael Murphy",party:"Republican",bio:""},
+    {name:"Joseph A. Tugaw",party:"Democrat",bio:""}
+  ]},
+  {group:"Wasatch County offices",office:"County Attorney",does:"Prosecutes criminal cases and advises county government.",candidates:[
+    {name:"Lauren Forsyth",party:"Democrat",bio:""},
+    {name:"Jon Woodard",party:"Republican",bio:""}
+  ]},
+  {group:"Wasatch County offices",office:"County Clerk/Auditor",does:"Runs county elections and oversees county finances and auditing.",candidates:[
+    {name:"Michelle Kellogg",party:"Republican",status:"Unopposed",bio:""}
+  ]},
+  {group:"Wasatch County offices",office:"County Sheriff",does:"Runs county law enforcement, the jail, and search and rescue.",candidates:[
+    {name:"Jeremy M. Hales",party:"Republican",bio:""},
+    {name:"Paul Moore",party:"Unaffiliated",bio:""}
+  ]},
+  {group:"Utah judiciary — retention",office:"Utah Supreme Court — retention",does:"Retention vote: vote YES to keep the justice in office or NO to remove.",candidates:[
+    {name:"Jill M. Pohlman",status:"Retention vote",bio:"Justice of the Supreme Court of Utah.",note:"The ballot directs voters to Judges.Utah.gov for the Judicial Performance Evaluation Commission's recommendations."}
+  ]},
+  {group:"Utah judiciary — retention",office:"Utah Court of Appeals — retention (6 judges)",does:"Retention vote: vote YES to keep the judge in office or NO to remove.",candidates:[
+    {name:"Amy Jo Oliver",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+    {name:"David Ned Mortensen",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+    {name:"Gregory Keith Orme",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+    {name:"John David Luthy",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+    {name:"Michele M. Christiansen Forster",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."},
+    {name:"Ryan M. Harris",status:"Retention vote",bio:"Judge of the Utah Court of Appeals.",note:"See Judges.Utah.gov for JPEC recommendations."}
+  ]}
     ]
   },
   arizona: {
-    label:"Arizona · Statewide ballot",chips:["Governor & Lt. Governor","6 statewide offices","U.S. House \u2014 9 districts","Corporation Commission","8 propositions"],summary:"Arizona's statewide races for November 3, 2026: Governor and the new Lieutenant Governor (elected together on one ticket), Secretary of State, Attorney General, Treasurer, Superintendent of Public Instruction, Corporation Commission (2 seats), Mine Inspector, all nine U.S. House districts, and 8 statewide propositions. There is no U.S. Senate race in Arizona in 2026. Phoenix and Tucson voters also have full VoterLens city guides, linked under Sources below.",
-    coverage:"This pathway covers the races that appear on ballots across Arizona for the November 3, 2026 general election. You vote in only one U.S. House district; all nine are listed so you can find yours. State legislative, county, city, school-district, and judicial races are not included here \u2014 for Phoenix and Tucson, use the full VoterLens city guides linked under Sources; other voters should check their official sample ballot at apps.arizona.vote.",
-    caveats:["2026 is Arizona's first election with a Lieutenant Governor, an office created by Proposition 131 (2022): each candidate for Governor names a running mate, and a single vote elects the ticket. The Lieutenant Governor replaces the Secretary of State as first in line to succeed the Governor.","In U.S. House District 3, no Republican name is printed on the ballot; the listings we relied on show a registered Republican write-in, Jacob Parkman. One secondary guide listed a different Republican name for this district \u2014 if you vote in District 3, confirm on your official sample ballot.","Some October coverage describes Corporation Commission candidate Mike Cease as a write-in; multiple candidate listings drawn from the Secretary of State's official list include him among the general-election candidates for the two seats.","Candidate lists were cross-checked against independent reproductions of the Arizona Secretary of State's official 2026 general-election candidate list; proposition texts are from the Secretary of State's official 2026 Ballot Language document. Compare your sample ballot before voting."],
-    sources:[{label:"Arizona Secretary of State \u2014 2026 general election candidates (official)",url:"https://apps.arizona.vote/electioninfo/Election/69"},{label:"Arizona Secretary of State \u2014 2026 ballot language (official)",url:"https://azsos.gov/sites/default/files/docs/2026-Ballot-Language-English-2026-0819.pdf"},{label:"VoterLens Phoenix city ballot guide",url:"https://muse.ai/s/phoenix-ballot-guide-2026-xjxt6poexl81xr1"},{label:"VoterLens Tucson city ballot guide",url:"https://muse.ai/s/tucson-ballot-guide-2026-mm6poexe8s8w"}],
+    label:"Arizona · Statewide ballot",chips:["Governor & Lt. Governor","6 statewide offices","U.S. House \u2014 9 districts","Corporation Commission","8 propositions","State Legislature \u2014 30 districts","All 15 counties"],summary:"Arizona's statewide races for November 3, 2026: Governor and the new Lieutenant Governor (elected together on one ticket), Secretary of State, Attorney General, Treasurer, Superintendent of Public Instruction, Corporation Commission (2 seats), Mine Inspector, all nine U.S. House districts, and 8 statewide propositions, plus all 30 State Legislature districts and county races in all 15 counties. There is no U.S. Senate race in Arizona in 2026. Phoenix and Tucson voters also have full VoterLens city guides, linked under Sources below.",
+    coverage:"This pathway covers the races that appear on ballots across Arizona for the November 3, 2026 general election, plus State Legislature districts and county races in all 15 counties. You vote in only one U.S. House district, one legislative district, and the county/precinct races for your address; all districts are listed so you can find yours. Statewide judicial retentions (Arizona Supreme Court and Court of Appeals), city races beyond Phoenix and Tucson, and school-district races are not included here \u2014 for Phoenix and Tucson, use the full VoterLens city guides linked under Sources; other voters should check their official sample ballot at apps.arizona.vote.",
+    caveats:["2026 is Arizona's first election with a Lieutenant Governor, an office created by Proposition 131 (2022): each candidate for Governor names a running mate, and a single vote elects the ticket. The Lieutenant Governor replaces the Secretary of State as first in line to succeed the Governor.","In U.S. House District 3, no Republican name is printed on the ballot; the listings we relied on show a registered Republican write-in, Jacob Parkman. One secondary guide listed a different Republican name for this district \u2014 if you vote in District 3, confirm on your official sample ballot.","Some October coverage describes Corporation Commission candidate Mike Cease as a write-in; multiple candidate listings drawn from the Secretary of State's official list include him among the general-election candidates for the two seats.","Candidate lists were cross-checked against independent reproductions of the Arizona Secretary of State's official 2026 general-election candidate list; proposition texts are from the Secretary of State's official 2026 Ballot Language document. Compare your sample ballot before voting.","State Legislature and county races were added Oct 28, 2026 from the Arizona Republic and Rose Law Group legislative guides, Ballotpedia county pages, and county elections sources; the Secretary of State candidate portal (apps.arizona.vote) is a JavaScript app whose table could not be read as plain text, so confirm every name, party, and precinct against your official sample ballot before voting.","Spelling corrections, Oct 28, 2026: LD3 House No Labels candidate is John Skirbst (SOS published list), not Skibst; LD24 House Republican is Delores McLaughlin (SOS filing); LD6 House Green is Brendan Trachsel (SOS list).","Most countywide offices (Board of Supervisors, Sheriff, County Attorney, Assessor, Recorder, Treasurer, Superintendent of Schools) are NOT on the Nov 3, 2026 ballot in Maricopa and Pima counties \u2014 they were last elected in 2024. County races on this ballot are mainly Clerk, Justice of the Peace, Constable, special-district boards, Superior Court retentions, and countywide measures; in other counties, the offices on the ballot vary by county and are listed as verified.","County coverage is partial by design: school-district, fire-district, and city/town races (beyond Phoenix and Tucson) are not included, and several counties have unverified JP/Constable or Clerk entries omitted \u2014 see the stage-1 and stage-2 draft files for per-county gap lists. Yuma and Navajo counties are the thinnest and most need a sample-ballot check.","Write-in candidates are not listed in the legislature draft, and some county write-ins are flagged in the draft files; voters must check their official sample ballot at apps.arizona.vote."],
+    sources:[{label:"Arizona Secretary of State \u2014 2026 general election candidates (official)",url:"https://apps.arizona.vote/electioninfo/Election/69"},{label:"Arizona Secretary of State \u2014 2026 ballot language (official)",url:"https://azsos.gov/sites/default/files/docs/2026-Ballot-Language-English-2026-0819.pdf"},{label:"VoterLens Phoenix city ballot guide",url:"https://muse.ai/s/phoenix-ballot-guide-2026-xjxt6poexl81xr1"},{label:"VoterLens Tucson city ballot guide",url:"https://muse.ai/s/tucson-ballot-guide-2026-mm6poexe8s8w"},{label:"Arizona Republic \u2014 Meet the candidates for the Arizona Legislature (Sept 29, 2026)",url:"https://www.azcentral.com/story/news/politics/elections/2026/09/29/arizona-legislature-2026-election/91766413007/"},{label:"Rose Law Group \u2014 2026 Arizona General Election Guide (Oct 2026)",url:"https://s4745.pcdn.co/wp-content/uploads/2026/10/RLG_GeneralElectionGuide_2026.pdf"},{label:"Ballotpedia \u2014 Municipal elections in Maricopa County, Arizona (2026)",url:"https://ballotpedia.org/Municipal_elections_in_Maricopa_County,_Arizona_(2026)"},{label:"Ballotpedia \u2014 Pima County, Arizona, elections, 2026",url:"https://ballotpedia.org/Pima_County,_Arizona,_elections,_2026"},{label:"Arizona Secretary of State \u2014 2026 candidate filing / write-in lists (PDFs, azsos.gov)",url:"https://azsos.gov/elections"}],
     measures:[
       {code:"Proposition 141 \u2014 Constitutional Amendment",title:"No taxes based on miles traveled",text:"Prohibits taxes or fees based on vehicle miles traveled, and laws monitoring or limiting vehicle miles traveled without consent. Referred by the Legislature (SCR 1004, 2025).",yes:"Adopt this amendment.",no:"Reject it; keep current law."},
       {code:"Proposition 142 \u2014 Constitutional Amendment",title:"Preferential treatment and discrimination",text:"Adds further details to the state constitution's prohibition against preferential treatment or discrimination by the state based on race, ethnicity, or other classes. Referred by the Legislature (HCR 2044, 2026).",yes:"Adopt this amendment.",no:"Reject it; keep current law."},
@@ -768,7 +1278,7 @@ window.EXPANDED_BALLOTS = {
       {code:"Proposition 318 \u2014 Statute",title:"School sports teams by biological sex",text:"Requires all schools and athletic associations to designate athletic teams as male, female, or coed based on the biological sex of the athletes as defined at birth, and prohibits these entities from authorizing use of private spaces not designated for a person's sex. Referred by the Legislature (HCR 2003, 2026).",yes:"Adopt this law.",no:"Reject it; keep current law."},
       {code:"Proposition 319 \u2014 Statute",title:"Photo traffic enforcement limits",text:"Prohibits state agencies and local governments from using photo enforcement systems for traffic enforcement unless provided by contract as of December 31, 2026, and requires local governments to obtain voter approval to continue their use (at the next regular general election and every 10 years after). Referred by the Legislature (SCR 1004, 2026).",yes:"Adopt this law.",no:"Reject it; keep current law."},
       {code:"Proposition 320 \u2014 Statute",title:"60% of school spending on instruction",text:"Requires certain school districts (7,500+ students, or in counties of 500,000+ people) to spend at least 60% of operational spending on direct instructional expenses as defined by the Auditor General; non-compliant districts lose 25% per year from the state Classroom Site Fund, subject to waivers. Referred by the Legislature (SCR 1032, 2026).",yes:"Adopt this law.",no:"Reject it; keep current law."}
-    ],
+    ,{code:"Proposition 413",title:"County jail facilities sales tax",text:"Renews the county's 0.2% (one-fifth of one cent) jail facilities sales tax for 20 years.",yes:"Approves a sales tax of one-fifth of one cent ($0.002) for county jail facilities and programs, the same rate as the existing tax expiring in March 2027.",no:"Rejects the one-fifth of one cent ($0.002) sales tax for jail facilities and programs."},{code:"Proposition 425",title:"Pima County permanent base adjustment",text:"Permanently adjusts Pima County's state-imposed 1979-80 expenditure base by $70,000,000. County documents estimate the fiscal year 2027-28 expenditure limit would rise from about $817 million to about $1.43 billion, an increase of about $610 million.",yes:"Allow Pima County to permanently adjust its 1979-80 base expenditure limit by $70 million.",no:"Do not allow Pima County to adjust its 1979-80 base expenditure limit."},{code:"Proposition 435",title:"Permanent adjustment to the county expenditure base",text:"Permanently increases Yuma County's 1979-80 expenditure base by $6.2 million, beginning in fiscal year 2027-28, for calculating the county's annual expenditure limitation. Referred to voters by the Board of Supervisors (Resolution No. 2026-22, May 18, 2026). This changes the spending limit calculation; it does not raise taxes, create fees, or generate new revenue.",yes:"Approve the permanent $6.2 million base adjustment.",no:"Reject it; keep the current 1979-80 expenditure base."},{code:"Proposition 417",title:"Permanent adjustment to the county expenditure base",text:"Proposal referred by the Santa Cruz County Board of Supervisors for a permanent adjustment to the county's 1979-80 expenditure base.",yes:"Allow the county to adjust its 1979-80 base expenditure limit.",no:"Do not allow the adjustment."},{code:"Proposition 404",title:"Permanent base expenditure limitation",text:"Graham County permanent base expenditure limitation. Full measure text not verified — see gap list.",yes:"Approve the permanent base expenditure limitation.",no:"Reject it; keep the current limitation."}],
     races:[
       {group:"Statewide offices",office:"Governor & Lieutenant Governor \u2014 4-year term (one ticket, one vote)",does:"The Governor runs Arizona's executive branch: signs or vetoes legislation, appoints agency heads and judges, and proposes the state budget. The Lieutenant Governor \u2014 a new office in 2026 \u2014 is first in line to succeed the Governor. Each ticket below is elected together with a single vote.",candidates:[
         {name:"Katie Hobbs & John Giles",party:"Democrat",status:"Incumbent (Hobbs)",bio:"Hobbs: Governor since 2023, seeking a second term. Giles, her pick for Lieutenant Governor, is the former mayor of Mesa (2014\u20132025)."},
@@ -847,13 +1357,559 @@ window.EXPANDED_BALLOTS = {
         {name:"Paul Gosar",party:"Republican",status:"Incumbent"},
         {name:"Danielle \"Dani\" Sterbinsky",party:"Democrat"}
       ]}
+,{group:"State Legislature",office:"State Senate — District 1 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all 30 are listed so you can find yours.",candidates:[
+    {name:"Mark Finchem",party:"Republican",status:"Incumbent"},
+    {name:"Christine Dargon",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 1 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Quang Nguyen",party:"Republican",status:"Incumbent"},
+    {name:"Selina Bliss",party:"Republican",status:"Incumbent"},
+    {name:"Sandy Zalecki",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 2 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Shawnna Bolick",party:"Republican",status:"Incumbent"},
+    {name:"Amelia Gallitano",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 2 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Paul Carver",party:"Republican"},
+    {name:"Justin Wilmeth",party:"Republican",status:"Incumbent"},
+    {name:"Stephanie Simacek",party:"Democrat",status:"Incumbent"}
+  ]},{group:"State Legislature",office:"State Senate — District 3 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"John Kavanagh",party:"Republican",status:"Incumbent"},
+    {name:"Jeffrey Fortney",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 3 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Cody Reim",party:"Republican",status:"Incumbent"},
+    {name:"George Khalaf",party:"Republican"},
+    {name:"Julie Gable",party:"Democrat"},
+    {name:"Richard Spargo",party:"Democrat"},
+    {name:"John Skirbst",party:"No Labels"}
+  ]},{group:"State Legislature",office:"State Senate — District 4 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Carine Werner",party:"Republican",status:"Incumbent"},
+    {name:"Aaron Lieberman",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 4 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Matt Gress",party:"Republican",status:"Incumbent"},
+    {name:"Pamela Carter",party:"Republican",status:"Incumbent"},
+    {name:"Tammy Caputi",party:"Democrat"},
+    {name:"Karen Gresham",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 5 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Christine Marsh",party:"Democrat"},
+    {name:"Jason LaForest",party:"No Labels"}
+  ]},{group:"State Legislature",office:"State House — District 5 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Sarah Liguori",party:"Democrat",status:"Incumbent"},
+    {name:"Aaron Márquez",party:"Democrat",status:"Incumbent"}
+  ]},{group:"State Legislature",office:"State Senate — District 6 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Jamescita Peshlakai",party:"Democrat"},
+    {name:"Lloyd Johnson",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 6 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Mae Peshlakai",party:"Democrat",status:"Incumbent"},
+    {name:"Ian Teller",party:"Democrat"},
+    {name:"Brendan Trachsel",party:"Green"}
+  ]},{group:"State Legislature",office:"State Senate — District 7 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Wendy Rogers",party:"Republican",status:"Incumbent"},
+    {name:"Michiel Montiel",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 7 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Walt Blackman",party:"Republican",status:"Incumbent"},
+    {name:"David Cook",party:"Republican"},
+    {name:"Samuel Martin",party:"Democrat"},
+    {name:"Richard Grayson",party:"Green"}
+  ]},{group:"State Legislature",office:"State Senate — District 8 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Lauren Kuby",party:"Democrat",status:"Incumbent"},
+    {name:"Bill Loughrige",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 8 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Janeen Connolly",party:"Democrat",status:"Incumbent"},
+    {name:"Brian Garcia",party:"Democrat",status:"Incumbent"},
+    {name:"Donald Hawker",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 9 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Kiana Sears",party:"Democrat",status:"Incumbent"},
+    {name:"Bridget Fitzgibbons",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 9 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Lorena Austin",party:"Democrat",status:"Incumbent"},
+    {name:"Jacob Martinez",party:"Democrat"},
+    {name:"Bradley Bettencourt",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 10 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"David Farnsworth",party:"Republican",status:"Incumbent"},
+    {name:"Blair Moses",party:"Democrat"},
+    {name:"Nick Fierro",party:"Independent"}
+  ]},{group:"State Legislature",office:"State House — District 10 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Justin Olson",party:"Republican",status:"Incumbent"},
+    {name:"James Rogers",party:"Republican"},
+    {name:"Brian Calaway",party:"Democrat"},
+    {name:"Helen Hunter",party:"Democrat"},
+    {name:"David Scott",party:"No Labels"}
+  ]},{group:"State Legislature",office:"State Senate — District 11 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Catherine Miranda",party:"Democrat",status:"Incumbent"},
+    {name:"Joshua Ayala",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 11 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Junelle Cavero",party:"Democrat",status:"Incumbent"},
+    {name:"Oscar De Los Santos",party:"Democrat",status:"Incumbent"},
+    {name:"Cesar Aleman",party:"Republican"},
+    {name:"Joseph Dailey",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 12 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Patricia \"Patty\" Contreras",party:"Democrat"},
+    {name:"Anthony Ramirez",party:"No Labels"}
+  ]},{group:"State Legislature",office:"State House — District 12 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Stacey Travers",party:"Democrat",status:"Incumbent"},
+    {name:"Armando Montero",party:"Democrat"},
+    {name:"David Richardson",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 13 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Julie Willoughby",party:"Republican"},
+    {name:"Kristie O'Brien",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 13 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Kevin Hartke",party:"Republican"},
+    {name:"Janet Weninger",party:"Republican"},
+    {name:"Racquel Armstrong",party:"Democrat"},
+    {name:"Jacob Weinberg",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 14 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Mylie Biggs",party:"Republican"},
+    {name:"Stephanie Walsh",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 14 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Laurin Hendrix",party:"Republican",status:"Incumbent"},
+    {name:"Tyler Farnsworth",party:"Republican"},
+    {name:"Mary Rose",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 15 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Jake Hoffman",party:"Republican",status:"Incumbent"},
+    {name:"Jayme Accalia",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 15 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Neal Carter",party:"Republican",status:"Incumbent"},
+    {name:"Michael Way",party:"Republican",status:"Incumbent"}
+  ]},{group:"State Legislature",office:"State Senate — District 16 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Thomas \"T.J.\" Shope",party:"Republican",status:"Incumbent"},
+    {name:"Elaine Aldrete",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 16 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Chris Lopez",party:"Republican",status:"Incumbent"},
+    {name:"Teresa Martinez",party:"Republican",status:"Incumbent"},
+    {name:"Julia Romero Gusse",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 17 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Christopher King",party:"Republican"},
+    {name:"Edgar Soto",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 17 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Rachel Keshel",party:"Republican",status:"Incumbent"},
+    {name:"John Winchester",party:"Republican"},
+    {name:"Kevin Volk",party:"Democrat",status:"Incumbent"},
+    {name:"Hollace Lyon",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 18 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Priya Sundareshan",party:"Democrat",status:"Incumbent"},
+    {name:"Douglas Everett",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 18 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Nancy Gutierrez",party:"Democrat",status:"Incumbent"},
+    {name:"Chris Mathis",party:"Democrat",status:"Incumbent"},
+    {name:"Bob Dohse",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 19 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Gail Griffin",party:"Republican"},
+    {name:"Bob Karp",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 19 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"David Gowan",party:"Republican"},
+    {name:"Lupe Diaz",party:"Republican",status:"Incumbent"},
+    {name:"Jackie O'Donnell Anderson",party:"Democrat"},
+    {name:"Aiden Nichollette Swallow",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 20 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Alma Hernandez",party:"Democrat",bio:"Running unopposed."}
+  ]},{group:"State Legislature",office:"State House — District 20 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Sally Ann Gonzales",party:"Democrat"},
+    {name:"Betty Villegas",party:"Democrat",status:"Incumbent"}
+  ]},{group:"State Legislature",office:"State Senate — District 21 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Rosanna Gabaldón",party:"Democrat",status:"Incumbent"},
+    {name:"Esteban Flores",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 21 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Consuelo Hernandez",party:"Democrat",status:"Incumbent"},
+    {name:"Miranda Lopez",party:"Democrat"},
+    {name:"Christopher Kibbey",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 22 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Eva Diaz",party:"Democrat",bio:"Running unopposed."}
+  ]},{group:"State Legislature",office:"State House — District 22 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Elda Luna-Nájera",party:"Democrat",status:"Incumbent"},
+    {name:"Betsy Muñoz",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 23 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Brian Fernandez",party:"Democrat",status:"Incumbent"},
+    {name:"Michelle Altherr",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 23 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Mariana Sandoval",party:"Democrat",status:"Incumbent"},
+    {name:"Emilia Cortez",party:"Democrat"},
+    {name:"Michele Peña",party:"Republican",status:"Incumbent"},
+    {name:"Gary Garcia Snyder",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 24 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Analise Ortiz",party:"Democrat",status:"Incumbent"},
+    {name:"Frank Steele",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 24 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Alberto Flores",party:"Democrat"},
+    {name:"Lisbeth Arescurenaga",party:"Democrat"},
+    {name:"Delores McLaughlin",party:"Republican"}
+  ]},{group:"State Legislature",office:"State Senate — District 25 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Timothy \"Tim\" Dunn",party:"Republican",status:"Incumbent"},
+    {name:"Laura Huber",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 25 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Michael Carbone",party:"Republican",status:"Incumbent"},
+    {name:"Nick Kupper",party:"Republican",status:"Incumbent"},
+    {name:"Tiffany Byrne",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 26 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Flavio Bravo",party:"Democrat",status:"Incumbent"},
+    {name:"Jim Bishop",party:"Republican"}
+  ]},{group:"State Legislature",office:"State House — District 26 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Cesar Aguilar",party:"Democrat",status:"Incumbent"},
+    {name:"Quantá Crews",party:"Democrat",status:"Incumbent"},
+    {name:"Jonathan McKenna",party:"Republican"},
+    {name:"Frank Roberts",party:"Republican"},
+    {name:"Hector Gomez",party:"Green"}
+  ]},{group:"State Legislature",office:"State Senate — District 27 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Kevin Payne",party:"Republican",status:"Incumbent"},
+    {name:"Kyle Clayton",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 27 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Lisa Fink",party:"Republican",status:"Incumbent"},
+    {name:"Tony Rivero",party:"Republican",status:"Incumbent"},
+    {name:"Deborah Howard",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 28 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Frank Carroll",party:"Republican",status:"Incumbent"},
+    {name:"Michael Braun",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 28 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"David Livingston",party:"Republican",status:"Incumbent"},
+    {name:"Beverly Pingerelli",party:"Republican",status:"Incumbent"},
+    {name:"Barbara Fike",party:"Democrat"},
+    {name:"Marc Graham",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 29 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Janae Shamp",party:"Republican",status:"Incumbent"},
+    {name:"Eric Stafford",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State House — District 29 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Steve Montenegro",party:"Republican",status:"Incumbent"},
+    {name:"James Taylor",party:"Republican",status:"Incumbent"},
+    {name:"Christine Marie Scianna",party:"Democrat"}
+  ]},{group:"State Legislature",office:"State Senate — District 30 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[
+    {name:"Leo Biasiucci",party:"Republican",bio:"Running unopposed."}
+  ]},{group:"State Legislature",office:"State House — District 30 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Mike Gannuscio",party:"Republican"},
+    {name:"David Rose",party:"Republican"},
+    {name:"Brian McMahan",party:"Democrat"}
+  ]},{group:"Maricopa County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps the Superior Court's records, processes filings and court-ordered payments, and supports jury and probate administration; the clerk does not decide cases.",candidates:[
+    {name:"Sebastian Matta",party:"Democrat",bio:"Arizona State University philosophy student, age 19; won the Democratic nomination unopposed in the July 21, 2026 primary."},
+    {name:"Jeff Dial",party:"Republican",bio:"Former Arizona state representative (2011-2015) and state senator (2015-2017); commercial real estate agent. Won the Republican nomination unopposed in the July 21, 2026 primary."}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Agua Fria Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Lupe Contreras",party:"Democrat",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Arrowhead District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Craig Wismer",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Canyon Trails Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Christopher Sumner",party:"Republican",status:"Write-in",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — East Mesa District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Fred Arnett",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — El Centro Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Jennifer Hernandez Sama",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Encanto Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Deborah Begay",party:"Democrat",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Hassayampa District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Danielle Blake",party:"Republican",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Ironwood District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Lori Burkhardt",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Kyrene Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Sharron Sauls",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — Manistee Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Lizbeth Feria",party:"Republican",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — McDowell Mountain Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Michele Reagan",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — North Valley Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Desarae Tucker",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — San Marcos District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Jennifer Jermaine",party:"Democrat",status:"Incumbent",bio:""},
+    {name:"Javan Daniel Mesnard",party:"Republican",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — South Mountain Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Rebecca Rios",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — University Lakes District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Tyler Kissell",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — West McDowell Precinct",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this precinct.",candidates:[
+    {name:"Teresa Lopez",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — West Mesa District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Elaissia Sears",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Justice of the Peace",office:"Justice of the Peace — White Tank District",does:"Hears small civil cases, misdemeanors, traffic cases, and preliminary criminal matters in the justice court for this district.",candidates:[
+    {name:"Heidi Owens",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Agua Fria Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"Michael Flores",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Arrowhead District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Darren Emfinger",party:"Republican",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Canyon Trails District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Jeremiah Schultz",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — East Mesa District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Luke Thompson",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — El Centro Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"Darlene Martinez",party:"Democrat",status:"Incumbent",bio:""},
+    {name:"Reuben Macias",party:"Independent",status:"Write-in",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Encanto Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"Maria Ligocki-Russell",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Hassayampa District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Scott Blake",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Ironwood District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Dan Birchfield",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Kyrene Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"Bridget Bellavigna",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — Manistee Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"April Flores",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — McDowell Mountain Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"Dan Diaz",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — North Valley Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"Mike Rowe",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — San Marcos District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Nathan Wallace",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — South Mountain",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this area.",candidates:[
+    {name:"Mahogany Kennedy",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — University Lakes District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Karyn Lathan",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — West McDowell Precinct",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this precinct.",candidates:[
+    {name:"Byron Rhymes Jr.",party:"Democrat",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — West Mesa District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Brandon Giles",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"Maricopa County — Constable",office:"Constable — White Tank District",does:"Serves court papers, executes court orders, and carries out other duties assigned by the justice court in this district.",candidates:[
+    {name:"Steven Conner",party:"Republican",bio:""}
+  ]},{group:"Maricopa County",office:"Community College District Governing Board — At-Large",does:"Sets policy, budgets, and oversight for the Maricopa County community college system.",candidates:[
+    {name:"John Crow",party:"Nonpartisan",bio:""},
+    {name:"Judy Schwiebert",party:"Nonpartisan",bio:""}
+  ]},{group:"Maricopa County",office:"Community College District Governing Board — District 3",does:"Sets policy, budgets, and oversight for the Maricopa County community college system.",candidates:[
+    {name:"William Sandweg",party:"Nonpartisan",bio:""},
+    {name:"Susan Winder",party:"Nonpartisan",bio:""}
+  ]},{group:"Maricopa County",office:"Community College District Governing Board — District 4",does:"Sets policy, budgets, and oversight for the Maricopa County community college system.",candidates:[
+    {name:"Donna Davis",party:"Nonpartisan",status:"Incumbent",bio:""},
+    {name:"Ryan Caracciolo",party:"Nonpartisan",bio:""},
+    {name:"Jack Hastings",party:"Nonpartisan",bio:""}
+  ]},{group:"Maricopa County",office:"Special Healthcare District Board — District 3",does:"Serves on the board that governs the county's special health-care district.",candidates:[
+    {name:"Kelly Barr",party:"Nonpartisan",status:"Incumbent",bio:""},
+    {name:"Angel Algarin",party:"Nonpartisan",bio:""}
+  ]},{group:"Maricopa County",office:"Special Healthcare District Board — District 4",does:"Serves on the board that governs the county's special health-care district.",candidates:[
+    {name:"Woody Thomas",party:"Nonpartisan",status:"Incumbent",bio:""},
+    {name:"Jolynn Herber",party:"Nonpartisan",bio:""}
+  ]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Amy Kalman",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Aryeh Schwartz",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Bradley Astrowsky",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Cassie Woo",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Charlene Jackson",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Colleen O'Donnell-Smith",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Daniel Martin",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Danielle J. Viola",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Dewain Fox",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Frank Moskowitz",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Geoffrey Fish",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Gregory Como",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Jay Polk",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Jeffrey Rueter",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Jennifer Green",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Jennifer Ryan-Touhill",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Jillian Francis",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"John Blanchard",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Joseph Kiefer",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Joseph Kreamer",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Joseph C. Welty",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Joshua Rogers",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Julie Mata",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Katherine Cooper",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Kerstin LeMaire",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Kristin Culbertson",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Lauren Guyton",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Marischa Gilla",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Marvin Davis",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Max-Henri Covil",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Melissa Iyer Julian",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Melissa Zabor",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Melody Harmon",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Michael Blair",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Michael J. Herrod",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Michael Rassas",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Michelle Carson",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Monica Edelstein",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Paula Williams",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Randall Warner",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Robert Brooks",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Ronee Korbin Steiner",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Roy Whitehead",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Sam Myers",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Steven McCarthy",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Sunita Krishna Cairo",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Suzanne Nicholls",party:"Nonpartisan",bio:""}]},{group:"Maricopa County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"William Wingard",party:"Nonpartisan",bio:""}]},{group:"Pima County",office:"Board of Supervisors — District 5 — special election (remainder of term)",does:"Sets county public policy, approves the county budget, sets property tax levies, and oversees county services including roads, parks, libraries, and health and public defense services. This special election fills the remainder of the term after the seat was vacated.",candidates:[
+    {name:"Andrés Cano",party:"Democrat",status:"Incumbent",bio:"Appointed to the Board in 2025; previously served three terms in the Arizona House, including as Minority Leader, and earned a Master of Public Administration from Harvard."},
+    {name:"Jeff Rhodes",party:"Republican",bio:""},
+    {name:"Trista di Genova",party:"Independent",status:"Write-in candidate",bio:"Educator, multimedia journalist, and independent researcher."}
+  ]},{group:"Pima County",office:"Clerk of the Superior Court — 4-year term",does:"Serves as the official record keeper and financial officer for the County Superior Court, maintaining court records, overseeing jury selection, processing court-ordered fees, fines and victim restitution, issuing marriage licenses, and accepting passport applications.",candidates:[
+    {name:"James W. Giacomino",party:"Democrat",status:"Incumbent",bio:"Appointed Clerk of the Superior Court in 2025 by Governor Katie Hobbs; worked in the Clerk's office for 14 years before the appointment."}
+  ]},{group:"Pima County",office:"Justice of the Peace — Precinct 1 — 4-year term",does:"Handles civil cases involving up to $10,000 in dispute, small claims, traffic violations, evictions, misdemeanor criminal cases, and preliminary felony hearings; also issues search warrants and restraining orders and performs marriage ceremonies.",candidates:[
+    {name:"Victoria Steele",party:"Democrat",status:"Incumbent",bio:"Justice of the Peace since January 2023; previously served in the Arizona House (2013-2016) and Arizona Senate (2019-2023)."}
+  ]},{group:"Pima County",office:"Justice of the Peace — Precinct 3 — 4-year term",does:"Handles civil cases involving up to $10,000 in dispute, small claims, traffic violations, evictions, misdemeanor criminal cases, and preliminary felony hearings; also issues search warrants and restraining orders and performs marriage ceremonies.",candidates:[
+    {name:"Sara Mae Williams",party:"Democrat",status:"Incumbent",bio:"First elected Tohono O'odham Nation Justice of the Peace for Pima County; served as Presiding Justice of the Peace and has been on the bench since 2023."},
+    {name:"Rodney Hopkins",party:"",bio:"Adult-education and GED teacher for about 19 years."}
+  ]},{group:"Pima County",office:"Justice of the Peace — Precinct 6 — special election (remainder of term)",does:"Handles civil cases involving up to $10,000 in dispute, small claims, traffic violations, evictions, misdemeanor criminal cases, and preliminary felony hearings; also issues search warrants and restraining orders and performs marriage ceremonies.",candidates:[
+    {name:"Morgan Miholich",party:"Democrat",bio:"Pima County Deputy Attorney in the Community Protection Bureau; has worked in the criminal justice system for 20 years."},
+    {name:"Francis Dowuona-Impraim",party:"",bio:""}
+  ]},{group:"Pima County",office:"Justice of the Peace — Precinct 7 — 4-year term",does:"Handles civil cases involving up to $10,000 in dispute, small claims, traffic violations, evictions, misdemeanor criminal cases, and preliminary felony hearings; also issues search warrants and restraining orders and performs marriage ceremonies.",candidates:[
+    {name:"Ray Carroll",party:"Republican",status:"Incumbent",bio:"Former Pima County Supervisor; Justice of the Peace for Precinct 7 since 2017."}
+  ]},{group:"Pima County",office:"Justice of the Peace — Precinct 8 — 4-year term",does:"Handles civil cases involving up to $10,000 in dispute, small claims, traffic violations, evictions, misdemeanor criminal cases, and preliminary felony hearings; also issues search warrants and restraining orders and performs marriage ceremonies.",candidates:[
+    {name:"Kristel Ann Foster",party:"Democrat",status:"Incumbent",bio:"Former Tucson Unified school board member and educator for nearly 20 years; has presided over Justice Court and Pima County's Domestic Violence Specialty Court since 2022."},
+    {name:"William Parven",party:"Republican",bio:"Practicing attorney for over 15 years in Tucson since 2014; approved to substitute as a justice of the peace pro tem."}
+  ]},{group:"Pima County",office:"Constable — Precinct 2 — 4-year term",does:"Serves as the law enforcement and process-serving arm of the Justice of the Peace Court, serving summonses, subpoenas and arrest warrants, seizing property to satisfy court judgments, carrying out evictions, and providing in-court security.",candidates:[
+    {name:"Francisco Lopez",party:"Democrat",status:"Incumbent",bio:"Career experience in law enforcement."},
+    {name:"Arturo Peralta",party:"Democrat",status:"Write-in candidate",bio:"Palo Verde High School graduate; career experience in law enforcement."}
+  ]},{group:"Pima County",office:"Constable — Precinct 3 — 4-year term",does:"Serves as the law enforcement and process-serving arm of the Justice of the Peace Court, serving summonses, subpoenas and arrest warrants, seizing property to satisfy court judgments, carrying out evictions, and providing in-court security.",candidates:[
+    {name:"Letitia Martin",party:"Democrat",bio:""},
+    {name:"Eric Krznarich",party:"Republican",bio:"Pima County constable."}
+  ]},{group:"Pima County",office:"Constable — Precinct 9 — special election (remainder of term)",does:"Serves as the law enforcement and process-serving arm of the Justice of the Peace Court, serving summonses, subpoenas and arrest warrants, seizing property to satisfy court judgments, carrying out evictions, and providing in-court security.",candidates:[
+    {name:"Gerard Acuña",party:"",bio:""},
+    {name:"Matthew R. Leve",party:"",status:"Incumbent",bio:"Appointed constable for Justice Precinct 9 effective January 1, 2025."}
+  ]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"J. Alan Goodwin",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Janet C. Bostwick",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Danelle Liwski",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Sandra M. Bensley",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Catherine M. Woods",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Kathleen A. Quigley",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Laurie B. San Angelo",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Cynthia Kuhn",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Jeffrey T. Bergin",party:"Nonpartisan",bio:""}]},{group:"Pima County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[{name:"Randi L. Burnett",party:"Nonpartisan",bio:""}]},{group:"Pinal County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Rebecca Padilla",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Justice of the Peace — Precinct 1 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Shaun Babeu",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Justice of the Peace — Precinct 2 (Casa Grande) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Dean Dill",party:"Democrat",bio:""},
+    {name:"Reginald Winston",party:"Republican",status:"Incumbent",bio:"Casa Grande justice of the peace since March 2025, appointed by the Board of Supervisors; judge pro tem since 2022."}
+  ]},{group:"Pinal County",office:"Justice of the Peace — Precinct 3 (Central Pinal) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"George Arredondo Sr.",party:"Democrat",bio:"Coolidge Unified school board member, term 2022-2026; ran for County Supervisor District 1 in 2024."},
+    {name:"Glenda Stewart",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Justice of the Peace — Precinct 4 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Patricia Glover",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Justice of the Peace — Precinct 5 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Nancy Discher",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Justice of the Peace — Precinct 6 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Kelly Gremmel",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Constable — Precinct 1 (Pioneer / San Tan Valley) — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Elizabeth Reed",party:"Democrat",bio:""},
+    {name:"Mal Osgood",party:"Republican",status:"Incumbent",bio:"Precinct 1 constable, term 2023-2026."}
+  ]},{group:"Pinal County",office:"Constable — Precinct 2 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Scott Elliott",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Constable — Precinct 3 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Shanna Martinez",party:"",bio:"Write-in candidate."}
+  ]},{group:"Pinal County",office:"Constable — Precinct 4 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"William Griffin",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Constable — Precinct 5 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Christopher Alvarado",party:"Republican",bio:""}
+  ]},{group:"Pinal County",office:"Constable — Precinct 6 (Apache Junction) — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Susan Bates",party:"Democrat",bio:""},
+    {name:"Ted Gremmel",party:"Republican",status:"Incumbent",bio:"Precinct 6 constable, per the county directory."}
+  ]},{group:"Pinal County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[
+    {name:"Jessica K. Dixon",party:"Nonpartisan",bio:""},
+    {name:"Steven J. Fuller",party:"Nonpartisan",bio:""},
+    {name:"Danielle Harris",party:"Nonpartisan",bio:""},
+    {name:"Delia R. Neal",party:"Nonpartisan",bio:""},
+    {name:"Karen F. Palmer",party:"Nonpartisan",bio:""},
+    {name:"Daniel A. Washburn",party:"Nonpartisan",bio:""}
+  ]},{group:"Yavapai County",office:"Board of Supervisors — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county departments and services.",candidates:[
+    {name:"Marie Moore",party:"Republican",bio:"Mayor of Camp Verde, small business operator, and longtime Yavapai County resident who has lived, worked, and raised her family there for over 30 years, with roots in agriculture; appointed to Town Council in 2022, elected later that year, now serving as Mayor. She won the July 21 Republican primary over Wiley Cline; no Democrat filed."}
+  ]},{group:"Yavapai County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Charlie Van Landingham",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Superior Court Judge — Division 1 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Michael P. McGill",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Superior Court Judge — Division 2 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"John D. Napper",party:"Republican",status:"Incumbent",bio:"Presiding judge."}
+  ]},{group:"Yavapai County",office:"Superior Court Judge — Division 3 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Josh Butner",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Superior Court Judge — Division 5 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Henry Whitmer",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Superior Court Judge — Division 6 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Anna Young",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Justice of the Peace — Prescott — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Douglas Suits",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Justice of the Peace — Verde Valley — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"David Gordon",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Justice of the Peace — Bagdad / Yarnell — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Dennis Dowling",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Justice of the Peace — Mayer — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Ed Cocchiola",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Justice of the Peace — Seligman — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Ben Emery",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Constable — Prescott — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Ron Williams",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Constable — Verde Valley — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Brandon Rumpf",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Constable — Bagdad / Yarnell — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Bill Risen",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Constable — Mayer — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Donny Oen",party:"Republican",bio:""}
+  ]},{group:"Yavapai County",office:"Constable — Seligman — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Schylar Cloudt",party:"Republican",bio:"Republican primary write-in winner."}
+  ]},{group:"Mohave County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Christina Spurlock",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Superior Court Judge — Division 1 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Megan A. McCoy",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Superior Court Judge — Division 2 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Derek Carlisle",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Superior Court Judge — Division 3 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Steven Moss",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Superior Court Judge — Division 4 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Aaron Demke",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Superior Court Judge — Division 6 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Eric E. Gordon",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Superior Court Judge — Division 7 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Kenneth L. Gregory",party:"Republican",bio:"Won the July 21 Republican primary over Jeffrey B. Haws."}
+  ]},{group:"Mohave County",office:"Superior Court Judge — Division 8 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Douglas Camacho",party:"Republican",bio:"The 8th Division was approved effective July 1, 2025; its contest is up for election in 2026."}
+  ]},{group:"Mohave County",office:"Justice of the Peace — Kingman, Precinct 1 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Dave Huerta",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Justice of the Peace — Lake Havasu, Precinct 2 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Jennifer Brodie",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Justice of the Peace — Bullhead, Precinct 3 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Jon Moss",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Justice of the Peace — North Canyon, Precinct 4 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Barbara Joy Brown",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Justice of the Peace — Cerbat, Precinct 5 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"David Jay Wayt",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Constable — Kingman, Precinct 1 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Timothy F. Griepp",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Constable — Lake Havasu, Precinct 2 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Martin Standsberry",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Constable — Bullhead, Precinct 3 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"John Deese",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Constable — North Canyon, Precinct 4 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Michael K. Hoggard",party:"Republican",bio:""}
+  ]},{group:"Mohave County",office:"Constable — Cerbat, Precinct 5 — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Robert \"Joey\" McEuen",party:"Republican",bio:""}
+  ]},{group:"Yuma County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Bobbie Jo Daily",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"County Recorder — 2-year term",does:"Records property documents, maintains public records, and oversees voter registration and early voting.",candidates:[
+    {name:"Billy Cloud",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Amy Hunley",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Justice of the Peace — Precinct 1 (Bisbee) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Janus Poppe",party:"Democrat",bio:""}
+  ]},{group:"Cochise County",office:"Justice of the Peace — Precinct 2 (Douglas) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Christopher Crucilla",party:"Republican",bio:""},
+    {name:"Juan Flores",party:"Democrat",bio:""}
+  ]},{group:"Cochise County",office:"Justice of the Peace — Precinct 3 (Benson) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Randy Judd",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Justice of the Peace — Precinct 4 (Willcox) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Trevor Ward",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Justice of the Peace — Precinct 5 (Sierra Vista) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Kenneth Curfman",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Justice of the Peace — Precinct 6 (Bowie) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Ruben Adame",party:"Democrat",bio:""}
+  ]},{group:"Cochise County",office:"Constable — Precinct 3 (Benson) — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Jon Drummond",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Constable — Precinct 5 (Sierra Vista) — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Melissa Wirthlin",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Superior Court Judge — Division I — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Joel Larson",party:"Democrat",bio:""}
+  ]},{group:"Cochise County",office:"Superior Court Judge — Division II — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Deana Champagne",party:"Republican",bio:""}
+  ]},{group:"Cochise County",office:"Superior Court Judge — Division III — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"David Thorn",party:"Republican",bio:""}
+  ]},{group:"Coconino County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Bradley Crossland",party:"",status:"Incumbent",bio:"Appointed Clerk of the Superior Court by the presiding judge in January 2026. Party unverified — see gap list."}
+  ]},{group:"Coconino County — Judicial retentions",office:"Superior Court Judge — Retention",does:"Retention vote: vote Yes to keep the judge in office, No to remove them.",candidates:[
+    {name:"Ted Reed",party:"Nonpartisan",bio:""},
+    {name:"Joshua C. Steinlage",party:"Nonpartisan",bio:""}
+  ]},{group:"Navajo County",office:"Superior Court Judge — Division I — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Joseph S. Clark",party:"Republican",status:"Incumbent",bio:"Division I judge; sole Republican primary candidate."}
+  ]},{group:"Navajo County",office:"Constable — Precinct 3 (Snowflake) — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Michelle Hunt",party:"Republican",bio:"Won the July 21 Republican primary over Roger Harston."}
+  ]},{group:"Apache County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Samceita Begay",party:"Democrat",bio:"Won the July 21 Democratic primary over Wendy Shepherd, 6,637 to 4,837."}
+  ]},{group:"Apache County",office:"County Attorney — 2-year term",does:"Prosecutes criminal cases for the county and serves as the county government's lawyer.",candidates:[
+    {name:"Jasmine Blackwater-Nygren",party:"Democrat",bio:"Unopposed in the July 21 Democratic primary, 9,869 votes."}
+  ]},{group:"Apache County",office:"Superior Court Judge — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Michael Latham",party:"Democrat",bio:"Unopposed in the July 21 Democratic primary, 10,554 votes."}
+  ]},{group:"Apache County",office:"Justice of the Peace — Precinct 1 (Round Valley) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Gary Ciminski",party:"Republican",bio:""}
+  ]},{group:"Apache County",office:"Justice of the Peace — Precinct 2 (St. Johns) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Butch Gunnels",party:"Republican",bio:"Won the July 21 Republican primary over Jared Raban, 680 to 409."}
+  ]},{group:"Apache County",office:"Justice of the Peace — Precinct 3 (North Star) — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Jay Yellowhorse",party:"Democrat",bio:"Won the July 21 Democratic primary over Phefelia Bradley, 6,429 to 4,127."}
+  ]},{group:"Apache County",office:"Constable — Precinct 2 (St. Johns) — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Lance Pearce",party:"Republican",bio:""}
+  ]},{group:"Apache County",office:"Constable — Precinct 3 (North Star) — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Sam Wood",party:"Democrat",bio:""}
+  ]},{group:"Santa Cruz County",office:"County School Superintendent — term ending January 2029",does:"Oversees county school services, supports school districts, and administers county education programs.",candidates:[
+    {name:"Maya M. Donnelly",party:"Democrat",bio:"Won the Democratic primary over Sonia Sanchez."}
+  ]},{group:"Santa Cruz County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Juan Pablo Guzman",party:"Democrat",bio:""}
+  ]},{group:"Santa Cruz County",office:"Justice of the Peace — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Miguel A. López",party:"Democrat",bio:"Won the Democratic primary over Adriana Olaiz."}
+  ]},{group:"Santa Cruz County",office:"Constable — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Joel Hathaway",party:"Democrat",bio:""}
+  ]},{group:"Santa Cruz County",office:"Superior Court Judge — Division 1 — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Robert Gilliland",party:"Nonpartisan",bio:""},
+    {name:"Anna Montoya",party:"Nonpartisan",bio:""}
+  ]},{group:"Gila County",office:"Superior Court Judge — Division II — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Timothy Wright",party:"Republican",bio:""}
+  ]},{group:"Gila County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Anita Escobedo",party:"Democrat",bio:""}
+  ]},{group:"Gila County",office:"County Recorder — 2-year term",does:"Records property documents, maintains public records, and oversees voter registration and early voting.",candidates:[
+    {name:"Wendy Mannigel-Smith",party:"Republican",bio:""}
+  ]},{group:"Gila County",office:"Justice of the Peace — Globe Regional — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Jordon Reardon",party:"Democrat",bio:""}
+  ]},{group:"Gila County",office:"Justice of the Peace — Payson Regional — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Donald Garvin",party:"Republican",bio:""}
+  ]},{group:"Gila County",office:"Constable — Globe Regional — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Ruben Mancha",party:"Democrat",bio:""}
+  ]},{group:"Gila County",office:"Constable — Payson Regional — 4-year term",does:"Serves court papers, enforces justice-court orders, and assists with evictions in the precinct.",candidates:[
+    {name:"Tony McDaniel",party:"Republican",bio:""}
+  ]},{group:"Graham County",office:"Justice of the Peace — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Stephanie Newton",party:"Republican",bio:""}
+  ]},{group:"Graham County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Heidi Torrio",party:"Republican",bio:""}
+  ]},{group:"Graham County",office:"Superior Court Judge — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Michael Peterson",party:"Republican",bio:""}
+  ]},{group:"Greenlee County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Madeline Montoya",party:"Democrat",status:"Incumbent",bio:"Democratic primary, 410 votes, 100%."}
+  ]},{group:"Greenlee County",office:"Justice of the Peace — Precinct 2 — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Mindy Claridge",party:"Republican",bio:"Republican primary, 262 votes, 100%."}
+  ]},{group:"La Paz County",office:"County Assessor — 4-year term",does:"Values property in the county for tax purposes and maintains property records.",candidates:[
+    {name:"Kari Ann Noeltner",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"La Paz County",office:"Justice of the Peace — 4-year term",does:"Hears misdemeanors, small civil claims, traffic cases, and preliminary hearings in a local justice court.",candidates:[
+    {name:"Tiffany Dyer",party:"Republican",status:"Incumbent",bio:"Republican primary, 1,725 votes, unopposed."}
+  ]},{group:"La Paz County",office:"County School Superintendent — 4-year term",does:"Oversees county school services, supports school districts, and administers county education programs.",candidates:[
+    {name:"Lonnie Lewis",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"La Paz County",office:"Clerk of the Superior Court — 4-year term",does:"Keeps Superior Court records, files court documents, and manages court fees and jury service.",candidates:[
+    {name:"Hollie Lucas",party:"Republican",status:"Incumbent",bio:""}
+  ]},{group:"La Paz County",office:"Superior Court Judge — 4-year term",does:"Hears felony criminal cases, major civil cases, family law, and probate matters in the county's trial court.",candidates:[
+    {name:"Thomas Dorsey",party:"Republican",bio:"Won the July 21 Republican primary over Anita Dale, 943 to 758."}
+  ]}
     ]
   },
   nevada: {
-    label:"Nevada · Statewide ballot",chips:["Governor","6 statewide offices","U.S. House NV-01\u2013NV-04","Supreme Court","Questions 6 & 7"],summary:"Nevada's statewide races for November 3, 2026: Governor, five more statewide offices, all four U.S. House districts, two Supreme Court seats, and ballot Questions 6 and 7. There is no U.S. Senate race in Nevada in 2026. Las Vegas and Reno voters also have full VoterLens city guides, linked under Sources below.",
-    coverage:"This pathway covers the races that appear on ballots across Nevada for the November 3, 2026 general election. You vote in only one U.S. House district; all four are listed so you can find yours. State legislative, county, city, and local court races are not included here \u2014 for Las Vegas and Reno, use the full VoterLens city guides linked under Sources; other voters should check the sample ballot from their county election department.",
-    caveats:["Nevada ballots also offer 'None of These Candidates' on partisan races \u2014 a Nevada-only ballot option, not listed per race here.","Aaron D. Ford and Danielle Ford are both candidates for Governor; sources checked do not show them to be related.","Candidate lists were verified against the Clark County Election Department's official 2026 contests list and post-primary listings drawn from the Secretary of State's certified candidate list. Compare your county sample ballot before voting.","The two Supreme Court races are nonpartisan and uncontested in 2026 \u2014 only the incumbent justice filed for each seat."],
-    sources:[{label:"Clark County Election Department \u2014 2026 contests and candidates (official)",url:"https://www.clarkcountynv.gov/adobe/assets/urn%3Aaaid%3Aaem%3Afe5dbe41-e2b2-402e-a651-cbe5e6ea53bc/original/as/Contests-Candidates-All-26.pdf"},{label:"Nevada Secretary of State \u2014 2026 statewide ballot questions (via Lander County booklet)",url:"https://www.landercountynv.org/2026 Ballot Question Booklet vFINAL.pdf?t=202610011717120"},{label:"VoterLens Las Vegas city ballot guide",url:"https://muse.ai/s/las-vegas-ballot-guide-2026-kxu6poevyxylxy"},{label:"VoterLens Reno city ballot guide",url:"https://muse.ai/s/reno-ballot-guide-2026-xexu6poei1xndxq"}],
+    label:"Nevada \u00b7 Statewide, legislature & county ballot",chips:["Governor","6 statewide offices","U.S. House NV-01\u2013NV-04","Supreme Court","Questions 6 & 7","State Legislature","County races"],summary:"Nevada's races for November 3, 2026: Governor, five more statewide offices, all four U.S. House districts, two Supreme Court seats, and ballot Questions 6 and 7 \u2014 plus the State Legislature (all 42 Assembly districts and the 11 Senate districts on this ballot) and county races in 16 of Nevada's 17 counties, including county courts. There is no U.S. Senate race in Nevada in 2026. Las Vegas and Reno voters also have full VoterLens city guides, linked under Sources below.",
+    coverage:"This pathway covers the statewide races, the legislature, and county offices and county courts that appear on ballots across Nevada for the November 3, 2026 general election. You vote in only one U.S. House district, one legislative district, and one county commission district; all districts on this ballot are listed so you can find yours. NOT included here: city races (for Las Vegas and Reno, use the full VoterLens city guides linked under Sources), school-district and Board of Regents races, Justices of the Peace and Constables, township races, local ballot measures beyond Questions 6 and 7, and Lincoln County, whose 2026 county ballot could not be verified. Other voters should check their county sample ballot.",
+    caveats:["Nevada ballots also offer 'None of These Candidates' on partisan races \u2014 a Nevada-only ballot option, not listed per race here.","Aaron D. Ford and Danielle Ford are both candidates for Governor; sources checked do not show them to be related.","Candidate lists were verified against the Clark County Election Department's official 2026 contests list and post-primary listings drawn from the Secretary of State's certified candidate list. Compare your county sample ballot before voting.","The two Supreme Court races are nonpartisan and uncontested in 2026 \u2014 only the incumbent justice filed for each seat.","Legislature and county entries were verified against county official lists and independent reproductions, but the Secretary of State candidate portal is a JavaScript app that could not be read line-by-line \u2014 confirm names against your county sample ballot before voting, especially the flagged items below.","Legislature flags: AD24 No Political Party candidate Andrew Schaefer and AD29 Libertarian Kathryn Nix were omitted (see draft gaps); SD8\u2019s three No Political Party candidates are included on weaker verification; spelling variants (Do\u00f1ate/Donate, Arroyo/Arroyo-Montalvo, Torres/Torres-Fossett) need a sample-ballot check.","County flags: Washoe\u2019s four unopposed partisan races (District Attorney, Assessor, Recorder, Treasurer) and Clark\u2019s exclusion of Simmons (Green, Commission E) and Baron (No Political Party, Commission F) need sample-ballot confirmation. Sheriffs in Clark and Washoe are not on this ballot (decided at the primary as sole nonpartisan filers). Nevada district-court judges are elected, not retained. Multicounty district courts (1st, 5th, 7th, 11th Judicial Districts) are listed once, not once per county."],
+    sources:[{label:"Clark County Election Department \u2014 2026 contests and candidates (official)",url:"https://www.clarkcountynv.gov/adobe/assets/urn%3Aaaid%3Aaem%3Afe5dbe41-e2b2-402e-a651-cbe5e6ea53bc/original/as/Contests-Candidates-All-26.pdf"},{label:"Nevada Secretary of State \u2014 2026 statewide ballot questions (via Lander County booklet)",url:"https://www.landercountynv.org/2026 Ballot Question Booklet vFINAL.pdf?t=202610011717120"},{label:"VoterLens Las Vegas city ballot guide",url:"https://muse.ai/s/las-vegas-ballot-guide-2026-kxu6poevyxylxy"},{label:"VoterLens Reno city ballot guide",url:"https://muse.ai/s/reno-ballot-guide-2026-xexu6poei1xndxq"},{label:"Clark County Election Department \u2014 Fall 2026 general-election contests list (official)",url:"https://www.clarkcountynv.gov/assets/documents/government/elections/newsletters/cced-newsletter-fall2026.pdf"},{label:"Washoe County Registrar of Voters \u2014 2026 General Election (official)",url:"https://www.washoecounty.gov/voters/information/index.php"},{label:"Ballotpedia \u2014 2026 Nevada Senate and Assembly elections (independent cross-check)",url:"https://ballotpedia.org/Nevada_State_Senate_elections,_2026"},{label:"County official sample ballots and guides \u2014 Churchill, Douglas, Elko, Humboldt, Lander, Nye, Storey, White Pine (see draft headers for full list)",url:"https://www.clarkcountynv.gov/assets/documents/government/elections/newsletters/cced-newsletter-fall2026.pdf"}],
     measures:[
       {code:"Question 6 \u2014 Constitutional Amendment",title:"Abortion rights",text:"Should the Nevada Constitution be amended to create an individual's fundamental right to an abortion, without interference by state or local governments, whenever the abortion is performed by a qualified healthcare professional until fetal viability or when necessary to protect the health or life of the pregnant individual at any point during the pregnancy? Voters first approved this citizen initiative in 2024; Nevada's constitution requires initiatives to pass twice, so it returns in 2026.",yes:"Amend the Nevada Constitution to create the abortion right described above.",no:"Do not amend the Constitution."},
       {code:"Question 7 \u2014 Constitutional Amendment",title:"Voter ID",text:"Should the Nevada Constitution be amended to require voters to either present photo identification to verify their identity when voting in-person or to provide certain personal information to verify their identity when voting by mail ballot? Voters first approved this citizen initiative in 2024; Nevada's constitution requires initiatives to pass twice, so it returns in 2026.",yes:"Amend the Nevada Constitution to require the voter identification described above.",no:"Do not amend the Constitution."}
@@ -914,14 +1970,659 @@ window.EXPANDED_BALLOTS = {
       ]},
       {group:"State courts",office:"Supreme Court \u2014 Seat D \u2014 6-year term",does:"Nevada's highest court: final appeals from district courts. Judicial races are nonpartisan. Only the incumbent filed for this seat, so it is uncontested.",candidates:[
         {name:"Douglas W. Herndon",party:"Nonpartisan",status:"Incumbent"}
-      ]}
+      ]},
+      {group:"State Legislature",office:"State Senate — District 2 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Edgar Flores",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 8 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Marilyn Dondero Loop",party:"Democrat",status:"Incumbent"},
+    {name:"George E. Harris",party:"Republican"},
+    {name:"Steven S. Cohen",party:"No Political Party"},
+    {name:"Jamie S. Miller",party:"No Political Party"},
+    {name:"Robert Morris",party:"No Political Party"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 9 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Melanie Scheible",party:"Democrat",status:"Incumbent"},
+    {name:"Maria Thompson",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 10 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Fabian Doñate",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 12 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Julie Pazina",party:"Democrat",status:"Incumbent"},
+    {name:"Rafael Arroyo-Montalvo",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 13 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Skip Daly",party:"Democrat",status:"Incumbent"},
+    {name:"Matthew Buehler",party:"Republican"},
+    {name:"Charlene Young",party:"Independent American"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 14 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Ira Hansen",party:"Republican",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 16 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Lisa Krasner",party:"Republican",status:"Incumbent"},
+    {name:"Chrystal Roll",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 17 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Robin Titus",party:"Republican",status:"Incumbent"},
+    {name:"Lynne Ballatore",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 20 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"Danielle Gallant",party:"Republican"},
+    {name:"Calvin Sandoval",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Senate — District 21 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; all districts on this ballot are listed so you can find yours.",candidates:[
+    {name:"James Ohrenschall",party:"Democrat",status:"Incumbent"},
+    {name:"Al Rojas",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 1 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Alexis Elizabeth Esparza",party:"Democrat"},
+    {name:"Tarik A. Barnes",party:"No Political Party"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 2 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Kamilah Bywaters",party:"Democrat"},
+    {name:"Drew Teitelbaum",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 3 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Selena Torres-Fossett",party:"Democrat",status:"Incumbent"},
+    {name:"Joseph P. Silvestri",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 4 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Lisa Cole",party:"Republican",status:"Incumbent"},
+    {name:"Eileen Eady",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 5 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Brittney M. Miller",party:"Democrat",status:"Incumbent"},
+    {name:"Kelly Quinn",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 6 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Jovan Alexander Jackson",party:"Democrat",status:"Incumbent"},
+    {name:"Katherine Duncan",party:"No Political Party"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 7 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Cameron Miller",party:"Democrat"},
+    {name:"Anthony Scott Willett",party:"Libertarian"},
+    {name:"Michael D. Musick",party:"No Political Party"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 8 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Duy Nguyen",party:"Democrat",status:"Incumbent"},
+    {name:"Joseph Charafi",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 9 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Ryan Hampton",party:"Democrat"},
+    {name:"Erica Alejandra Neely",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 10 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Venise L. Karris",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 11 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Cinthia Moore",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 12 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Max Carter II",party:"Democrat",status:"Incumbent"},
+    {name:"Nancy Roecker",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 13 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Brian Hibbetts",party:"Republican",status:"Incumbent"},
+    {name:"Daniel Andrews",party:"Democrat"},
+    {name:"Gage C. Beck",party:"Libertarian"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 14 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Erica Mosca",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 15 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Miguel Davila",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 16 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Cecelia González",party:"Democrat",status:"Incumbent"},
+    {name:"John Carlo",party:"Republican"},
+    {name:"Jasmine Kurys",party:"No Political Party"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 17 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Linda F. Hunt",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 18 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Venicia Considine",party:"Democrat",status:"Incumbent"},
+    {name:"Crystal Newton",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 19 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Jason Patchett",party:"Republican",status:"Incumbent"},
+    {name:"Zackaraih Lysaght",party:"Libertarian"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 20 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"David Orentlicher",party:"Democrat",status:"Incumbent"},
+    {name:"Stan Vaughan",party:"Independent American"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 21 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Elaine Marzola",party:"Democrat",status:"Incumbent"},
+    {name:"Patsy A. Carvalho",party:"Republican"},
+    {name:"Tighe Galvin",party:"Libertarian"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 22 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Melissa Hardy",party:"Republican",status:"Incumbent"},
+    {name:"Shenea Booth",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 23 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Denise Daniels Fanning",party:"Republican"},
+    {name:"Jan Allen Aspelund",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 24 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Erica Roth",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 25 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Selena La Rue Hatch",party:"Democrat",status:"Incumbent"},
+    {name:"Michael A. Ginsburg",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 26 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Richard DeLong",party:"Republican",status:"Incumbent"},
+    {name:"Sam Baugh",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 27 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Heather Goulding",party:"Democrat",status:"Incumbent"},
+    {name:"Veronica Cortes",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 28 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Reuben D'Silva",party:"Democrat",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 29 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Alex J. Pereszlenyi",party:"Democrat"},
+    {name:"Joe Ludwig",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 30 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Natha Anderson",party:"Democrat",status:"Incumbent"},
+    {name:"Trista Gomez",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 31 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Jill Dickman",party:"Republican",status:"Incumbent"},
+    {name:"Neal Schwartz",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 32 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Alexis Hansen",party:"Republican",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 33 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Bert Gurr",party:"Republican",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 34 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Hanadi Nadeem",party:"Democrat",status:"Incumbent"},
+    {name:"Brandon Davis",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 35 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Rebecca Edgeworth",party:"Republican",status:"Incumbent"},
+    {name:"Joe Spica",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 36 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Gregory T. Hafen II",party:"Republican",status:"Incumbent"},
+    {name:"Jon Penn Junejo",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 37 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Shea Backus",party:"Democrat",status:"Incumbent"},
+    {name:"Jill Douglass",party:"Republican"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 38 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Gregory Koenig",party:"Republican",status:"Incumbent"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 39 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Blayne Osborn",party:"Republican",status:"Incumbent"},
+    {name:"Erich Obermayr",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 40 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Julie Butler",party:"Republican"},
+    {name:"Oscar Fuentes",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 41 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Kelly Chapman",party:"Republican"},
+    {name:"Vinny Spotleson",party:"Democrat"}
+  ]},
+      {group:"State Legislature",office:"State Assembly — District 42 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one Assembly district; all districts are listed so you can find yours.",candidates:[
+    {name:"Tracy Brown-May",party:"Democrat",status:"Incumbent"},
+    {name:"Christopher Brandlin",party:"Republican"}
+  ]},
+      {group:"Clark County",office:"County Commission — District E — 4-year term",does:"Sets county policy, adopts the county budget, and governs land use, roads, and county services, including for unincorporated Clark County.",candidates:[
+    {name:"Richard \"Tick\" Segerblom",party:"Democrat",status:"Incumbent",bio:"County commissioner since 2019."},
+    {name:"Manny Kess",party:"Republican",bio:""}
+  ]},
+      {group:"Clark County",office:"County Commission — District F — 4-year term",does:"Sets county policy, adopts the county budget, and governs land use, roads, and county services, including for unincorporated Clark County. Open seat — Commissioner Justin Jones is not seeking reelection.",candidates:[
+    {name:"Minja Yan",party:"Democrat",bio:""},
+    {name:"Heidi Kasama",party:"Republican",bio:""},
+    {name:"Becky Harris",party:"No Political Party",bio:""}
+  ]},
+      {group:"Clark County",office:"County Commission — District G — 4-year term",does:"Sets county policy, adopts the county budget, and governs land use, roads, and county services, including for unincorporated Clark County.",candidates:[
+    {name:"Jim Gibson",party:"Democrat",status:"Incumbent",bio:"County commissioner since 2019."},
+    {name:"Jon Maxham",party:"Republican",bio:"Internal medicine physician and U.S. Air Force veteran."}
+  ]},
+      {group:"Clark County",office:"District Attorney — 4-year term",does:"Prosecutes criminal cases on behalf of the people of Clark County and advises county law enforcement.",candidates:[
+    {name:"Steve Wolfson",party:"Democrat",status:"Incumbent · unopposed",bio:"District Attorney since 2012."}
+  ]},
+      {group:"Clark County",office:"County Assessor — 4-year term",does:"Values taxable property in Clark County, administers exemptions, and maintains assessment records. Open seat.",candidates:[
+    {name:"Tamicka Washington",party:"Democrat",bio:""},
+    {name:"Judy Joe",party:"Republican",bio:""},
+    {name:"Lynette Warren",party:"Libertarian",bio:""}
+  ]},
+      {group:"Clark County",office:"County Clerk — 4-year term",does:"Issues marriage licenses, records county documents, and keeps county records. Clark County elections are run by the separate Registrar of Voters, not the Clerk.",candidates:[
+    {name:"Lynn Marie Goya",party:"Democrat",status:"Incumbent",bio:"County Clerk since 2015."},
+    {name:"Howell Shaw",party:"Republican",bio:""},
+    {name:"George Stamper",party:"Libertarian",bio:""}
+  ]},
+      {group:"Clark County",office:"County Recorder — 4-year term",does:"Records and preserves real-property documents, deeds, and other public records for Clark County. Open seat.",candidates:[
+    {name:"Tanya Flanagan",party:"Democrat",bio:""},
+    {name:"Bill Young",party:"Republican",bio:""},
+    {name:"Steven T. Borella",party:"Libertarian",bio:""}
+  ]},
+      {group:"Clark County",office:"County Treasurer — 4-year term",does:"Receives, safeguards, invests, and disburses Clark County public funds.",candidates:[
+    {name:"J. \"Ken\" Diaz",party:"Democrat",status:"Incumbent",bio:"County Treasurer since 2023."},
+    {name:"Mitchell T. Tracy",party:"Republican",bio:""},
+    {name:"Tim J. \"TJ\" Ferreira",party:"Libertarian",bio:""}
+  ]},
+      {group:"Clark County",office:"Public Administrator — 4-year term",does:"Administers the estates of Clark County residents who die without a qualified person to handle their affairs.",candidates:[
+    {name:"Stephanie Itkin-Goodman",party:"Democrat",bio:""},
+    {name:"Michael Murphy",party:"Republican",bio:""}
+  ]},
+      {group:"County courts",office:"Clark County District Court — Department 1 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Bita \"Marie\" Yeager",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 2 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Carli Lynn Kierny",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 3 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Monica Trujillo",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 4 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Nadia Krall",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 5 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Veronica Barisich",party:"Nonpartisan",bio:""},{name:"Tracy Hibbetts",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 6 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Jacqueline M. Bluth",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 7 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Danielle K. Pieper",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 8 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Austin Beaumont",party:"Nonpartisan",bio:""},{name:"Jessica K. Peterson",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 9 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Maria Alice Gall",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 10 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Tierra D. Jones",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 11 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Anna Albertson",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 12 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Dan Gilliam",party:"Nonpartisan",bio:""},{name:"Michelle Leavitt",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 13 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Adam Ganz",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 14 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Tina Talim",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 15 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Joe Hardy Jr.",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 16 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Tim Williams",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 17 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Jennifer Schwartz",party:"Nonpartisan",bio:""},{name:"Jake Villani",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 18 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Mary Kay Holthus",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 19 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Crystal Eller",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 20 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Eric Johnson",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 21 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Tara Clark-Newberry",party:"Nonpartisan",bio:""},{name:"Alex Hubert",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 22 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Susan Johnson",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 23 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Martina Bauhaus",party:"Nonpartisan",bio:""},{name:"Jasmin Lilly-Spells",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 24 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Colleen Brown",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 25 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Kathleen E. Delaney",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 26 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Jessica Goodey",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 27 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Erika Mendoza",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 28 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Noreen C. DeMonte",party:"Nonpartisan",bio:""},{name:"Danielle A. Tarmu",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 29 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Alex Quagge",party:"Nonpartisan",bio:""},{name:"Jacob Reynolds",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 30 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Josh Santeramo",party:"Nonpartisan",bio:""},{name:"Jerry A. Wiese II",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 31 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Joanna S. Kishner",party:"Nonpartisan",bio:""},{name:"Alexandra Beth McLeod",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court — Department 32 — 6-year term",does:"Hears felony criminal cases, civil cases, and family and juvenile matters in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Christy Craig",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department A — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Maria-Belleza D. \"Mari\" Parladé",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department B — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Linda Marquis",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department C — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Gregory G. Gordon",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department D — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Patricia A. Marr",party:"Nonpartisan",bio:""},{name:"Gwynneth Smith",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department E — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Charles \"Chuck\" Hoskin",party:"Nonpartisan",bio:""},{name:"Timothy Treffinger",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department F — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Denise L. Gentile",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department G — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Rhonda K. Forsberg",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department H — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Emily McFarling",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department I — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Soonhee \"Sunny\" Bailey",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department J — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Dedree \"DEE\" Butler",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department K — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Cynthia N. Giuliani",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department L — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"David S. Gibson Jr.",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department M — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Amy M. Mastin",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department N — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Michel Gaudet",party:"Nonpartisan",bio:""},{name:"Kerri Jean Maxey",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department O — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Gina McConnell",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department P — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Jennifer Isso",party:"Nonpartisan",bio:""},{name:"Mary Perry",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department Q — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Bryce C. Duckworth",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department R — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Marilyn A. Caston",party:"Nonpartisan",bio:""},{name:"Bill Henderson",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department S — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Kristine Brewer",party:"Nonpartisan",bio:""},{name:"Randall Forman",party:"Nonpartisan",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department T — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Nadin Cutter",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department U — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Dawn R. Throne",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department V — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Margaret E. Pickard",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department W — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Stacy Rocheleau",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department X — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Heidi Almase",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department Y — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Adriana Rincon White",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Clark County District Court, Family Division — Department Z — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Eighth Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Michele \"Shell\" Mercer",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"Washoe County",office:"County Commission — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and governs land use, roads, and county services. Open seat — incumbent Michael Clark lost the June Republican primary.",candidates:[
+    {name:"Marie Rodriguez",party:"Democrat",bio:"Reno Police Department community services officer."},
+    {name:"Jon Killoran",party:"Republican",bio:"CEO of the Reno Tahoe Winter Games Coalition."}
+  ]},
+      {group:"Washoe County",office:"County Commission — District 3 — 4-year term",does:"Sets county policy, adopts the county budget, and governs land use, roads, and county services.",candidates:[
+    {name:"Mariluz Garcia",party:"Democrat",status:"Incumbent",bio:"Commissioner since 2022; commission vice chair."},
+    {name:"Troy Regas",party:"Republican",bio:"Manager at a floral wholesale company; first run for office."}
+  ]},
+      {group:"Washoe County",office:"County Commission — District 5 — 4-year term",does:"Sets county policy, adopts the county budget, and governs land use, roads, and county services. Open seat — incumbent Jeanne Herman is not running for reelection.",candidates:[
+    {name:"Brian Wadsworth",party:"Democrat",bio:"COO of Native Public Media; two terms on the Pyramid Lake Paiute Tribal Council."},
+    {name:"Rob Pierce",party:"Republican",bio:"Retired automotive specialist; Navy veteran; former county planning commissioner."},
+    {name:"Lisa Lee",party:"Libertarian",bio:"Public health doctor; former county Human Services Agency staffer."}
+  ]},
+      {group:"Washoe County",office:"County Clerk — 4-year term",does:"Issues marriage licenses and keeps county commission and public records. Washoe County elections are run by the separate Registrar of Voters, not the Clerk.",candidates:[
+    {name:"Sean McDowell",party:"Democrat",bio:"Reno civil rights attorney."},
+    {name:"Duane Meyer",party:"Republican",bio:"Retired Washoe County Sheriff's Office captain; Navy veteran."}
+  ]},
+      {group:"Washoe County",office:"Public Administrator — 4-year term",does:"Administers the estates of Washoe County residents who die without a will or family to handle their affairs.",candidates:[
+    {name:"Blaise Jorgensen",party:"Democrat",bio:"Co-founder and COO of an estate-planning document business."},
+    {name:"Nicole Klitzke",party:"Republican",status:"Incumbent",bio:"Public administrator since 2023; more than 20 years in the office."}
+  ]},
+      {group:"Washoe County",office:"District Attorney — 4-year term",does:"Prosecutes criminal cases on behalf of the people of Washoe County. See Gap List: included as an unopposed November race; confirm against a Washoe sample ballot before publish.",candidates:[
+    {name:"Wes Duncan",party:"Republican",status:"Unopposed",bio:"Sparks city attorney since 2022; former Assemblyman. Won the June Republican primary over incumbent Chris Hicks."}
+  ]},
+      {group:"Washoe County",office:"County Assessor — 4-year term",does:"Values taxable property in Washoe County, administers exemptions, and maintains assessment records. See Gap List: included as an unopposed November race; confirm against a Washoe sample ballot before publish.",candidates:[
+    {name:"Chris Sarman",party:"Republican",status:"Incumbent · unopposed",bio:""}
+  ]},
+      {group:"Washoe County",office:"County Recorder — 4-year term",does:"Records and preserves real-property documents, deeds, and other public records for Washoe County. See Gap List: included as an unopposed November race; confirm against a Washoe sample ballot before publish.",candidates:[
+    {name:"Kalie Work",party:"Democrat",status:"Incumbent · unopposed",bio:""}
+  ]},
+      {group:"Washoe County",office:"County Treasurer — 4-year term",does:"Receives, safeguards, invests, and disburses Washoe County public funds. See Gap List: included as an unopposed November race; confirm against a Washoe sample ballot before publish.",candidates:[
+    {name:"Justin Taylor",party:"Republican",status:"Incumbent · unopposed",bio:""}
+  ]},
+      {group:"County courts",office:"Washoe County District Court — Department 1 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan. Open seat — Judge Kathleen Drakulich retired.",candidates:[
+    {name:"Derek C. Dreiling",party:"Nonpartisan",bio:"Senior justice of the peace and family court commissioner."},
+    {name:"Edmund \"Joe\" Gorman",party:"Nonpartisan",bio:"Probate commissioner for the Second Judicial District Court."}
+  ]},
+      {group:"County courts",office:"Washoe County District Court — Department 3 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Tammy M. Riggs",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court — Department 4 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Connie J. Steinheimer",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court — Department 6 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Lynne Jones",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court — Department 7 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Egan K. Walker",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court — Department 8 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Barry Breslow",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court — Department 9 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Scott Freeman",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court — Department 10 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Kathleen A. Sigurdson",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court — Department 15 — 6-year term",does:"Hears felony criminal cases, civil cases over $15,000, and family and juvenile matters in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"David A. Hardy",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court, Family Division — Department 2 — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Dixie Grossman",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court, Family Division — Department 5 — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Kristine E. Riley",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court, Family Division — Department 11 — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Paige Dollinger",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court, Family Division — Department 12 — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Sandra A. Unsworth",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court, Family Division — Department 13 — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[
+    {name:"Alexander C. Morey",party:"Nonpartisan",status:"Appointed incumbent",bio:"Already serving as judge in Department 13 after appointment to serve out the retired incumbent's term."},
+    {name:"Lance White",party:"Nonpartisan",bio:"Deceased; his name remains on the November 3, 2026 ballot per the Washoe County Registrar of Voters."}
+  ]},
+      {group:"County courts",office:"Washoe County District Court, Family Division — Department 14 — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Tamatha Schreinert",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"County courts",office:"Washoe County District Court, Family Division — Department 16 — 6-year term",does:"Hears family matters — divorce, child custody, and related cases — in the Second Judicial District Court. Judicial races are nonpartisan.",candidates:[{name:"Aimee E. Banales",party:"Nonpartisan",status:"Unopposed",bio:""}]},
+      {group:"Carson City",office:"Board of Supervisors — Ward 1 — 4-year term",does:"Carson City's governing board; sets city-county policy, adopts the budget, and oversees services.",candidates:[
+    {name:"Robert Stacey Giomi",party:"Nonpartisan",status:"Incumbent",bio:""}
+  ]},
+      {group:"Carson City",office:"Board of Supervisors — Ward 3 — 4-year term",does:"Carson City's governing board; sets city-county policy, adopts the budget, and oversees services.",candidates:[
+    {name:"Curtis Horton",party:"Nonpartisan",status:"Incumbent",bio:""},
+    {name:"Mayita Sanchez",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Carson City",office:"Sheriff — 4-year term",does:"Chief law-enforcement officer for Carson City; runs patrol, the jail, and court security.",candidates:[
+    {name:"Kenneth T. Furlong",party:"Nonpartisan",status:"Incumbent",bio:""},
+    {name:"Don Gibson",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Carson City",office:"District Attorney — 4-year term",does:"Chief prosecutor for Carson City; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"David A. Bailey",party:"Nonpartisan",bio:""},
+    {name:"Kelly Brandon",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Carson City",office:"County Treasurer — 4-year term",does:"Manages Carson City funds and financial accounts.",candidates:[
+    {name:"Andrew Rasor",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Carson City",office:"County Assessor — 4-year term",does:"Values taxable property in Carson City.",candidates:[
+    {name:"Kimberly D. Adams",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Carson City",office:"County Clerk-Recorder — 4-year term",does:"Keeps public records and recorded documents, issues marriage licenses, and helps administer elections.",candidates:[
+    {name:"William Scott Hoen",party:"Nonpartisan",status:"Incumbent",bio:""}
+  ]},
+      {group:"County courts",office:"District Court — 1st Judicial District, Dept. 1 — 6-year term",does:"Presides over felony, civil, and family cases in the First Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Jason D. Woodbury",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"District Court — 1st Judicial District, Dept. 2 — 6-year term",does:"Presides over felony, civil, and family cases in the First Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Kristin N. Luis",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Churchill County",office:"County Commission — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Myles R. Getto",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Churchill County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Denise L. Mondhink-Felton",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Churchill County",office:"County Clerk/Treasurer — 4-year term",does:"Keeps county records and elections paperwork, and manages county funds.",candidates:[
+    {name:"Linda Rothery",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Churchill County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Art Mallory",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Churchill County",office:"Public Administrator — 4-year term",does:"Manages estates of people who die without a will or a known executor.",candidates:[
+    {name:"Robert \"Bob\" Getto",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Churchill County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Tasha Hessey",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Churchill County",office:"Sheriff — 4-year term",does:"Chief county law-enforcement officer; runs patrol, the jail, and court security.",candidates:[
+    {name:"Michael J. Davis",party:"Nonpartisan",bio:""},
+    {name:"Lee D. Orozco",party:"Nonpartisan",status:"Incumbent",bio:"Appointed sheriff in April 2026 after the death of Sheriff Richard Hickox."}
+  ]},
+      {group:"County courts",office:"Churchill County District Court — 10th Judicial District — 6-year term",does:"Presides over felony, civil, and family cases in the Tenth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Thomas Stockard",party:"Nonpartisan",status:"Incumbent",bio:""}
+  ]},
+      {group:"Douglas County",office:"County Commission — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Sharla Hales",party:"Republican",bio:""}
+  ]},
+      {group:"Douglas County",office:"County Commission — District 4 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Diane Imbach",party:"Democrat",bio:""},
+    {name:"Scott Morgan",party:"Republican",bio:""}
+  ]},
+      {group:"Douglas County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Trent Tholen",party:"Republican",bio:""}
+  ]},
+      {group:"Douglas County",office:"County Clerk-Treasurer — 4-year term",does:"Keeps county records and elections paperwork, and manages county funds.",candidates:[
+    {name:"Amy Burgans",party:"Republican",bio:""}
+  ]},
+      {group:"Douglas County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Mark B. Jackson",party:"Republican",bio:""}
+  ]},
+      {group:"Douglas County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Shawnyne Garren",party:"Republican",bio:""}
+  ]},
+      {group:"County courts",office:"Douglas County District Court — 9th Judicial District, Dept. 1 — 6-year term",does:"Presides over felony, civil, and family cases in the Ninth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Nathan Tod Young",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"Douglas County District Court — 9th Judicial District, Dept. 2 — 6-year term",does:"Presides over felony, civil, and family cases in the Ninth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Tom Gregory",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Elko County",office:"County Commission — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Scott A. Gavorsky",party:"Republican",bio:""}
+  ]},
+      {group:"Elko County",office:"County Commission — District 4 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Travis W. Gerber",party:"Republican",bio:""}
+  ]},
+      {group:"Elko County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Janet L. Iribarne-Hutton",party:"Republican",bio:""}
+  ]},
+      {group:"Elko County",office:"County Clerk — 4-year term",does:"Keeps county records and helps administer elections.",candidates:[
+    {name:"Rebecca \"Becky\" Plunkett",party:"Republican",bio:""}
+  ]},
+      {group:"Elko County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"D. Mike Smales",party:"Republican",bio:""}
+  ]},
+      {group:"Elko County",office:"County Treasurer — 4-year term",does:"Manages county funds and financial accounts.",candidates:[
+    {name:"Cheryl Paul",party:"Republican",bio:""}
+  ]},
+      {group:"Elko County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Tyler J. Ingram",party:"Republican",bio:""}
+  ]},
+      {group:"Elko County",office:"Sheriff — 4-year term",does:"Chief county law-enforcement officer; runs patrol, the jail, and court security.",candidates:[
+    {name:"Aitor Narvaiza",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"Elko County District Court — 4th Judicial District, Dept. 1 — 6-year term",does:"Presides over felony, civil, and family cases in the Fourth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Kriston N. Hill",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"Elko County District Court — 4th Judicial District, Dept. 2 — 6-year term",does:"Presides over felony, civil, and family cases in the Fourth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Al Kacin",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"Elko County District Court — 4th Judicial District, Dept. 3 — 6-year term",does:"Presides over felony, civil, and family cases in the Fourth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Mason E. Simons",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Esmeralda County",office:"County Commission — District 1 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Mark Stezaker",party:"Republican",bio:""}
+  ]},
+      {group:"Esmeralda County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Kathleen R. Keyes",party:"Republican",bio:""}
+  ]},
+      {group:"Esmeralda County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Tim Sutton",party:"Republican",bio:""}
+  ]},
+      {group:"County courts",office:"District Court — 5th Judicial District, Dept. 1 — 6-year term",does:"Presides over felony, civil, and family cases in the Fifth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Nathan Gent",party:"Nonpartisan",bio:""},
+    {name:"Kimberly A. \"Kim\" Wanker",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"District Court — 5th Judicial District, Dept. 2 — 6-year term",does:"Presides over felony, civil, and family cases in the Fifth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Jason Earnest",party:"Nonpartisan",bio:""},
+    {name:"Robert W. Lane",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Eureka County",office:"County Commission — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Richard \"Rich\" McKay",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Eureka County",office:"Sheriff — 4-year term",does:"Chief county law-enforcement officer; runs patrol, the jail, and court security.",candidates:[
+    {name:"Jason Flanagan",party:"Nonpartisan",bio:""},
+    {name:"Miles Umina",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"District Court — 7th Judicial District, Dept. 1 — 6-year term",does:"Presides over felony, civil, and family cases in the Seventh Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Steve L. Dobrescu",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"District Court — 7th Judicial District, Dept. 2 — 6-year term",does:"Presides over felony, civil, and family cases in the Seventh Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Jane M. Eberhardy",party:"Nonpartisan",bio:""},
+    {name:"Dylan V. Frehner",party:"Nonpartisan",status:"Incumbent",bio:""}
+  ]},
+      {group:"Humboldt County",office:"County Commission — Seat C — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Giovanni Giordano",party:"Republican",bio:""},
+    {name:"Mike Loupas",party:"Independent American Party",bio:""}
+  ]},
+      {group:"Humboldt County",office:"County Commission — Seat E — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Mark Evatz",party:"Republican",bio:""}
+  ]},
+      {group:"Humboldt County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Andrew J. Heiser",party:"Republican",bio:""}
+  ]},
+      {group:"Humboldt County",office:"County Clerk — 4-year term",does:"Keeps county records and helps administer elections.",candidates:[
+    {name:"Tami Rae Spero",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Humboldt County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Tia H. Lange",party:"Republican",bio:""}
+  ]},
+      {group:"Humboldt County",office:"County Treasurer — 4-year term",does:"Manages county funds and financial accounts.",candidates:[
+    {name:"Rhona Lecumberry",party:"Republican",bio:""}
+  ]},
+      {group:"Humboldt County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Wendy Maddox",party:"Republican",bio:""}
+  ]},
+      {group:"Humboldt County",office:"Sheriff — 4-year term",does:"Chief county law-enforcement officer; runs patrol, the jail, and court security.",candidates:[
+    {name:"Herbert Ross",party:"Nonpartisan",bio:""},
+    {name:"Angel Cardenas",party:"Nonpartisan",status:"Incumbent",bio:""}
+  ]},
+      {group:"County courts",office:"Humboldt County District Court — 6th Judicial District — 6-year term",does:"Presides over felony, civil, and family cases in the Sixth Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Michael R. Montero",party:"Nonpartisan",status:"Incumbent",bio:""}
+  ]},
+      {group:"Lander County",office:"County Commission — District 1 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Randy Artz",party:"Republican",bio:""},
+    {name:"Amy L. Nelson",party:"No Political Party",bio:""}
+  ]},
+      {group:"Lander County",office:"County Commission — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Michael P. Chopp",party:"Republican",bio:""}
+  ]},
+      {group:"Lander County",office:"County Commission — District 5 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Alicia A. Price",party:"Republican",bio:""}
+  ]},
+      {group:"Lander County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Lura Duvall",party:"Republican",bio:""}
+  ]},
+      {group:"Lander County",office:"County Clerk — 4-year term",does:"Keeps county records and helps administer elections.",candidates:[
+    {name:"Molly Gonzalez",party:"Republican",bio:""}
+  ]},
+      {group:"Lander County",office:"County Treasurer — 4-year term",does:"Manages county funds and financial accounts.",candidates:[
+    {name:"Jusdivia \"Justi\" Johnson",party:"Republican",bio:""}
+  ]},
+      {group:"Lander County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"William E. Schaeffer",party:"Republican",bio:""}
+  ]},
+      {group:"Lander County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Alexis \"Lexi\" Reiva",party:"Republican",bio:""}
+  ]},
+      {group:"Lander County",office:"Sheriff — 4-year term",does:"Chief county law-enforcement officer; runs patrol, the jail, and court security.",candidates:[
+    {name:"Arthur Bryan Aten",party:"Nonpartisan",bio:""},
+    {name:"Ron Unger",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"County courts",office:"District Court — 11th Judicial District, Dept. 1 — 6-year term",does:"Presides over felony, civil, and family cases in the Eleventh Judicial District. Judicial races are nonpartisan.",candidates:[
+    {name:"Bryce Shields",party:"Nonpartisan",status:"Incumbent",bio:""}
+  ]},
+      {group:"Lyon County",office:"Sheriff — 4-year term",does:"Chief county law-enforcement officer; runs patrol, the jail, and court security.",candidates:[
+    {name:"Brad Pope",party:"Nonpartisan",status:"Incumbent",bio:""},
+    {name:"Timothy Shaffer",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Mineral County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Ryan McCormick",party:"Republican",status:"Incumbent",bio:"Announced resignation effective Nov. 8, 2026; a successor must be appointed."}
+  ]},
+      {group:"Mineral County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Kelly Owens",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"County Commission — District 4 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Anthony Greco",party:"Independent American Party",bio:""},
+    {name:"Debra Thomas",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"County Commission — District 5 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Christopher Everett Lally",party:"No Political Party",bio:""},
+    {name:"Matt Sadler",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Sheree Stringer",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"County Clerk — 4-year term",does:"Keeps county records and helps administer elections.",candidates:[
+    {name:"Kayla Ball",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Deborah Beatty",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"County Treasurer — 4-year term",does:"Manages county funds and financial accounts.",candidates:[
+    {name:"Raelyn Powers",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Brian Kunzi",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"Public Administrator — 4-year term",does:"Manages estates of people who die without a will or a known executor.",candidates:[
+    {name:"Bill Hockstedler",party:"Republican",bio:""}
+  ]},
+      {group:"Nye County",office:"Sheriff — 4-year term",does:"Chief county law-enforcement officer; runs patrol, the jail, and court security.",candidates:[
+    {name:"Joe McGill",party:"Nonpartisan",bio:""},
+    {name:"Dan Pineau",party:"Nonpartisan",bio:""}
+  ]},
+      {group:"Pershing County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Jennifer Hill",party:"Republican",status:"Incumbent",bio:"Appointed assessor in October 2026 to fill a vacancy; also the Republican nominee."}
+  ]},
+      {group:"Storey County",office:"County Commission — District 2 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"Debeeann Formentini",party:"Republican",bio:""}
+  ]},
+      {group:"Storey County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Jana V. Seddon",party:"Republican",bio:""}
+  ]},
+      {group:"Storey County",office:"County Clerk & Treasurer — 4-year term",does:"Keeps county records and elections paperwork, and manages county funds.",candidates:[
+    {name:"Jim Hindle",party:"Republican",status:"Incumbent",bio:""}
+  ]},
+      {group:"Storey County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Melanie A. Brantingham",party:"Republican",bio:""}
+  ]},
+      {group:"Storey County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Dru McPherson",party:"Republican",bio:""}
+  ]},
+      {group:"White Pine County",office:"County Commission — Seat 1 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"David Pratt",party:"Republican",bio:""}
+  ]},
+      {group:"White Pine County",office:"County Commission — Seat 5 — 4-year term",does:"Sets county policy, adopts the county budget, and oversees county services.",candidates:[
+    {name:"George Chachas",party:"Democrat",bio:""},
+    {name:"Jose A. Noriega",party:"Republican",bio:""}
+  ]},
+      {group:"White Pine County",office:"County Assessor — 4-year term",does:"Values taxable property in the county.",candidates:[
+    {name:"Burton Hilton",party:"Republican",bio:""}
+  ]},
+      {group:"White Pine County",office:"County Clerk — 4-year term",does:"Keeps county records and helps administer elections.",candidates:[
+    {name:"Nichole Stephey",party:"Republican",bio:""}
+  ]},
+      {group:"White Pine County",office:"County Recorder — 4-year term",does:"Records deeds, liens, and other public documents.",candidates:[
+    {name:"Chrissie Shady",party:"Republican",bio:""}
+  ]},
+      {group:"White Pine County",office:"County Treasurer — 4-year term",does:"Manages county funds and financial accounts.",candidates:[
+    {name:"Catherine M. Bakaric",party:"Republican",bio:""}
+  ]},
+      {group:"White Pine County",office:"District Attorney — 4-year term",does:"Chief county prosecutor; prosecutes criminal cases and advises law enforcement.",candidates:[
+    {name:"Melissa A. Brown",party:"Republican",bio:""}
+  ]}
     ]
   },
   newhampshire: {
-    label:"New Hampshire · Statewide ballot",chips:["Governor","U.S. Senate","U.S. House NH-01 & NH-02","Executive Council","2 ballot questions"],summary:"New Hampshire's statewide races for November 3, 2026: Governor, an open U.S. Senate seat, both U.S. House districts, all five Executive Council districts, and 2 ballot questions. Nashua and Manchester voters also have full VoterLens city guides, linked under Sources below.",
-    coverage:"This pathway covers the races that appear on ballots across New Hampshire for the November 3, 2026 general election. You vote in only one U.S. House district and only one Executive Council district; both sets are listed here so you can find yours. State Senate, State House, county, and town races are not included here \u2014 for Nashua and Manchester, use the full VoterLens city guides linked under Sources; everywhere else, check your official sample ballot at sos.nh.gov.",
-    caveats:["New Hampshire does not elect its Secretary of State or Attorney General by popular vote: the legislature chooses the Secretary of State and State Treasurer, and the Governor appoints the Attorney General with Executive Council approval \u2014 that is why those offices do not appear on this ballot.","Executive Council pairings for Districts 1, 3, 4, and 5, and the NH-01 candidate list, are drawn from New Hampshire Secretary of State candidate filings as reported in October 2026; the District 2 pairing, and the Governor, Senate, NH-02, and ballot-question listings, were confirmed on an official sample ballot. Compare your printed ballot before voting.","Question 2 (the school-district tax cap) is decided separately in each school district; the wording on your ballot applies to your own district."],
-    sources:[{label:"NH Secretary of State \u2014 sample ballots",url:"https://www.sos.nh.gov/elections/sample-ballots"},{label:"NH Secretary of State \u2014 2026 election details",url:"https://www.sos.nh.gov/2026-election-details"},{label:"VoterLens Nashua city ballot guide",url:"https://muse.ai/s/nashua-ballot-guide-2026-xim6poepfm5xm"},{label:"VoterLens Manchester city ballot guide",url:"https://muse.ai/s/manchester-ballot-guide-2026-tm6poezoxjxwn"}],
+    label:"New Hampshire · Statewide, legislature & county ballot",chips:["Governor","U.S. Senate","U.S. House NH-01 & NH-02","Executive Council","2 ballot questions","State Legislature","County races"],summary:"New Hampshire's races for November 3, 2026: Governor, an open U.S. Senate seat, both U.S. House districts, all five Executive Council districts, and 2 ballot questions — plus the State Senate (all 24 districts), State House districts in all 10 counties (161 of the House districts, 279 seats — see coverage), and county races in all 10 counties. Nashua and Manchester voters also have full VoterLens city guides, linked under Sources below.",
+    coverage:"This pathway covers the statewide races, the State Senate (all 24 districts), State House districts in all 10 counties, and county offices that appear on ballots across New Hampshire for the November 3, 2026 general election. You vote in only one U.S. House district, one Executive Council district, one Senate district, and one or two House districts (your numbered district plus a floterial district where one applies); all districts on this ballot are listed so you can find yours. NOT included here: 42 House districts in Hillsborough and Rockingham counties (see caveats), town/city races (for Nashua and Manchester, use the full VoterLens city guides linked under Sources), school-district races, and county offices whose 2026 ballot status could not be verified. Other voters should check your official sample ballot at sos.nh.gov.",
+    caveats:["New Hampshire does not elect its Secretary of State or Attorney General by popular vote: the legislature chooses the Secretary of State and State Treasurer, and the Governor appoints the Attorney General with Executive Council approval \u2014 that is why those offices do not appear on this ballot.","Executive Council pairings for Districts 1, 3, 4, and 5, and the NH-01 candidate list, are drawn from New Hampshire Secretary of State candidate filings as reported in October 2026; the District 2 pairing, and the Governor, Senate, NH-02, and ballot-question listings, were confirmed on an official sample ballot. Compare your printed ballot before voting.","Question 2 (the school-district tax cap) is decided separately in each school district; the wording on your ballot applies to your own district.","Legislature and county entries were added Oct 28, 2026 from NH Secretary of State sample-ballot pages, RSA 662:5 seat counts, Citizens Count 2026 general-election pages, primary-winner lists, and county/town sample ballots; the SOS sample-ballot tool is form-driven and its per-town PDFs could not be bulk-extracted, so confirm names, parties, and precincts against your official sample ballot before voting, especially the flagged items below.","Senate flags: District 6 is drafted as James Gray only — Democrat Cecil Abels won the primary but ended his campaign Oct 17, 2026 and his printed-ballot status is unverified; District 21 is drafted as Rebecca Perkins Kwoka only — a conflicting grades list names a Republican Jeffrey Berlin found nowhere else; District 10 (Donovan Fenton only) is not SOS-confirmed as unopposed; District 19 spelling Michelle Sawyer Moge vs Michelle Moge and District 20 form Patrick Long vs Pat Long need a printed-ballot check; no third-party Senate candidate was found, but that negative finding also needs a sample-ballot check.","House flags: 42 Hillsborough/Rockingham House districts are omitted (24 Hillsborough, 18 Rockingham — see draft files); Hillsborough 40's 4th Democrat is unresolved after a primary tie; Rockingham 17 (Daniel Popovici-Muller) and Rockingham 25's full Democratic slate are unresolved; party-label conflicts (Hillsborough 37 D'Angelo, Rockingham 32 Dvorak, and several Independent/Third-party entries) need an SOS sample-ballot check; candidate order was not verified; House entries in the other 8 counties rest largely on Citizens Count general pages plus primary lists, with only Merrimack 9, 11, and 27 spot-checked against official town sample ballots, and several ballot spellings, post-primary replacements (e.g. Belknap 5, Strafford 6), and floterial explanations still need checking.","County flags: several county slates rest on secondary lists rather than a full sample ballot (Belknap, Coos, parts of Sullivan); Merrimack commissioner races and Sullivan Sheriff/County Attorney/Treasurer/Register of Probate are omitted as unverified (not carried forward from 2024); Rockingham's second commissioner district up in 2026 is omitted as unverified; commissioner term lengths are unverified for staggered counties; a vacancy race in a seat not up under the stagger could be missed — verify against the SOS candidate list before voting."],
+    sources:[{label:"NH Secretary of State \u2014 sample ballots",url:"https://www.sos.nh.gov/elections/sample-ballots"},{label:"NH Secretary of State \u2014 2026 election details",url:"https://www.sos.nh.gov/2026-election-details"},{label:"VoterLens Nashua city ballot guide",url:"https://muse.ai/s/nashua-ballot-guide-2026-xim6poepfm5xm"},{label:"VoterLens Manchester city ballot guide",url:"https://muse.ai/s/manchester-ballot-guide-2026-tm6poezoxjxwn"},{label:"NH General Court \u2014 RSA 662:5 (House apportionment / seat counts)",url:"https://gc.nh.gov/rsa/html/LXIII/662/662-5.htm"},{label:"Citizens Count \u2014 2026 NH House general election",url:"https://www.citizenscount.org/elections/2026-nh-house-general-election"},{label:"Ballotpedia \u2014 2026 NH Senate and House elections (independent cross-check)",url:"https://ballotpedia.org/New_Hampshire_State_Senate_elections,_2026"}],
     measures:[
       {code:"Question 1 \u2014 Constitutional Amendment (CACR 13)",title:"Eliminate the Register of Probate office",text:"Amends Articles 71 and 81 of Part II of the New Hampshire Constitution to eliminate the elected county office of Register of Probate. The office has had only archival duties since a 2011 court reorganization moved its work to court clerks. Needs a two-thirds (66.67%) YES vote to pass.",yes:"Eliminate the Register of Probate office.",no:"Keep the Register of Probate office."},
       {code:"Question 2 \u2014 School-District Tax Cap (HB 1300)",title:"Cap school-district taxes and SAU central-office spending",text:"Voted on separately in each town and city for its own school district. For two years, a YES vote limits the local property tax levy to the prior year's amount, adjusted for inflation and new construction; limits SAU central-office spending to 6% of total school-district appropriations; and excludes bonded capital costs from both limits. The caps apply to SAU central-office administrative operations only \u2014 not classroom instruction or school-based services \u2014 and can be overridden as provided in RSA 32:5-i. Needs a three-fifths (60%) YES vote in the district to pass.",yes:"Adopt the two-year tax and SAU central-office spending caps for your school district.",no:"Do not adopt the caps."}
@@ -965,14 +2666,494 @@ window.EXPANDED_BALLOTS = {
       {group:"Executive Council",office:"Executive Council \u2014 District 5 \u2014 2-year term",does:"One of five councilors, elected by district, who approve major state contracts and confirm the Governor's appointments of department heads and judges. You vote only in your own district.",candidates:[
         {name:"Dave Wheeler",party:"Republican",status:"Incumbent"},
         {name:"Melanie Levesque",party:"Democrat",bio:"Former state senator (District 12, 2018\u20132020)."}
-      ]}
+      ]},
+{group:"State Legislature",office:"State Senate — District 1 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"David Rochefort",party:"Republican",status:"Incumbent"},{name:"Cathleen Fountain",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 2 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Timothy Lang Sr.",party:"Republican",status:"Incumbent"},{name:"Kurt Webber",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 3 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Mark McConkey",party:"Republican",status:"Incumbent"},{name:"Bobbi Boudman",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 4 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"David Watters",party:"Democrat",status:"Incumbent"},{name:"Shawn Mickelonis",party:"Republican"}]},
+  {group:"State Legislature",office:"State Senate — District 5 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Suzanne Prentiss",party:"Democrat",status:"Incumbent"},{name:"Conrad Schoeffter",party:"Republican"}]},
+  // District 6 — see GAP 1: Cecil Abels (D) won the primary but ended his campaign Oct 17, 2026; ballot-print status unverified, so he is not listed.
+  {group:"State Legislature",office:"State Senate — District 6 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"James Gray",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 7 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Dan Innis",party:"Republican",status:"Incumbent"},{name:"Rebecca Harned",party:"Democrat"}]},
+  // District 8 — open seat: incumbent Ruth Ward is retiring.
+  {group:"State Legislature",office:"State Senate — District 8 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Jim Creighton",party:"Republican"},{name:"David Trumble",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 9 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Denise Ricciardi",party:"Republican",status:"Incumbent"},{name:"Matthew McLaughlin",party:"Democrat"}]},
+  // District 10 — see GAP 3: sole candidate per primary field and NHFC general grades; confirm on SOS sample ballot.
+  {group:"State Legislature",office:"State Senate — District 10 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Donovan Fenton",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 11 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Tim McGough",party:"Republican",status:"Incumbent"},{name:"Shannon Chandley",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 12 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Kevin Avard",party:"Republican",status:"Incumbent"},{name:"Carryl Roy",party:"Democrat"}]},
+  // District 13 — open seat: incumbent Cindy Rosenwald is retiring.
+  {group:"State Legislature",office:"State Senate — District 13 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Laura Telerski",party:"Democrat"},{name:"Daniel J. Paul",party:"Republican"}]},
+  {group:"State Legislature",office:"State Senate — District 14 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Sharon Carson",party:"Republican",status:"Incumbent"},{name:"Timothy T. Wyatt",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 15 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Tara Reardon",party:"Democrat",status:"Incumbent"},{name:"Dennis Blankenbeker",party:"Republican"}]},
+  {group:"State Legislature",office:"State Senate — District 16 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Keith Murphy",party:"Republican",status:"Incumbent"},{name:"Dian McCarthy",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 17 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Howard Pearl",party:"Republican",status:"Incumbent"},{name:"Robert Lawliss",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 18 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Victoria Sullivan",party:"Republican",status:"Incumbent"},{name:"Leonard Bell",party:"Democrat"}]},
+  // District 19 — see GAP 4: "Michelle Sawyer Moge" vs. "Michelle Moge" spelling; confirm printed ballot form.
+  {group:"State Legislature",office:"State Senate — District 19 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Regina Birdsell",party:"Republican",status:"Incumbent"},{name:"Michelle Sawyer Moge",party:"Democrat"}]},
+  // District 20 — see GAP 5: "Patrick Long" vs. "Pat Long" / "Pat T. Long"; confirm printed ballot form.
+  {group:"State Legislature",office:"State Senate — District 20 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Patrick Long",party:"Democrat",status:"Incumbent"},{name:"Patrick Binder",party:"Republican"}]},
+  // District 21 — see GAP 2: Seacoastonline reports Kwoka unopposed, but NRA-PVF grades list a Jeffrey Berlin (R); Berlin omitted pending SOS sample-ballot check.
+  {group:"State Legislature",office:"State Senate — District 21 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Rebecca Perkins Kwoka",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State Senate — District 22 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Daryl Abbas",party:"Republican",status:"Incumbent"},{name:"Chris Tardif",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 23 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Bill Gannon",party:"Republican",status:"Incumbent"},{name:"David Childs",party:"Democrat"}]},
+  {group:"State Legislature",office:"State Senate — District 24 — 2-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments.",candidates:[{name:"Debra Altschiller",party:"Democrat",status:"Incumbent"},{name:"Lou Gargiulo",party:"Republican"}]},
+{group:"State Legislature",office:"State House — Hillsborough 2 — 2-year term (vote for up to 7)",does:"Votes on state laws and the state budget. Vote for up to seven candidates.",candidates:[
+    {name:"Brian Labrie",party:"Republican",status:"Incumbent"},
+    {name:"Kristin Noble",party:"Republican",status:"Incumbent"},
+    {name:"John Schneller",party:"Republican",status:"Incumbent"},
+    {name:"Phil Greazzo",party:"Republican"},
+    {name:"Peter Kujawski",party:"Republican"},
+    {name:"Pat MacMonagle",party:"Republican"},
+    {name:"Matthew Castanien",party:"Republican"},
+    {name:"Catherine A. Rombeau",party:"Democrat",status:"Incumbent"},
+    {name:"Todd C. Fahey",party:"Democrat"},
+    {name:"John K. Fitzgerald",party:"Democrat"},
+    {name:"Jeffrey L. Kerr",party:"Democrat"},
+    {name:"Ryan Nugent",party:"Democrat"},
+    {name:"Geoffrey Wellington",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 6 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[
+    {name:"Lee Ann Kluger",party:"Democrat",status:"Incumbent"},
+    {name:"Michele Roussel Buckley",party:"Democrat"},
+    {name:"Adam Thompson",party:"Democrat"},
+    {name:"Daniel Richardson",party:"Republican"},
+    {name:"Doris Hohensee",party:"Republican"},
+    {name:"Elena Pavlou",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 12 — 2-year term (vote for up to 8)",does:"Votes on state laws and the state budget. Vote for up to eight candidates.",candidates:[
+    {name:"Bill Boyd",party:"Republican",status:"Incumbent"},
+    {name:"Julie Miles",party:"Republican",status:"Incumbent"},
+    {name:"Maureen Mooney",party:"Republican",status:"Incumbent"},
+    {name:"Jeanine Notter",party:"Republican",status:"Incumbent"},
+    {name:"Adam Presa",party:"Republican",status:"Incumbent"},
+    {name:"Kevin Francis Ballantine",party:"Republican"},
+    {name:"Nancy A. Murphy",party:"Democrat",status:"Incumbent"},
+    {name:"Rosemarie Rung",party:"Democrat",status:"Incumbent"},
+    {name:"Wendy Thomas",party:"Democrat",status:"Incumbent"},
+    {name:"Rebecca Boutin",party:"Democrat"},
+    {name:"Matthew Brown",party:"Democrat"},
+    {name:"Marc Nozell",party:"Democrat"},
+    {name:"Mary Beth Raven",party:"Democrat"},
+    {name:"Kyle Haines",party:"Independent"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 13 — 2-year term (vote for up to 6)",does:"Votes on state laws and the state budget. Vote for up to six candidates.",candidates:[
+    {name:"Dillon Dumont",party:"Republican",status:"Incumbent"},
+    {name:"Catherine Kenny",party:"Republican",status:"Incumbent"},
+    {name:"Andrew Prout",party:"Republican",status:"Incumbent"},
+    {name:"Jordan Ulery",party:"Republican",status:"Incumbent"},
+    {name:"Robert Wherry",party:"Republican",status:"Incumbent"},
+    {name:"Tom Trost",party:"Republican"},
+    {name:"James Battis",party:"Democrat"},
+    {name:"Jim Caron",party:"Democrat"},
+    {name:"Kate Messner",party:"Democrat"},
+    {name:"Don Staveley",party:"Democrat"},
+    {name:"C. Mark DelSesto",party:"Independent"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 15 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Mark McLean",party:"Republican",status:"Incumbent"},
+    {name:"Mark Proulx",party:"Republican",status:"Incumbent"},
+    {name:"Michael Farley",party:"Democrat"},
+    {name:"Michael Fitzell",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 19 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Matt Drew",party:"Republican",status:"Incumbent"},
+    {name:"Mickey Mullin",party:"Republican"},
+    {name:"Jane Ellen Beaulieu",party:"Democrat"},
+    {name:"Chrissy Simonds",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 23 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Jean Leniol Jeudy",party:"Democrat",status:"Incumbent"},
+    {name:"Mary Ngwanda Georges",party:"Democrat",status:"Incumbent"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 26 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Brian D. Cole",party:"Republican",status:"Incumbent"},
+    {name:"Henry Emele",party:"Republican"},
+    {name:"Patrick N. Long",party:"Democrat",status:"Incumbent"},
+    {name:"Mary C. Freitas",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 27 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Mary Murphy",party:"Republican",status:"Incumbent"},
+    {name:"Timothy J. Coffin",party:"Independent"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 28 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Travis Corcoran",party:"Republican",status:"Incumbent"},
+    {name:"Keith Erf",party:"Republican",status:"Incumbent"},
+    {name:"David E. Erikson",party:"Democrat"},
+    {name:"Benson H. Goodwin",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 29 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[
+    {name:"Joe Alexander Jr.",party:"Republican",status:"Incumbent"},
+    {name:"Henry Giasson",party:"Republican",status:"Incumbent"},
+    {name:"Sherri Reinfurt",party:"Republican",status:"Incumbent"},
+    {name:"Shanun R. Carey",party:"Republican"},
+    {name:"Christopher Calhoun",party:"Democrat"},
+    {name:"Judi Lanza",party:"Democrat"},
+    {name:"Karyn Battey",party:"Democrat"},
+    {name:"Marie B. Morgan",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 33 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Peter R. Leishman",party:"Democrat",status:"Incumbent"},
+    {name:"Jonah Wheeler",party:"Democrat",status:"Incumbent"},
+    {name:"Kimberly Thomas",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 34 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[
+    {name:"Stephanie Grund",party:"Democrat",status:"Incumbent"},
+    {name:"Daniel LeClerc",party:"Democrat",status:"Incumbent"},
+    {name:"Daniel T. Veilleux",party:"Democrat",status:"Incumbent"},
+    {name:"Jason Hennessey",party:"Republican"},
+    {name:"Russ Hodgkins",party:"Republican"},
+    {name:"Diane Layton",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 35 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Kat McGhee",party:"Democrat",status:"Incumbent"},
+    {name:"Ben Ming",party:"Democrat"},
+    {name:"Liz Barbour",party:"Republican",status:"Incumbent"},
+    {name:"Jim Kelly",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 36 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Diane Pauer",party:"Republican",status:"Incumbent"},
+    {name:"John W. Suiter",party:"Republican",status:"Incumbent"},
+    {name:"Michael Pellerito",party:"Democrat"},
+    {name:"Stephen Spratt",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 37 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Megan A. Murray",party:"Democrat",status:"Incumbent"},
+    {name:"Michael E. Thornton",party:"Republican"},
+    {name:"Daryl D'Angelo",party:"Independent"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 38 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Adam Haverstock",party:"Republican"},
+    {name:"Ted Trost",party:"Republican"},
+    {name:"Mahendra Bakshi",party:"Democrat"},
+    {name:"Heidi Jakoby",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 39 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"William Infantine",party:"Republican"},
+    {name:"Jon DiPietro",party:"Republican"},
+    {name:"Ellen A. Boudreau",party:"Democrat"},
+    {name:"Thomas Katsiantonis",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 41 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[
+    {name:"Lily Foss",party:"Democrat",status:"Incumbent"},
+    {name:"Tom Stewart",party:"Democrat"},
+    {name:"Bishwa Bahadur Shah",party:"Democrat"},
+    {name:"Ryan Hebert",party:"Republican"},
+    {name:"Joseph Skinner",party:"Republican"},
+    {name:"Jason Hodgdon",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 44 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Ross Berry",party:"Republican",status:"Incumbent"},
+    {name:"Lisa Mazur",party:"Republican",status:"Incumbent"},
+    {name:"Chris Conroy",party:"Democrat"},
+    {name:"Robert \"Bob\" Jones",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Hillsborough 45 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Jack B. Flanagan",party:"Republican",status:"Incumbent"},
+    {name:"Jerry Roche",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 6 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Eric Turer",party:"Democrat",status:"Incumbent"},
+    {name:"Allen Cook",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 10 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[
+    {name:"Ellen Read",party:"Democrat",status:"Incumbent"},
+    {name:"Michael Cahill",party:"Democrat",status:"Incumbent"},
+    {name:"Charlotte DiLorenzo",party:"Democrat",status:"Incumbent"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 11 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[
+    {name:"Mark Paige",party:"Democrat",status:"Incumbent"},
+    {name:"Julie D. Gilman",party:"Democrat",status:"Incumbent"},
+    {name:"Enna Grazier",party:"Democrat"},
+    {name:"Steven C. Jones",party:"Democrat"},
+    {name:"Robert Goeman",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 12 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Zoe R. Manos",party:"Democrat",status:"Incumbent"},
+    {name:"Allison Knab",party:"Democrat",status:"Incumbent"},
+    {name:"Patrick Abrami",party:"Republican"},
+    {name:"James Scamman",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 19 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Susan Porcelli",party:"Republican",status:"Incumbent"},
+    {name:"Wendy Larson",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 21 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Anna Howard",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 22 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Rebecca Audet",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 23 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Jim Maggiore",party:"Democrat",status:"Incumbent"},
+    {name:"Kirsten Larsen Schultz",party:"Third-party"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 24 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Dennis Malloy",party:"Democrat",status:"Incumbent"},
+    {name:"Michael Moody",party:"Democrat"},
+    {name:"Marilyn Page",party:"Republican"},
+    {name:"Kevin Szmyd",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 26 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Buzz Scherr",party:"Democrat",status:"Incumbent"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 27 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Gerald W.R. Ward",party:"Democrat",status:"Incumbent"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 28 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Carrie Sorensen",party:"Democrat",status:"Incumbent"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 29 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[
+    {name:"Nicholas Bridle",party:"Republican",status:"Incumbent"},
+    {name:"Richard Wickson Jr.",party:"Republican"},
+    {name:"Bruce Theriault",party:"Republican"},
+    {name:"Kenneth Sheffert",party:"Republican"},
+    {name:"Ward Galanis",party:"Democrat"},
+    {name:"Rebecca LaPierre",party:"Democrat"},
+    {name:"Molly McCoy",party:"Democrat"},
+    {name:"Nathan Andrew Riggs",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 30 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Aboul Khan",party:"Republican",status:"Incumbent"},
+    {name:"Jason A. Janvrin",party:"Republican"},
+    {name:"Diana Labrecque Chapman",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 31 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[
+    {name:"Jess Edwards",party:"Republican",status:"Incumbent"},
+    {name:"Terry Roy",party:"Republican",status:"Incumbent"},
+    {name:"Peter Boudreau",party:"Democrat"},
+    {name:"Yaz Safarzadeh",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 32 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Melissa Litchfield",party:"Republican",status:"Incumbent"},
+    {name:"Kaley Dvorak",party:"Third-party"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 33 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Alexis Simpson",party:"Democrat",status:"Incumbent"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 36 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"JD Bernardy",party:"Republican",status:"Incumbent"},
+    {name:"Paul Bonzani",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 37 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Kate Cook",party:"Democrat"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 38 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Peggy Balboni",party:"Democrat",status:"Incumbent"},
+    {name:"Paul Martino",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 39 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Barbara Ward",party:"Democrat"},
+    {name:"Sue Polidura",party:"Republican"}
+  ]},
+  {group:"State Legislature",office:"State House — Rockingham 40 — 2-year term (vote for 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[
+    {name:"Linda McGrath",party:"Republican",status:"Incumbent"},
+    {name:"Justin Packard",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State House — Belknap 1 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Tom Ploszaj",party:"Republican",status:"Incumbent"},{name:"Amber Schaefer",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Belknap 2 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Matthew Coker",party:"Republican",status:"Incumbent"},{name:"Scott Wallace",party:"Republican"},{name:"Dean Cascadden",party:"Democrat"},{name:"Seth Wheeler",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Belknap 3 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Steven Bunce",party:"Republican"},{name:"William Lawrence, Jr.",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Belknap 4 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Liz Charlwood",party:"Democrat"},{name:"Kevin M. Nugent, Jr.",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Belknap 5 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[{name:"Mike Bordes",party:"Republican",status:"Incumbent"},{name:"Timothy Minor",party:"Republican"},{name:"Cody Pfaff",party:"Republican"},{name:"Paul Rossi",party:"Republican"},{name:"Marcia Hayward",party:"Democrat"},{name:"Eric Hoffman",party:"Democrat"},{name:"Lois A. Kessin",party:"Democrat"},{name:"Denise Riley",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Belknap 6 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[{name:"Glen Aldrich",party:"Republican",status:"Incumbent"},{name:"Priscilla Bean",party:"Republican"},{name:"Jade Wood",party:"Republican"},{name:"Colleen Harkey",party:"Republican"},{name:"David Nagel",party:"Democrat",status:"Incumbent"},{name:"Allan Frank",party:"Democrat"},{name:"Bob McLean",party:"Democrat"},{name:"Lisa Rivard",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Belknap 7 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"Barbara Comtois",party:"Republican",status:"Incumbent"},{name:"Paul A. Terry",party:"Republican",status:"Incumbent"},{name:"Peter R. Varney",party:"Republican",status:"Incumbent"},{name:"Stephen Copithorne",party:"Democrat"},{name:"Laura Dunham",party:"Democrat"},{name:"Nancy Mitchell",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Belknap 8 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates. This is a floterial district.",candidates:[{name:"Lisa M. Freeman",party:"Republican",status:"Incumbent"},{name:"Cameron Thompson",party:"Republican"},{name:"Donald J. Giguere",party:"Democrat"},{name:"Don House",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Carroll 1 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"David Paige",party:"Democrat",status:"Incumbent"},{name:"Benjamin Colbath",party:"Democrat"},{name:"Ellin M. Leonard",party:"Democrat"},{name:"Gregory Corrigan",party:"Republican"},{name:"Robert W. Nelson",party:"Republican"},{name:"Karen C. Umberger",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Carroll 2 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Anita Burroughs",party:"Democrat",status:"Incumbent"},{name:"Adam Heard",party:"Democrat"},{name:"Erlon Jones",party:"Republican"},{name:"Jennifer LePla",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Carroll 3 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Karel A. Crawford",party:"Republican",status:"Incumbent"},{name:"Richard R. Brown",party:"Republican"},{name:"Todd Milliken",party:"Democrat"},{name:"Bryan Randolph",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Carroll 4 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Lino M. Avellani",party:"Republican",status:"Incumbent"},{name:"Mike Belcher",party:"Republican",status:"Incumbent"},{name:"Annie Gehring",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Carroll 5 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Steven Brown",party:"Republican"},{name:"Morgan Bultman",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Carroll 6 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"John T. MacDonald",party:"Republican",status:"Incumbent"},{name:"Tim Bauman",party:"Republican"},{name:"Deirdre McEachern",party:"Democrat"},{name:"Phoebe VanScoy-Giessler",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Carroll 7 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Dale Fincher",party:"Republican"},{name:"Karen Burnett-Kurie",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Carroll 8 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates. This is a floterial district.",candidates:[{name:"Colin Mitchell",party:"Republican"},{name:"Tammy Simmons Garthwaite",party:"Republican"},{name:"James Pittman",party:"Democrat"},{name:"George Randell",party:"Independent"}]},
+  {group:"State Legislature",office:"State House — Cheshire 1 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Timothy J. Donovan",party:"Republican"},{name:"Dylan Germana",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 2 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Dru Fox",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Cheshire 3 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Philip Jones",party:"Democrat",status:"Incumbent"},{name:"Marissa W. Salisbury",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Cheshire 4 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Jodi Newell",party:"Democrat",status:"Incumbent"},{name:"Robert Johnson",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Cheshire 5 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Lucy McVitty Weber",party:"Democrat",status:"Incumbent"},{name:"William J. Sommer",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Cheshire 6 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Paul Berch",party:"Democrat",status:"Incumbent"},{name:"Cathryn A. Harvey",party:"Democrat",status:"Incumbent"},{name:"Sean Graves",party:"Republican"},{name:"Zachary Nutting",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Cheshire 7 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Teresa O'Rorke",party:"Democrat",status:"Incumbent"},{name:"Jonathan Liptak",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Cheshire 8 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Christine L. Parshall",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 9 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Richard M. Nalevanko",party:"Republican",status:"Incumbent"},{name:"James Gruber",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 10 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Sly Karasinski",party:"Republican",status:"Incumbent"},{name:"Michael R. York",party:"Republican"},{name:"Alan Gross",party:"Democrat"},{name:"Steve Russell",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 11 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Denis Vincent Murphy, II",party:"Republican",status:"Incumbent"},{name:"Lindseigh Picard",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 12 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Richard Thackston III",party:"Republican",status:"Incumbent"},{name:"Kristan Tilton",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 13 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Matthew John Santonastaso",party:"Republican"},{name:"Tom Ahlborn-Hsu",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 14 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"John Hunt",party:"Republican",status:"Incumbent"},{name:"Gene Andersen",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 15 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates. This is a floterial district.",candidates:[{name:"Nicholas Germana",party:"Democrat",status:"Incumbent"},{name:"Samantha Jacobs",party:"Democrat",status:"Incumbent"},{name:"Matthew Roach",party:"Republican"},{name:"Becky Shields",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Cheshire 16 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Alexander Nalevanko",party:"Republican"},{name:"Lucius Parshall",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 17 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Jennifer Rhodes",party:"Republican",status:"Incumbent"},{name:"Jennie Gomarlo",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Cheshire 18 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates. This is a floterial district.",candidates:[{name:"Rita Mattson",party:"Republican",status:"Incumbent"},{name:"Jim Qualey",party:"Republican",status:"Incumbent"},{name:"Allen Davis",party:"Democrat"},{name:"Rory Lovett Sherman",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Coos 1 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Sam Hoehn",party:"Republican"},{name:"Amy Norris",party:"Republican"},{name:"Jay Ennis",party:"Democrat"},{name:"Lee Ann Potter",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Coos 2 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Arnold G. Davis",party:"Republican",status:"Incumbent"},{name:"Lincoln Robertson",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Coos 3 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Mike Ouellet",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Coos 4 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Seth King",party:"Republican",status:"Incumbent"},{name:"David Holmander",party:"Democrat"},{name:"Scott McKinnon Black",party:"Independent"}]},
+  {group:"State Legislature",office:"State House — Coos 5 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Peter Morency",party:"Republican",status:"Incumbent"},{name:"Mark Evans",party:"Republican"},{name:"Cassie Mason",party:"Independent"}]},
+  {group:"State Legislature",office:"State House — Coos 6 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Robert Gargano",party:"Republican"},{name:"Richard Umiker",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Coos 7 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Lori Korzen",party:"Republican",status:"Incumbent"},{name:"Corinne E. Cascadden",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 1 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"Joseph Barton",party:"Republican",status:"Incumbent"},{name:"Calvin Beaulier",party:"Republican",status:"Incumbent"},{name:"Andrew Dorsett",party:"Republican"},{name:"Joseph Goderic Beaulieu",party:"Democrat"},{name:"Timothy T. Egan",party:"Democrat"},{name:"Linda Massimilla",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 2 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Jared Sullivan",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Grafton 3 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Jerry M. Stringham",party:"Democrat",status:"Incumbent"},{name:"Bonnie Ham",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Grafton 4 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Heather P. Baldwin",party:"Democrat",status:"Incumbent"},{name:"David Adams Rardin",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Grafton 5 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Marie Louise Bjelobrk",party:"Republican",status:"Incumbent"},{name:"Greg Mathieson",party:"Republican"},{name:"Dustin Vigneault",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 6 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Linda Franz",party:"Republican",status:"Incumbent"},{name:"Paul J. Goundrey",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 7 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Janet Marie Lucas",party:"Democrat",status:"Incumbent"},{name:"Jon A. Gablinske",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Grafton 8 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"Bill Bolton",party:"Democrat",status:"Incumbent"},{name:"Sallie Fellows",party:"Democrat",status:"Incumbent"},{name:"Peter Lovett",party:"Democrat",status:"Incumbent"},{name:"George Kirk",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Grafton 9 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Ella V. Barrett",party:"Democrat"},{name:"Bradley Macrae",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Grafton 10 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Marc E. Bourassa",party:"Democrat"},{name:"Steven Coffill",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Grafton 11 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Jake Abuhav",party:"Republican"},{name:"Roger B. Larochelle, Jr.",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 12 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[{name:"Mary A. Hakken-Phillips",party:"Democrat",status:"Incumbent"},{name:"Russell Muirhead",party:"Democrat",status:"Incumbent"},{name:"Ellen Rockmore",party:"Democrat",status:"Incumbent"},{name:"Terry Spahr",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Grafton 13 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Laurel Stavis",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Grafton 14 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Kathryn Brennan",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 15 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Zoe Hill",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 16 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"David Fracht",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Grafton 17 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Thomas Cormen",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Grafton 18 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Donald McFarlane",party:"Republican",status:"Incumbent"},{name:"Marko Kloos",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 1 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Rick Devoid",party:"Republican",status:"Incumbent"},{name:"Lorrie Carey",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 2 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Gregory Hill",party:"Republican",status:"Incumbent"},{name:"Joyce May Fulweiler",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 3 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Scott A. Burns",party:"Democrat"},{name:"Vivian Marie Hall",party:"Democrat"},{name:"Werner D. Horn",party:"Republican"},{name:"Michael Visconti",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 4 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Jose E. Cambrils",party:"Republican",status:"Incumbent"},{name:"Michael Moffett",party:"Republican",status:"Incumbent"},{name:"Cody York",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 5 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Louise Andrus",party:"Republican",status:"Incumbent"},{name:"Deborah Aylward",party:"Republican",status:"Incumbent"},{name:"Lorna Carlisle",party:"Democrat"},{name:"Thomas Ware",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 6 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Thomas Schamberg",party:"Democrat",status:"Incumbent"},{name:"Paul M. Little",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 7 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Karen E. Ebel",party:"Democrat",status:"Incumbent"},{name:"Gregory M. Sargent",party:"Democrat",status:"Incumbent"},{name:"Dorothy L. Hitchmoth",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 8 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"Tony Caplan",party:"Democrat",status:"Incumbent"},{name:"Eileen Kelly",party:"Democrat",status:"Incumbent"},{name:"Stephanie R. Payeur",party:"Democrat",status:"Incumbent"},{name:"Matt Center",party:"Republican"},{name:"Stephen Craig Pierce",party:"Republican"},{name:"Natalie J. Wells",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 9 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[{name:"Eleana Marie Colby",party:"Democrat",status:"Incumbent"},{name:"Muriel Hall",party:"Democrat",status:"Incumbent"},{name:"David Luneau",party:"Democrat",status:"Incumbent"},{name:"James Newsom",party:"Democrat",status:"Incumbent"},{name:"John F. Martin",party:"Republican"},{name:"Matthew Poulin",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 10 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[{name:"Stephen E. Boyd",party:"Republican",status:"Incumbent"},{name:"Yury Polozov",party:"Republican",status:"Incumbent"},{name:"Thomas C. Walsh",party:"Republican",status:"Incumbent"},{name:"Pamela McMahon",party:"Republican"},{name:"Lucas Coriaty",party:"Democrat"},{name:"Ricky Gurung",party:"Democrat"},{name:"William Patrick Lynch",party:"Democrat"},{name:"Germano Martins",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 11 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Matthew Pitaro",party:"Republican",status:"Incumbent"},{name:"Alisson Turcotte",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 12 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Peter L. Mehegan",party:"Republican",status:"Incumbent"},{name:"Brian Seaworth",party:"Republican",status:"Incumbent"},{name:"Mariana R. Beer",party:"Democrat"},{name:"Kenneth Nivison",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 13 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Cyril Aures",party:"Republican",status:"Incumbent"},{name:"Clayton Wood",party:"Republican",status:"Incumbent"},{name:"Becky Berk",party:"Independent"},{name:"Paul Twomey",party:"Independent"}]},
+  {group:"State Legislature",office:"State House — Merrimack 14 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Gary Matteson",party:"Republican"},{name:"Glenn Horner",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 15 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Tracy Anne Bricchi",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Merrimack 16 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Connie Lane",party:"Democrat",status:"Incumbent"},{name:"Laurence Weissbrot",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 17 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Beth Richards",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Merrimack 18 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Lisa Beaudoin",party:"Democrat"},{name:"Elijah Wilson",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 19 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Mary Jane Wallner",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Merrimack 20 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Nathan Giffard",party:"Democrat"},{name:"Jonathan Clark",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 21 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Timothy Soucy",party:"Democrat",status:"Incumbent"},{name:"Darryl Berleth",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 22 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Alison Murphy",party:"Democrat"},{name:"John Cate",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 23 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Kristopher Levesque",party:"Democrat"},{name:"Andrew Georgevits",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Merrimack 24 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Matthew S. Hicks",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Merrimack 25 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"James Thibault",party:"Republican",status:"Incumbent"},{name:"Erica Russell",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 26 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Alvin B. See",party:"Republican",status:"Incumbent"},{name:"Harold D. Tuttle",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 27 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates. This is a floterial district.",candidates:[{name:"Raymond Plante",party:"Republican",status:"Incumbent"},{name:"Vanessa Poulin",party:"Republican"},{name:"Harry Kozlowski",party:"Democrat"},{name:"Phillip James Walker",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 28 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Lisa Brown",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Merrimack 29 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Kris Schultz",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Merrimack 30 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Robert C. Washburn",party:"Republican"},{name:"Jason Quinno",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 1 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates.",candidates:[{name:"Brian Beaverstock",party:"Democrat"},{name:"Jimmy Bourque",party:"Democrat"},{name:"Packy Campbell",party:"Republican"},{name:"Andy Dow",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 2 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"Glenn Bailey",party:"Republican",status:"Incumbent"},{name:"Michael Granger",party:"Republican",status:"Incumbent"},{name:"Mark F. Racic",party:"Republican"},{name:"Larry Brown",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 3 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Susan DeRoy",party:"Republican",status:"Incumbent"},{name:"Linda R. Adamo",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 4 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"JoAnn Hack",party:"Republican"},{name:"Tanya Rich",party:"Republican"},{name:"Kurt Wuelper",party:"Republican"},{name:"Kimberly McGlinchey",party:"Democrat"},{name:"Ginna Schonwald",party:"Democrat"},{name:"Scott Shepard",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 5 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Jenny O. Wilson",party:"Republican"},{name:"William F. Fessenden",party:"Independent"}]},
+  {group:"State Legislature",office:"State House — Strafford 6 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Denise DeDe-Poulin",party:"Republican",status:"Incumbent"},{name:"Daniel Fitzpatrick",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 7 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"John Larochelle",party:"Democrat",status:"Incumbent"},{name:"Eric Bourgeois",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 8 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"David Walker",party:"Republican",status:"Incumbent"},{name:"Ty Wyman",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 9 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Nevin Dexter",party:"Democrat"},{name:"Robert Qua",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 10 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[{name:"Loren Selig",party:"Democrat",status:"Incumbent"},{name:"Timothy Horrigan",party:"Democrat",status:"Incumbent"},{name:"Wayne M. Burton",party:"Democrat",status:"Incumbent"},{name:"Siena R. Schaier",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 11 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"Erik Johnson",party:"Democrat",status:"Incumbent"},{name:"Thomas Southworth",party:"Democrat",status:"Incumbent"},{name:"Janet G. Wall",party:"Democrat",status:"Incumbent"},{name:"Monique Meadows",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 12 — 2-year term (vote for up to 4)",does:"Votes on state laws and the state budget. Vote for up to four candidates.",candidates:[{name:"Billie Butler",party:"Democrat",status:"Incumbent"},{name:"Myles England",party:"Democrat",status:"Incumbent"},{name:"Wayne Pearson",party:"Democrat",status:"Incumbent"},{name:"Will Hurley",party:"Democrat"},{name:"Omero N. Ambriz",party:"Republican"},{name:"Paul Edgar",party:"Republican"},{name:"David Hilton",party:"Republican"},{name:"Philip Houde",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 13 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Peter Bixby",party:"Democrat",status:"Incumbent"},{name:"Daniel A. Furman",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 14 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Peter B. Schmidt",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Strafford 15 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Samuel Chouinard",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 16 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Gary R. Gilmore",party:"Democrat",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Strafford 17 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Jessica F. LaMontagne",party:"Democrat",status:"Incumbent"},{name:"Matthew D. Albion",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 18 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Thom Flynn",party:"Democrat"},{name:"Michael Harrington",party:"Republican",status:"Incumbent"}]},
+  {group:"State Legislature",office:"State House — Strafford 19 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates. This is a floterial district.",candidates:[{name:"Samuel Farrington",party:"Republican",status:"Incumbent"},{name:"James Higginbottom",party:"Republican"},{name:"Jonathan Verbicky",party:"Republican"},{name:"Jonathan J. King",party:"Democrat"},{name:"Justin McIsaac",party:"Democrat"},{name:"Nick Paul",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Strafford 20 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Allan Howland",party:"Democrat",status:"Incumbent"},{name:"John Colford",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Strafford 21 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates. This is a floterial district.",candidates:[{name:"Seth Miller",party:"Democrat",status:"Incumbent"},{name:"Geoffrey Smith",party:"Democrat",status:"Incumbent"},{name:"Alice Wade",party:"Democrat",status:"Incumbent"},{name:"Joseph D. Morganella",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Sullivan 1 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Brian M. Sullivan",party:"Democrat",status:"Incumbent"},{name:"Joel T. Hutchins",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Sullivan 2 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Jenny Ramsey",party:"Democrat"},{name:"Michael Belanger",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Sullivan 3 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"Skip Rollins",party:"Republican",status:"Incumbent"},{name:"Steven Smith",party:"Republican",status:"Incumbent"},{name:"Walter Spilsbury",party:"Republican",status:"Incumbent"},{name:"Lisa DeBartolomao",party:"Democrat"},{name:"Timothy Fitzpatrick",party:"Democrat"},{name:"Jeffrey F. Kessler",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Sullivan 4 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"Ron Rule",party:"Republican"},{name:"Chris Salmon",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Sullivan 5 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate.",candidates:[{name:"George C. Grant",party:"Republican",status:"Incumbent"},{name:"Judith M. Thackaberry",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Sullivan 6 — 2-year term (vote for up to 3)",does:"Votes on state laws and the state budget. Vote for up to three candidates.",candidates:[{name:"John R. Cloutier",party:"Democrat",status:"Incumbent"},{name:"Dale Girard",party:"Republican",status:"Incumbent"},{name:"Wayne J. Hemingway",party:"Republican",status:"Incumbent"},{name:"Chris Cogswell",party:"Democrat"},{name:"Lisa R. Gosselin",party:"Democrat"},{name:"Emily Sandblade",party:"Republican"}]},
+  {group:"State Legislature",office:"State House — Sullivan 7 — 2-year term (vote for up to 1)",does:"Votes on state laws and the state budget. Vote for one candidate. This is a floterial district.",candidates:[{name:"Margaret M. Drye",party:"Republican",status:"Incumbent"},{name:"Lawrence A. Schissel",party:"Democrat"}]},
+  {group:"State Legislature",office:"State House — Sullivan 8 — 2-year term (vote for up to 2)",does:"Votes on state laws and the state budget. Vote for up to two candidates. This is a floterial district.",candidates:[{name:"Hope Damon",party:"Democrat",status:"Incumbent"},{name:"Samuel Deering",party:"Democrat"},{name:"Jonathan F. Stone",party:"Republican"},{name:"Catherine Peschke",party:"Republican"}]},
+// ============================== BELKNAP ==============================
+  {group:"Belknap County",office:"Sheriff — 2-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Bill Wright",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Belknap County",office:"County Attorney — 2-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"Keith Gerard Cormier",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Belknap County",office:"County Treasurer — 2-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Jason Sproul",party:"Democrat"},{name:"Travis J. O'Hara",party:"Republican"}]},
+  {group:"Belknap County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Laura Lapointe",party:"Republican",status:"Incumbent"},{name:"Maureen Baxley",party:"Democrat"}]},
+  {group:"Belknap County",office:"Register of Probate — 2-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Ruth Larson",party:"Democrat"},{name:"Krystie Sullivan",party:"Republican"}]},
+  {group:"Belknap County",office:"County Commissioner, District 1",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Peter John Spanos",party:"Republican",status:"Incumbent"}]},
+  {group:"Belknap County",office:"County Commissioner, District 2",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Glen A. Waring",party:"Republican",status:"Incumbent"}]},
+  // ============================== CARROLL ==============================
+  {group:"Carroll County",office:"Sheriff — 2-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Domenic M. Richardi",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Carroll County",office:"County Attorney — 2-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"Keith D. Blair",party:"Republican",status:"Incumbent"}]},
+  {group:"Carroll County",office:"County Treasurer — 2-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Matt Sawyer, Jr.",party:"Republican",status:"Incumbent"}]},
+  {group:"Carroll County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Karen I. Rines",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Carroll County",office:"Register of Probate — 2-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Steve Woodcock",party:"Democrat"},{name:"Brett I. Williams",party:"Republican"}]},
+  {group:"Carroll County",office:"County Commissioner, District 1",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Voters across the whole county vote in this race; the winner must live in the district.",candidates:[{name:"Wharton Sinkler",party:"Democrat"},{name:"Gene G. Chandler",party:"Republican",status:"Incumbent"}]},
+  {group:"Carroll County",office:"County Commissioner, District 2",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Voters across the whole county vote in this race; the winner must live in the district.",candidates:[{name:"Tom Randell",party:"Democrat"},{name:"Chuck McGee",party:"Republican",status:"Incumbent"}]},
+  {group:"Carroll County",office:"County Commissioner, District 3",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Voters across the whole county vote in this race; the winner must live in the district.",candidates:[{name:"Michael Parton",party:"Democrat"},{name:"Harold B. Parker",party:"Republican",status:"Incumbent"}]},
+  // ============================== CHESHIRE ==============================
+  {group:"Cheshire County",office:"Sheriff — 2-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Eli Rivera",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Cheshire County",office:"County Attorney — 2-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"D. Chris McLaughlin",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Cheshire County",office:"County Treasurer — 2-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Jack Wozmak",party:"Democrat",status:"Incumbent"}]},
+  {group:"Cheshire County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Anna Z. Tilton",party:"Democrat",status:"Incumbent"}]},
+  {group:"Cheshire County",office:"Register of Probate — 2-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Jeremy LaPlante",party:"Democrat",status:"Incumbent"}]},
+  {group:"Cheshire County",office:"County Commissioner, District 1",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Benjamin Tilton",party:"Democrat"},{name:"Kate Day",party:"Republican"}]},
+  {group:"Cheshire County",office:"County Commissioner, District 2",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Terry M. Clark",party:"Democrat",status:"Incumbent"}]},
+  // ============================== COOS ==============================
+  // NOTE: No Coos sheriff, county attorney, treasurer, register of deeds, or register of
+  // probate race is on the 2026 ballot — those offices serve 4-year terms from the 2024
+  // election (RSA 653:1 V) and are next up in 2028.
+  {group:"Coos County",office:"County Commissioner, District 1",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Robert Theberge",party:"Republican"},{name:"Eamon Kelley",party:"Democrat"}]},
+  {group:"Coos County",office:"County Commissioner, District 3",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Ray Gorman",party:"Republican"}]},
+  // ============================== GRAFTON ==============================
+  {group:"Grafton County",office:"Sheriff — 2-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Jillian E. Myers",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Grafton County",office:"County Attorney — 2-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"Martha Ann Hornick",party:"Democrat",status:"Incumbent"},{name:"Matthew D. Bjelobrk",party:"Republican"}]},
+  {group:"Grafton County",office:"County Treasurer — 2-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Michael J. Cryans",party:"Democrat",status:"Incumbent"},{name:"Brian Dear",party:"Republican"}]},
+  {group:"Grafton County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Kelley Jean Monahan",party:"Republican",status:"Incumbent"},{name:"Brie Choate",party:"Democrat"}]},
+  {group:"Grafton County",office:"Register of Probate — 2-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Sharon Modjeska",party:"Democrat"}]},
+  {group:"Grafton County",office:"County Commissioner, District 1",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"George Sykes",party:"Democrat"}]},
+  {group:"Grafton County",office:"County Commissioner, District 3",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Katie Hedberg",party:"Democrat",status:"Incumbent"},{name:"Kimberly Chandonnet",party:"Republican"}]},
+  // ============================== HILLSBOROUGH ==============================
+  {group:"Hillsborough County",office:"Sheriff — 2-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Brian Newcomb",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Hillsborough County",office:"County Attorney — 2-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"John J. Coughlin",party:"Republican",status:"Incumbent"},{name:"Travis Bennett",party:"Democrat"}]},
+  {group:"Hillsborough County",office:"County Treasurer — 2-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Beverly Cotton",party:"Democrat"},{name:"Christopher Maidment",party:"Republican"}]},
+  {group:"Hillsborough County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Dennis Hogan",party:"Republican",status:"Incumbent"},{name:"Mary Ann Crowell",party:"Democrat"}]},
+  {group:"Hillsborough County",office:"Register of Probate — 2-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Ross W. Terrio",party:"Republican"},{name:"June Trisciani",party:"Democrat"}]},
+  {group:"Hillsborough County",office:"County Commissioner, District 1 — 2-year term",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Toni Pappas",party:"Republican",status:"Incumbent"},{name:"Pierre A. Cetoute",party:"Democrat"}]},
+  {group:"Hillsborough County",office:"County Commissioner, District 2 — 2-year term",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"David Fredette",party:"Republican"},{name:"Sherry Dutzy",party:"Democrat"}]},
+  {group:"Hillsborough County",office:"County Commissioner, District 3 — 2-year term",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Robert H. Rowe",party:"Republican",status:"Incumbent"},{name:"Julie Radhakrishnan",party:"Democrat"}]},
+  // ============================== MERRIMACK ==============================
+  // NOTE: Merrimack commissioner races are omitted (see GAP 7 in the header).
+  {group:"Merrimack County",office:"Sheriff — 2-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Peter Shephard",party:"Democrat"},{name:"Frank T. Cassidy",party:"Republican"}]},
+  {group:"Merrimack County",office:"County Attorney — 2-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"Steven Endres",party:"Democrat"},{name:"Meg Hagaman",party:"Republican"}]},
+  {group:"Merrimack County",office:"County Treasurer — 2-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Kathleen Donnelly",party:"Democrat"}]},
+  {group:"Merrimack County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Erica S. Davis",party:"Democrat"},{name:"Samantha Morse",party:"Republican"}]},
+  {group:"Merrimack County",office:"Register of Probate — 2-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Jane Bradstreet",party:"Democrat"},{name:"Alyssa Ehl",party:"Republican"}]},
+  // ============================== ROCKINGHAM ==============================
+  // NOTE: Rockingham county-wide offices serve 4-year terms (2022 cohort, up in 2026).
+  // A second commissioner district up in 2026 is omitted (see GAP 8 in the header).
+  {group:"Rockingham County",office:"Sheriff — 4-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Chuck Massahos",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Rockingham County",office:"County Attorney — 4-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"Patricia G. Conway",party:"Republican",status:"Incumbent"},{name:"Robert Wilson",party:"Democrat"}]},
+  {group:"Rockingham County",office:"County Treasurer — 4-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Kevin Coyle",party:"Democrat"},{name:"Scott Priestly",party:"Republican",status:"Incumbent"}]},
+  {group:"Rockingham County",office:"Register of Deeds — 4-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Cathy Stacey",party:"Democrat / Republican",status:"Incumbent"}]},
+  {group:"Rockingham County",office:"Register of Probate — 4-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Douglas Marino",party:"Republican"},{name:"John Stark",party:"Democrat"}]},
+  {group:"Rockingham County",office:"County Commissioner, District 3",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"Thomas Tombarello",party:"Democrat / Republican",status:"Incumbent"}]},
+  // ============================== STRAFFORD ==============================
+  // NOTE: The Dover ballot prints no district number for the commissioner race (see
+  // GAP 9 in the header); any other commissioner-district races are unverified.
+  {group:"Strafford County",office:"Sheriff — 2-year term",does:"Leads the county sheriff's office, which handles court security, prisoner transport, and service of court papers.",candidates:[{name:"Kathryn L. Mone",party:"Democrat",status:"Incumbent"},{name:"Richard Krauss",party:"Republican"}]},
+  {group:"Strafford County",office:"County Attorney — 2-year term",does:"The county's chief prosecutor; decides which criminal cases the county brings to court.",candidates:[{name:"Emily C. Garod",party:"Democrat / Republican"}]},
+  {group:"Strafford County",office:"County Treasurer — 2-year term",does:"Manages the county's money: receives, holds, and pays out county funds.",candidates:[{name:"Pamela J. Arnold",party:"Democrat"}]},
+  {group:"Strafford County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Catherine A. Berube",party:"Democrat / Republican"}]},
+  {group:"Strafford County",office:"Register of Probate — 2-year term",does:"Keeps probate court records for wills, estates, guardianships, and adoptions.",candidates:[{name:"Jan Nedelka",party:"Democrat"},{name:"Nancy Sirois",party:"Republican"}]},
+  {group:"Strafford County",office:"County Commissioner — 2-year term",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Only voters who live in this district vote in this race.",candidates:[{name:"George Maglaras",party:"Democrat / Republican"}]},
+  // ============================== SULLIVAN ==============================
+  // NOTE: Sullivan sheriff, county attorney, treasurer, and register of probate races
+  // are omitted (see GAP 10 in the header). Current officers were NOT carried forward.
+  {group:"Sullivan County",office:"Register of Deeds — 2-year term",does:"Records and preserves land and property documents for the county.",candidates:[{name:"Je Austin",party:"Democrat"},{name:"Renee Simino",party:"Republican",status:"Incumbent"}]},
+  {group:"Sullivan County",office:"County Commissioner, District 1",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Voters across the whole county vote in this race; the winner must live in the district.",candidates:[{name:"Benjamin Nelson",party:"Democrat"},{name:"Joe Osgood",party:"Republican",status:"Incumbent"}]},
+  {group:"Sullivan County",office:"County Commissioner, District 2",does:"Serves on the county's governing board, which sets the county budget and oversees county services. Voters across the whole county vote in this race; the winner must live in the district.",candidates:[{name:"Jim Bednar",party:"Democrat"},{name:"Ben Nelson",party:"Republican"}]}
     ]
   },
   mississippi: {
-    label:"Mississippi \u00b7 Statewide ballot",chips:["U.S. Senate","U.S. House \u2014 all 4 districts","Court of Appeals \u2014 5 seats","No statewide offices or measures in 2026"],summary:"Mississippi's statewide layer for November 3, 2026: the U.S. Senate race, all four U.S. House districts, and five Court of Appeals seats. Mississippi elects its Governor, state legislators, and other statewide officers in odd years, so none appear in 2026, and no Supreme Court seats are on this ballot (see caveats). There are no statewide ballot measures. Southaven and DeSoto County voters also have a full VoterLens pathway in this app \u2014 enter ZIP 38671.",
-    coverage:"This pathway covers what appears on ballots across Mississippi for the November 3, 2026 general election. You vote in only one U.S. House district and one Court of Appeals district; all of them are listed so you can find yours. Chancery, circuit, and county-court races are also on the 2026 ballot statewide, but they are elected by county and judicial district and are not listed here \u2014 except DeSoto County's, which are covered in the Southaven pathway in this app (enter ZIP 38671). Other voters should check their official sample ballot at sos.ms.gov.",
-    caveats:["No Mississippi Supreme Court seats appear on the November 2026 ballot: the Secretary of State's 2026 elections calendar states that the regularly scheduled Supreme Court election is currently enjoined due to a federal court order concerning the districts used to elect justices.","Mississippi elects its Governor, state legislators, statewide officers, and county officers in odd years (last 2023, next 2027), so none appear on this ballot.","2026 is a judicial election year for Mississippi's trial courts: chancery, circuit, and county-court judges across the state are on the ballot by district and county. Only the Court of Appeals seats are listed in this pathway; DeSoto County's trial-court races are in the Southaven pathway. Judicial races are nonpartisan, and a judicial race in which no candidate wins a majority goes to a runoff on December 1, 2026.","A few single-district special elections share the November 3 ballot \u2014 State Senate District 34, State House Districts 70 and 77, and District Attorney District 7, per the Secretary of State's candidate list. They appear only on those districts' ballots and are not listed here.","Four of the five Court of Appeals races drew a single candidate, shown as unopposed. Candidate lists are from the Mississippi Secretary of State's official candidate qualifying list for the November 3, 2026 general election \u2014 compare your official sample ballot before voting."],
-    sources:[{label:"Mississippi Secretary of State \u2014 official candidate qualifying list, 2026 general election",url:"https://www.sos.ms.gov/content/CandidateQualifying/default.aspx"},{label:"Mississippi Secretary of State \u2014 elections and voting",url:"https://www.sos.ms.gov/elections-voting"},{label:"Mississippi Independent: no Supreme Court election in 2026 (analysis)",url:"https://msindy.org/p/mississippi-voters-get-no-say-on"}],
+    label:"Mississippi \u00b7 Statewide ballot",chips:["U.S. Senate","U.S. House \u2014 all 4 districts","Court of Appeals \u2014 5 seats","Trial courts statewide","2 House specials + DA 7 special","No statewide offices or measures in 2026"],summary:"Mississippi's statewide layer for November 3, 2026: the U.S. Senate race, all four U.S. House districts, five Court of Appeals seats, trial-court judges statewide (chancery, circuit, and county courts), and three Nov. 3 special elections (State House Districts 70 and 77, District Attorney District 7). Mississippi elects its Governor, state legislators, and other statewide officers in odd years, so none appear in 2026, and no Supreme Court seats are on this ballot (see caveats). There are no statewide ballot measures. Southaven and DeSoto County voters also have a full VoterLens pathway in this app \u2014 enter ZIP 38671.",
+    coverage:"This pathway covers what appears on ballots across Mississippi for the November 3, 2026 general election. You vote in only one U.S. House district, one Court of Appeals district, and only your own chancery, circuit, and county-court races; all districts are listed so you can find yours. DeSoto County's trial-court races are covered in the Southaven pathway in this app (enter ZIP 38671) and are not repeated here. City races beyond Southaven and school-district races are not included. Other voters should check their official sample ballot at sos.ms.gov.",
+    caveats:["No Mississippi Supreme Court seats appear on the November 2026 ballot: the Secretary of State's 2026 elections calendar states that the regularly scheduled Supreme Court election is currently enjoined due to a federal court order concerning the districts used to elect justices.","Mississippi elects its Governor, state legislators, statewide officers, and county officers in odd years (last 2023, next 2027), so none appear on this ballot.","2026 is a judicial election year for Mississippi's trial courts: chancery, circuit, and county-court judges across the state are on the ballot by district and county. Only the Court of Appeals seats are listed in this pathway; DeSoto County's trial-court races are in the Southaven pathway. Judicial races are nonpartisan, and a judicial race in which no candidate wins a majority goes to a runoff on December 1, 2026.","The Nov. 3 special elections in this pathway are State House Districts 70 and 77 and District Attorney District 7 only. State Senate District 34 is NOT a Nov. 3 race: its special election is Dec. 22, 2026 (runoff Jan. 19, 2027 if needed) and it is not listed here.","Chancery Court District 5-1: J. Dewayne Thomas died Sep. 16, 2026 while running unopposed; his name remains on the ballot, with an interim appointment and a later special election to follow — do not treat it as a normal unopposed re-election.","County-court candidates qualify locally, not on the SOS statewide candidate list, so county-court names here rest on county sample ballots, local news, and the Mississippi Judiciary directory — confirm on the printed ballot. County courts in 12 of the 24 county-court counties are not yet listed (see draft file gap list).","No countywide ballot measure was verified for Hinds, Harrison, Jackson, or Rankin counties; a City of Jackson tourism-tax measure (city voters only) was found but its certified ballot title and passage threshold were not verified, so it is not listed here.","Four of the five Court of Appeals races drew a single candidate, shown as unopposed. Candidate lists are from the Mississippi Secretary of State's official candidate qualifying list for the November 3, 2026 general election \u2014 compare your official sample ballot before voting."],
+    sources:[{label:"Mississippi Secretary of State \u2014 official candidate qualifying list, 2026 general election",url:"https://www.sos.ms.gov/content/CandidateQualifying/default.aspx"},{label:"Mississippi Secretary of State \u2014 elections and voting",url:"https://www.sos.ms.gov/elections-voting"},{label:"Mississippi Independent: no Supreme Court election in 2026 (analysis)",url:"https://msindy.org/p/mississippi-voters-get-no-say-on"},{label:"Mississippi Secretary of State — Sample Ballot 9-9-26 (trial courts)",url:"https://www.sos.ms.gov/content/documents/Elections/2026/Sample%20Ballot%209-9-26.pdf"},{label:"The Ballot Brief — Judges on the Mississippi Ballot 2026",url:"https://theballotbrief.com/judges/mississippi"}],
     noMeasuresTitle:"No ballot measures on the statewide ballot.",
     noMeasuresText:"No statewide measures were certified for Mississippi's November 3, 2026 ballot, and Mississippi has had no citizen-initiative process since 2021. Any county or local question appears on the official sample ballot from the Secretary of State.",
     races:[
@@ -1016,14 +3197,147 @@ window.EXPANDED_BALLOTS = {
       ]},
       {group:"Mississippi judiciary",office:"Court of Appeals \u2014 District 5, Place 1",does:"Hears appeals from Mississippi trial courts; decisions can be further appealed to the state Supreme Court. Nonpartisan race \u2014 no party labels on the ballot. Only voters in District 5 vote in this race.",candidates:[
         {name:"Anthony \u201cTony\u201d Lawrence",status:"Incumbent \u00b7 unopposed",bio:"Sitting Court of Appeals judge, first elected in 2018; the only candidate who qualified for this seat in 2026."}
-      ]}
+      ]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 1, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Brad Tennison",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 1, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Michael Malski",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 1, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Jacqueline Mask",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 1, Place 4",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Stephen T. Bailey",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 2, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Roy Noble Lee Jr.",status:"Unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 2, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Gerald M. Martin",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 2, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"David Shoemake",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 3, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Ginger M. Miller"},{name:"Jay Westfaul"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 3, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Sabrina D. Howell",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 3, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Mitchell M. Lundy Jr.",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 4, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"E. Vincent Davis",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 4, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Wayne Smith",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 4, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Debbra K. Halford",status:"Incumbent"},{name:"Ashunda Hampton"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 5-1",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 5-1 vote in this race.",candidates:[{name:"J. Dewayne Thomas",status:"Unopposed · died Sep. 16, 2026 — name remains on ballot; interim appointment and special election to follow"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 5-2",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 5-2 vote in this race.",candidates:[{name:"Crystal Wise Martin",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 5-3",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 5-3 vote in this race.",candidates:[{name:"Bridgett B. Clayton"},{name:"Tametrice E. Hodges"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 5-4",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 5-4 vote in this race.",candidates:[{name:"Tiffany Grove",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 6, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Doug S. Crosby",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 6, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Kiley Catledge Kirk",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 7-1, Place 1",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 7-1 vote in this race.",candidates:[{name:"Catherine Farris-Carter",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 7-2",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 7-2 vote in this race.",candidates:[{name:"Willie J. Perkins Sr.",status:"Incumbent"},{name:"W. M. Sanders",status:"Incumbent"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 8, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Jim Persons",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 8, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Jennifer T. Schloegel",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 8, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Margaret Alfonso",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 8, Place 4",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Haley Necaise Broom"},{name:"Stephen J. Maggio"},{name:"Frances 'Fran' Yeatts"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 9-1",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 9-1 vote in this race.",candidates:[{name:"Bennie L. Richard",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 9-2",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 9-2 vote in this race.",candidates:[{name:"Vicki Roach Barnes",status:"Incumbent"},{name:"Penny B. Lawson"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 10, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Renee McBride Porter",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 10, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Rhea Hudson Sheldon",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 10, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Tara Kellar",status:"Unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 10, Place 4",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Chad Smith",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 11-1",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 11-1 vote in this race.",candidates:[{name:"Robert G. Clark III",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 11-2",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 11-2 vote in this race.",candidates:[{name:"Cynthia Lee Brewer",status:"Incumbent"},{name:"Rhonda Cecilia Cooper"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 11, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Gene D. Berry"},{name:"David Bridges"},{name:"Alan Rhea"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 12, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Austin C. Terry",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 12, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Amanda Trawick Rainey",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 13, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Sheila Havard Smallwood",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 13, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"George Schmidt"},{name:"John D. Smallwood"},{name:"Zachary Monroe Vaughn"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 14-1",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 14-1 vote in this race.",candidates:[{name:"Rodney P. Faver",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 14-2",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 14-2 vote in this race.",candidates:[{name:"Joseph N. 'Joe' Studdard",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 14-3",does:"Handles estates, divorces, child custody, and property disputes. Only voters in Subdistrict 14-3 vote in this race.",candidates:[{name:"Paula Drungole-Ellis",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 15, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Joseph Durr",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 15, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Price Henley",status:"Unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 16, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"D. Neil Harris Sr.",status:"Incumbent"},{name:"Jennifer Sekul Harris"},{name:"Matthew Paul Pavlov"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 16, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Ashlee Cole",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 16, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Mark Maples",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 16, Place 4",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Kaleigh Nelson",status:"Unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 18, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Jenessa Carter Hicks"},{name:"Sarah J. Liddy"},{name:"Jennifer L. Shackelford"},{name:"Michael Watts"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 18, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Bob Whitwell",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 19, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Jerry D. Sharp",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 19, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Kathryn Dickerson Clay",status:"New seat · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 20, Place 1",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Bo Agnew"},{name:"Keri H. Carroll"},{name:"Michael 'Mike' Wolf"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 20, Place 2",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Troy Farrell Odom",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Chancery Court — District 20, Place 3",does:"Handles estates, divorces, child custody, and property disputes.",candidates:[{name:"Haydn J. Roberts",status:"Incumbent · unopposed"}]},
+
+      {group:"Mississippi judiciary",office:"Circuit Court — District 1, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"John R. White",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 1, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Josh Wise",status:"Unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 1, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Kelly L. Mims",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 1, Place 4",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Michael P. 'Chip' Mills Jr.",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 2, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Lisa P. Dodson",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 2, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Chris Schmidt",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 2, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Larry Bourgeois",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 2, Place 4",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Randi Peresich Mueller",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 3, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Gray Tollison",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 3, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Bart M. Adams"},{name:"Shirley C. Byers"},{name:"Steven Patrick Jubera"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 3, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Kent E. Smith",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 4-1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Richard A. Smith",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 4-2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Margaret Carey-McCray",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 4-3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Carol White Richard",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 4-4",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Ashley Hines",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 5, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Joseph H. 'Joey' Loper Jr.",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 5, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Alan D. 'Devo' Lancaster",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 6-1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Carmen Brooks Drake",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 6-2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Debra W. Blackwell",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 6-3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"David H. Strong Jr.",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 7-1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Adrienne Wooten",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 7-2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Debra Gibbs",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 7-3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Winston Lee Kidd",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 7-4",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Faye Peterson",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 7-5",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Tomika T. Harris-Irving",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 7-6",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Damon R. Stevenson",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 8, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Caleb E. May",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 8, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Christopher Morgan Posey",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 9-1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Toni Walker Terrett",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 9-2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"M. James 'Jim' Chaney Jr.",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 10, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Charles W. Wright Jr.",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 10, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Robert T. 'Bo' Bailey",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 11-1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"W. Hunter Nowell",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 11-2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Stephanie 'Nikki' Morris-Harris"},{name:"David L. Tisdell"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 11-3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Charles E. Webster",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 12, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"T. Michael Reed",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 12, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Wes Curry",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 13, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Matthew G. Sullivan",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 13, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Stanley Sorey",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 14, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Mike Taylor",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 14, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Brendon Adams"},{name:"Matt Kitchens"},{name:"Albert Turnage"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 15, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Brad A. Touchstone",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 15, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Ryan Bruhl"},{name:"Prentiss G. Harrell",status:"Incumbent"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 15, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Richelle Lumpkin",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 16, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"James 'Jim' Thomas Kitchens Jr.",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 16, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Lee J. 'Jay' Howard",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 16, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Michelle Easterling",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 17, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Smith Murphey V",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 17, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"James 'Jimmy' McClure",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 18, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Brad R. Thompson"},{name:"Eric Tiebauer"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 18, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Darryl A. Hurt Jr.",status:"New seat · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 19, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Matthew Lachaussee"},{name:"Justin Lovorn"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 19, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Kathy King Jackson",status:"Incumbent"},{name:"Leilani 'Lani' Tynes"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 19, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Calvin Taylor",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 19, Place 4",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"George Huffman",status:"New seat · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 20, Place 1",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Sarah Butler"},{name:"Scott Gilbert"},{name:"Carter Smith"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 20, Place 2",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Steve S. Ratcliff",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 20, Place 3",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Dewey Arthur",status:"Incumbent · unopposed"}]},
+      {group:"Mississippi judiciary",office:"Circuit Court — District 22",does:"Handles felony criminal cases and major civil cases.",candidates:[{name:"Tim Howard"},{name:"Akillie Malone Oliver"}]},
+      {group:"Mississippi judiciary",office:"Forrest County Court Judge",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Carol Jones Russell",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Hinds County Court Judge, District 1",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Carlyn Hicks",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Hinds County Court Judge, District 2",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Yemi Kings",status:"Incumbent"}]},
+      {group:"Mississippi judiciary",office:"Rankin County Court Judge, Place 1",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"David L. Morrow Jr.",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Rankin County Court Judge, Place 2",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Josh McCrory",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Madison County Court Judge, Place 1",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Staci O'Neal",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Madison County Court Judge, Place 2",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Lindsey Herr",status:"Challenger"},{name:"Todd McAlpin",status:"Challenger"}]},
+      {group:"Mississippi judiciary",office:"Jackson County Court Judge, Place 1",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Stacie Zorn",status:"Incumbent"}]},
+      {group:"Mississippi judiciary",office:"Jackson County Court Judge, Place 2",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Mark Watts",status:"Incumbent"}]},
+      {group:"Mississippi judiciary",office:"Lauderdale County Court Judge, Place 1",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Lisa Howell",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Lauderdale County Court Judge, Place 2",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Veldore Young Graham",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Lafayette County Court Judge",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Tiffany Kilpatrick",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Leflore County Court Judge",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"James K. Littleton",status:"Incumbent"},{name:"Kevin A. Adams",status:"Challenger"}]},
+      {group:"Mississippi judiciary",office:"Lowndes County Court Judge",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Allison Kizer",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Yazoo County Court Judge",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"Mary Cotton",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi judiciary",office:"Pike County Court Judge",does:"Handles misdemeanors, smaller civil cases, and preliminary hearings.",candidates:[{name:"David Brewer",status:"Incumbent, unopposed"}]},
+      {group:"Mississippi legislature",office:"State House, District 70 — special election",does:"Represents District 70 in the Mississippi House of Representatives. Special election to serve through January 2028.",candidates:[{name:"Imelda A. Brown",party:"Independent"},{name:"Marcus A. Cheatham",party:"Independent"},{name:"James Lott III",party:"Independent"}]},
+      {group:"Mississippi legislature",office:"State House, District 77 — special election",does:"Represents District 77 in the Mississippi House of Representatives. Special election to serve through January 2028.",candidates:[{name:"Christopher \"Chris\" Dunn",party:"Independent"},{name:"Dianne McNair Gaddis",party:"Independent"},{name:"Melissa C Sullivan",party:"Independent"},{name:"Craig T. Williams",party:"Independent"}]},
+      {group:"Mississippi judiciary",office:"District Attorney, District 7 — special election",does:"Prosecutes criminal cases for District 7. Special election to serve through January 2028.",candidates:[{name:"Gwen Agho",party:"Independent"},{name:"Greta Mack Harris",party:"Independent"},{name:"Darla Palmer",party:"Independent"},{name:"Marvin L. Sanders",party:"Independent"},{name:"Wendy Wilson White",party:"Independent"}]},
     ]
   },
   tennessee: {
-    label:"Tennessee \u00b7 Statewide ballot",chips:["Governor \u2014 open seat","U.S. Senate","U.S. House \u2014 all 9 districts","3 constitutional amendments"],summary:"Tennessee's statewide layer for November 3, 2026: an open-seat Governor's race, a U.S. Senate race, all nine U.S. House districts, and three proposed constitutional amendments. Memphis and Shelby County voters land here \u2014 and Tennessee redrew its congressional map in 2026, splitting Memphis among Districts 5, 8, and 9, so confirm your district before you vote. Southaven, Mississippi voters (ZIP 38671), just across the state line from Memphis, have their own pathway in this app.",
-    coverage:"This pathway covers what appears on ballots across Tennessee for the November 3, 2026 general election. You vote in only one U.S. House district; all nine are listed so you can find yours. Because the congressional map was redrawn in 2026, your district number may differ from 2024 \u2014 confirm it on your official sample ballot from the Secretary of State or your county election commission. State Senate and State House races are on every ballot but are elected by district and are not listed here. Trial judges and district attorneys are also elected by judicial district in Tennessee.",
-    caveats:["Tennessee redrew its congressional district map in a May 2026 special session (signed May 7, 2026). Memphis and Shelby County are now split among Districts 5, 8, and 9, and the District 9 incumbent since 2007 is not on the November ballot. District numbers may differ from the last election \u2014 confirm your district on your official sample ballot.","The Governor is the only statewide state office Tennessee voters elect. The Secretary of State, Comptroller of the Treasury, and State Treasurer are chosen by the General Assembly; the Attorney General is appointed by the state Supreme Court; and the Lieutenant Governor is the Speaker of the state Senate, chosen by the senators \u2014 none of those offices appear on your ballot.","No judicial retention questions appear on the November 2026 ballot. Tennessee appellate judges are appointed by the Governor, confirmed by the Legislature, and then face retention (yes/no) elections in August \u2014 the 2026 retention votes were held August 6, 2026.","A constitutional amendment passes only if it wins more yes than no votes AND the yes votes total more than half of all votes cast in the Governor's race \u2014 so voting on the amendments matters even in a low-turnout governor's race.","State Senate (33 districts) and State House (99 districts) races are elected by district and are not listed in this pathway \u2014 check your official sample ballot for your district's candidates.","Candidate names and parties are from the Tennessee Secretary of State's official candidate list for the November 3, 2026 general election \u2014 compare your official sample ballot before voting."],
-    sources:[{label:"Tennessee Secretary of State \u2014 2026 candidate lists (November 3, 2026 general election)",url:"http://sos.tn.gov/elections/2026-candidate-lists"},{label:"Tennessee Secretary of State \u2014 2026 proposed constitutional amendments",url:"http://sos.tn.gov/elections/announcements/2026-proposed-constitutional-amendments"},{label:"Hamilton County Election Commission \u2014 official sample ballot, November 3, 2026",url:"https://elect.hamiltontn.gov/Portals/12/HTML/GenSample.html"}],
+    label:"Tennessee \u00b7 Statewide ballot",chips:["Governor \u2014 open seat","U.S. Senate","U.S. House \u2014 all 9 districts","3 constitutional amendments","State Legislature \u2014 98 House + 17 Senate","County specials \u2014 5 races"],summary:"Tennessee's statewide layer for November 3, 2026: an open-seat Governor's race, a U.S. Senate race, all nine U.S. House districts, and three proposed constitutional amendments. Memphis and Shelby County voters land here \u2014 and Tennessee redrew its congressional map in 2026, splitting Memphis among Districts 5, 8, and 9, so confirm your district before you vote. Southaven, Mississippi voters (ZIP 38671), just across the state line from Memphis, have their own pathway in this app. Also included: the 17 State Senate districts up in 2026 and all 99 State House districts except District 93 (no candidate qualified, write-in only), plus five November county special and unexpired-term races. Full-term county offices were decided August 6, 2026 and are not on the November ballot.",
+    coverage:"This pathway covers what appears on ballots across Tennessee for the November 3, 2026 general election, plus the State Legislature districts and five November county special and unexpired-term races. You vote in only one U.S. House district, one State Senate district, and one State House district; all districts are listed so you can find yours. Because the congressional map was redrawn in 2026, your district number may differ from 2024 \u2014 confirm it on your official sample ballot from the Secretary of State or your county election commission. Full-term county offices were decided at the August 6, 2026 county general election and are NOT on the November ballot \u2014 only vacancy, unexpired-term, and special county races appear here. City races (including Memphis, Nashville, Knoxville, Chattanooga, and Clarksville) and school-district races are not yet built.",
+    caveats:["Tennessee redrew its congressional district map in a May 2026 special session (signed May 7, 2026). Memphis and Shelby County are now split among Districts 5, 8, and 9, and the District 9 incumbent since 2007 is not on the November ballot. District numbers may differ from the last election \u2014 confirm your district on your official sample ballot.","The Governor is the only statewide state office Tennessee voters elect. The Secretary of State, Comptroller of the Treasury, and State Treasurer are chosen by the General Assembly; the Attorney General is appointed by the state Supreme Court; and the Lieutenant Governor is the Speaker of the state Senate, chosen by the senators \u2014 none of those offices appear on your ballot.","No judicial retention questions appear on the November 2026 ballot. Tennessee appellate judges are appointed by the Governor, confirmed by the Legislature, and then face retention (yes/no) elections in August \u2014 the 2026 retention votes were held August 6, 2026.","A constitutional amendment passes only if it wins more yes than no votes AND the yes votes total more than half of all votes cast in the Governor's race \u2014 so voting on the amendments matters even in a low-turnout governor's race.","Tennessee county offices are elected in August, not November (T.C.A. 2-3-202/203): full-term county mayor, sheriff, commission, clerk, trustee, register, assessor, and school-board seats were decided August 6, 2026. The five county races listed here are special or unexpired-term races only; 85 of the other 90 counties have no November county race at all, and Shelby, Davidson, Knox, Hamilton, and Montgomery have none.","State House District 93 has no candidate qualified on the November ballot \u2014 the Secretary of State prints 'No Candidate Qualified' with a write-in line only \u2014 so no name is listed for that district.","State House District 26 lists Greg Martin alone: Nathan Denton won the August Democratic primary but does not appear in the Secretary of State general list or on the Hamilton County sample ballot; the reason for his absence was not verified.","State House District 84 lists Matthew Szalaj alone: Joe Towns Jr. won the August primary, then won the Shelby County Criminal Court Clerk race and resigned the House seat August 31, 2026; Szalaj was named replacement nominee.","Senate District 31 incumbent Brent Taylor is also the Republican nominee for U.S. House District 9, and House District 86 incumbent Justin Pearson is also the Democratic nominee for U.S. House District 9; both are listed in their legislative races exactly as the Secretary of State lists them.","Candidate order in the legislative races follows the Secretary of State list order, not verified ballot order, and some name forms are shortened from the Secretary of State form (for example, Richard Briggs for Richard M. Briggs). Bios are blank where no verified neutral bio was found \u2014 a blank bio is not a missing candidate.","City races and school-district races are not included in this pathway. Municipal races found on November ballots in the large counties (for example, Clarksville Mayor and Council, and suburban-town races around Memphis and Nashville) are not built here.","Candidate names and parties are from the Tennessee Secretary of State's official candidate list for the November 3, 2026 general election \u2014 compare your official sample ballot before voting."],
+    sources:[{label:"Tennessee Secretary of State \u2014 2026 candidate lists (November 3, 2026 general election)",url:"http://sos.tn.gov/elections/2026-candidate-lists"},{label:"Tennessee Secretary of State \u2014 2026 proposed constitutional amendments",url:"http://sos.tn.gov/elections/announcements/2026-proposed-constitutional-amendments"},{label:"Hamilton County Election Commission \u2014 official sample ballot, November 3, 2026",url:"https://elect.hamiltontn.gov/Portals/12/HTML/GenSample.html"},{label:"Tennessee Secretary of State \u2014 Candidates for Tennessee Senate, Nov 3, 2026 general election (official PDF)",url:"https://sos-prod.tnsosgovfiles.com/s3fs-public/document/TNSenate_Nov2026.pdf"},{label:"Tennessee Secretary of State \u2014 Candidates for Tennessee House of Representatives, Nov 3, 2026 general election (official PDF)",url:"https://sos-prod.tnsosgovfiles.com/s3fs-public/document/TNHouse_Nov2026.pdf"},{label:"BallotReady \u2014 Tennessee General Election, Nov 3, 2026 (independent reproduction)",url:"https://www.ballotready.org/elections/tennessee-general-election-491e8bff-f877-4c4a-83be-3f8ccc9d6ae3"}],
     measures:[
       {code:"Constitutional Amendment #1",title:"Denying bail for serious offenses",text:"Shall Article I, Section 15 of the Constitution of Tennessee be amended by deleting the following: That all prisoners shall be bailable by sufficient sureties, unless for capital offences, when the proof is evident, or the presumption great. And the privilege of the writ of Habeas Corpus shall not be suspended, unless when in case of rebellion or invasion, the General Assembly shall declare the public safety requires it. and substituting instead the following: (a) All prisoners shall be bailable by sufficient sureties unless for the following when the proof is evident or the presumption great: (1) A capital offense; (2) An act of terrorism; (3) Second degree murder; (4) Aggravated rape of a child; (5) Aggravated rape; (6) Grave torture; and (7) Any other offense for which, as of November 3, 2026, a defendant, if convicted, could not be released prior to the expiration of at least eighty-five percent of the entire sentence imposed. (b) In any case in which bail for an offense listed in subsection (a) is granted or denied before conviction, the judge or magistrate shall place in the record the judge\u2019s or magistrate\u2019s reasons for granting or denying bail. (c) The privilege of the writ of Habeas Corpus shall not be suspended, unless when in case of rebellion or invasion, the General Assembly shall declare the public safety requires it.",yes:"Allow courts to hold a defendant without bail before trial for the listed offenses \u2014 capital offenses, terrorism, second-degree murder, aggravated rape of a child, aggravated rape, grave torture, and offenses requiring at least 85% of the sentence to be served \u2014 and require the judge to state the reasons on the record.",no:"Keep the current rule, under which a defendant may be held without bail before trial only for a capital offense when the proof is evident or the presumption great."},
       {code:"Constitutional Amendment #2",title:"Prohibit a state property tax",text:"Shall Article II, Section 28 of the Constitution of the State of Tennessee be amended by deleting the following language from the first sentence: In accordance with the following provisions, all property real, personal or mixed shall be subject to taxation, but the Legislature and substituting instead the following: In accordance with the following provisions, all property real, personal, or mixed shall be subject to taxation, but the Legislature shall not levy, authorize, or otherwise permit any state tax upon such property, and the Legislature",yes:"Amend the constitution to prohibit the Legislature from levying, authorizing, or permitting any state tax on real, personal, or mixed property. (County and city property taxes are not addressed by this amendment.)",no:"Keep the current constitutional language, which does not prohibit a state property tax."},
@@ -1040,10 +3354,536 @@ window.EXPANDED_BALLOTS = {
       {group:"Federal offices",office:"U.S. House \u2014 District 6 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Open seat \u2014 the incumbent ran for Governor instead and is not on the November ballot.",candidates:[{name:"Johnny Garrett",party:"Republican",bio:"State Representative (District 45) since 2018, serving as House Majority Whip; a Goodlettsville attorney."},{name:"Mike Croley",party:"Democrat",bio:"Crossville resident; U.S. Navy veteran and engineer, former Tennessee State Park ranger, and nonprofit founder."},{name:"Christopher B. Monday",party:"Independent",bio:"Cookeville graphic designer; ran for this seat in 2018 and 2020."},{name:"Angus Purdy",party:"Independent",bio:"Nashville businessman and community activist."}]},
       {group:"Federal offices",office:"U.S. House \u2014 District 7 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills.",candidates:[{name:"Matt Van Epps",party:"Republican",status:"Incumbent",bio:"Won the December 2025 special election to succeed Rep. Mark Green, who resigned; an Army helicopter pilot and West Point graduate, and former Tennessee Commissioner of General Services."},{name:"Darden Copeland",party:"Democrat",bio:"Nashville businessman; founder of the public-affairs firm Calvert Street Group."},{name:"Andrew J. Koontz",party:"Independent",bio:"Portland real-estate agent."},{name:"Lowell Reynolds",party:"Independent",bio:"Nashville resident; Grammy Award-winning audio engineer."}]},
       {group:"Federal offices",office:"U.S. House \u2014 District 8 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. The district was substantially redrawn in 2026 and now includes part of Memphis.",candidates:[{name:"David Kustoff",party:"Republican",status:"Incumbent",bio:"In Congress since 2017; an attorney and former U.S. Attorney for the Western District of Tennessee (2006\u20132008)."},{name:"Heidi Kuhn",party:"Democrat",bio:"Shelby County Criminal Court Clerk since 2018, with 18 years in Shelby County government."},{name:"Adam D. Austill",party:"Independent",bio:"Covington applied-behavioral therapist who works with children with autism; a doctoral candidate at the University of Memphis."},{name:"Wendell \u201cWells\u201d Blankenship",party:"Independent",bio:"",note:"No public biographical information was found in this research."},{name:"Antonio Futch",party:"Independent",bio:"",note:"No public biographical information was found in this research."},{name:"Pamela Jeanine \u201cP.\u201d Moses",party:"Independent",bio:"Memphis co-founder of Black Lives Matter Memphis and CEO of Rise Up America; previously ran for Memphis mayor and for U.S. Senate."},{name:"Horace Taylor",party:"Independent",bio:"Germantown resident; retired U.S. Army veteran and cybersecurity analyst for a defense contractor."},{name:"Henry J. Ward, III",party:"Independent",bio:"",note:"No public biographical information was found in this research."}]},
-      {group:"Federal offices",office:"U.S. House \u2014 District 9 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Open seat \u2014 the incumbent since 2007 retired after the 2026 redistricting split his Memphis-based district three ways. This district covers part of Memphis.",candidates:[{name:"Brent Taylor",party:"Republican",bio:"State Senator (District 31) since 2023 and a Mid-South funeral-home owner; previously a Memphis City Council member and Shelby County commissioner."},{name:"Justin J. Pearson",party:"Democrat",bio:"State Representative (District 86, Memphis) since 2023; a Memphis community organizer first elected in a 2023 special election."},{name:"Dennis Clark",party:"Independent",bio:"Memphis actor, comedian, and filmmaker."},{name:"Michelle Davis Head",party:"Independent",bio:"",note:"No public biographical information was found in this research."}]}
+      {group:"Federal offices",office:"U.S. House \u2014 District 9 \u2014 2-year term",does:"Votes on federal legislation; the House initiates tax and spending bills. Open seat \u2014 the incumbent since 2007 retired after the 2026 redistricting split his Memphis-based district three ways. This district covers part of Memphis.",candidates:[{name:"Brent Taylor",party:"Republican",bio:"State Senator (District 31) since 2023 and a Mid-South funeral-home owner; previously a Memphis City Council member and Shelby County commissioner."},{name:"Justin J. Pearson",party:"Democrat",bio:"State Representative (District 86, Memphis) since 2023; a Memphis community organizer first elected in a 2023 special election."},{name:"Dennis Clark",party:"Independent",bio:"Memphis actor, comedian, and filmmaker."},{name:"Michelle Davis Head",party:"Independent",bio:"",note:"No public biographical information was found in this research."}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 1",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"J. Adam Lowe",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 3",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Rusty Crowe",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 5",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Jimmy Matlock",party:"Republican",bio:""},{name:"David Miller",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 7",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Richard Briggs",party:"Republican",status:"Incumbent",bio:""},{name:"Bryan Langan",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 9",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Steve Southerland",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 11",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Bo Watson",party:"Republican",status:"Incumbent",bio:""},{name:"Tim Roberts",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 13",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Dawn White",party:"Republican",status:"Incumbent",bio:""},{name:"Angela Evans Wynn",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 15",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Paul Bailey",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 17",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Mark Pody",party:"Republican",status:"Incumbent",bio:""},{name:"Lindsey Patrick-Wright",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 19",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Charlane Oliver",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 21",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Jeff Yarbro",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 23",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Kerry Roberts",party:"Republican",status:"Incumbent",bio:""},{name:"David Lee Marcum",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 25",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Ed Jackson",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 27",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Jack Johnson",party:"Republican",status:"Incumbent",bio:""},{name:"David Hardy",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 29",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Raumesh Akbari",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 31",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"Brent Taylor",party:"Republican",status:"Incumbent",bio:""},{name:"David Weatherspoon",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Senator — District 33",does:"Votes on Tennessee laws, the state budget, and taxes.",candidates:[{name:"London Lamar",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 1",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jessica Means",party:"Republican",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 2",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Gary Stidham",party:"Republican",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 3",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Timothy Hill",party:"Republican",status:"Incumbent",bio:""},{name:"Lori Love",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 4",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Renea Jones",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 5",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"David Hawk",party:"Republican",status:"Incumbent",bio:""},{name:"Catherine Bacon",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 6",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Tim Hicks",party:"Republican",status:"Incumbent",bio:""},{name:"Brad Batt",party:"Democrat",bio:""},{name:"Rodger Broadwater",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 7",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rebecca Alexander",party:"Republican",status:"Incumbent",bio:""},{name:"Sarah Jayne Della Vecchia",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 8",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jordan Henderson",party:"Republican",bio:""},{name:"Hilary Trudell",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 9",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Gary Hicks",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 10",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rick Eldridge",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 11",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kenny Cody",party:"Republican",bio:""},{name:"Sheila Grooms McMahan",party:"Democrat",bio:""},{name:"Larry Jeremiah Brown",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 12",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Fred Atchley",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 13",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Robert Stevens",party:"Republican",status:"Incumbent",bio:""},{name:"Brett Windrow",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 14",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jason Zachary",party:"Republican",status:"Incumbent",bio:""},{name:"Lindsay Young Honaker",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 15",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Sam McKenzie",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 16",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Michele Carringer",party:"Republican",status:"Incumbent",bio:""},{name:"Eliza Boles",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 17",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Andrew Farmer",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 18",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Elaine Davis",party:"Republican",status:"Incumbent",bio:""},{name:"Bryan Goldberg",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 19",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Dave Wright",party:"Republican",status:"Incumbent",bio:""},{name:"Jenny Fowler",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 20",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Tom Stinnett",party:"Republican",status:"Incumbent",bio:""},{name:"Karen Gertz",party:"Democrat",bio:""},{name:"Jeff Coggin",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 21",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Lowell Russell",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 22",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Dan Howell",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 23",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Mark Cochran",party:"Republican",status:"Incumbent",bio:""},{name:"Jeremy Bromwell",party:"Independent",bio:""},{name:"Jason Hitt",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 24",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kevin Raper",party:"Republican",status:"Incumbent",bio:""},{name:"Daniel Jones",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 25",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Cameron Sexton",party:"Republican",status:"Incumbent",bio:""},{name:"Monica Mowdy",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 26",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Greg Martin",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 27",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Michele Reneau",party:"Republican",status:"Incumbent",bio:""},{name:"Paige Quirin",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 28",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Yusuf Hakeem",party:"Democrat",status:"Incumbent",bio:""},{name:"Demetrus Coonrod",party:"Independent",bio:""},{name:"Johnny Horne",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 29",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Greg Vital",party:"Republican",status:"Incumbent",bio:""},{name:"Ryan Scofield",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 30",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Esther Helton-Haynes",party:"Republican",status:"Incumbent",bio:""},{name:"Art Rymer",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 31",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Andrew Swafford",party:"Republican",bio:""},{name:"Michael Woodlee",party:"Democrat",bio:""},{name:"Keith Nolan",party:"Independent",bio:""},{name:"Randy Sharp",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 32",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jack Stockton",party:"Republican",bio:""},{name:"Ali Simpson",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 33",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rick Scarbrough",party:"Republican",status:"Incumbent",bio:""},{name:"Anne Backus",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 34",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Tim Rudd",party:"Republican",status:"Incumbent",bio:""},{name:"Owen Farnsworth",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 35",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"William Slater",party:"Republican",status:"Incumbent",bio:""},{name:"Phil Barnes",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 36",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Noah Smith",party:"Republican",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 37",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Charlie Baum",party:"Republican",status:"Incumbent",bio:""},{name:"Mary Ann Young",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 38",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kelly Keisling",party:"Republican",status:"Incumbent",bio:""},{name:"Seth McMillan",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 39",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Iris Rudder",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 40",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Michael Hale",party:"Republican",status:"Incumbent",bio:""},{name:"Daniel T. Hawthorne",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 41",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Ed Butler",party:"Republican",status:"Incumbent",bio:""},{name:"R. Jason Goodman",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 42",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Ryan Williams",party:"Republican",status:"Incumbent",bio:""},{name:"Trenton Tyler Strode",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 43",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Paul Sherrell",party:"Republican",status:"Incumbent",bio:""},{name:"Samantha Petit",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 44",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"William Lamberth",party:"Republican",status:"Incumbent",bio:""},{name:"Latoya Holcomb",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 45",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Brian Stewart",party:"Republican",bio:""},{name:"Mandy Cook",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 46",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Clark Boyd",party:"Republican",status:"Incumbent",bio:""},{name:"Dominic Howard",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 47",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rush Bricken",party:"Republican",status:"Incumbent",bio:""},{name:"Mike Stein",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 48",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Bryan Terry",party:"Republican",status:"Incumbent",bio:""},{name:"Matt Ferry",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 49",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Mike Sparks",party:"Republican",status:"Incumbent",bio:""},{name:"Connie Casha",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 50",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Bo Mitchell",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 51",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Aftyn Behn",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 52",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Michele Vetter",party:"Republican",bio:""},{name:"Justin Jones",party:"Democrat",status:"Incumbent",bio:""},{name:"Martez Coleman",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 53",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jason Powell",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 54",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Vincent Dixie",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 55",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jayla Thomas",party:"Republican",bio:""},{name:"John Ray Clemmons",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 56",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Bob Freeman",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 57",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Susan Lynn",party:"Republican",status:"Incumbent",bio:""},{name:"Matt Burchfield",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 58",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Harold Love Jr.",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 59",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Bill Hancock",party:"Republican",bio:""},{name:"Mark Proctor",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 60",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Eva Romero",party:"Republican",bio:""},{name:"Shaundelle Brooks",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 61",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Gino Bulso",party:"Republican",status:"Incumbent",bio:""},{name:"Becca Ripley",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 62",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Pat Marsh",party:"Republican",status:"Incumbent",bio:""},{name:"Brieanna Akers",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 63",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jake McCalmon",party:"Republican",status:"Incumbent",bio:""},{name:"Laura Andreson",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 64",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Scott Cepicky",party:"Republican",status:"Incumbent",bio:""},{name:"Craig D'Apolito",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 65",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Lee Reeves",party:"Republican",status:"Incumbent",bio:""},{name:"Julian Pierre-Griffin",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 66",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Sabi Kumar",party:"Republican",status:"Incumbent",bio:""},{name:"Tamara Bavendam",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 67",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Chris Lanier",party:"Republican",bio:""},{name:"Ronnie Glynn",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 68",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Aron Maberry",party:"Republican",status:"Incumbent",bio:""},{name:"Garfield Scott",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 69",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jody Barrett",party:"Republican",status:"Incumbent",bio:""},{name:"Rachael Murray",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 70",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Clay Doggett",party:"Republican",status:"Incumbent",bio:""},{name:"Rayanne Moos",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 71",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kip Capley",party:"Republican",status:"Incumbent",bio:""},{name:"Matt Day",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 72",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kirk Haston",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 73",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Chris Todd",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 74",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jay Reedy",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 75",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Michael Lankford",party:"Republican",status:"Incumbent",bio:""},{name:"Allie Phillips",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 76",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Tandy Darby",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 77",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Rusty Grills",party:"Republican",status:"Incumbent",bio:""},{name:"Erin Reid",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 78",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Perry Keenan",party:"Republican",bio:""},{name:"Hillary Capes-Gwinn",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 79",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Brock Martin",party:"Republican",status:"Incumbent",bio:""},{name:"Kirk Carter",party:"Independent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 80",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Julian McTizic",party:"Republican",bio:""},{name:"Andrea Bond Johnson",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 81",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Brett Giannini",party:"Republican",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 82",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Chris Hurt",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 83",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Mark White",party:"Republican",status:"Incumbent",bio:""},{name:"Margaret Price",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 84",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Matthew Szalaj",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 85",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Jesse Chism",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 86",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Justin Pearson",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 87",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Reggie William Hall",party:"Republican",bio:""},{name:"Karen Camper",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 88",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Larry Miller",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 89",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Justin Lafferty",party:"Republican",status:"Incumbent",bio:""},{name:"Randy Debord",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 90",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Gloria Johnson",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 91",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Torrey Harris",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 92",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Todd Warner",party:"Republican",status:"Incumbent",bio:""},{name:"Teri Mai",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 94",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Ron Gant",party:"Republican",status:"Incumbent",bio:""},{name:"Francine Johnson",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 95",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Kevin Vaughan",party:"Republican",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 96",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Telisa Franklin",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 97",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"John Gillespie",party:"Republican",status:"Incumbent",bio:""},{name:"Jesse Huseth",party:"Democrat",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 98",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Antonio Parkinson",party:"Democrat",status:"Incumbent",bio:""}]},
+      {group:"Tennessee Legislature",office:"State Representative — District 99",does:"Votes on Tennessee laws, the state budget, and taxes; the House initiates revenue bills.",candidates:[{name:"Tom Leatherwood",party:"Republican",status:"Incumbent",bio:""},{name:"William Mouzon",party:"Independent",bio:""}]},
+      {group:"Anderson County",office:"County Commission \u2014 District 8",does:"The county's legislative body \u2014 sets the county budget and property-tax rate and oversees county departments, roads, and services. This is a special election for one District 8 seat.",candidates:[{name:"Gina Grubb",party:"Democrat",bio:""},{name:"Don Layton",party:"Republican",bio:""}]},
+      {group:"Cheatham County",office:"Constable \u2014 District 6 (Unexpired Term)",does:"An elected peace officer for the district who serves court papers and helps keep the peace. This race fills the remainder of an unexpired term.",candidates:[{name:"Bubba Parker",party:"Independent",bio:""}]},
+      {group:"Claiborne County",office:"County Mayor",does:"The county's chief executive and financial officer \u2014 prepares the budget and runs day-to-day county government. This is a special election to fill the office.",candidates:[{name:"Otis \"Mike\" Campbell",party:"Independent",bio:""},{name:"Jack C Daniels",party:"Independent",bio:""},{name:"J.D. Estep",party:"Independent",bio:""},{name:"Daniel (Doc) Hurst",party:"Independent",bio:""},{name:"Danny \"Harland Stonewall\" Jones",party:"Independent",bio:""},{name:"Whitt Shuford",party:"Independent",bio:""},{name:"Randall \"O.T.\" Smith",party:"Independent",bio:""},{name:"Richard H. Smith",party:"Independent",bio:""}]},
+      {group:"Henry County",office:"County Commission \u2014 District 2",does:"The county's legislative body \u2014 sets the county budget and property-tax rate and oversees county departments, roads, and services.",candidates:[{name:"Paul J Neal",party:"Independent",bio:""},{name:"Eric Walker",party:"Independent",bio:""}]},
+      {group:"Polk County",office:"County Commission \u2014 District 2 (Unexpired Term)",does:"The county's legislative body \u2014 sets the county budget and property-tax rate and oversees county departments, roads, and services. This race fills the remainder of an unexpired term.",candidates:[{name:"Shawn Pritchett",party:"Republican",bio:""},{name:"John Tyler Longley",party:"Independent",bio:""},{name:"D. Travis Mull",party:"Independent",bio:""},{name:"Debbie Lewis Silvers",party:"Independent",bio:""},{name:"Thristian \"Toot\" Swallows",party:"Independent",bio:""}]},
+
     ]
   },
-  multnomah: {
+  california: {
+    label:"California \u00b7 State Legislature only",chips:["State Legislature \u2014 80 Assembly + 20 Senate","Legislature only \u2014 statewide races not yet added","Counties, city, school not yet added"],summary:"California's State Legislature for November 3, 2026, only: all 80 State Assembly districts and the 20 State Senate districts up in 2026 (the even-numbered districts 2 through 40). This is a legislature-only stage \u2014 statewide offices, U.S. House and U.S. Senate races, statewide measures, county, city, and school-district races are NOT included yet. Check your official sample ballot at sos.ca.gov before voting.",
+    coverage:"This pathway covers only what is listed below for the November 3, 2026 general election: your State Assembly race (all 80 districts are listed; you vote in only one) and, if your Senate district is up this year, your State Senate race (20 even-numbered districts; the other 20 Senate districts were elected in 2024 and are not on this ballot). Everything else on a California ballot \u2014 Governor and statewide offices, U.S. Senate and U.S. House, statewide propositions, county offices, city races, school-board races, and judicial retentions \u2014 is not included yet and must be checked on your official sample ballot at sos.ca.gov.",
+    caveats:["Legislature only: this section was added Oct 28, 2026 as stage 1 of the California build. Statewide, congressional, county, city, school, and judicial races are not included yet \u2014 do not treat this as a complete California ballot.","Candidate lists are from the California Secretary of State Official Certified List of Candidates for the November 3, 2026 General Election, dated August 27, 2026, cross-checked against Ballotpedia, JoinCalifornia, and The Ballot Book. Re-check the SOS list before any publish for late withdrawals \u2014 the certified list used here is dated August 27, 2026.","Candidate order follows SOS certified-list order, not ballot order. Party labels use SOS wording exactly, including No Party Preference, Green, and Peace and Freedom.","California uses a top-two general election, so several races are same-party: Senate District 24 and Senate District 26 are Democrat vs. Democrat; Assembly same-party races include Districts 3, 6, 12, 18, 38, 51, 55, 66, 68, and 69. Senate District 12 is Republican vs. Libertarian.","Spelling follows the fuller SOS form where secondary lists shorten a name (for example Susan A. Mason, Linda R. Price, Darin S. DuPont, Guillermo Asuncion Gonzalez, John M. Erickson, Bob J. Archuleta, Catherine S. Blakespear, Corey A. Jackson, Victoria Viveros Mageno, Carrie S. Espinoza Villanueva, Alejandro Galicia, and Jos\u00e9 Luis Solache).","Assembly District 38: Michael MacDonald is listed as Democrat per the SOS certified list, SOS contact list, and Ventura County Star reporting; JoinCalifornia's Republican label for him appears to be an error and was not followed.","Assembly District 17: Manuel Noris-Barrera qualified for the general election as a write-in candidate; Assembly District 54: Alexandra Briseno advanced as a write-in. Both are on the SOS general list and are included.","Assembly District 68: the final certified top two are David Penaloza and Jessie Lopez (both Democrat); an early primary snapshot showing Mayra Ruiz leading was superseded. Assembly District 72 is an open seat: Diane Dixon, the 2024 incumbent, did not advance; the race is Chris Kluwe vs. Gracey Van Der Mark.","Senate District 4: Marie Alvarado-Gil, the incumbent, was eliminated in the primary and is correctly absent. Senate Districts 2, 10, 12, 14, 24, 26, 34, and 40 are open seats.","Single-candidate Assembly races as certified by SOS, not omissions: Districts 4, 8, 22, and 32. Bios were omitted rather than invented; incumbent status is marked only where the SOS list marks it with an asterisk."],
+    sources:[{label:"California SOS \u2014 Official Certified List of Candidates, Nov 3, 2026 (Aug 27, 2026)",url:"https://elections.cdn.sos.ca.gov/statewide-elections/2026-general/cert-list-candidates.pdf"},{label:"California SOS \u2014 Official Candidate Contact List, Nov 3, 2026 (Sep 23, 2026)",url:"https://elections.cdn.sos.ca.gov/statewide-elections/2026-general/contact-list.pdf"},{label:"California SOS \u2014 General Election Nov 3, 2026 hub",url:"https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/"},{label:"Ballotpedia \u2014 California State Senate elections, 2026",url:"https://ballotpedia.org/California_State_Senate_elections,_2026"},{label:"JoinCalifornia \u2014 Nov 3, 2026 General Election",url:"http://www.joincalifornia.com/election/2026-11-03"},{label:"The Ballot Book \u2014 June 2026 Primary Results, Assembly",url:"https://theballotbook.com/results?category=assembly&shem=rimspwouoe,,rimspwouoe,"}],
+    races:[
+{group:"State Legislature",office:"State Senate — District 2 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Damon Connolly",party:"Democrat"},
+    {name:"Tief Gibbs",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 4 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Jaron Brandon",party:"Democrat"},
+    {name:"Alexandra Duarte",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 6 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Sean Frame",party:"Democrat"},
+    {name:"Roger Niello",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 8 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Angelique Ashby",party:"Democrat",status:"Incumbent"},
+    {name:"Susan A. Mason",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 10 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Scott Sakakihara",party:"Democrat"},
+    {name:"Linda R. Price",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 12 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Nathan Magsig",party:"Republican"},
+    {name:"William Brown Jr.",party:"Libertarian"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 14 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Esmeralda Soria",party:"Democrat"},
+    {name:"Darin S. DuPont",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 16 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Melissa Hurtado",party:"Democrat",status:"Incumbent"},
+    {name:"Guillermo Asuncion Gonzalez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 18 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Steve Padilla",party:"Democrat",status:"Incumbent"},
+    {name:"Art Hodges",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 20 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Caroline Menjivar",party:"Democrat",status:"Incumbent"},
+    {name:"Tony Rodriguez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 22 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Susan Rubio",party:"Democrat",status:"Incumbent"},
+    {name:"Mike Netter",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 24 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"John M. Erickson",party:"Democrat"},
+    {name:"Brian Goldsmith",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 26 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Sara Hernandez",party:"Democrat"},
+    {name:"Sarah Rascón",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 28 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Lola Smallwood-Cuevas",party:"Democrat",status:"Incumbent"},
+    {name:"Joe Lisuzzo",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 30 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Bob J. Archuleta",party:"Democrat",status:"Incumbent"},
+    {name:"Araceli Martinez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 32 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Tiffanie Tate",party:"Democrat"},
+    {name:"Kelly Seyarto",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 34 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Avelino Valencia",party:"Democrat"},
+    {name:"Rhonda Shader",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 36 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Chris Duncan",party:"Democrat"},
+    {name:"Tony Strickland",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 38 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Catherine S. Blakespear",party:"Democrat",status:"Incumbent"},
+    {name:"Laura Bassett",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Senate — District 40 — 4-year term",does:"Votes on state laws and the state budget; confirms the Governor's appointments. You vote in only one legislative district; only the districts up in 2026 are listed.",candidates:[
+    {name:"Mara Elliott",party:"Democrat"},
+    {name:"Kristie Bruce-Lane",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 1 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Dianna Margaret James",party:"Democrat"},
+    {name:"Heather Hadwick",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 2 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Chris Rogers",party:"Democrat",status:"Incumbent"},
+    {name:"Michael Greer",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 3 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Dom Belza",party:"Republican"},
+    {name:"James \"Jamie\" Johansson",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 4 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Cecilia M. Aguiar-Curry",party:"Democrat",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 5 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Neva Parker",party:"Democrat"},
+    {name:"Joe Patterson",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 6 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Maggy Krell",party:"Democrat",status:"Incumbent"},
+    {name:"Jagtar Singh",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 7 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Amy L. Slavensky",party:"Democrat"},
+    {name:"Josh Hoover",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 8 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"David Jariustokaeutulelei Tangipa",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 9 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Matthew Adams",party:"Democrat"},
+    {name:"Heath Flora",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 10 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Stephanie Nguyen",party:"Democrat",status:"Incumbent"},
+    {name:"Vinaya Singh",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 11 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Lori D Wilson",party:"Democrat",status:"Incumbent"},
+    {name:"Jenny Leilani Callison",party:"No Party Preference"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 12 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Jackie Elward",party:"Democrat"},
+    {name:"Eric Lucan",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 13 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Rhodesia Ransom",party:"Democrat",status:"Incumbent"},
+    {name:"Tom Patti",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 14 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Buffy Wicks",party:"Democrat",status:"Incumbent"},
+    {name:"Mark Rendon",party:"Green"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 15 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Anamarie Avila Farias",party:"Democrat",status:"Incumbent"},
+    {name:"Arthur Webb",party:"No Party Preference"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 16 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Rebecca Bauer-Kahan",party:"Democrat",status:"Incumbent"},
+    {name:"Joseph A. Rubay",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 17 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Matt Haney",party:"Democrat",status:"Incumbent"},
+    {name:"Manuel Noris-Barrera",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 18 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Mia Bonta",party:"Democrat",status:"Incumbent"},
+    {name:"Andre Sandford",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 19 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Catherine Stefani",party:"Democrat",status:"Incumbent"},
+    {name:"Philip Louis Wing",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 20 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Liz Ortega",party:"Democrat",status:"Incumbent"},
+    {name:"Patricia Muga",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 21 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Diane Papan",party:"Democrat",status:"Incumbent"},
+    {name:"Jabra J Muhawieh",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 22 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Juan Alanis",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 23 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Marc Berman",party:"Democrat",status:"Incumbent"},
+    {name:"David G. Johnson",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 24 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Alex Lee",party:"Democrat",status:"Incumbent"},
+    {name:"Max Hsia",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 25 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Ash Kalra",party:"Democrat",status:"Incumbent"},
+    {name:"Himat Singh Bainiwal",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 26 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Patrick Ahrens",party:"Democrat",status:"Incumbent"},
+    {name:"Tim Gorsulowsky",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 27 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Brian Pacheco",party:"Democrat"},
+    {name:"Mike Murphy",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 28 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Gail Pellerin",party:"Democrat",status:"Incumbent"},
+    {name:"Carol Pefley",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 29 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Robert Rivas",party:"Democrat",status:"Incumbent"},
+    {name:"Dennis P. Sanchez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 30 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Dawn Addis",party:"Democrat",status:"Incumbent"},
+    {name:"Shannon Kessler",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 31 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Annalisa Perea",party:"Democrat"},
+    {name:"Jim Polsgrove",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 32 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"David Couch",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 33 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Hipolito Angel Cerros",party:"Democrat"},
+    {name:"Alexandra (Ali) Macedo",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 34 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Randall Putz",party:"Democrat"},
+    {name:"Charles Frederick Hughes",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 35 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Andrae Gonzales",party:"Democrat"},
+    {name:"Saul Ayon",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 36 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Ida S. Obeso-Martinez",party:"Democrat"},
+    {name:"Jeff Gonzalez",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 37 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Gregg Hart",party:"Democrat",status:"Incumbent"},
+    {name:"Sari Domingues",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 38 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Steve Bennett",party:"Democrat",status:"Incumbent"},
+    {name:"Michael MacDonald",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 39 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Juan Carrillo",party:"Democrat",status:"Incumbent"},
+    {name:"Paul Andre Marsh",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 40 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Pilar Schiavo",party:"Democrat",status:"Incumbent"},
+    {name:"Rickey Tracy Hayes II",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 41 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"John Harabedian",party:"Democrat",status:"Incumbent"},
+    {name:"Adam Christopher Vena",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 42 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Deborah Klein Lopez",party:"Democrat"},
+    {name:"Ted Nordblum",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 43 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Celeste Rodriguez",party:"Democrat",status:"Incumbent"},
+    {name:"Ricardo Benitez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 44 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Nick Schultz",party:"Democrat",status:"Incumbent"},
+    {name:"Carolyn Daniels",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 45 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"James C. Ramos",party:"Democrat",status:"Incumbent"},
+    {name:"Greg Abdouch",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 46 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Jesse Gabriel",party:"Democrat",status:"Incumbent"},
+    {name:"Tracey Schroeder",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 47 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Leila Namvar",party:"Democrat"},
+    {name:"Greg Wallis",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 48 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Blanca Rubio",party:"Democrat",status:"Incumbent"},
+    {name:"Dan T. Tran",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 49 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Mike Fong",party:"Democrat",status:"Incumbent"},
+    {name:"Long David Liu",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 50 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Robert Garcia",party:"Democrat",status:"Incumbent"},
+    {name:"Victoria Viveros Mageno",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 51 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Colin D. Hernandez",party:"Democrat"},
+    {name:"Rick Chavez Zbur",party:"Democrat",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 52 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Jessica Caloza",party:"Democrat",status:"Incumbent"},
+    {name:"Andrea Lee Anderson",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 53 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Michelle Rodriguez",party:"Democrat",status:"Incumbent"},
+    {name:"Rafaela Romero",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 54 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Mark Gonzalez",party:"Democrat",status:"Incumbent"},
+    {name:"Alexandra Briseno",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 55 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Ashley M. Brown",party:"Democrat"},
+    {name:"Isaac G. Bryan",party:"Democrat",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 56 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Lisa Calderon",party:"Democrat",status:"Incumbent"},
+    {name:"Jessica Martinez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 57 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Sade Elhawary",party:"Democrat",status:"Incumbent"},
+    {name:"Constance Jewel Menzies",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 58 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Clarissa Cervantes",party:"Democrat"},
+    {name:"Leticia Castillo",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 59 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Phillip Chen",party:"Republican",status:"Incumbent"},
+    {name:"Victor Hernandez",party:"Green"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 60 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Corey A. Jackson",party:"Democrat",status:"Incumbent"},
+    {name:"Ed Delgado",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 61 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Tina Simone McKinnor",party:"Democrat",status:"Incumbent"},
+    {name:"Brian Lockwood",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 62 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"José Luis Solache",party:"Democrat",status:"Incumbent"},
+    {name:"Paul Irving Jones",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 63 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Natasha Johnson",party:"Republican",status:"Incumbent"},
+    {name:"Kevin Akin",party:"Peace and Freedom"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 64 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Blanca Pacheco",party:"Democrat",status:"Incumbent"},
+    {name:"Raul Ortiz Jr.",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 65 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Ayanna Davis",party:"Democrat"},
+    {name:"Lydia A. Gutiérrez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 66 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Sara Deen",party:"Democrat"},
+    {name:"Paul Seo",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 67 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Mark Pulido",party:"Democrat"},
+    {name:"Paulo Morales",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 68 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Jessie Lopez",party:"Democrat"},
+    {name:"David Penaloza",party:"Democrat"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 69 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Carolyn J. Essex",party:"Democrat"},
+    {name:"Josh Lowenthal",party:"Democrat",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 70 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Paula Swift",party:"Democrat"},
+    {name:"Tri Ta",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 71 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"JJ Galvez",party:"Democrat"},
+    {name:"Kate Sanchez",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 72 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Chris Kluwe",party:"Democrat"},
+    {name:"Gracey Van Der Mark",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 73 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Cottie Petrie-Norris",party:"Democrat",status:"Incumbent"},
+    {name:"Urson Russell",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 74 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Sergio Farias",party:"Democrat"},
+    {name:"Laurie Davies",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 75 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Gerald C. Boursiquot",party:"Democrat"},
+    {name:"Carl DeMaio",party:"Republican",status:"Incumbent"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 76 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Darshana Patel",party:"Democrat",status:"Incumbent"},
+    {name:"Carrie S. Espinoza Villanueva",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 77 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Tasha Boerner",party:"Democrat",status:"Incumbent"},
+    {name:"Trinity Hannaway",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 78 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"Chris Ward",party:"Democrat",status:"Incumbent"},
+    {name:"Payton Galvez",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 79 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"LaShae Sharp-Collins",party:"Democrat",status:"Incumbent"},
+    {name:"Andrew Lawson",party:"Republican"}
+  ]},
+{group:"State Legislature",office:"State Assembly — District 80 — 2-year term",does:"Votes on state laws and the state budget. You vote in only one legislative district; all districts are listed so you can find yours.",candidates:[
+    {name:"David A. Alvarez",party:"Democrat",status:"Incumbent"},
+    {name:"Alejandro Galicia",party:"Republican"}
+  ]},
+    ]
+  },
+  
+multnomah: {
     label:"Portland · Multnomah County",chips:["U.S. Senate","Governor","County Chair — ranked-choice","Portland Council Districts 3 & 4","Circuit Court"],summary:"Up to 16 races depending on your districts and city: federal and statewide offices, your state Senate and House races, the Multnomah County Chair race (ranked-choice), county auditor and sheriff, circuit-court judges, Portland city auditor and council, and east-county city races — plus local measures for Portland, Troutdale, and Reynolds School District voters.",
     coverage:"This pathway covers Multnomah County, Oregon for the November 3, 2026 general election. ZIP codes cross district lines here, so the guide asks you to confirm your congressional, legislative, council, and commission districts from your voter record or printed ballot instead of guessing from a ZIP. County Chair, Commissioner District 2, and Portland races use ranked-choice voting. Several races were decided in the May primary and do not appear in November — including Metro Council and County Commission Districts 1, 3, and 4 — and the Portland mayor is not on the 2026 ballot.",
     caveats:["Portland City Council Districts 3 and 4 each elect three councilors in 2026 by ranked-choice voting; District 1 and 2 seats are not on the 2026 ballot.","The Reynolds School District bond (Measure 26-268) is shown on east-county city pathways; parts of Gresham and Portland (Rockwood) inside the district may not be flagged here — compare the printed ballot.","Two small-district measures could not be reliably assigned by ZIP and are not shown: Burlington Water District Measure 26-269 and Hillsboro School District Measure 34-355 (a small number of Multnomah voters near the county line). Check the printed ballot.","Lake Oswego and Maywood Park council races reach a small number of Multnomah County voters; the number of seats up in 2026 could not be verified, so they are not shown — compare the printed ballot.","Soil and water conservation district and public utility district director races appear on some ballots; position-level fields could not be verified and are not shown.","Candidate order follows the county voters' pamphlet candidate index and may differ from the printed ballot order.","There are no Oregon statewide measures on the November 2026 ballot."],
