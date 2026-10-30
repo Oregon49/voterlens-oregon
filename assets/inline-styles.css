@@ -35,3 +35,8 @@ html.vl-es .lang-note-es{display:block}
 .iphone-guide-fix summary{cursor:pointer}
 .iphone-guide-close{display:block;width:100%;min-height:52px;margin-top:1rem;border:2px solid #16265c;border-radius:.35rem;background:#16265c;color:#fff;font-weight:800;font-size:1rem;cursor:pointer}
 #iphone-guide-link{display:inline-block;font-weight:700;color:#16265c;text-decoration:underline}
+
+.ballot-jump{position:sticky;top:70px;z-index:90;display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;margin:1rem 0;background:var(--paper);color:var(--ink);border:2px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.ballot-jump label{font-weight:850;white-space:nowrap}
+.ballot-jump select{flex:1;min-width:0;min-height:48px;padding:.45rem .6rem;background:var(--paper);color:var(--ink);border:2px solid var(--line);border-radius:8px;font-weight:700}
+#jump-top,#jump-missing,#jump-federal,#jump-state,#jump-county,#jump-city,#jump-soil,#jump-judicial,#jump-measure{scroll-margin-top:150px}
