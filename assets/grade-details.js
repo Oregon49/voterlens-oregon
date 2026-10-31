@@ -1,0 +1,67 @@
+(function(){
+"use strict";
+function el(html){var d=document.createElement('div');d.innerHTML=html;return d.firstElementChild;}
+function voteWord(c){return c==='Y'?'Yes':c==='N'?'No':c==='E'?'Excused / absent':'No vote recorded';}
+var data=window.SCORECARD_DATA;
+if(!data) return;
+var grades=document.getElementById('grades');
+var list=document.getElementById('legislator-list');
+if(grades && list && !document.getElementById('vl-transparency-box')){
+  var transparency=el('<section id="vl-transparency-box" style="background:#fff3cd;color:#111111;border:2px solid #8a6d00;padding:14px;margin:14px 0;"><h2 style="margin:0 0 8px;">How to read a grade — and what it is not</h2><p style="margin:0 0 8px;"><strong>Sample grade, not a full record:</strong> a legislature grade is based on 16 recorded votes, not every vote that person ever cast.</p><p style="margin:0 0 8px;"><strong>No score does not mean a bad score.</strong> Some candidates have no legislature grade because they never served in the Oregon Legislature, or served in a different office. We do not invent a score for them.</p><p style="margin:0 0 8px;"><strong>A grade is a match to a stated scorecard position.</strong> If you disagree with that position — for example, you support school funding in SB 5516 — you will grade that vote differently. Tap any lawmaker card to see the full 16-bill record, the stated position, and how that lawmaker voted.</p><p style="margin:0;"><strong>What to check instead, for a no-grade candidate:</strong> their stated promises, their questionnaire answers, and their record in any prior office.</p></section>');
+  list.parentNode.insertBefore(transparency, list);
+}
+if(grades && list && data.legislators){
+  var drazan=null;
+  for(var i=0;i<data.legislators.length;i++){if(data.legislators[i].id==='christine-drazan'){drazan=data.legislators[i];break;}}
+  if(drazan && !document.getElementById('vl-drazan-breakdown')){
+    var rows='', matched=0, counted=0;
+    for(var j=0;j<data.bills.length;j++){
+      var b=data.bills[j], c=drazan.v.charAt(j), pos=b.position==='yes'?'Yes':'No', result, cls='';
+      if(c==='Y'||c==='N'){
+        counted++;
+        var exp=b.position==='yes'?'Y':'N';
+        if(c===exp){matched++;result='Matched scorecard';} else {result='Did not match scorecard';}
+      } else {result='Not counted';}
+      rows+='<tr><td><strong>'+b.bill+'</strong> — '+b.title+'</td><td>Scorecard: '+pos+'</td><td>Her vote: '+voteWord(c)+'</td><td>'+result+'</td></tr>';
+    }
+    var box=el('<section id="vl-drazan-breakdown" style="background:#ffffff;color:#111111;border:2px solid #16265c;padding:14px;margin:14px 0;"><h2 style="margin:0 0 8px;">Worked example: why Christine Drazan is a C</h2><p style="margin:0 0 8px;">Christine Drazan (R, Canby), former House member, now running for governor. Her House scorecard grade is <strong>'+matched+' of '+counted+' scored votes = '+Math.round(matched/counted*100)+'% = C</strong> (C is 70–79%). Excused/absent votes and votes from before she took office are not counted for or against her.</p><p style="margin:0 0 8px;">The three votes that cost her the higher grade are SB 5516 ($11.36 billion K-12 school funding), HB 2530 (school-bus stop-arm cameras), and SB 1014 (translated party statements in the voters\' pamphlet) — she voted Yes on all three, where the scorecard position is No. If you agree with those Yes votes, you disagree with the scorecard position on those bills, not with the arithmetic.</p><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr><th style="text-align:left;border-bottom:1px solid #999;">Bill</th><th style="text-align:left;border-bottom:1px solid #999;">Scorecard</th><th style="text-align:left;border-bottom:1px solid #999;">Vote</th><th style="text-align:left;border-bottom:1px solid #999;">Result</th></tr></thead><tbody>'+rows+'</tbody></table><p style="margin:8px 0 0;">This is her former House record. It is not a governor grade — she has no governor record to grade. Her governor promises, if she is elected, are the list to hold her to after Nov. 3.</p></section>');
+    list.parentNode.insertBefore(box, list);
+  }
+}
+if(grades && list && !document.getElementById('vl-kotek-grade')){
+  var kotek=el('<section id="vl-kotek-grade" style="background:#ffffff;color:#111111;border:2px solid #16265c;padding:14px;margin:14px 0;"><h2 style="margin:0 0 8px;">Governor grade: Tina Kotek — F, on the same scale as the legislature</h2><p style="margin:0 0 8px;">This is <strong>not</strong> a legislature vote grade. A governor does not cast legislative roll-call votes; she signs or vetoes legislation. This grade scores <strong>promises made, quoted with a date and source, against what she did in office and what happened on the outcome she named</strong> — whether she did them, or did the opposite — with her own explanation shown alongside. <strong>Kept 2, Not kept 6, out of 8 items = 25% = F</strong> on the same bands as the legislature (Drazan 70% = C, Hayden/Cate 67% = D). Partial credit would still leave it under 40% — still F on this scale. If a different, holistic scale is wanted for governors, it must be stated up front, not quietly adjusted.</p><ol style="margin:0;padding-left:20px;">'
+  +'<li><strong>Housing production — Not kept.</strong> Jan. 2023 executive order: 36,000 new homes per year. Revised target about 29,522 per year. Permits about 17,700 in 2023, about 14,300–14,600 in 2024, under 15,000 in 2025. Governor\'s side: about 50,000 units opened or underway with state support, and about 13,821 affordable units financed or created since 2023; higher interest rates and federal headwinds cited.</li>'
+  +'<li><strong>Homelessness — Not kept, with partial shelter progress noted.</strong> Day-one emergency, $130 million package, help for at least 1,200 unsheltered Oregonians off the streets within a year. HUD point-in-time count: 17,959 in 2022, 22,875 in 2024, 27,202 in 2025, about 16,500 unsheltered in 2025. Caveats: Multnomah County changed its counting method, so direct year-over-year comparison there is not valid; excluding Multnomah, unsheltered homelessness declined 6.4% elsewhere; shelter capacity rose about 39%; 5,539 households rehoused since 2023 (agency-reported).</li>'
+  +'<li><strong>Constitutional authority, Executive Order 24-31 — Not kept.</strong> Dec. 2024 order requiring project labor agreements on many state construction projects. Marion County Circuit Judge Thomas Hart blocked it Mar. 2025; final ruling Mar./Apr. 2026 found it a law-making function committed to the Legislative Assembly, in violation of Oregon Constitution Art. III §1, and in excess of Art. V authority. Appeal status not confirmed — if appealed or reversed, this item must be updated.</li>'
+  +'<li><strong>Working with the Legislature — Not kept on this item.</strong> Veto of SB 875, a foster children\'s bill of rights with bipartisan support. Senate overrode the veto 21–6 on June 25, 2025 — the first veto override since 2011. She also vetoed SB 976 and SB 1047 in 2025.</li>'
+  +'<li><strong>Climate / clean energy — Kept.</strong> Promise to protect the environment and put Oregon on a path to 100% clean electricity by 2040. Actions: Climate Protection Program re-established in 2025, clean-energy siting executive orders, $197 million EPA grant, POWER Act signed. Opponents argue the program itself is executive overreach — that argument is noted, but this item scores whether she did what she said she would do on climate, and she did.</li>'
+  +'<li><strong>Budget on time — Kept.</strong> Governor\'s Recommended Budget submitted on time: $32.1 billion for 2023–25 in Jan. 2023, and $39.3 billion general fund for 2025–27 in Dec. 2024. Kept on process only — it does not score whether the amounts were wise.</li>'
+  +'<li><strong>Will of the people, Measure 114 delayed — Not kept.</strong> Voters passed Measure 114 in Nov. 2022. Kotek signed HB 4145, delaying implementation to Jan. 1, 2028. State\'s justification, stated plainly: the law was under court review (circuit court found it unconstitutional in 2023, Court of Appeals disagreed, Oregon Supreme Court to decide). Delaying while a case is pending is not repeal — but voters said yes, and the law did not go into effect as voted.</li>'
+  +'<li><strong>Will of the people, Climate Protection Program workaround — Not kept.</strong> This is separate from Item 5. The Legislature failed to pass cap-and-invest (HB 2020, 2019–20, after walkouts), then Gov. Brown\'s Executive Order 20-04 (2020) directed DEQ to regulate emissions, EQC adopted the CPP in 2021, the Oregon Court of Appeals invalidated it Dec. 2023 on procedural grounds only (ORS 468A.237(1)(b)), DEQ did not appeal, EQC re-adopted it Nov. 2024, relaunched Jan. 2025 under Kotek, and in 2026 Kotek kept it in place after her own Prosperity Council recommended replacing it. The second rulemaking cured the procedural defect named by the court, so re-adoption was not defiance of a court order — but the policy still reached voters through an agency, not through the Legislature that failed to pass it.</li>'
+  +'</ol><p style="margin:8px 0 0;"><strong>Not in this grade:</strong> opinion polling, party label as a score, or education / behavioral-health promises not researched here. No grade for Christine Drazan as governor — she has no governor record; her record shown here is her former House scorecard grade, and her future governor promises are the list to hold her to if she wins.</p></section>');
+  list.parentNode.insertBefore(kotek, list);
+}
+var votes=document.getElementById('votes');
+var billList=document.getElementById('bill-list');
+if(votes && billList && !document.getElementById('vl-oregon16-box')){
+  var o16=el('<section id="vl-oregon16-box" style="background:#ffffff;color:#111111;border:2px solid #16265c;padding:14px;margin:14px 0;"><h2 style="margin:0 0 8px;">Oregon 16 bills — pros, cons, and poison-pill flags</h2><p style="margin:0 0 8px;">The 12 votes in Key Votes are a sample. The full 16-bill record — what each bill does, whether it is bundled, supporters\' and critics\' arguments with factuality grades, and what it means in everyday life — is in the full page below. A factuality grade does <strong>not</strong> change a scorecard grade or a measure yes/no. <strong>SB 5516 is secondary-sourced only, flagged as such — do not treat it as OLIS-verified.</strong></p><p style="margin:0 0 8px;"><a href="assets/oregon-16-bills.html" target="_blank" rel="noopener"><strong>Open the full Oregon 16 pros, cons, and poison-pill page</strong></a></p><table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr><th style="text-align:left;border-bottom:1px solid #999;">Bill</th><th style="text-align:left;border-bottom:1px solid #999;">Scorecard</th><th style="text-align:left;border-bottom:1px solid #999;">Bundling flag</th></tr></thead><tbody>'
+  +'<tr><td>SB 554 — Firearm storage; Capitol/airport restrictions</td><td>No</td><td>Flagged — bundled</td></tr>'
+  +'<tr><td>SB 5514 — $9.3B K-12 State School Fund</td><td>No</td><td>Single-subject</td></tr>'
+  +'<tr><td>HB 2005 — Unserialized / home-built firearms</td><td>No</td><td>Flagged — bundled</td></tr>'
+  +'<tr><td>HB 5015 — $10.2B K-12 State School Fund</td><td>No</td><td>Single-subject</td></tr>'
+  +'<tr><td>SB 243 — Rapid-fire activators; public-building carry</td><td>No</td><td>Flagged — bundled, clearest poison-pill example</td></tr>'
+  +'<tr><td>HB 3054 — Rent control, manufactured-home parks</td><td>No</td><td>Flagged — bundled</td></tr>'
+  +'<tr><td>HB 2385 — 340B prescription-drug mandates</td><td>No</td><td>Flagged — bundled</td></tr>'
+  +'<tr><td>SB 5516 — $11.36B K-12 school funding</td><td>No</td><td>Single-subject (secondary-sourced only)</td></tr>'
+  +'<tr><td>SB 551 — Plastic checkout bags only</td><td>No</td><td>Flagged as introduced, narrowed as enacted</td></tr>'
+  +'<tr><td>SB 827 — Solar / energy-storage rebates</td><td>No</td><td>Single-subject</td></tr>'
+  +'<tr><td>HB 2530 — School-bus stop-arm cameras</td><td>No</td><td>Single-subject</td></tr>'
+  +'<tr><td>SB 1014 — Translated party statements</td><td>No</td><td>Single-subject</td></tr>'
+  +'<tr><td>HB 2586 — In-state tuition, asylum seekers</td><td>No</td><td>Single-subject (enrolled text)</td></tr>'
+  +'<tr><td>HB 3792 — Energy-bill surcharge, low-income aid</td><td>No</td><td>Flagged — bundled mechanics + separate study</td></tr>'
+  +'<tr><td>SB 1587 — Limits on sharing data, immigration enforcement</td><td>Yes</td><td>Single-subject</td></tr>'
+  +'<tr><td>HB 4145 — Delays Measure 114 to 2028</td><td>Yes</td><td>Flagged — bundled</td></tr>'
+  +'</tbody></table></section>');
+  billList.parentNode.insertBefore(o16, billList.nextSibling);
+}
+})();
