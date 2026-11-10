@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Score a journalist — VoterLens</title>
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;max-width:780px;margin:2em auto;padding:0 1em;line-height:1.55;background:#fff;color:#111}
+h1{font-size:1.6em;line-height:1.25}h2{font-size:1.25em;margin-top:1.8em;border-bottom:2px solid #111;padding-bottom:.2em}h3{font-size:1.05em;margin-top:1.4em}
+a{color:#0645ad}
+.kicker{color:#444;font-size:.95em}
+.note{background:#f4f4f4;border-left:4px solid #666;padding:.7em 1em;margin:1em 0}
+.warn{background:#fff8e1;border-left:4px solid #b58900;padding:.7em 1em;margin:1em 0}
+.check{background:#eef7ee;border:1px solid #2e7d32;border-radius:8px;padding:.6em .9em;margin:1em 0}
+.footnote{color:#444;font-size:.9em}
+label{display:block;font-weight:700;margin:1em 0 .3em}
+input[type=text],input[type=url]{width:100%;padding:.6em .7em;font:inherit;border:2px solid #666;border-radius:6px}
+button.primary{background:#16265c;color:#fff;font:inherit;font-weight:800;padding:.7em 1.4em;border:0;border-radius:8px;cursor:pointer;margin-top:1em}
+button.primary:disabled{opacity:.55;cursor:wait}
+button.ghost{background:#fff;color:#16265c;font:inherit;font-weight:700;padding:.5em 1em;border:2px solid #16265c;border-radius:8px;cursor:pointer}
+button.linklike{background:none;border:0;color:#0645ad;text-decoration:underline;font:inherit;cursor:pointer;padding:0}
+.status{margin:1em 0;font-weight:600}
+.status .spin{display:inline-block;width:1em;height:1em;border:3px solid #ccc;border-top-color:#16265c;border-radius:50%;animation:spin 1s linear infinite;vertical-align:-0.15em;margin-right:.4em}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scorebars{margin:1em 0}
+.scorebar{margin:.7em 0}
+.scorebar .lab{display:flex;justify-content:space-between;font-weight:700}
+.scorebar .track{height:14px;background:#eee;border-radius:7px;overflow:hidden;margin-top:.2em}
+.scorebar .fill{height:100%;border-radius:7px}
+.verdict{font-size:1.15em;font-weight:800;padding:.7em 1em;border-radius:8px;margin:1em 0}
+.verdict.straight{background:#dff1e6;color:#17633a}
+.verdict.mostly{background:#fff0bd;color:#6f4d00}
+.verdict.mixed{background:#fde3df;color:#8d261d}
+.verdict.narrative{background:#fde3df;color:#8d261d}
+.verdict.unrated{background:#e7edf1;color:#173b59}
+details.article{border:1px solid #999;border-radius:8px;padding:.6em .9em;margin:.6em 0}
+details.article summary{cursor:pointer;font-weight:700}
+details.article summary .meta{font-weight:400;color:#444;font-size:.9em}
+table.scores{border-collapse:collapse;width:100%;margin:.6em 0;font-size:.95em}
+table.scores th,table.scores td{border:1px solid #999;padding:.35em .5em;text-align:left}
+table.scores th{background:#eee}
+ul.unreadable li{margin:.35em 0}
+.candidate{border:2px solid #16265c;border-radius:8px;padding:.8em 1em;margin:.7em 0}
+.candidate .outlet{font-weight:800;font-size:1.1em}
+.candidate .recent{color:#444;font-size:.92em}
+.error{background:#fde3df;border-left:4px solid #b3261e;padding:.7em 1em;margin:1em 0}
+.small{font-size:.9em;color:#444}
+</style>
+</head>
+<body>
+<p class="kicker"><a href="../index.html">VoterLens</a> &middot; Check your news</p>
+<h1>Score a journalist</h1>
+<p><strong>Paste a link to one of their articles, or type their name. Either one works.</strong> The tool pulls a run of that journalist&rsquo;s recent text articles and scores each one with the same four checks the Journalist Scoreboard uses for whole outlets: loaded language, quotes vs paraphrase, headline vs story, and anonymous sourcing.</p>
+<p>What you get is a <strong>bias and flavor signal</strong> — whether this journalist has a bias or an opinion dressed as news, or just what their flavor is. It is <strong>not</strong> a verdict on whether they are credible, and it does not check whether their facts are true. It measures the wording.</p>
+
+<form id="score-form">
+  <label for="url-input">Article link (one of their articles)</label>
+  <input type="url" id="url-input" placeholder="https://www.example.com/2026/11/10/politics/some-story" autocomplete="off">
+  <p class="small">The link settles who it is — the name, the outlet, and the story are all on it, so there is no guessing which person it is.</p>
+  <label for="name-input">Or a journalist&rsquo;s name</label>
+  <input type="text" id="name-input" placeholder="First Last" autocomplete="off">
+  <p class="small">If several people share the name, you will be asked which one — each is shown with its outlet.</p>
+  <button class="primary" type="submit" id="go-btn">Score this journalist</button>
+  <span class="small" style="margin-left:.6em">Try an example: <button type="button" class="linklike" id="try-example">Aaron Blake, CNN</button></span>
+</form>
+
+<div id="status" class="status" aria-live="polite"></div>
+<div id="candidates"></div>
+<div id="result"></div>
+
+<div class="warn">
+<h3 style="margin-top:0">What this score can and cannot tell you</h3>
+<ul>
+<li><strong>It measures wording and spin, not truth.</strong> A cleanly worded story can still be wrong, and a slanted one can still carry real facts. The score tells you how the journalist reports, not whether the facts check out.</li>
+<li><strong>Only text articles can be scored.</strong> Video-only stories with no transcript, paywalled articles, and pages that block automated reading are listed as unreadable, never scored.</li>
+<li><strong>Opinion is never scored as news.</strong> If the link is an opinion piece, the tool says so and stops.</li>
+<li><strong>Wire copy has no named journalist on it</strong> (Reuters, AP, staff reports) and is never scored as one person&rsquo;s work.</li>
+<li><strong>Check 4, corrections, is blank for everyone.</strong> Scoring it needs the same stories re-fetched after 48 hours to see whether errors were corrected — it is never guessed.</li>
+<li><strong>The score rests on the articles it could actually read</strong> — usually up to 20 recent ones, often fewer. The number scored is shown on the result, so you can see how much it rests on.</li>
+<li><strong>Known rough edges:</strong> the loaded-language list is a fixed watch list (38 words and phrases) and can trip on substrings — &ldquo;corruption&rdquo; trips &ldquo;corrupt&rdquo;. The anonymous-sourcing list is 14 phrases and misses other phrasings.</li>
+</ul>
+</div>
+
+<details open>
+<summary><strong>How the scoring works</strong></summary>
+<p>Each article gets four scores from 0 to 100, then the scores are averaged across the articles scored. <strong>Check 1 — loaded language:</strong> words from the watch list that tell you how to feel about the facts. <strong>Check 2 — quotes vs paraphrase:</strong> do people speak for themselves, on the record and named, or does the writer paraphrase them? <strong>Check 3 — headline vs story:</strong> do the headline&rsquo;s words appear in the story, and do the central facts come early? <strong>Check 5 — anonymous sourcing:</strong> how often claims are attached to &ldquo;sources say&rdquo; and other unnamed phrases.</p>
+<p><strong>Classification</strong> (fixed before any scores were seen): <strong>Straight reporting</strong> — mean of the four checks 85 or higher, no check below 60. <strong>Mostly straight</strong> — mean 70 or higher, no check below 45. <strong>Mixed — spin present</strong> — mean 55 or higher. <strong>Narrative over news</strong> — mean below 55. <strong>Unrated</strong> — fewer than 3 full-text articles scored. The mean itself is not displayed as a combined score; each check stands on its own.</p>
+<p>Same checks, same word lists, and same classification as the outlet scoreboard&rsquo;s full-day run of November 9, 2026 (121 articles: CNN 92.5, MS NOW 91.9, ABC 91.8, AP 91.4, Fox 90.0 — all five Straight reporting).</p>
+</details>
+
+<p class="footnote"><a href="../index.html">&larr; Back to VoterLens</a></p>
+
+<script>
+(function () {
+  var form = document.getElementById('score-form');
+  var urlInput = document.getElementById('url-input');
+  var nameInput = document.getElementById('name-input');
+  var goBtn = document.getElementById('go-btn');
+  var statusEl = document.getElementById('status');
+  var candEl = document.getElementById('candidates');
+  var resultEl = document.getElementById('result');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function setStatus(html, spinning) {
+    statusEl.innerHTML = (spinning ? '<span class="spin"></span>' : '') + html;
+  }
+  function barColor(score) {
+    if (score >= 80) return '#2e8b57';
+    if (score >= 65) return '#8a6d1a';
+    if (score >= 45) return '#c96a1b';
+    return '#b3261e';
+  }
+  function verdictClass(tier) {
+    if (tier === 'Straight reporting') return 'straight';
+    if (tier === 'Mostly straight') return 'mostly';
+    if (tier === 'Mixed — spin present') return 'mixed';
+    if (tier === 'Narrative over news') return 'narrative';
+    return 'unrated';
+  }
+  function checkRow(num, label, score, what) {
+    return '<div class="scorebar"><div class="lab"><span>Check ' + num + ' — ' + esc(label) + '</span><span>' + (score == null ? 'blank' : score + ' / 100') + '</span></div>' +
+      '<div class="track"><div class="fill" style="width:' + (score == null ? 0 : score) + '%;background:' + barColor(score == null ? 0 : score) + '"></div></div>' +
+      '<div class="small">' + esc(what) + '</div></div>';
+  }
+
+  function renderResult(r) {
+    var j = r.journalist || {};
+    var html = '<h2>' + esc(j.name || 'Unknown') + ' — ' + esc(j.outlet || '') + '</h2>';
+    html += '<p><strong>' + r.articles_scored + ' article' + (r.articles_scored === 1 ? '' : 's') + ' scored</strong>' +
+      (r.articles_found > r.articles_scored ? ' (of ' + r.articles_found + ' found — the rest could not be read, listed below)' : '') + '.</p>';
+    var cls = verdictClass(r.classification.tier);
+    html += '<div class="verdict ' + cls + '">' + esc(r.classification.tier) + ' — ' + esc(r.classification.reason) + '</div>';
+    html += '<div class="scorebars">';
+    html += checkRow(1, 'Loaded language', r.means.c1, 'Words that tell you how to feel about the facts.');
+    html += checkRow(2, 'Quotes vs paraphrase', r.means.c2, 'Do people speak for themselves, on the record and named?');
+    html += checkRow(3, 'Headline vs story', r.means.c3, 'Does the headline match what the story actually says?');
+    html += checkRow(4, 'Corrections', null, 'Blank — needs the same stories re-fetched after 48 hours. Never guessed.');
+    html += checkRow(5, 'Anonymous sourcing', r.means.c5, 'How often claims are attached to “sources say” with no name.');
+    html += '</div>';
+    html += '<h3>Each article, so you can check the work</h3>';
+    (r.articles || []).forEach(function (a) {
+      html += '<details class="article"><summary>' + esc(a.headline || '(no headline)') + ' <span class="meta">— ' + esc(a.outlet || '') + ', ' + esc(a.date || 'no date') + ', ' + (a.words || 0) + ' words</span></summary>';
+      html += '<table class="scores"><tr><th>Check</th><th>Score</th></tr>' +
+        '<tr><td>1 — Loaded language</td><td>' + a.c1 + '</td></tr>' +
+        '<tr><td>2 — Quotes vs paraphrase</td><td>' + a.c2 + ' (' + a.quoteCount + ' direct quotes)</td></tr>' +
+        '<tr><td>3 — Headline vs story</td><td>' + a.c3 + '</td></tr>' +
+        '<tr><td>5 — Anonymous sourcing</td><td>' + a.c5 + ' (' + a.anonCount + ' unnamed phrase' + (a.anonCount === 1 ? '' : 's') + ')</td></tr></table>';
+      if (a.loadedHits && a.loadedHits.length) {
+        html += '<p class="small">Loaded words found: ' + a.loadedHits.map(function (h) { return esc(h.word) + ' ×' + h.count; }).join(', ') + '</p>';
+      }
+      if (a.flags && a.flags.length) {
+        html += '<p class="small">Flags: ' + a.flags.map(esc).join(' · ') + '</p>';
+      }
+      html += '<p><a href="' + esc(a.url) + '" target="_blank" rel="noopener">Read the original &rarr;</a></p></details>';
+    });
+    if (r.unreadable && r.unreadable.length) {
+      html += '<h3>Could not be read — not scored, not hidden</h3><ul class="unreadable">';
+      r.unreadable.forEach(function (u) {
+        html += '<li>' + (u.headline ? esc(u.headline) + ' — ' : '') + esc(u.reason) +
+          (u.url ? ' (<a href="' + esc(u.url) + '" target="_blank" rel="noopener">link</a>)' : '') + '</li>';
+      });
+      html += '</ul>';
+    }
+    html += '<p class="small">Scored with the same checks as the outlet scoreboard. The score measures wording and spin, not whether the underlying facts are true.</p>';
+    resultEl.innerHTML = html;
+    resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function showError(msg) {
+    resultEl.innerHTML = '<div class="error">' + esc(msg) + '</div>';
+  }
+
+  function post(body) {
+    return fetch('/api/score-journalist', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    }).then(function (resp) { return resp.json(); });
+  }
+
+  function runScore(body, busyText) {
+    goBtn.disabled = true;
+    setStatus(busyText, true);
+    return post(body).then(function (r) {
+      goBtn.disabled = false;
+      return r;
+    }).catch(function () {
+      goBtn.disabled = false;
+      setStatus('', false);
+      showError('The request did not come back. Check your connection and try again — nothing was scored.');
+      return null;
+    });
+  }
+
+  function scoreByUrl(url) {
+    resultEl.innerHTML = '';
+    candEl.innerHTML = '';
+    runScore({ mode: 'url', url: url }, 'Reading the article and finding more by the same journalist…').then(function (r) {
+      if (!r) return;
+      if (r.ok) {
+        setStatus('Done — ' + r.articles_scored + ' article' + (r.articles_scored === 1 ? '' : 's') + ' scored.', false);
+        renderResult(r);
+      } else {
+        setStatus('', false);
+        showError(r.error || 'That did not work. Try another link or type the name instead.');
+      }
+    });
+  }
+
+  function scoreByName(name) {
+    resultEl.innerHTML = '';
+    candEl.innerHTML = '';
+    runScore({ mode: 'name', name: name }, 'Looking for recent stories by ' + name + '…').then(function (r) {
+      if (!r) return;
+      if (!r.ok) {
+        setStatus('', false);
+        showError(r.error || 'No stories turned up for that name. Check the spelling, or paste one of their article links instead.');
+        return;
+      }
+      var cands = r.candidates || [];
+      if (cands.length === 1) {
+        pickCandidate(cands[0]);
+        return;
+      }
+      setStatus('More than one person shares that name. Which one?', false);
+      var html = '<h3>Which one?</h3>';
+      cands.forEach(function (c, i) {
+        html += '<div class="candidate"><div class="outlet">' + esc(c.name) + ' — ' + esc(c.outlet) + '</div>' +
+          '<div class="recent">' + (c.stories_seen ? c.stories_seen + ' recent stor' + (c.stories_seen === 1 ? 'y' : 'ies') + ' seen' : 'seen in search results') +
+          (c.recent && c.recent.length ? ': ' + c.recent.map(esc).join(' · ') : '') + '</div>' +
+          '<p style="margin:.6em 0 0"><button type="button" class="ghost" data-cand="' + i + '">Score this one</button></p></div>';
+      });
+      candEl.innerHTML = html;
+      candEl.querySelectorAll('[data-cand]').forEach(function (btn) {
+        btn.addEventListener('click', function () { pickCandidate(cands[+btn.getAttribute('data-cand')]); });
+      });
+      candEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  function pickCandidate(c) {
+    candEl.innerHTML = '';
+    resultEl.innerHTML = '';
+    runScore({ mode: 'score', name: c.name, outlet: c.outlet }, 'Reading ' + c.name + '’s recent articles at ' + c.outlet + '…').then(function (r) {
+      if (!r) return;
+      if (r.ok) {
+        setStatus('Done — ' + r.articles_scored + ' article' + (r.articles_scored === 1 ? '' : 's') + ' scored.', false);
+        renderResult(r);
+      } else {
+        setStatus('', false);
+        showError(r.error || 'That did not work.');
+        if (r.unreadable && r.unreadable.length) {
+          resultEl.innerHTML += '<h3>What was found</h3><ul class="unreadable">' +
+            r.unreadable.map(function (u) { return '<li>' + (u.headline ? esc(u.headline) + ' — ' : '') + esc(u.reason) + '</li>'; }).join('') + '</ul>';
+        }
+      }
+    });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var url = urlInput.value.trim();
+    var name = nameInput.value.trim();
+    if (url) { scoreByUrl(url); return; }
+    if (name) { scoreByName(name); return; }
+    setStatus('Paste an article link or type a journalist’s name first.', false);
+  });
+
+  document.getElementById('try-example').addEventListener('click', function () {
+    urlInput.value = '';
+    nameInput.value = 'Aaron Blake';
+    scoreByName('Aaron Blake');
+  });
+})();
+</script>
+</body>
+</html>

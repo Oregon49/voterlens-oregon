@@ -52,6 +52,8 @@ html.vl-es .lang-note-es{display:block}
 /* Run-for-office door + no-consultant badge (Nov 9, 2026) */
 .run-office-door{width:min(1180px,calc(100% - 2rem));margin:1rem auto;padding:.85rem 1rem;background:var(--goodbg);border:2px solid var(--good);border-radius:.35rem;font-weight:650}
 .run-office-door a{font-weight:850}
+.news-door{width:min(1180px,calc(100% - 2rem));margin:1rem auto;padding:.85rem 1rem;background:var(--paper);border:2px solid var(--navy);border-radius:.35rem;font-weight:650}
+.news-door a{font-weight:850}
 .badge-pill{display:inline-block;background:var(--ink);color:var(--paper);font-weight:800;font-size:.85em;padding:.2em .7em;border-radius:999px;margin:.3em 0 .4em}
 .badge-note{font-size:.92em;margin:.2em 0 .6em}
 .badge-check{background:var(--goodbg);border:1px solid var(--good);border-radius:.5rem;padding:.6em .9em;margin:.8em 0}
