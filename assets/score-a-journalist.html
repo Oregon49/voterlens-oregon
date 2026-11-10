@@ -130,7 +130,7 @@ ul.unreadable li{margin:.35em 0}
     var j = r.journalist || {};
     var html = '<h2>' + esc(j.name || 'Unknown') + ' — ' + esc(j.outlet || '') + '</h2>';
     html += '<p><strong>' + r.articles_scored + ' article' + (r.articles_scored === 1 ? '' : 's') + ' scored</strong>' +
-      (r.articles_found > r.articles_scored ? ' (of ' + r.articles_found + ' found — the rest could not be read, listed below)' : '') + '.</p>';
+      (r.articles_checked > r.articles_scored ? ' (of ' + r.articles_checked + ' checked)' : '') + '.</p>';
     var cls = verdictClass(r.classification.tier);
     html += '<div class="verdict ' + cls + '">' + esc(r.classification.tier) + ' — ' + esc(r.classification.reason) + '</div>';
     html += '<div class="scorebars">';

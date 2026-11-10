@@ -281,7 +281,8 @@ function mean1(xs) {
 /* ================= fetching & extraction ================= */
 
 var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
-var MAX_ARTICLES = 20;          // candidates to try per run
+var MAX_ARTICLES = 30;          // candidates to try per run (byline-checked; up to 20 scored)
+var MAX_SCORED = 20;            // most articles scored in one run
 var FETCH_TIMEOUT_MS = 5000;     // per-fetch cap
 var GLOBAL_BUDGET_MS = 8500;     // whole run must fit a ~10s serverless window
 
@@ -663,8 +664,14 @@ function isOpinionUrl(u) {
   } catch (e) { return false; }
 }
 
+/* Two phases: fetch + extract every candidate in parallel, then keep only
+   the ones actually by the target journalist (search results often mention
+   the name without being by them) and score up to MAX_SCORED of those,
+   most recent first. Articles that merely mention the name are dropped
+   silently — they are search noise, not the journalist's work. Genuine read
+   failures are reported as unreadable. */
 async function scoreUrls(urls, targetName, deadline) {
-  var scored = [], unreadable = [];
+  var scored = [], unreadable = [], checked = 0;
   var seen = {};
   var list = urls.filter(function (u) { if (seen[u]) return false; seen[u] = 1; return true; }).slice(0, MAX_ARTICLES);
   var results = await Promise.all(list.map(function (u) {
@@ -681,7 +688,7 @@ async function scoreUrls(urls, targetName, deadline) {
         return { url: u, status: 'unreadable', headline: a.headline, reason: why };
       }
       if (isWireOrStaff(a.author)) return { url: u, status: 'unreadable', headline: a.headline, reason: 'wire copy or staff report — no named journalist on it' };
-      if (targetName && !namesMatch(a.author, targetName)) return { url: u, status: 'unreadable', headline: a.headline, reason: 'not by ' + targetName + ' (byline: ' + (a.author || 'none found') + ')' };
+      if (targetName && !namesMatch(a.author, targetName)) return { url: u, status: 'not-theirs' };
       var r = analyze5(a.headline || '', a.text);
       return {
         url: u, status: 'scored', headline: a.headline, outlet: a.outlet, date: a.date,
@@ -694,12 +701,16 @@ async function scoreUrls(urls, targetName, deadline) {
     })();
   }));
   results.forEach(function (r) {
+    checked++;
     if (r.status === 'scored') scored.push(r);
-    else unreadable.push({ url: r.url, headline: r.headline || null, reason: r.reason });
+    else if (r.status === 'unreadable' || r.status === 'skipped') unreadable.push({ url: r.url, headline: r.headline || null, reason: r.reason });
+    // 'not-theirs' is search noise (articles that mention the name) — dropped, not reported.
   });
-  // Most recent first when dates are known.
+  // Most recent first when dates are known; score at most MAX_SCORED.
   scored.sort(function (x, y) { return (y.date || '') < (x.date || '') ? -1 : 1; });
-  return { scored: scored, unreadable: unreadable };
+  var extra = scored.slice(MAX_SCORED);
+  scored = scored.slice(0, MAX_SCORED);
+  return { scored: scored, unreadable: unreadable, checked: checked, extra_scored_not_shown: extra.length };
 }
 
 function buildResult(journalist, run) {
@@ -714,7 +725,7 @@ function buildResult(journalist, run) {
     ok: true,
     journalist: journalist,
     articles_scored: s.length,
-    articles_found: s.length + run.unreadable.length,
+    articles_checked: run.checked,
     means: means,
     classification: classify(means, s.length),
     articles: s,
@@ -818,8 +829,11 @@ module.exports = async function (req, res) {
       var urls2 = await discoverMore(sName, domain, deadline);
       if (!urls2.length) return json(res, 200, { ok: false, error: 'No articles by "' + sName + '" could be found to read. Try pasting one of their article links instead.' });
       var run2 = await scoreUrls(urls2, sName, deadline);
-      if (!run2.scored.length && run2.unreadable.length) {
-        return json(res, 200, { ok: false, error: 'Found ' + run2.unreadable.length + ' article(s) by "' + sName + '", but none could be read well enough to score.', unreadable: run2.unreadable });
+      if (!run2.scored.length) {
+        if (run2.checked > 0) {
+          return json(res, 200, { ok: false, error: 'Found articles mentioning "' + sName + '", but none of the ones that could be read were actually by them. Try pasting one of their article links instead.', unreadable: run2.unreadable });
+        }
+        return json(res, 200, { ok: false, error: 'No articles by "' + sName + '" could be found to read. Try pasting one of their article links instead.', unreadable: run2.unreadable });
       }
       return json(res, 200, buildResult({ name: sName, outlet: sOutlet }, run2));
     }
