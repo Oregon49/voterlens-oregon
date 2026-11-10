@@ -12,10 +12,10 @@
  * from preview/run_full.js. Check 4 (Corrections) is BLANK by design — it
  * needs the same stories re-fetched after 48 hours, so it is never guessed.
  *
- * Discovery uses only free, no-key sources: DuckDuckGo HTML search (direct
- * result links) and Google News RSS (titles/outlets/dates only — its
- * redirect links can't be followed server-side). Muck Rack is blocked (403)
- * and is not used. No paid API.
+ * Discovery uses only free, no-key sources: DuckDuckGo HTML search and Bing
+ * news search (direct result links) and Google News RSS (titles/outlets/
+ * dates only — its redirect links can't be followed server-side). Two search
+ * engines are used because results vary by where the request comes from.
  */
 'use strict';
 
@@ -538,6 +538,21 @@ async function ddgSearch(query, ms) {
   } catch (e) { return []; }
 }
 
+async function bingSearch(query, ms) {
+  try {
+    var f = await fetchText('https://www.bing.com/news/search?q=' + encodeURIComponent(query), ms || 6000);
+    if (!f.ok) return [];
+    var links = [];
+    var re = /href="(https?:\/\/[^"]+)"/gi, m;
+    while ((m = re.exec(f.html))) {
+      var u = m[1];
+      if (u.indexOf('bing.com') !== -1 || u.indexOf('microsoft.com') !== -1) continue;
+      links.push(u);
+    }
+    return cleanResultUrls(links);
+  } catch (e) { return []; }
+}
+
 async function gnewsSearch(name, ms) {
   try {
     var f = await fetchText('https://news.google.com/rss/search?q=' + encodeURIComponent('"' + name + '"') + '&hl=en-US&gl=US&ceid=US:en', ms || 6000);
@@ -607,6 +622,11 @@ async function discoverMore(name, outletDomain, deadline) {
     // Year-pathed site search finds recent dated articles where a plain
     // site: search returns mostly profile pages.
     jobs.push({ kind: 'search', run: ddgSearch('"' + name + '" site:' + outletDomain + '/' + new Date().getFullYear(), Math.max(1000, deadline - Date.now())) });
+    // Bing news search is a second, independent engine: DuckDuckGo answers
+    // vary by where the request comes from, and CNN discovery failed live
+    // on DuckDuckGo alone while Bing returned direct article links.
+    jobs.push({ kind: 'search', run: bingSearch('"' + name + '" site:' + outletDomain, Math.max(1000, deadline - Date.now())) });
+    jobs.push({ kind: 'search', run: bingSearch('"' + name + '" site:' + outletDomain + '/' + new Date().getFullYear(), Math.max(1000, deadline - Date.now())) });
   }
   jobs.push({ kind: 'search', run: ddgSearch('"' + name + '" journalist', Math.max(1000, deadline - Date.now())) });
   var parts = await Promise.all(jobs.map(function (j) { return j.run.catch(function () { return []; }); }));
