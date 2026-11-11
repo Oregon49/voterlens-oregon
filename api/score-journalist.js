@@ -787,8 +787,8 @@ module.exports = async function (req, res) {
       // the leg that actually supplies URLs — keep both, use whichever answers.
       var found = await Promise.all([
         gnewsSearch(nameQ, 5000),
-        ddgSearch('"' + nameQ + '" journalist', 5000),
-        bingSearch('"' + nameQ + '" journalist', 5000)
+        ddgSearch('"' + nameQ + '" journalist', 3000),
+        bingSearch('"' + nameQ + '" journalist', 3000)
       ]);
       var gnews = found[0], ddg = found[1], bing = found[2];
       var webUrls = [];
@@ -837,6 +837,24 @@ module.exports = async function (req, res) {
         }
       });
       if (!candidates.length) return json(res, 200, { ok: false, error: 'No recent stories by "' + nameQ + '" turned up in the news search. Check the spelling, or paste one of their article links instead.' });
+      // Phase 2: real article URLs per candidate. Generic name searches come
+      // back empty on Bing News (verified Nov 11), but a site-restricted
+      // search returns server-rendered article links — the same discovery
+      // the score step relies on. Short cap, all in parallel; whatever
+      // answers gets attached, and the score step still discovers on its
+      // own when nothing comes back, so a slow search can only help.
+      var siteJobs = candidates.map(function (c) {
+        var dom = domainForOutlet(c.outlet);
+        if (!dom) return Promise.resolve([]);
+        return bingSearch('"' + nameQ + '" site:' + dom, 2000).catch(function () { return []; });
+      });
+      var siteResults = await Promise.all(siteJobs);
+      siteResults.forEach(function (urls, i) {
+        urls.forEach(function (u) {
+          if (candidates[i].urls.indexOf(u) === -1) candidates[i].urls.push(u);
+        });
+        candidates[i].urls = candidates[i].urls.slice(0, 10);
+      });
       return json(res, 200, { ok: true, mode: 'candidates', name: nameQ, candidates: candidates.slice(0, 5) });
     }
 
