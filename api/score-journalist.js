@@ -453,7 +453,7 @@ function domainFromUrl(u) {
 }
 function outletLabel(domain) {
   var map = {
-    'cnn.com': 'CNN', 'foxnews.com': 'Fox News', 'apnews.com': 'AP',
+    'cnn.com': 'CNN', 'edition.cnn.com': 'CNN', 'foxnews.com': 'Fox News', 'apnews.com': 'AP',
     'abcnews.go.com': 'ABC', 'abcnews.com': 'ABC', 'ms.now': 'MS NOW',
     'nbcnews.com': 'NBC News', 'cbsnews.com': 'CBS News', 'nytimes.com': 'New York Times',
     'washingtonpost.com': 'Washington Post', 'wsj.com': 'Wall Street Journal',
@@ -781,8 +781,18 @@ module.exports = async function (req, res) {
     if (mode === 'name') {
       var nameQ = String(body.name || '').trim().replace(/\s+/g, ' ');
       if (!nameQ || nameQ.split(' ').length < 2) return json(res, 400, { ok: false, error: 'Type a full name — first and last — so the right person can be found.' });
-      var gnews = await gnewsSearch(nameQ, 5000);
-      var ddg = await ddgSearch('"' + nameQ + '" journalist', 5000);
+      // Three sources in parallel: the news feed (reliable counts), plus the
+      // two web searches (real article URLs to hand to the score step).
+      // DuckDuckGo HTML currently answers empty from servers, so Bing is
+      // the leg that actually supplies URLs — keep both, use whichever answers.
+      var found = await Promise.all([
+        gnewsSearch(nameQ, 5000),
+        ddgSearch('"' + nameQ + '" journalist', 5000),
+        bingSearch('"' + nameQ + '" journalist', 5000)
+      ]);
+      var gnews = found[0], ddg = found[1], bing = found[2];
+      var webUrls = [];
+      ddg.concat(bing).forEach(function (u) { if (webUrls.indexOf(u) === -1) webUrls.push(u); });
       // Candidates are (name, outlet) pairs: group recent stories by outlet.
       var byOutlet = {};
       gnews.forEach(function (it) {
@@ -798,10 +808,10 @@ module.exports = async function (req, res) {
       var urlsForOutlet = function (outletLabelStr) {
         var out = [];
         var dom = domainForOutlet(outletLabelStr);
-        ddg.forEach(function (u) {
+        webUrls.forEach(function (u) {
           var d = domainFromUrl(u);
           if (!d) return;
-          if (outletLabel(d) === outletLabelStr || (dom && d === dom)) {
+          if (outletLabel(d) === outletLabelStr || (dom && (d === dom || d.endsWith('.' + dom)))) {
             if (out.indexOf(u) === -1) out.push(u);
           }
         });
@@ -818,7 +828,7 @@ module.exports = async function (req, res) {
       candidates.sort(function (a, b) { return b.stories_seen - a.stories_seen; });
       candidates = candidates.slice(0, 5);
       // Outlets seen in web results but not in the news feed still count.
-      ddg.forEach(function (u) {
+      webUrls.forEach(function (u) {
         var d = domainFromUrl(u);
         if (!d) return;
         var label = outletLabel(d);
