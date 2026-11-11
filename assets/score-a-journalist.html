@@ -244,7 +244,7 @@ ul.unreadable li{margin:.35em 0}
   function pickCandidate(c) {
     candEl.innerHTML = '';
     resultEl.innerHTML = '';
-    runScore({ mode: 'score', name: c.name, outlet: c.outlet }, 'Reading ' + c.name + '’s recent articles at ' + c.outlet + '…').then(function (r) {
+    runScore({ mode: 'score', name: c.name, outlet: c.outlet, urls: c.urls || [] }, 'Reading ' + c.name + '’s recent articles at ' + c.outlet + '…').then(function (r) {
       if (!r) return;
       if (r.ok) {
         setStatus('Done — ' + r.articles_scored + ' article' + (r.articles_scored === 1 ? '' : 's') + ' scored.', false);

@@ -564,11 +564,15 @@ async function gnewsSearch(name, ms) {
       var title = (block.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '';
       var source = (block.match(/<source[^>]*>([\s\S]*?)<\/source>/) || [])[1] || '';
       var pub = (block.match(/<pubDate>([\s\S]*?)<\/pubDate>/) || [])[1] || '';
+      var link = (block.match(/<link>([\s\S]*?)<\/link>/) || [])[1] || '';
       title = decodeEntities(title.replace(/<!\[CDATA\[|\]\]>/g, '')).trim();
       source = decodeEntities(source.replace(/<!\[CDATA\[|\]\]>/g, '')).trim();
       // Titles usually end with " - Outlet"; the <source> element is the outlet.
       var outlet = source || (title.match(/ - ([^-]+)$/) || [])[1] || '';
-      if (title) items.push({ title: title, outlet: outlet.trim(), date: pub ? pub.slice(0, 16) : null });
+      // The <link> is a Google News redirect to the publisher; fetchText
+      // follows it to the real article. It is carried through so the score
+      // step can use the exact articles the name step just showed.
+      if (title) items.push({ title: title, outlet: outlet.trim(), date: pub ? pub.slice(0, 16) : null, url: link.trim() || null });
     }
     return items;
   } catch (e) { return []; }
@@ -681,6 +685,7 @@ async function scoreUrls(urls, targetName, deadline) {
       if (isOpinionUrl(u)) return { url: u, status: 'unreadable', reason: 'opinion piece — opinion is never scored as news' };
       var f = await fetchText(u, Math.min(FETCH_TIMEOUT_MS, remain));
       if (!f.ok) return { url: u, status: 'unreadable', reason: 'could not open the page (' + (f.note || 'HTTP ' + f.status) + ')' };
+      if (isOpinionUrl(f.finalUrl || u)) return { url: u, status: 'unreadable', reason: 'opinion piece — opinion is never scored as news' };
       var a = extractArticle(f.html, f.finalUrl || u);
       if (a.videoOnly && a.text.length < 400) return { url: u, status: 'unreadable', headline: a.headline, reason: 'video — no text article to score' };
       if (a.text.length < 400) {
@@ -782,12 +787,13 @@ module.exports = async function (req, res) {
       gnews.forEach(function (it) {
         var d = it.outlet ? it.outlet : '';
         if (!d) return;
-        (byOutlet[d] = byOutlet[d] || { outlet: d, titles: [], count: 0 });
+        (byOutlet[d] = byOutlet[d] || { outlet: d, titles: [], urls: [], count: 0 });
         byOutlet[d].titles.push(it.title);
+        if (it.url && byOutlet[d].urls.indexOf(it.url) === -1) byOutlet[d].urls.push(it.url);
         byOutlet[d].count++;
       });
       var candidates = Object.keys(byOutlet).map(function (o) {
-        return { name: nameQ, outlet: byOutlet[o].outlet, recent: byOutlet[o].titles.slice(0, 3), stories_seen: byOutlet[o].count };
+        return { name: nameQ, outlet: byOutlet[o].outlet, recent: byOutlet[o].titles.slice(0, 3), urls: byOutlet[o].urls.slice(0, 10), stories_seen: byOutlet[o].count };
       });
       // The news feed also turns up stories ABOUT a namesake (an obituary, a
       // cabaret listing). A real working journalist has several recent
@@ -826,8 +832,23 @@ module.exports = async function (req, res) {
         Object.keys(counts).forEach(function (d) { if (counts[d] > bestN) { bestN = counts[d]; best = d; } });
         domain = best;
       }
-      var urls2 = await discoverMore(sName, domain, deadline);
-      if (!urls2.length) return json(res, 200, { ok: false, error: 'No articles by "' + sName + '" could be found to read. Try pasting one of their article links instead.' });
+      // Articles the "Which one?" step already found come along for the ride:
+      // the score step used to re-search from scratch, and when that second
+      // search came back empty the user saw "no articles" right after being
+      // shown 23. Passed URLs are seeded first; discovery only tops up.
+      var seeded = [];
+      if (Array.isArray(body.urls)) {
+        body.urls.forEach(function (u) {
+          if (typeof u === 'string' && isPublicUrl(u) && seeded.indexOf(u) === -1) seeded.push(u);
+        });
+        seeded = seeded.slice(0, 10);
+      }
+      var urls2 = seeded;
+      if (urls2.length < 8 && deadline - Date.now() > 2000) {
+        var more2 = await discoverMore(sName, domain, deadline);
+        more2.forEach(function (u) { if (urls2.indexOf(u) === -1) urls2.push(u); });
+      }
+      if (!urls2.length) return json(res, 200, { ok: false, error: 'The news search came back empty this time — nothing to read for "' + sName + '". Try again in a moment, or paste one of their article links instead.' });
       var run2 = await scoreUrls(urls2, sName, deadline);
       if (!run2.scored.length) {
         if (run2.checked > 0) {
