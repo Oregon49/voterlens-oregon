@@ -564,15 +564,16 @@ async function gnewsSearch(name, ms) {
       var title = (block.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '';
       var source = (block.match(/<source[^>]*>([\s\S]*?)<\/source>/) || [])[1] || '';
       var pub = (block.match(/<pubDate>([\s\S]*?)<\/pubDate>/) || [])[1] || '';
-      var link = (block.match(/<link>([\s\S]*?)<\/link>/) || [])[1] || '';
+
       title = decodeEntities(title.replace(/<!\[CDATA\[|\]\]>/g, '')).trim();
       source = decodeEntities(source.replace(/<!\[CDATA\[|\]\]>/g, '')).trim();
       // Titles usually end with " - Outlet"; the <source> element is the outlet.
       var outlet = source || (title.match(/ - ([^-]+)$/) || [])[1] || '';
-      // The <link> is a Google News redirect to the publisher; fetchText
-      // follows it to the real article. It is carried through so the score
-      // step can use the exact articles the name step just showed.
-      if (title) items.push({ title: title, outlet: outlet.trim(), date: pub ? pub.slice(0, 16) : null, url: link.trim() || null });
+      // NOTE: the RSS <link> is a Google News redirect that returns a Google
+      // News shell page when fetched server-side (verified Nov 11) — it is
+      // deliberately NOT carried through. Real article URLs come from the
+      // web search below instead.
+      if (title) items.push({ title: title, outlet: outlet.trim(), date: pub ? pub.slice(0, 16) : null });
     }
     return items;
   } catch (e) { return []; }
@@ -787,13 +788,27 @@ module.exports = async function (req, res) {
       gnews.forEach(function (it) {
         var d = it.outlet ? it.outlet : '';
         if (!d) return;
-        (byOutlet[d] = byOutlet[d] || { outlet: d, titles: [], urls: [], count: 0 });
+        (byOutlet[d] = byOutlet[d] || { outlet: d, titles: [], count: 0 });
         byOutlet[d].titles.push(it.title);
-        if (it.url && byOutlet[d].urls.indexOf(it.url) === -1) byOutlet[d].urls.push(it.url);
         byOutlet[d].count++;
       });
+      // Real article URLs for each candidate, from the web search (direct
+      // publisher links, fetchable). The score step seeds from these, so it
+      // no longer depends on a second search answering the same way.
+      var urlsForOutlet = function (outletLabelStr) {
+        var out = [];
+        var dom = domainForOutlet(outletLabelStr);
+        ddg.forEach(function (u) {
+          var d = domainFromUrl(u);
+          if (!d) return;
+          if (outletLabel(d) === outletLabelStr || (dom && d === dom)) {
+            if (out.indexOf(u) === -1) out.push(u);
+          }
+        });
+        return out.slice(0, 10);
+      };
       var candidates = Object.keys(byOutlet).map(function (o) {
-        return { name: nameQ, outlet: byOutlet[o].outlet, recent: byOutlet[o].titles.slice(0, 3), urls: byOutlet[o].urls.slice(0, 10), stories_seen: byOutlet[o].count };
+        return { name: nameQ, outlet: byOutlet[o].outlet, recent: byOutlet[o].titles.slice(0, 3), urls: urlsForOutlet(byOutlet[o].outlet), stories_seen: byOutlet[o].count };
       });
       // The news feed also turns up stories ABOUT a namesake (an obituary, a
       // cabaret listing). A real working journalist has several recent
@@ -808,7 +823,7 @@ module.exports = async function (req, res) {
         if (!d) return;
         var label = outletLabel(d);
         if (!candidates.some(function (c) { return c.outlet === label || c.outlet === d; })) {
-          candidates.push({ name: nameQ, outlet: label, recent: [], stories_seen: 0 });
+          candidates.push({ name: nameQ, outlet: label, recent: [], urls: urlsForOutlet(label), stories_seen: 0 });
         }
       });
       if (!candidates.length) return json(res, 200, { ok: false, error: 'No recent stories by "' + nameQ + '" turned up in the news search. Check the spelling, or paste one of their article links instead.' });
@@ -847,6 +862,11 @@ module.exports = async function (req, res) {
       if (urls2.length < 8 && deadline - Date.now() > 2000) {
         var more2 = await discoverMore(sName, domain, deadline);
         more2.forEach(function (u) { if (urls2.indexOf(u) === -1) urls2.push(u); });
+      }
+      if (!urls2.length && deadline - Date.now() > 3000) {
+        // One more try: the search engines sometimes answer empty once.
+        var retry = await discoverMore(sName, domain, deadline);
+        retry.forEach(function (u) { if (urls2.indexOf(u) === -1) urls2.push(u); });
       }
       if (!urls2.length) return json(res, 200, { ok: false, error: 'The news search came back empty this time — nothing to read for "' + sName + '". Try again in a moment, or paste one of their article links instead.' });
       var run2 = await scoreUrls(urls2, sName, deadline);
