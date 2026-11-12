@@ -1,7 +1,10 @@
 // VoterLens service worker — enables PWA install prompt, basic offline shell
-// v3 (Oct 30, 2026): saved-app users were stuck on v2's cached index.html,
-// so HTML/navigation is now network-first. Old cache is cleared on activate.
-var CACHE = 'voterlens-v3';
+// v4 (Nov 12, 2026): v3 was network-first for HTML, but the fetch could still
+// be satisfied from the browser HTTP cache, and a page restored from memory
+// (swipe away and reopen) never fetched at all. v4 forces the navigation
+// fetch past the HTTP cache, and the page itself reloads on bfcache restore
+// (see index.html pageshow handler). Old cache is cleared on activate.
+var CACHE = 'voterlens-v4';
 var SHELL = ['/', '/index.html', '/manifest.json', '/assets/icon-192.png', '/assets/icon-512.png'];
 self.addEventListener('install', function(e) {
   e.waitUntil(caches.open(CACHE).then(function(c) { return c.addAll(SHELL); }).then(function() { return self.skipWaiting(); }));
@@ -15,11 +18,12 @@ self.addEventListener('activate', function(e) {
 });
 self.addEventListener('fetch', function(e) {
   if (e.request.method !== 'GET') return;
-  // Navigation / HTML: network first, so saved-app users get the latest
-  // ballot and fixes without a fresh link. Offline: fall back to cache.
+  // Navigation / HTML: network first, bypassing the HTTP cache, so saved-app
+  // users get the latest ballot and fixes without a fresh link. Offline:
+  // fall back to cache.
   if (e.request.mode === 'navigate' || (e.request.headers.get('accept') || '').indexOf('text/html') !== -1) {
     e.respondWith(
-      fetch(e.request).then(function(res) {
+      fetch(e.request, { cache: 'reload' }).then(function(res) {
         var copy = res.clone();
         caches.open(CACHE).then(function(c) { c.put(e.request, copy); });
         return res;
