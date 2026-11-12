@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Supreme Court Scoreboard — VoterLens</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f2f5f7;color:#111820;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.55}
+  .site-head{background:#102b46;color:#fff;padding:1.2rem 1rem 1.4rem;border-bottom:5px solid #9d3a25}
+  .site-head .inner{max-width:860px;margin:0 auto}
+  .eyebrow{font-size:.85rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#dbe6ef;margin:0 0 .3rem}
+  .site-head h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1}
+  .tagline{margin:.5rem 0 0;font-size:1.15rem;color:#f5a18e;font-style:italic}
+  main{max-width:860px;margin:0 auto;padding:1.2rem 1rem 3rem;background:#fff}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:1.5rem;line-height:1.2;margin:1.8rem 0 .6rem}
+  h3{font-size:1.15rem;margin:1.2rem 0 .4rem}
+  p{margin:.5rem 0}
+  .preview-banner{background:#fff0bd;border:2px solid #6f4d00;padding:.9rem 1rem;font-weight:650;margin-bottom:1.2rem}
+  .quote-box{background:#f2f5f7;border-left:5px solid #9d3a25;padding:.9rem 1rem;margin:1rem 0}
+  .quote-box p{margin:.3rem 0}
+  table{border-collapse:collapse;width:100%;margin:.8rem 0;font-size:.95rem}
+  th,td{border:1px solid #bac5ce;padding:.5rem .55rem;text-align:center;vertical-align:top}
+  th{background:#102b46;color:#fff;font-size:.9rem}
+  td:first-child,th:first-child{text-align:left}
+  td.good{background:#dff1e6;color:#17633a;font-weight:800}
+  td.warn{background:#fff0bd;color:#6f4d00;font-weight:800}
+  td.mid{background:#fde3df;color:#8d261d;font-weight:800}
+  td.bad{background:#8d261d;color:#fff;font-weight:800}
+  td.blank{background:#e7edf1;color:#46515e}
+  .n{font-size:.82rem;color:#46515e;font-weight:400}
+  td.bad .n{color:#f2b8b0}
+  details{border:1px solid #bac5ce;padding:.7rem .9rem;margin:.6rem 0;background:#fff}
+  summary{cursor:pointer;font-size:1.05rem}
+  a{color:#9d3a25}
+  ul,ol{margin:.4rem 0 .8rem 1.2rem;padding:0}
+  li{margin:.3rem 0}
+  .note{background:#e7edf1;border:1px solid #bac5ce;padding:.8rem 1rem;margin:1rem 0}
+  .verdict{display:inline-block;font-weight:800;padding:.1rem .5rem;border-radius:3px}
+  .verdict.consistent{background:#dff1e6;color:#17633a}
+  .verdict.mixed{background:#fff0bd;color:#6f4d00}
+  .verdict.inconsistent{background:#8d261d;color:#fff}
+  .meta{font-size:.92rem;color:#46515e}
+  .meta strong{color:#111820}
+  blockquote{margin:.6rem 0 .6rem 1rem;padding:.5rem .8rem;border-left:4px solid #102b46;background:#f2f5f7;font-style:italic}
+  footer{margin-top:2rem;border-top:2px solid #bac5ce;padding-top:.8rem;color:#46515e;font-size:.9rem}
+  .small{font-size:.9rem;color:#46515e}
+</style>
+</head>
+<body>
+<header class="site-head"><div class="inner">
+<p class="eyebrow">VoterLens &middot; Check the Court</p>
+<h1>Supreme Court Scoreboard</h1>
+<p class="tagline">Does the ruling match the Constitution as written?</p>
+</div></header>
+<main>
+<p><a href="../index.html">&larr; Back to VoterLens</a></p>
+
+<div class="preview-banner">October Term 2025 &mdash; 14 major cases, decided. 9 Consistent, 5 Mixed, 0 Inconsistent. The verdicts are analysis under the framework below &mdash; not a court&rsquo;s ruling, not a grade. The OT2026 tracker below is a watch list, not a verified record &mdash; see its flag.</div>
+
+<h2>How this board works</h2>
+<div class="quote-box">
+<p>&ldquo;Judge each one individually and the whole Court gets judged. Scoring the Court as a whole would hide the answers.&rdquo; &mdash; Allan, November 11, 2026</p>
+</div>
+<p><strong>The framework:</strong> each ruling is measured against the <strong>constitutional text and its original public meaning</strong> &mdash; what the words meant when they were written, with the Federalist Papers and the founding debates as evidence. <strong>Precedent is shown as context, NOT as the standard</strong> &mdash; a past ruling that drifted from the text does not bless the next one. Explicit provisions are non-negotiable (for example, the Second Amendment: &ldquo;the right of the people to keep and bear Arms, shall not be infringed&rdquo;).</p>
+<p><strong>The verdicts:</strong> <span class="verdict consistent">CONSISTENT</span> the ruling matches the text under the framework &middot; <span class="verdict mixed">MIXED</span> genuinely ambiguous &mdash; the text and history cut both ways, or the ruling is defensible on one part and not another &middot; <span class="verdict inconsistent">INCONSISTENT</span> the ruling conflicts with the text. A Mixed verdict is not a dodge; it is what the framework honestly produces when the evidence is genuinely two-sided.</p>
+<p><strong>Scored per justice, not per Court.</strong> The tally below records each justice&rsquo;s vote on each case and counts how many aligned with the verdict. Mixed cases are counted in votes but <strong>not</strong> scored for alignment &mdash; neither side is marked right or wrong when the framework itself is ambiguous. A simple count is used (aligned X of Y). No combined &ldquo;score&rdquo; formula is invented.</p>
+<p><strong>What counts as &ldquo;major&rdquo;:</strong> the term&rsquo;s major constitutional cases, selected from SCOTUSblog&rsquo;s final Stat Pack for OT2025 (updated July 6, 2026) and its closely-divided-cases tables. Minor statutory cases are excluded.</p>
+<p><strong>Verification:</strong> every vote count, author, date, and outcome on this page was checked against <strong>at least three independent sources</strong> &mdash; the Court&rsquo;s slip opinions and preliminary prints on supremecourt.gov, Oyez case pages, Cornell LII slip opinions, Justia slip opinions, the SCOTUSblog final Stat Pack, and secondary analyses such as CRS and the Civil Rights Litigation Clearinghouse. <strong>No thinly-sourced facts remain among the OT2025 core facts.</strong> The OT2026 tracker is different: it was researched by a subagent and was not independently re-verified &mdash; see the tracker section below.</p>
+
+<h2>The justices (OT2025)</h2>
+<p>Chief Justice John Roberts; Clarence Thomas; Samuel Alito; Sonia Sotomayor; Elena Kagan; Neil Gorsuch; Brett Kavanaugh; Amy Coney Barrett; Ketanji Brown Jackson.</p>
+
+<h2>OT2025 &mdash; the 14 major constitutional cases</h2>
+<p class="small">October Term 2025 ran October 2025 to June 2026. All 14 cases below are decided. 9 verdicts Consistent, 5 Mixed, 0 Inconsistent.</p>
+
+<details open><summary><strong>1. First Choice Women&rsquo;s Resource Centers, Inc. v. Davenport</strong> &mdash; No. 24-781 &middot; April 29, 2026 &middot; 9-0 &middot; Gorsuch &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> First Amendment (freedom of association); Article III (standing). <strong>Who dissented:</strong> nobody (unanimous).</p>
+<p><strong>Holding in one sentence:</strong> A state attorney general&rsquo;s subpoena demanding a nonprofit&rsquo;s donor names causes a present injury to its First Amendment associational rights, so the group has standing to challenge it in federal court &mdash; even before the subpoena is enforced.</p>
+<blockquote>&ldquo;Congress shall make no law&hellip; abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.&rdquo; (First Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> the mere issuance of the subpoena &mdash; not just its enforcement &mdash; burdens association, because donors will pull back if their names may be exposed. Standing follows.</p>
+<p><strong>Where they align:</strong> the text protects association, and the Court has held since <em>NAACP v. Alabama</em> (1958) that compelled disclosure of membership lists chills it. A government demand for ten years of donor names is exactly the kind of pressure the Clause forbids.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> there was no dissent.</p>
+<p class="small"><strong>Scope note:</strong> the Court decided standing only. It did NOT rule on whether the subpoena itself violates the First Amendment on the merits &mdash; that question goes back to the lower courts.</p>
+</details>
+
+<details open><summary><strong>2. Chiles v. Salazar</strong> &mdash; No. 24-539 &middot; March 31, 2026 &middot; 8-1 &middot; Gorsuch &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> First Amendment (freedom of speech). <strong>Who dissented:</strong> Jackson.</p>
+<p><strong>Holding in one sentence:</strong> Colorado&rsquo;s ban on &ldquo;conversion therapy&rdquo; for minors, as applied to a licensed counselor who uses only talk therapy, violates the First Amendment because it is viewpoint discrimination.</p>
+<blockquote>&ldquo;Congress shall make no law&hellip; abridging the freedom of speech&hellip;&rdquo; (First Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> the law lets a therapist encourage a minor toward gender transition but forbids the same therapist from encouraging the minor the other way. That picks winners and losers by message &mdash; viewpoint discrimination, which gets the strictest scrutiny. Talk therapy is speech, not mere &ldquo;conduct,&rdquo; and relabeling it a &ldquo;treatment&rdquo; does not strip its protection.</p>
+<p><strong>Where they align:</strong> viewpoint discrimination is the core of what the Speech Clause forbids. The law&rsquo;s one-sided design is the textbook case.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> Justice Jackson said the law regulates medical treatment, not speech; the speech burden is incidental to regulating a harmful practice, and the majority&rsquo;s rule undermines states&rsquo; ability to set standards of care.</p>
+<p class="small"><strong>Scope note:</strong> the ruling is as-applied to talk-only counseling. The Court did not decide whether a content-based but viewpoint-neutral restriction on therapeutic speech would survive.</p>
+</details>
+
+<details open><summary><strong>3. Learning Resources, Inc. v. Trump</strong> (consolidated with Trump v. V.O.S. Selections, Inc.) &mdash; No. 24-1287 &middot; February 20, 2026 &middot; 6-3 &middot; Roberts &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> Article I, &sect;8 (taxing power); separation of powers. <strong>Majority:</strong> Roberts, Sotomayor, Kagan, Gorsuch, Barrett, Jackson. <strong>Dissent:</strong> Kavanaugh (joined by Thomas and Alito); Thomas also dissented separately.</p>
+<p><strong>Holding in one sentence:</strong> The International Emergency Economic Powers Act (IEEPA) does not authorize the President to impose tariffs.</p>
+<blockquote>&ldquo;The Congress shall have Power To lay and collect Taxes, Duties, Imposts and Excises&hellip;&rdquo; (Article I, &sect;8, cl. 1). &ldquo;No Tax or Duty shall be laid on Articles exported from any State.&rdquo; (Article I, &sect;9, cl. 5)</blockquote>
+<p><strong>What the ruling held:</strong> the taxing power belongs to Congress. IEEPA lets the President &ldquo;regulate&rdquo; importation in an emergency; regulating and taxing are distinct powers, and when Congress delegates tariff authority it says so expressly (&ldquo;duty,&rdquo; &ldquo;surcharge&rdquo;) with procedural limits. Reading IEEPA to allow tariffs would also collide with the Export Clause, since IEEPA covers exports too.</p>
+<p><strong>Where they align:</strong> the text vests the taxing power in Congress alone, and the majority&rsquo;s reading keeps that vesting intact. Gorsuch&rsquo;s and Barrett&rsquo;s concurrences add that the major questions doctrine &mdash; requiring clear authorization for extraordinary assertions of power &mdash; protects the same separation.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> Justice Kavanaugh said history, precedent, and the ordinary meaning of &ldquo;regulate&rdquo; show IEEPA authorizes tariffs; Justice Thomas said the nondelegation doctrine does not apply to foreign commerce, so Congress may freely delegate tariff power.</p>
+<p class="small"><strong>Scope note:</strong> this was a statutory holding (what IEEPA means), reached with constitutional avoidance &mdash; the Court did not strike IEEPA down. The verdict measures the outcome against the text&rsquo;s vesting of the taxing power in Congress.</p>
+</details>
+
+<details open><summary><strong>4. Louisiana v. Callais</strong> &mdash; No. 24-109 &middot; April 29, 2026 &middot; 6-3 &middot; Alito &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> Fourteenth Amendment, Equal Protection Clause; Voting Rights Act &sect;2. <strong>Majority:</strong> Alito, Roberts, Thomas, Gorsuch, Kavanaugh, Barrett. <strong>Dissent:</strong> Kagan (joined by Sotomayor and Jackson). Thomas concurred (joined by Gorsuch).</p>
+<p><strong>Holding in one sentence:</strong> Louisiana&rsquo;s second majority-Black congressional district was an unconstitutional racial gerrymander, because the Voting Rights Act did not require the state to create it.</p>
+<blockquote>&ldquo;No State shall&hellip; deny to any person within its jurisdiction the equal protection of the laws.&rdquo; (Fourteenth Amendment, &sect;1)</blockquote>
+<p><strong>What the ruling held:</strong> a state that draws districts predominantly by race must satisfy strict scrutiny &mdash; a compelling interest, narrowly tailored. The only interest Louisiana offered was compliance with VRA &sect;2, and &sect;2, properly read, requires proof of intentional discrimination and a workable alternative map, not proportional representation. Louisiana showed neither, so the race-based map fails.</p>
+<p><strong>Where they align:</strong> the Clause&rsquo;s original meaning is that government may not sort citizens by race. Strict scrutiny for racial classifications is the doctrine that carries that meaning, and the majority applied it.</p>
+<p><strong>Where they diverge:</strong> nowhere on the constitutional holding. The live fight is the majority&rsquo;s reinterpretation of VRA &sect;2 (an intent requirement) &mdash; a statutory move, not a constitutional one &mdash; and it is flagged here rather than scored.</p>
+<p><strong>What the dissent argued:</strong> Justice Kagan said &sect;2&rsquo;s &ldquo;results&rdquo; test looks at real-world vote dilution, not intent, and the majority made proof of intent a near-impossible barrier, undermining Congress&rsquo;s purpose.</p>
+<p class="small"><strong>Concurrence note:</strong> Justice Thomas, joined by Gorsuch, would go further &mdash; &sect;2 covers ballot access only, not districting at all.</p>
+</details>
+
+<details open><summary><strong>5. United States v. Hemani</strong> &mdash; No. 24-1234 &middot; June 18, 2026 &middot; 9-0 &middot; Gorsuch &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> Second Amendment. <strong>Who dissented:</strong> nobody (unanimous in result). Alito concurred in the judgment only (joined by Kagan); Thomas and Jackson concurred separately.</p>
+<p><strong>Holding in one sentence:</strong> The government may not prosecute a person under the federal &ldquo;unlawful user&rdquo; gun ban, 18 U.S.C. &sect; 922(g)(3), based on habitual marijuana use alone, without proof of dangerousness or intoxication.</p>
+<blockquote>&ldquo;A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.&rdquo; (Second Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> under <em>Bruen</em> (2022), a gun law must be consistent with the nation&rsquo;s historical tradition of firearm regulation. The government admitted the ban burdens protected conduct but offered no historical analogue for disarming someone for a drug-use status alone. The prosecution was therefore inconsistent with the Second Amendment &mdash; as applied to Hemani.</p>
+<p><strong>Where they align:</strong> the text says the right &ldquo;shall not be infringed,&rdquo; and <em>Bruen</em>&rsquo;s history-and-tradition test is the framework this board uses for the Second Amendment. A status-based ban with no historical analogue fails it. All nine justices agreed on the result.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> there was no dissent.</p>
+<p class="small"><strong>Scope note:</strong> narrow and as-applied. The Court expressly did NOT decide bans on addicts, people presently intoxicated while possessing firearms, felon-in-possession laws, or a future case where the government proves the defendant&rsquo;s drug use made him dangerous. The statute itself was not struck off the books.</p>
+</details>
+
+<details open><summary><strong>6. Landor v. Louisiana Department of Corrections and Public Safety</strong> &mdash; No. 23-1197 &middot; June 23, 2026 &middot; 6-3 &middot; Gorsuch &nbsp;<span class="verdict mixed">MIXED</span></summary>
+<p class="meta"><strong>Provision:</strong> Spending Clause (Article I, &sect;8); Religious Land Use and Institutionalized Persons Act (RLUIPA); First Amendment free exercise in the background. <strong>Majority:</strong> Gorsuch, Roberts, Thomas, Alito, Kavanaugh, Barrett. <strong>Dissent:</strong> Jackson (joined by Sotomayor and Kagan).</p>
+<p><strong>Holding in one sentence:</strong> A person may not be held personally liable for money damages under a Spending Clause statute unless that person voluntarily and knowingly consented to be sued.</p>
+<blockquote>&ldquo;The Congress shall have Power To lay and collect Taxes&hellip; to&hellip; provide for the&hellip; general Welfare of the United States&hellip;&rdquo; (Article I, &sect;8, cl. 1). &ldquo;Congress shall make no law&hellip; prohibiting the free exercise [of religion]&hellip;&rdquo; (First Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> Damon Landor, a Rastafarian prisoner whose dreadlocks were forcibly shaved, sued the officers under RLUIPA. The Court did NOT dispute that his rights were violated. It held only that RLUIPA &mdash; a Spending Clause statute &mdash; does not authorize money damages against officers in their personal capacities, because the officers never voluntarily and knowingly consented to be sued.</p>
+<p><strong>Where they align:</strong> on the statute&rsquo;s text, the majority&rsquo;s &ldquo;clear statement&rdquo; approach is a standard textualist move &mdash; a damages remedy against individuals must be clearly stated, and the majority found it was not.</p>
+<p><strong>Where they diverge:</strong> the practical effect is that a conceded violation of religious exercise gets no remedy against the people who committed it. And the dissent&rsquo;s textual point is strong: RLUIPA uses language identical to the Religious Freedom Restoration Act (RFRA), and the Court held in <em>Tanzin v. Tanvir</em> (2020) that RFRA DOES allow individual-capacity damages. The majority&rsquo;s new &ldquo;consent&rdquo; requirement appears nowhere in the statute&rsquo;s text &mdash; it is a judge-made gloss.</p>
+<p><strong>What the dissent argued:</strong> Justice Jackson said the majority&rsquo;s consent requirement has no basis in the statute, that identical language in RFRA was already held to allow such suits, and that the ruling&rsquo;s blast radius reaches civil rights, environmental, and healthcare statutes built on the Spending Clause.</p>
+<p class="small"><strong>Scope note:</strong> this is a remedy case, not a ruling on the underlying First Amendment right. Nobody on the Court disputed that Landor&rsquo;s religious exercise was violated.</p>
+</details>
+
+<details open><summary><strong>7. Wolford v. Lopez</strong> &mdash; No. 24-1046 &middot; June 25, 2026 &middot; 6-3 &middot; Alito &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> Second Amendment; Fourteenth Amendment. <strong>Majority:</strong> Alito, Roberts, Thomas, Gorsuch, Kavanaugh, Barrett (Barrett also concurred separately). <strong>Dissents:</strong> Kagan (joined by Jackson); Jackson (joined by Sotomayor).</p>
+<p><strong>Holding in one sentence:</strong> Hawaii may not make it a crime for a licensed concealed-carry permit holder to bring a handgun onto private property open to the public unless the owner gives express authorization.</p>
+<blockquote>&ldquo;&hellip;the right of the people to keep and bear Arms, shall not be infringed.&rdquo; (Second Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> &ldquo;bear arms&rdquo; includes carrying a handgun for self-defense, so Hawaii&rsquo;s rule falls within the Amendment&rsquo;s plain text and is presumptively unconstitutional. Under <em>Bruen</em>, the government must then show a historical tradition &mdash; and Hawaii&rsquo;s analogues failed: colonial anti-poaching laws targeted hunting on farmland, not everyday carry into stores and restaurants; a single 1893 Oregon statute cannot define a tradition; and an 1865 Louisiana Black Code enacted to disarm freed Black people carries no weight.</p>
+<p><strong>Where they align:</strong> the text covers carrying for self-defense, the burden shifted to the government, and the government&rsquo;s history did not carry it. The ruling also restores the common-law default &mdash; firearms are permitted on property open to the public unless the owner says no &mdash; rather than flipping it.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> Justice Kagan said the historical analogues satisfy <em>Bruen</em> because old and new laws share the same mechanism (a default rule requiring affirmative consent) and purpose; Justice Jackson said the case is about property rights, not gun rights, and the Second Amendment never protected carrying onto private property without the owner&rsquo;s consent.</p>
+<p class="small"><strong>Scope note:</strong> the Court decided only the private-property default rule. The rest of Hawaii&rsquo;s &ldquo;sensitive places&rdquo; list was not before the Court and remains in litigation.</p>
+</details>
+
+<details open><summary><strong>8. Trump v. Slaughter</strong> &mdash; No. 25-332 &middot; June 29, 2026 &middot; 6-3 &middot; Roberts &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> Article II (vesting and Take Care Clauses); separation of powers. <strong>Majority:</strong> Roberts, Alito, Gorsuch, Kavanaugh, Barrett, and Thomas (all but the section reserving edge cases). <strong>Dissent:</strong> Sotomayor (joined by Kagan and Jackson). Gorsuch concurred.</p>
+<p><strong>Holding in one sentence:</strong> The Federal Trade Commission Act&rsquo;s &ldquo;for-cause&rdquo; limits on removing FTC commissioners violate the separation of powers, and <em>Humphrey&rsquo;s Executor</em> (1935) is overruled.</p>
+<blockquote>&ldquo;The executive Power shall be vested in a President of the United States of America&hellip;&rdquo; (Article II, &sect;1). &ldquo;&hellip;he shall take Care that the Laws be faithfully executed&hellip;&rdquo; (Article II, &sect;3)</blockquote>
+<p><strong>What the ruling held:</strong> Article II vests ALL executive power in one President. The FTC makes binding rules, investigates and prosecutes, and files civil suits &mdash; it exercises executive power, full stop, so the President must be able to remove its officers at will. <em>Humphrey&rsquo;s Executor</em> rested on calling the FTC &ldquo;quasi-legislative&rdquo; and &ldquo;quasi-judicial&rdquo;; later cases showed those labels cannot bear the weight. The Decision of 1789 and <em>Myers v. United States</em> (1926) confirm the removal power.</p>
+<p><strong>Where they align:</strong> the text vests the whole executive power in one President, and the ruling follows that vesting to its conclusion. Under this board&rsquo;s framework, precedent is context, not the standard &mdash; so overruling a 1935 precedent that conflicts with the text is consistent, not a strike against the ruling.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> Justice Sotomayor said neither the text nor history supports an absolute at-will removal power, that <em>Humphrey&rsquo;s</em> was correctly decided and reaffirmed for nearly a century, and that stare decisis should have been decisive given reliance interests across dozens of agencies.</p>
+<p class="small"><strong>Concurrence note:</strong> Justice Gorsuch agreed with the holding but warned that concentrating all delegated power in presidential hands raises its own separation-of-powers concerns. <strong>Scope note:</strong> the majority expressly reserved questions about the Federal Reserve and judges of non-Article III courts. The Fed question was addressed the same day in <em>Trump v. Cook</em> (case 9).</p>
+</details>
+
+<details open><summary><strong>9. Trump v. Cook</strong> &mdash; No. 25A312 &middot; June 29, 2026 &middot; 5-4 &middot; Roberts &nbsp;<span class="verdict mixed">MIXED</span></summary>
+<p class="meta"><strong>Provision:</strong> Article II; Federal Reserve Act; Fifth Amendment Due Process Clause. <strong>Majority:</strong> Roberts, Sotomayor, Kagan, Kavanaugh, Jackson. <strong>Dissents:</strong> Thomas; Alito (joined by Gorsuch); Barrett (own opinion). Kavanaugh and Jackson concurred.</p>
+<p><strong>Holding in one sentence:</strong> The Federal Reserve&rsquo;s for-cause protection for its governors is consistent with the Constitution, the President must give a governor notice and an opportunity to respond before removal, and the stay of the order keeping Governor Lisa Cook in office is denied.</p>
+<blockquote>&ldquo;The executive Power shall be vested in a President of the United States of America&hellip;&rdquo; (Article II, &sect;1). &ldquo;No person shall&hellip; be deprived of life, liberty, or property, without due process of law&hellip;&rdquo; (Fifth Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> this came to the Court on the interim docket, as a stay application &mdash; not a full merits decision. The Court decided on narrow grounds: the President tried to remove Governor Cook for alleged mortgage fraud without giving her notice or a chance to respond, and the government had not shown it was likely to succeed. The majority treated the Fed as unique, drawing on the independence the founding generation gave the First and Second Banks.</p>
+<p><strong>Where they align:</strong> the narrow procedural holding is consistent with the Due Process Clause &mdash; a governor facing removal for cause is owed notice and a chance to answer before the axe falls. The majority called the 2025 removal &ldquo;erroneous and void&rdquo; for lack of process, not because removal is impossible.</p>
+<p><strong>Where they diverge:</strong> the broader statement &mdash; that the Fed&rsquo;s for-cause protection &ldquo;is consistent with the Constitution&rdquo; &mdash; sits in real tension with the Article II vesting logic the same Court applied the same day in <em>Slaughter</em> (case 8), which struck down for-cause protections for the FTC. The only distinction offered is the Banks&rsquo; history. If Article II vests all executive power in the President, a carve-out for the Fed needs more than a history lesson to square with the text.</p>
+<p><strong>What the dissent argued:</strong> Justice Thomas would have granted the stay; Justice Alito (joined by Gorsuch) said the President&rsquo;s determination of cause should stand; Justice Barrett, in her own opinion, would have let the removal proceed while the case continues.</p>
+<p class="small"><strong>Scope note:</strong> interim docket, narrow grounds, case continues in the lower courts. The injunction does not stop the President &ldquo;from trying again&rdquo; &mdash; with proper process. In October 2026 the President created a committee of inquiry to recommend whether cause exists.</p>
+</details>
+
+<details open><summary><strong>10. Chatrie v. United States</strong> &mdash; No. 25-112 &middot; June 29, 2026 &middot; 6-3 &middot; Kagan &nbsp;<span class="verdict mixed">MIXED</span></summary>
+<p class="meta"><strong>Provision:</strong> Fourth Amendment. <strong>Majority opinion:</strong> Kagan, Roberts, Sotomayor, Kavanaugh, Jackson. Gorsuch concurred in the judgment. <strong>Dissents:</strong> Alito (Thomas joined Part I; Barrett joined Parts II-B, II-C-1, II-C-2); Barrett (own opinion).</p>
+<p><strong>Holding in one sentence:</strong> Police conduct a Fourth Amendment search when they acquire a person&rsquo;s cell-phone location data from Google through a geofence warrant; whether that particular warrant was valid goes back to the lower court.</p>
+<blockquote>&ldquo;The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.&rdquo; (Fourth Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> an individual has a reasonable expectation of privacy in cell-phone location information, so acquiring it from Google is a search and the Fourth Amendment applies. The Court did NOT decide whether this geofence warrant &mdash; or geofence warrants generally &mdash; satisfy probable cause and particularity. It vacated and remanded for the Fourth Circuit to decide that.</p>
+<p><strong>Where they align:</strong> the result is defensible on the text &mdash; location data held by a company is arguably the modern equivalent of a person&rsquo;s &ldquo;papers&rdquo; and &ldquo;effects,&rdquo; and the Amendment&rsquo;s core is security against government rummaging. The ruling extends <em>Carpenter v. United States</em> (2018) to geofence warrants.</p>
+<p><strong>Where they diverge:</strong> the <em>reasoning</em> is the <em>Katz</em> &ldquo;reasonable expectation of privacy&rdquo; test (1967) &mdash; a judicial invention, not the text&rsquo;s original meaning. The original meaning of &ldquo;search&rdquo; turns on government invasion of a protected space or thing, which is why Justice Gorsuch&rsquo;s concurrence (property-law grounds) is closer to this board&rsquo;s framework than the majority opinion is. And the ruling is incomplete: it says a search occurred but leaves the warrant&rsquo;s validity &mdash; the question that actually decides the case &mdash; for later.</p>
+<p><strong>What the dissent argued:</strong> Justice Alito said Chatrie voluntarily disclosed his location data by using Google&rsquo;s services, that the ruling removes <em>Carpenter</em>&rsquo;s limits, and that the good-faith exception likely saves the evidence anyway. Justice Barrett, in her short dissent, agreed with Alito.</p>
+<p class="small"><strong>Scope note:</strong> the 6-3 margin describes the judgment, not the reasoning &mdash; Kagan&rsquo;s opinion had five votes; Gorsuch supplied the sixth on different grounds.</p>
+</details>
+
+<details open><summary><strong>11. Watson v. Republican National Committee</strong> &mdash; No. 24-1260 &middot; June 29, 2026 &middot; 5-4 &middot; Barrett &nbsp;<span class="verdict mixed">MIXED</span></summary>
+<p class="meta"><strong>Provision:</strong> Elections Clause (Article I, &sect;4); federal election-day statutes. <strong>Majority:</strong> Barrett, Roberts, Sotomayor, Kagan, Jackson. <strong>Dissent:</strong> Alito (joined by Thomas and Gorsuch); Kavanaugh joined in part.</p>
+<p><strong>Holding in one sentence:</strong> Federal election-day statutes govern when voters must cast their ballots, not when those ballots must physically arrive &mdash; so they do not preempt Mississippi&rsquo;s law counting mail ballots postmarked by Election Day and received up to five days later.</p>
+<blockquote>&ldquo;The Times, Places and Manner of holding Elections for Senators and Representatives, shall be prescribed in each State by the Legislature thereof; but the Congress may at any time by Law make or alter such Regulations&hellip;&rdquo; (Article I, &sect;4, cl. 1)</blockquote>
+<p><strong>What the ruling held:</strong> &ldquo;election&rdquo; in the federal statutes means the act of choosing &mdash; the electorate&rsquo;s expression of its preference &mdash; not the physical delivery of ballots. Congress&rsquo;s most recent amendment defines &ldquo;election day&rdquo; by the &ldquo;period of voting,&rdquo; not receipt. The Constitution separates the act of voting from the act of receipt (a uniform day for electors to vote, but nothing about when votes must arrive). And the Uniformed and Overseas Citizens Absentee Voting Act leaves receipt deadlines to state law.</p>
+<p><strong>Where they align:</strong> the Elections Clause gives states the primary role in prescribing the manner of elections, and the majority&rsquo;s textual reading of &ldquo;election&rdquo; as the act of choosing is defensible. If Congress wants a receipt deadline, it can write one.</p>
+<p><strong>Where they diverge:</strong> the dissent&rsquo;s historical-practice argument is a genuine original-meaning challenge &mdash; for two centuries, including every Civil War-era absentee voting scheme, the uniform understanding was that ballots must be both cast and received by Election Day. Under this board&rsquo;s framework, practice at enactment is evidence of meaning, and two centuries of it is weighty.</p>
+<p><strong>What the dissent argued:</strong> Justice Alito said &ldquo;election&rdquo; as understood at enactment required both casting and collection by Election Day, that history proves it, and that the decision opens unanswered questions and erodes confidence in election integrity.</p>
+<p class="small"><strong>Scope note:</strong> the ruling affects roughly thirty states that count late-arriving mail ballots. Justice Barrett wrote the majority; a switch by her would have changed the result.</p>
+</details>
+
+<details open><summary><strong>12. Trump v. Barbara</strong> &mdash; No. 25-365 &middot; June 30, 2026 &middot; 6-3 on the judgment (majority opinion 5-4) &middot; Roberts &nbsp;<span class="verdict mixed">MIXED</span></summary>
+<p class="meta"><strong>Provision:</strong> Fourteenth Amendment, Citizenship Clause. <strong>Majority opinion:</strong> Roberts, Sotomayor, Kagan, Barrett, Jackson. Kavanaugh concurred in the judgment only (on statutory grounds). <strong>Dissents:</strong> Thomas (joined by Gorsuch); Alito; Gorsuch (separately).</p>
+<p><strong>Holding in one sentence:</strong> Children born in the United States to parents who are unlawfully or temporarily present are citizens at birth, because they are &ldquo;subject to the jurisdiction&rdquo; of the United States.</p>
+<blockquote>&ldquo;All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States&hellip;&rdquo; (Fourteenth Amendment, &sect;1)</blockquote>
+<p><strong>What the ruling held:</strong> the Citizenship Clause codified the English common-law rule of <em>jus soli</em> &mdash; birth on the soil makes a subject &mdash; specifically to repudiate <em>Dred Scott</em>. (Note the word: English law made <em>subjects</em> of a Crown; the Amendment makes <em>citizens</em> of a republic. A subject is under a monarch; a citizen holds rights against the government. The majority treats the English rule as carried over into the Clause.) &ldquo;Subject to the jurisdiction&rdquo; means subject to the nation&rsquo;s full governing power over those physically present, as Chief Justice Marshall defined it in <em>Schooner Exchange</em> (1812). The exceptions are narrow: children of foreign diplomats and members of Indian tribes. The government&rsquo;s proposed domicile requirement &mdash; parents intending to make America their permanent home &mdash; has no support in the 1866 debates, and the words &ldquo;mother,&rdquo; &ldquo;father,&rdquo; &ldquo;lawful,&rdquo; and &ldquo;temporary&rdquo; in the Executive Order appear nowhere in the Clause.</p>
+<p><strong>Where they align:</strong> the common-law reading has real support &mdash; <em>United States v. Wong Kim Ark</em> (1898) confirmed the Clause incorporated it, and the Clause&rsquo;s authors called it &ldquo;simply declaratory&rdquo; of existing law.</p>
+<p><strong>Where they diverge:</strong> the key phrase is genuinely ambiguous, and the dissent&rsquo;s evidence is also real. The Civil Rights Act of 1866, passed in parallel, used &ldquo;not subject to any foreign power&rdquo; &mdash; and the dissent argues the Clause&rsquo;s drafters meant the same thing: children born to parents who are automatically nationals of a foreign country at birth owe allegiance elsewhere. Justice Thomas argues the Clause was designed for freed slaves and those who called America home, and that <em>Wong Kim Ark</em>&rsquo;s holding covered only parents with established permanent domicile. Both sides have history; the text does not settle it alone.</p>
+<p><strong>What the dissent argued:</strong> Justice Thomas said the Clause requires parental domicile and the majority constitutionalizes a feudal English rule Americans rejected. Justice Alito said &ldquo;subject to the jurisdiction&rdquo; means not subject to any foreign power. Justice Gorsuch flagged that children of long-term undocumented immigrants who made America their permanent home might separately qualify &mdash; an open question.</p>
+<p class="small"><strong>Scope note:</strong> the longest opinion of the term (over 60,000 words across all opinions). Justice Kavanaugh agreed with the result but only on the narrower statutory ground (the order violates 8 U.S.C. &sect; 1401(a)), and disagreed with the constitutional holding &mdash; a sign of how contested the constitutional question was even inside the majority.</p>
+</details>
+
+<details open><summary><strong>13. West Virginia v. B.P.J.</strong> (consolidated with Little v. Hecox) &mdash; Nos. 24-43 and 24-38 &middot; June 30, 2026 &middot; Title IX 9-0; Equal Protection 6-3 &middot; Kavanaugh &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> Fourteenth Amendment, Equal Protection Clause; Title IX of the Education Amendments of 1972. <strong>Equal Protection majority:</strong> Kavanaugh, Roberts, Thomas, Alito, Gorsuch, Barrett. <strong>Concurring in the judgment in part and dissenting in part:</strong> Sotomayor (joined by Kagan and Jackson); Jackson (separately). Thomas and Gorsuch concurred.</p>
+<p><strong>Holding in one sentence:</strong> Schools may maintain girls&rsquo; and boys&rsquo; sports teams defined by biological sex &mdash; unanimously under Title IX, and 6-3 under the Equal Protection Clause.</p>
+<blockquote>&ldquo;No State shall&hellip; deny to any person within its jurisdiction the equal protection of the laws.&rdquo; (Fourteenth Amendment, &sect;1) &ldquo;No person in the United States shall, on the basis of sex, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any education program or activity receiving Federal financial assistance.&rdquo; (Title IX, 20 U.S.C. &sect; 1681(a) &mdash; a statute, not constitutional text)</blockquote>
+<p><strong>What the ruling held:</strong> &ldquo;sex&rdquo; in Title IX means biological sex, and its regulations allow separate teams. Under the Equal Protection Clause, the sex-based classification survives intermediate scrutiny: the state&rsquo;s interests in fair competition and safety are important, and limiting girls&rsquo; teams to biological females is substantially related to them.</p>
+<p><strong>Where they align:</strong> under original meaning, &ldquo;equal protection&rdquo; never meant identical treatment regardless of sex &mdash; separate facilities and teams for the sexes were the norm at ratification, and the Clause&rsquo;s drafters did not understand it to forbid sex distinctions (women&rsquo;s suffrage needed its own amendment). &ldquo;Sex&rdquo; means biological sex in both the statute and the Clause.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> Justice Sotomayor (joined by Kagan and Jackson) said excluding transgender girls from girls&rsquo; teams denies them equal protection; Justice Jackson wrote separately to the same effect.</p>
+<p class="small"><strong>Scope note:</strong> the Title IX holding was unanimous &mdash; all nine justices agreed the laws do not violate Title IX. The Court split 6-3 only on the constitutional question. The ruling decides eligibility for sex-segregated school sports; it does not announce a general theory about transgender constitutional protections.</p>
+</details>
+
+<details open><summary><strong>14. National Republican Senatorial Committee v. Federal Election Commission</strong> &mdash; No. 24-621 &middot; June 30, 2026 &middot; 6-3 &middot; Kavanaugh &nbsp;<span class="verdict consistent">CONSISTENT</span></summary>
+<p class="meta"><strong>Provision:</strong> First Amendment (freedom of speech). <strong>Majority:</strong> Kavanaugh, Roberts, Thomas, Alito, Gorsuch, Barrett. <strong>Dissent:</strong> Kagan (joined by Sotomayor and Jackson).</p>
+<p><strong>Holding in one sentence:</strong> The Federal Election Campaign Act&rsquo;s limits on how much political parties may spend in coordination with their candidates violate the First Amendment.</p>
+<blockquote>&ldquo;Congress shall make no law&hellip; abridging the freedom of speech&hellip;&rdquo; (First Amendment)</blockquote>
+<p><strong>What the ruling held:</strong> restricting how much a party can spend on political communication directly restricts speech. The only legitimate interest for campaign-finance limits is preventing quid pro quo corruption or its appearance. Reducing overall spending is flatly impermissible; stopping a party from influencing its own candidates defies their aligned relationship; &ldquo;undue influence&rdquo; by donors is ingratiation and access, not corruption. The remaining anti-circumvention interest fails &ldquo;closely drawn&rdquo; scrutiny because existing safeguards &mdash; base contribution limits, earmarking rules, disclosure &mdash; already address it. <em>Colorado II</em> (2001), which upheld the limits under a deferential standard later decisions repudiated, is overruled.</p>
+<p><strong>Where they align:</strong> political speech is the core of the Speech Clause, and the majority&rsquo;s reasoning follows the text and the Court&rsquo;s own First Amendment doctrine. Under this board&rsquo;s framework, precedent is context, not the standard &mdash; overruling a precedent that conflicts with the text is consistent.</p>
+<p><strong>Where they diverge:</strong> nowhere on the question decided.</p>
+<p><strong>What the dissent argued:</strong> Justice Kagan said the caps are necessary because donors can route hundreds of thousands of dollars to a candidate through joint fundraising committees without technically earmarking, making earmarking rules and disclosure insufficient &mdash; the decision &ldquo;ushers back in the same opportunities for quid pro quo corruption that the contribution limits were meant to check.&rdquo;</p>
+<p class="small"><strong>Scope note:</strong> the ruling does not change how much individuals or PACs may contribute to parties &mdash; only how parties may spend what they raise in coordination with candidates.</p>
+</details>
+
+<h2>Per-justice tally &mdash; OT2025</h2>
+<p><strong>Rule:</strong> a justice &ldquo;aligns&rdquo; when their vote was on the side the verdict says matches the text. <strong>Mixed cases (Landor, Cook, Chatrie, Watson, Barbara) are counted in votes but NOT scored for alignment</strong> &mdash; neither side is marked right or wrong when the framework itself is ambiguous. All nine justices participated in all 14 cases. &ldquo;Scored cases&rdquo; = the 9 cases with a Consistent verdict.</p>
+<table>
+<thead><tr><th>Justice</th><th>Votes counted</th><th>Aligned (of 9 scored)</th><th>Where they did not align (scored cases)</th></tr></thead>
+<tbody>
+<tr><td>Roberts, C.J.</td><td>14</td><td class="good">9 of 9</td><td>&mdash;</td></tr>
+<tr><td>Thomas</td><td>14</td><td class="good">8 of 9</td><td>Learning Resources (dissent)</td></tr>
+<tr><td>Alito</td><td>14</td><td class="good">8 of 9</td><td>Learning Resources (dissent)</td></tr>
+<tr><td>Sotomayor</td><td>14</td><td class="warn">4 of 9</td><td>Callais, Wolford, Slaughter, B.P.J., NRSC (dissent)</td></tr>
+<tr><td>Kagan</td><td>14</td><td class="warn">4 of 9</td><td>Callais, Wolford, Slaughter, B.P.J., NRSC (dissent)</td></tr>
+<tr><td>Gorsuch</td><td>14</td><td class="good">9 of 9</td><td>&mdash;</td></tr>
+<tr><td>Kavanaugh</td><td>14</td><td class="good">8 of 9</td><td>Learning Resources (dissent)</td></tr>
+<tr><td>Barrett</td><td>14</td><td class="good">9 of 9</td><td>&mdash;</td></tr>
+<tr><td>Jackson</td><td>14</td><td class="warn">3 of 9</td><td>Chiles, Callais, Wolford, Slaughter, B.P.J., NRSC (dissent)</td></tr>
+</tbody>
+</table>
+<p><strong>How to read this:</strong> the tally counts only the 9 cases where the framework produced a clear verdict. Three justices aligned in all 9 (Roberts, Gorsuch, Barrett); three aligned in 8 (Thomas, Alito, Kavanaugh &mdash; all three dissented in Learning Resources); Sotomayor and Kagan aligned in 4; Jackson aligned in 3. The five Mixed cases &mdash; where the text and history are genuinely two-sided &mdash; are not scored for anyone. <strong>This tally is a count, not a grade.</strong> It says how often each justice voted with the side this framework finds text-consistent, on the cases where the framework gives a clear answer. It does not measure intelligence, good faith, or overall fidelity &mdash; a justice can vote against the framework&rsquo;s reading for reasons the framework does not capture.</p>
+<p class="small"><strong>Majority-opinion authors (OT2025 major cases):</strong> Roberts 4 (Learning Resources, Slaughter, Cook, Barbara); Gorsuch 4 (First Choice, Chiles, Hemani, Landor); Kavanaugh 2 (B.P.J., NRSC); Alito 2 (Callais, Wolford); Barrett 1 (Watson); Kagan 1 (Chatrie). Total: 14. For context, the SCOTUSblog final Stat Pack (updated July 6, 2026) records Roberts and Kavanaugh in the majority 95% of the time across the whole term, Barrett 92%, Jackson lowest at 67%; 44% of the term&rsquo;s decisions were unanimous; 22.7% split 6-3 on ideological lines (vs an 11% average for the 2020-21 through 2024-25 terms).</p>
+
+<h2>OT2026 &mdash; live tracker (pending cases, no verdicts yet)</h2>
+<div class="note"><strong>Status as of November 11, 2026: no OT2026 merits case has been decided.</strong> The term opened Monday, October 5, 2026. Decisions in argued cases normally come by the end of June 2027. <strong>No verdicts are given below and none are invented</strong> &mdash; this section is a tracker shell, to be filled as decisions come down. <strong>Flag:</strong> these tracker entries were researched by a subagent from the Court&rsquo;s Granted &amp; Noted List, Oyez, and the University of Richmond Law Library&rsquo;s OT2026 preview, and were <strong>not independently re-verified</strong> by the lead researcher. Treat them as a watch list, not a verified record.</div>
+<table>
+<thead><tr><th>#</th><th>Case</th><th>Docket</th><th>Question (one line)</th><th>Provision</th><th>Argued / scheduled</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Suncor Energy (U.S.A.) Inc. v. County Commissioners of Boulder County</td><td>25-170</td><td>Does federal law preclude state-law climate claims for greenhouse-gas injuries?</td><td>Art. III; Supremacy Clause / preemption</td><td>Oct 5, 2026</td><td>Argued, pending</td></tr>
+<tr><td>2</td><td>Johnson v. United States Congress</td><td>25-735</td><td>Did the Veterans&rsquo; Judicial Review Act strip courts of jurisdiction over constitutional challenges to veterans&rsquo;-benefits laws?</td><td>Art. III; 5th Am. equal protection; Bill of Attainder</td><td>Oct 5, 2026</td><td>Argued, pending</td></tr>
+<tr><td>3</td><td>St. Mary Catholic Parish v. Roy</td><td>25-581</td><td>May Colorado condition preschool-program participation on a nondiscrimination agreement Catholic schools say conflicts with their faith?</td><td>1st Am. Free Exercise</td><td>Nov 3, 2026</td><td>Argued, pending</td></tr>
+<tr><td>4</td><td>Guerrero v. Johnson</td><td>25-1003</td><td>Is an Atkins claim &ldquo;previously unavailable&rdquo; for a successive habeas petition when a DSM-5 change made it assertable?</td><td>8th Am. (Atkins); habeas</td><td>Nov 4, 2026</td><td>Argued, pending</td></tr>
+<tr><td>5</td><td>Dept. of Labor v. Sun Valley Orchards, LLC</td><td>25-966</td><td>May the Labor Dept. use its own proceedings to collect money from employers, or does the Constitution require a federal court?</td><td>Art. III (agency adjudication; Jarkesy)</td><td>Nov 10, 2026</td><td>Argued, pending</td></tr>
+<tr><td>6</td><td>Viramontes v. Cook County, Ill. (consol. Grant v. Higgins)</td><td>25-238 / 25-566</td><td>Does the Second Amendment protect owning AR-15-style rifles?</td><td>2nd Am. / 14th Am.</td><td>Dec 2, 2026</td><td>Scheduled &mdash; caveat: lead petitioner moved to withdraw Oct 29, 2026; Cook County filed a suggestion of mootness Nov 5; Court had not acted as of Nov 10</td></tr>
+<tr><td>7</td><td>Int&rsquo;l Partners for Ethical Care, Inc. v. Ferguson</td><td>25-840</td><td>Do parents have standing to challenge a law displacing their role in their children&rsquo;s &ldquo;gender transitions&rdquo;?</td><td>Art. III standing; 14th Am. parental liberty</td><td>Dec 7, 2026</td><td>Scheduled</td></tr>
+<tr><td>8</td><td>Republican National Committee v. Mi Familia Vota</td><td>25-1017</td><td>May Arizona require documentary proof of citizenship to register, and cancel noncitizen registrations within 90 days of an election?</td><td>NVRA; Elections Clause</td><td>Dec 8, 2026</td><td>Scheduled</td></tr>
+<tr><td>9</td><td>Dept. of Homeland Security v. D. V. D.</td><td>26-426</td><td>Must the government give notice and a chance to claim fear of persecution before third-country removal?</td><td>5th Am. Due Process</td><td>Dec 9, 2026</td><td>Scheduled</td></tr>
+<tr><td>10</td><td>Grand v. City of University Heights, Ohio</td><td>25-965</td><td>Does the chilling-effect doctrine protect home prayer/worship from government threats, or does land-use finality displace it?</td><td>1st Am. Free Exercise</td><td>Dec 9, 2026</td><td>Scheduled &mdash; caveat: petitioner moved out of the city; mootness briefed</td></tr>
+<tr><td>11</td><td>Kian v. Florida</td><td>25-6623</td><td>Does the Sixth Amendment require a 12-person jury for serious felonies &mdash; overrule Williams v. Florida (1970)?</td><td>6th Am. jury trial</td><td>Jan 13, 2027</td><td>Scheduled</td></tr>
+<tr><td>12</td><td>Rhoney v. Barbosa da Cunha</td><td>26-104</td><td>Does &sect; 1225(b)(2)(A) mandate detention pending removal for aliens present without admission?</td><td>Statutory (&sect; 1225); due process in background</td><td>Not yet scheduled</td><td>Granted Oct 1, 2026</td></tr>
+</tbody>
+</table>
+<p><strong>Not proceeding:</strong> Genalo v. Black (No. 25-886) &mdash; the term&rsquo;s big immigration-detention/due-process case &mdash; was dismissed September 11, 2026, under Rule 46 (joint stipulation) as moot. A replacement petition, Genalo v. D.C. (No. 26-379), was filed September 21, 2026; grant status not verified as of Nov 11, 2026.</p>
+
+<h2>Verification log</h2>
+<p>All 14 OT2025 cases were verified against <strong>3 or more independent sources</strong> for vote, author, date, holding, and dissent lineup. Batch 1 (Nov 11): Cornell LII slip opinions fetched and confirmed for First Choice, Chiles, Learning Resources, Callais, Slaughter. Batch 2 (Nov 11&ndash;12): Oyez pages fetched and confirmed for Hemani, Landor, Chatrie, B.P.J.; Cornell LII slip opinion fetched and confirmed for Watson; Justia slip opinion fetched and confirmed for Barbara; Cook&rsquo;s outcome confirmed against the Court&rsquo;s official preliminary print on supremecourt.gov (609 U.S. Part 2, pp. 528&ndash;604), CRS Legal Sidebar LSB11449, and the Civil Rights Litigation Clearinghouse; Landor&rsquo;s official preliminary print on supremecourt.gov (609 U.S. Part 1, pp. 59&ndash;107) also fetched and confirmed. <strong>No thinly-sourced facts remain among the OT2025 core facts.</strong></p>
+<table>
+<thead><tr><th>Case</th><th>Sources confirming vote / author / date / holding / dissent</th><th>Count</th></tr></thead>
+<tbody>
+<tr><td>First Choice</td><td>Cornell LII slip opinion; SCOTUSblog Stat Pack; Jenner &amp; Block client alert (May 1, 2026)</td><td>3</td></tr>
+<tr><td>Chiles</td><td>Cornell LII slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+<tr><td>Learning Resources</td><td>Cornell LII slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+<tr><td>Callais</td><td>Cornell LII slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+<tr><td>Hemani</td><td>supremecourt.gov slip opinion; Oyez; Constitution Annotated</td><td>3</td></tr>
+<tr><td>Landor</td><td>supremecourt.gov preliminary print (609 U.S. Pt. 1, pp. 59&ndash;107); Oyez; NAAG Supreme Court Report Vol. 33, Iss. 17; supremecourt.report docket</td><td>4</td></tr>
+<tr><td>Wolford</td><td>Cornell LII slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+<tr><td>Slaughter</td><td>Cornell LII slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+<tr><td>Cook</td><td>supremecourt.gov preliminary print (609 U.S. Pt. 2, pp. 528&ndash;604); CRS Legal Sidebar LSB11449; Civil Rights Litigation Clearinghouse; SCOTUSblog Stat Pack</td><td>4</td></tr>
+<tr><td>Chatrie</td><td>supremecourt.gov preliminary print (slip opinion); Oyez; Constitution Annotated</td><td>3</td></tr>
+<tr><td>Watson</td><td>Cornell LII slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+<tr><td>Barbara</td><td>Justia slip opinion; Oyez; Civil Rights Litigation Clearinghouse</td><td>3</td></tr>
+<tr><td>B.P.J.</td><td>supremecourt.gov slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+<tr><td>NRSC</td><td>Justia slip opinion; Oyez; SCOTUSblog Stat Pack</td><td>3</td></tr>
+</tbody>
+</table>
+<p class="small">One honest limit: the Oyez page for <em>Trump v. Cook</em> (No. 25A312) was fetched, but its decision text did not extract, so it is <strong>not</strong> counted as a confirming source for Cook&rsquo;s outcome &mdash; Cook&rsquo;s four sources are the ones listed above. The OT2026 tracker entries were not independently re-verified (see the tracker note).</p>
+
+<h2>Sources</h2>
+<p class="small"><strong>Term-wide:</strong> SCOTUSblog, Final Stat Pack for the 2025-26 Term (updated July 6, 2026), compiled by Jake S. Truscott and Adam Feldman &mdash; <a href="https://cdn.sanity.io/files/pito4za5/production/563200520fdde75291c69f3eaeeee8f55aaaf27c.pdf">cdn.sanity.io &hellip; Stat Pack PDF</a> &middot; Supreme Court of the United States, October Term 2025 opinions &mdash; <a href="https://www.supremecourt.gov/opinions/">supremecourt.gov/opinions</a></p>
+<p class="small"><strong>Per case:</strong> First Choice &mdash; <a href="https://www.law.cornell.edu/supct/pdf/24-781.pdf">Cornell slip</a>, <a href="https://www.jenner.com/print/v2/content/101256/first-choice-womens-resource-centers-inc-v-davenport.pdf">Jenner &amp; Block alert</a> &middot; Chiles &mdash; <a href="https://www.law.cornell.edu/supct/pdf/24-539.pdf">Cornell slip</a>, <a href="https://www.oyez.org/cases/2025/24-539">Oyez</a> &middot; Learning Resources &mdash; <a href="https://www.law.cornell.edu/supct/pdf/24-1287.pdf">Cornell slip</a>, <a href="https://www.oyez.org/cases/2025/24-1287">Oyez</a> &middot; Callais &mdash; <a href="https://www.law.cornell.edu/supct/pdf/24-109.pdf">Cornell slip</a>, <a href="https://www.oyez.org/cases/2025/24-109">Oyez</a> &middot; Hemani &mdash; <a href="https://www.supremecourt.gov/opinions/25pdf/24-1234_new_6k47.pdf">supremecourt.gov slip</a>, <a href="https://www.oyez.org/cases/2025/24-1234">Oyez</a> &middot; Landor &mdash; <a href="http://www.supremecourt.gov/opinions/25pdf/609us1r55_h315.pdf">supremecourt.gov preliminary print</a>, <a href="https://www.oyez.org/cases/2025/23-1197">Oyez</a> &middot; Wolford &mdash; <a href="https://www.law.cornell.edu/supct/pdf/24-1046.pdf">Cornell slip</a>, <a href="https://www.oyez.org/cases/2025/24-1046">Oyez</a> &middot; Slaughter &mdash; <a href="https://www.law.cornell.edu/supct/pdf/25-332.pdf">Cornell slip</a>, <a href="https://www.oyez.org/cases/2025/25-332">Oyez</a> &middot; Cook &mdash; <a href="http://www.supremecourt.gov/opinions/25pdf/609us2r63_e2pg.pdf">supremecourt.gov preliminary print</a>, <a href="https://www.everycrsreport.com/reports/LSB11449.html">CRS LSB11449</a>, <a href="https://clearinghouse.net/case/46876/">Clearinghouse</a> &middot; Chatrie &mdash; <a href="https://www.supremecourt.gov/opinions/25pdf/609us2r64_7mio.pdf">supremecourt.gov slip</a>, <a href="https://www.oyez.org/cases/2025/25-112">Oyez</a> &middot; Watson &mdash; <a href="https://www.law.cornell.edu/supct/pdf/24-1260.pdf">Cornell slip</a>, <a href="https://www.oyez.org/cases/2025/24-1260">Oyez</a> &middot; Barbara &mdash; <a href="https://supreme.justia.com/cases/federal/us/609/25-365/">Justia slip</a>, <a href="https://www.oyez.org/cases/2025/25-365">Oyez</a>, <a href="https://clearinghouse.net/case/46748/">Clearinghouse</a> &middot; B.P.J. &mdash; <a href="https://www.supremecourt.gov/opinions/25pdf/24-43_2b35.pdf">supremecourt.gov slip</a>, <a href="https://www.oyez.org/cases/2025/24-43">Oyez</a> &middot; NRSC &mdash; <a href="https://supreme.justia.com/cases/federal/us/609/24-621/">Justia slip</a>, <a href="https://www.oyez.org/cases/2025/24-621">Oyez</a></p>
+<p class="small"><strong>OT2026 tracker (subagent research, not independently re-verified):</strong> Oyez case pages (oyez.org/cases/2026/&hellip;); Supreme Court Granted &amp; Noted List &mdash; <a href="https://www.supremecourt.gov/Orders/26grantednotedlist.pdf">supremecourt.gov</a>; Supreme Court October 2026 hearing list &mdash; <a href="https://supremecourt.gov/oral_arguments/hearinglists/HearingList-October2026.pdf">supremecourt.gov</a>; University of Richmond Law Library OT2026 preview &mdash; <a href="https://create.richmond.edu/lawlibrary/?p=7922">create.richmond.edu</a></p>
+<p class="small"><strong>Constitutional text:</strong> quoted from the Constitution as ratified/amended (Article I, Article II, First, Second, Fourth, Fifth, Sixth, Eighth, and Fourteenth Amendments; Title IX, 20 U.S.C. &sect; 1681(a), is a statute, not constitutional text, and is labeled as such above).</p>
+
+<footer>
+<p>VoterLens &mdash; Supreme Court Scoreboard, live November 12, 2026. The verdicts are analysis under the stated framework, not a court&rsquo;s ruling. <a href="../index.html">&larr; Back to VoterLens</a></p>
+</footer>
+
+</main>
+</body>
+</html>

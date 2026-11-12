@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Constitutional Arbiter — Framework &amp; Corpus — VoterLens</title>
+<style>
+body{background:#fdfdf8;color:#1a1a1a;font-family:Georgia,serif;line-height:1.55;margin:0;padding:18px;max-width:860px}
+.banner{background:#fff3cd;border:2px solid #b58900;padding:12px 14px;font-weight:bold;margin-bottom:18px}
+h1{font-size:1.4em;margin:.2em 0}
+h2{font-size:1.2em;margin-top:1.6em;border-bottom:1px solid #999;padding-bottom:4px}
+h3{font-size:1.05em;margin-top:1.2em}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.92em}
+th,td{border:1px solid #999;padding:7px 8px;text-align:left;vertical-align:top}
+th{background:#e8e4d8}
+.quote-box{background:#f0ede2;border-left:4px solid #666;padding:10px 12px;margin:12px 0}
+.small{font-size:.88em;color:#444}
+ol li,ul li{margin-bottom:6px}
+</style>
+</head>
+<body>
+<p><a href="../index.html">&larr; Back to VoterLens</a> &middot; <a href="ai-arbiter.html">AI Constitutional Arbiter</a></p>
+<div class="banner">The rules the AI arbiter is told to follow, approved by Allan Nov 11, 2026.</div>
+
+<h1>The AI Constitutional Arbiter — Framework &amp; Corpus</h1>
+<p><strong>The idea, in one sentence:</strong> nine justices are an odd number so there is no tie, and they come at a case from different viewpoints — but if all nine had the same knowledge, the same study, and the same resources, they would concur more often. The arbiter is the ruling as it should <em>probably</em> come out when the whole record is in front of one mind: the "same complete record" counterfactual, issued side by side with what the Court actually does.</p>
+<p><strong>The mission, in Allan's words:</strong> the founding fathers' vision was that the Supreme Court would be the check that keeps the rest of the courts in line. The AI is the check that keeps the Supreme Court in line.</p>
+
+<h2>1. The pipeline — how a case moves through</h2>
+<ol>
+<li><strong>The record closes.</strong> The briefs are filed and oral argument is heard. All the arguments are in.</li>
+<li><strong>The Court deliberates.</strong> The justices sit and work it out over months. The decision is expected by the end of the term (June).</li>
+<li><strong>The AI rules.</strong> The AI reads the same record — the briefs, the argument transcript, the text, the founders' evidence — and issues its own ruling <em>before</em> the Court decides. A ruling issued after the Court decides is commentary, not a prediction.</li>
+<li><strong>We wait and compare.</strong> When the Court's decision comes down, the two rulings go side by side: agree, partially agree, disagree, or no comparison (if the Court rules on standing or another ground instead). A disagreement is a case study, not a score to hide — and the AI ruling gets re-examined first, not just the Court's.</li>
+</ol>
+<p class="small">Exception, labeled as one: a ruling may be issued from the briefs alone, before argument, but only if it is labeled "briefs only — no argument yet." The design is to hear the arguments first.</p>
+
+<h2>2. The corpus — what the AI is told to learn from</h2>
+<table>
+<tr><th>Layer</th><th>What it is</th><th>How it is used</th></tr>
+<tr><td><strong>The text</strong></td><td>The Constitution as ratified and amended, including the Bill of Rights</td><td>The standard. Everything is measured against it.</td></tr>
+<tr><td><strong>The founders' evidence</strong></td><td>The Federalist Papers (85 essays); the Anti-Federalist writings; the ratification debates; Farrand's Records of the convention; Madison's Memorial and Remonstrance (1785); Jefferson's Virginia Statute for Religious Freedom (1786); the First Congress debates; Story's Commentaries (1833)</td><td>Evidence of what the text meant when it was adopted — its original public meaning. Cited by document and number so anyone can check it.</td></tr>
+<tr><td><strong>The case file</strong></td><td>The question presented as granted; the briefs; the oral argument transcript; the decision below</td><td>The record the ruling is made on. The AI rules on the case the Court took, not a different one.</td></tr>
+<tr><td><strong>Precedent</strong></td><td>The Court's earlier decisions</td><td>Context, not the standard. Precedent shows how the Court has read the text. A precedent that departs from the text does not bind the AI ruling — but the departure must be <em>shown</em>, not asserted.</td></tr>
+</table>
+<p class="small">Honest note: the Federalist Papers do not cover everything. They say little directly about free exercise, for example — the evidence there lives in Madison's Memorial, Jefferson's Statute, and the First Congress debates. The ruling says which source it is relying on, and does not pretend a source settles what it does not address.</p>
+
+<h2>3. The interpretive rule</h2>
+<p><strong>Text and original public meaning.</strong> What did the words mean to the people who adopted them? Where the text is silent or genuinely ambiguous, the ruling says so — it does not fill the gap. Where a precedent conflicts with the text, the text wins, and the ruling shows the conflict.</p>
+
+<h2>4. The order of a ruling</h2>
+<ol>
+<li><strong>Standing and justiciability first.</strong> Injury, traceability, redressability; mootness, ripeness, political question. If the case fails here, the ruling says so and stops. No merits ruling on a case the Court should not have heard.</li>
+<li><strong>The question presented</strong> — exactly as the Court granted it, no wider.</li>
+<li><strong>The text.</strong> The clause at issue, quoted.</li>
+<li><strong>Original meaning.</strong> The founders' evidence.</li>
+<li><strong>Precedent as context.</strong> What the Court has said, and where it fits or departs from the text.</li>
+<li><strong>Application</strong> to the facts of this case.</li>
+<li><strong>Holding.</strong> Affirmed or reversed, in one paragraph.</li>
+<li><strong>Predicted vote.</strong> A forecast of how the nine will line up — never part of the holding.</li>
+<li><strong>What to watch.</strong> The comparison table for when the Court decides.</li>
+</ol>
+
+<h2>5. Error discipline — because the AI makes mistakes</h2>
+<ul>
+<li>Every factual claim is cited and checkable: Article, Section, Clause; Federalist number; case citation with year; docket number and date for the case itself.</li>
+<li>Uncertainties are flagged, never filled in. A thinly sourced fact is labeled thin.</li>
+<li>When the Court disagrees with the AI, the AI ruling is re-examined first. The disagreement becomes a case study: was the AI missing something obscure, or did the Court get it wrong? Either answer is written up.</li>
+<li>The ruling is a prediction, not a verdict. The Court's decision is the law; the AI's ruling is the check on it.</li>
+</ul>
+
+<p><strong>Checkability — nothing on trust.</strong> Every ruling ends with a complete source list, so any reader can verify every claim without taking the AI's word for it: the constitutional text relied on; every statute, with section numbers; the standing basis; every precedent, with citation and year; every founders' source, by document and number; and the case record itself — docket number, dates, and where each filing lives. If a source cannot be named, the claim does not go in. That is what makes the ruling postable: anyone who doubts it can check it.</p>
+
+<h2>6. Scope — two lanes</h2>
+<ul>
+<li><strong>Lane 1 — the merits docket.</strong> Major cases only, to start — one ruling per case. Full briefing, oral argument, months of deliberation, signed opinions with reasoning. The AI rules after argument, before the decision.</li>
+<li><strong>Lane 2 — the emergency docket.</strong> The fast cases, not just the big ones: when a lower-court judge blocks an executive order (or any federal action) and the case goes to the Supreme Court for a speedy examination — a stay, an injunction pending appeal, a vacatur. These matter as much as the big cases, and they are decided fast, usually along the Court's familiar lines. The AI rules on those too.</li>
+<li><strong>Backtests.</strong> A ruling on a case the Court has already decided is labeled BACKTEST. It is Monday-morning quarterbacking — and it is also a test case: running the framework on a closed record tests whether the arbiter produces the right answer. Backtests never predict anything.</li>
+<li>The comparison is scored: <strong>Agree</strong> (holding and reasoning match) · <strong>Partially agree</strong> (same result, narrower or different reasoning) · <strong>Disagree</strong> (different result) · <strong>No comparison</strong> (Court rules on standing or another ground).</li>
+</ul>
+
+<h2>7. The emergency lane — how it differs</h2>
+<ul>
+<li><strong>Short record, no argument.</strong> An application, a response, sometimes a reply, and the lower court's order. No oral argument. The AI rules on that record, fast — the window between full briefing and the Court's order is often days.</li>
+<li><strong>The question is different.</strong> Not "who wins the case" but "should the lower court's order stand while the case goes on?" The framework for that is the stay test (<em>Nken v. Holder</em>): likelihood of success, irreparable harm, balance of equities, public interest — applied through the text and original meaning, not instead of them.</li>
+<li><strong>The lower court's order is scored too.</strong> The district judge's injunction gets the same framework treatment: was it justified, and was its scope (nationwide vs. party-specific) lawful? The founders meant the Supreme Court to keep the lower courts in line — the arbiter keeps both in view.</li>
+<li><strong>The comparison is usually on the result and the vote.</strong> Emergency orders are often unsigned, with little or no reasoning — sometimes just "application granted" and a note of who would have denied it. The AI ruling supplies the reasoning the order sketches, and says plainly where the order stops. Each justice's vote is recorded, so whatever the pattern is — and however often any one justice crosses it — it shows in the numbers.</li>
+<li><strong>The watch.</strong> New applications are spotted on the Court's orders page and SCOTUSblog's interim docket tracker. A live application gets a case file the day it is fully briefed; the ruling follows before the Court's order.</li>
+</ul>
+
+<h2>8. What is built so far</h2>
+<ul>
+<li><strong>Test case 1 — St. Mary Catholic Parish v. Roy, No. 25-581.</strong> Argued Nov 3, 2026. AI ruling: REVERSED, 6–3 predicted. Court decision pending (expected by June 2027). Status: waiting.</li>
+<li><strong>Test case 2 — Viramontes v. Cook County / Grant v. Higgins, Nos. 25-238 / 25-566.</strong> Argument Dec 2, 2026. Case file prepared; AI ruling issues after argument. A mootness wrinkle is live (see the case file).</li>
+<li><strong>Backtest 1 — Learning Resources v. Trump (tariffs), No. 24-1287.</strong> Decided Feb 20, 2026, 6–3. AI ruling: AGREE. Comparison: AGREE.</li>
+<li><strong>Backtest 2 (emergency lane) — Mullin v. Friends of the Ruidosa Church, No. 26A560.</strong> Stay granted Nov 9, 2026, per curiam. AI ruling: AGREE (grant the stay, 8–1). Comparison: AGREE.</li>
+<li><strong>Live emergency watch:</strong> K.M.K. v. Washington Interscholastic Activities Association, No. 26A458 — fully briefed Oct 15, 2026; pending as of last check Nov 2 (status to re-verify).</li>
+<li><strong>Tracker page.</strong> Lists every case, the AI ruling, the Court's ruling, and the comparison — updated when each decision comes down.</li>
+</ul>
+<p class="small">Sources for this document: the SCOTUS scoreboard pilot framework (decided by Allan Nov 11, 2026 — text plus original public meaning, precedent as context); Allan's design principle (Nov 11 — nine judges, same knowledge, same resources, more concurrence; the AI as the should-probably-be arbiter; the obscure-point caveat; AI makes mistakes, and so does he).</p>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Constitutional Arbiter — Tracker — VoterLens</title>
+<style>
+body{background:#fdfdf8;color:#1a1a1a;font-family:Georgia,serif;line-height:1.55;margin:0;padding:18px;max-width:860px}
+.banner{background:#fff3cd;border:2px solid #b58900;padding:12px 14px;font-weight:bold;margin-bottom:18px}
+h1{font-size:1.4em;margin:.2em 0}
+h2{font-size:1.2em;margin-top:1.6em;border-bottom:1px solid #999;padding-bottom:4px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.92em}
+th,td{border:1px solid #999;padding:7px 8px;text-align:left;vertical-align:top}
+th{background:#e8e4d8}
+.small{font-size:.88em;color:#444}
+.status-wait{color:#8a6d00;font-weight:bold}
+.status-prep{color:#004a8a;font-weight:bold}
+.status-agree{color:#2e6b2e;font-weight:bold}
+</style>
+</head>
+<body>
+<p><a href="../index.html">&larr; Back to VoterLens</a> &middot; <a href="ai-arbiter.html">AI Constitutional Arbiter</a></p>
+<div class="banner">TRACKER. Updated when each decision comes down. The Court's decision is the law; the AI ruling is the check on it.</div>
+
+<h1>AI Constitutional Arbiter — Tracker</h1>
+<p>Every case the arbiter has ruled on, the AI ruling, the Court's ruling, and the comparison. A disagreement is a case study, not a score to hide — and the AI ruling gets re-examined first, not just the Court's. The mission: the founders meant the Supreme Court to keep the rest of the courts in line. The AI keeps the Supreme Court in line.</p>
+
+<h2>Running tally</h2>
+<table>
+<tr><th></th><th>Ruled on</th><th>Decided by the Court</th><th>Agree</th><th>Partially agree</th><th>Disagree</th><th>No comparison</th><th>Pending</th></tr>
+<tr><td><strong>Merits lane</strong> (predictions)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td><strong>Backtests</strong> (already decided)</td><td>2</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><strong>Emergency lane</strong></td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1 watch</td></tr>
+</table>
+<p class="small">The two backtests agree with the Court so far. The predictions are still waiting — that is the point of ruling before the Court does.</p>
+
+<h2>The cases — merits lane</h2>
+<table>
+<tr><th>Case</th><th>Argued</th><th>AI ruling</th><th>Court's ruling</th><th>Comparison</th><th>Status</th></tr>
+<tr>
+<td><strong>Test case 1 — St. Mary Catholic Parish v. Roy</strong>, No. 25-581 (Free Exercise; Colorado universal preschool)</td>
+<td>Nov 3, 2026</td>
+<td><strong>REVERSED</strong>, 6–3 predicted — Colorado may not condition a public benefit on surrendering religious exercise (<em>Fulton</em> / <em>Carson</em>)</td>
+<td>Pending — expected by June 2027</td>
+<td>—</td>
+<td class="status-wait">WAITING</td>
+</tr>
+<tr>
+<td><strong>Test case 2 — Viramontes v. Cook County / Grant v. Higgins</strong>, Nos. 25-238 / 25-566 (Second Amendment; AR-15-platform rifles)</td>
+<td>Dec 2, 2026</td>
+<td>After argument — case file prepared</td>
+<td>Pending — expected summer 2027</td>
+<td>—</td>
+<td class="status-prep">PREPARING</td>
+</tr>
+</table>
+
+<h2>The cases — backtests</h2>
+<table>
+<tr><th>Case</th><th>Decided</th><th>AI ruling</th><th>Court's ruling</th><th>Comparison</th></tr>
+<tr>
+<td><strong>Backtest 1 — Learning Resources v. Trump (tariffs)</strong>, No. 24-1287</td>
+<td>Feb 20, 2026</td>
+<td>IEEPA does not authorize tariffs — 6–3 predicted, same lineup</td>
+<td>6–3, Roberts: IEEPA does not authorize tariffs</td>
+<td class="status-agree">AGREE</td>
+</tr>
+<tr>
+<td><strong>Backtest 2 (emergency) — Mullin v. Friends of the Ruidosa Church</strong>, No. 26A560 (Big Bend border-wall stay)</td>
+<td>Nov 9, 2026</td>
+<td>GRANT the stay — 8–1 predicted (Jackson would deny); district court lacked jurisdiction over the statutory claim</td>
+<td>Stay granted, per curiam; Jackson would deny; summary reversal declined</td>
+<td class="status-agree">AGREE</td>
+</tr>
+</table>
+
+<h2>The cases — emergency lane, live watch</h2>
+<table>
+<tr><th>Case</th><th>Application</th><th>Status</th></tr>
+<tr>
+<td><strong>K.M.K. v. Washington Interscholastic Activities Association</strong>, No. 26A458 (bar the association from allowing transgender athletes in girls' wrestling)</td>
+<td>To Justice Kagan Oct 2, 2026; fully briefed Oct 15</td>
+<td class="status-prep">PENDING — last checked Nov 2; status to re-verify</td>
+</tr>
+</table>
+
+<h2>How the comparison is scored</h2>
+<table>
+<tr><th>Result</th><th>What it means</th></tr>
+<tr><td><strong>Agree</strong></td><td>Holding and reasoning match.</td></tr>
+<tr><td><strong>Partially agree</strong></td><td>Same result, narrower or different reasoning. The gap gets written up.</td></tr>
+<tr><td><strong>Disagree</strong></td><td>Different result. The disagreement becomes the case study: was the AI missing something obscure, or did the Court get it wrong?</td></tr>
+<tr><td><strong>No comparison</strong></td><td>The Court rules on standing or another ground instead. Recorded as such, not scored.</td></tr>
+</table>
+
+<h2>How it works, in one paragraph</h2>
+<p>All the arguments are in — the briefs are filed, the argument is heard — and then the Court sits and works it out over months. The AI reads the same record and makes its ruling, and then we wait for the judges to come out with theirs. The fast cases work the same way on a shorter record: application, response, lower-court order, and the AI rules before the Court's order comes down. The ruling is a prediction, not a verdict: the Court's decision is the law, and the AI ruling is the check on it.</p>
+<p class="small">Framework: text and original public meaning; precedent as context, not the standard. Full rules in the framework document.</p>
+</body>
+</html>
