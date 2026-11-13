@@ -19,6 +19,9 @@
  */
 'use strict';
 
+var dns = require('dns').promises;
+var net = require('net');
+
 /* ================= scoring (verbatim port of preview/score5.js) ================= */
 
 var LOADED_WORDS = [
@@ -286,14 +289,98 @@ var MAX_SCORED = 20;            // most articles scored in one run
 var FETCH_TIMEOUT_MS = 5000;     // per-fetch cap
 var GLOBAL_BUDGET_MS = 8500;     // whole run must fit a ~10s serverless window
 
-function isPublicUrl(u) {
+/* An address is not public if it is loopback, unspecified, private (RFC 1918 /
+ * unique-local), link-local, CGNAT, documentation, benchmarking, multicast or
+ * otherwise reserved. Covers IPv4 and IPv6, including ::ffff:a.b.c.d
+ * IPv4-mapped IPv6. */
+function isPrivateIp(ip) {
+  if (net.isIP(ip) === 4) {
+    var o = ip.split('.').map(Number);
+    if (o[0] === 0) return true;                            // 0.0.0.0/8 ("this network")
+    if (o[0] === 10) return true;                           // 10/8
+    if (o[0] === 100 && o[1] >= 64 && o[1] <= 127) return true; // 100.64/10 CGNAT
+    if (o[0] === 127) return true;                          // 127/8 loopback
+    if (o[0] === 169 && o[1] === 254) return true;          // 169.254/16 link-local
+    if (o[0] === 172 && o[1] >= 16 && o[1] <= 31) return true; // 172.16/12
+    if (o[0] === 192 && o[1] === 0 && o[2] === 0) return true;  // 192.0.0/24
+    if (o[0] === 192 && o[1] === 0 && o[2] === 2) return true;  // 192.0.2/24 TEST-NET-1
+    if (o[0] === 192 && o[1] === 168) return true;          // 192.168/16
+    if (o[0] === 198 && o[1] === 18) return true;           // 198.18/15 benchmarking
+    if (o[0] === 198 && o[1] === 51 && o[2] === 100) return true; // TEST-NET-2
+    if (o[0] === 203 && o[1] === 0 && o[2] === 113) return true; // TEST-NET-3
+    if (o[0] >= 224) return true;                           // 224/4 multicast + 240/4 reserved
+    return false;
+  }
+  if (net.isIP(ip) === 6) {
+    var z = ip.split('%')[0].toLowerCase();
+    var m = z.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/);
+    if (m) return isPrivateIp(m[1]); // IPv4-mapped: judge the embedded IPv4
+    var g = expandIpv6(z);
+    if (!g) return true; // unparsable — fail closed
+    if (g[0] === 0 && g[1] === 0 && g[2] === 0 && g[3] === 0 && g[4] === 0 && g[5] === 0xffff) {
+      return isPrivateIp(((g[6] >> 8) & 255) + '.' + (g[6] & 255) + '.' + ((g[7] >> 8) & 255) + '.' + (g[7] & 255));
+    }
+    if (g[0] === 0 && g[1] === 0 && g[2] === 0 && g[3] === 0 && g[4] === 0 && g[5] === 0 && g[6] === 0 && g[7] === 0) return true; // ::
+    if (g[0] === 0 && g[1] === 0 && g[2] === 0 && g[3] === 0 && g[4] === 0 && g[5] === 0 && g[6] === 0 && g[7] === 1) return true; // ::1
+    if (g[0] >= 0xfe80 && g[0] <= 0xfebf) return true;       // fe80::/10 link-local
+    if (g[0] >= 0xfec0 && g[0] <= 0xfeff) return true;       // fec0::/10 site-local (deprecated, never public)
+    if (g[0] >= 0xfc00 && g[0] <= 0xfdff) return true;       // fc00::/7 unique-local
+    if (g[0] === 0x0100 && g[1] === 0 && g[2] === 0 && g[3] === 0) return true; // 100::/64 discard
+    if (g[0] === 0x2001 && g[1] === 0x0db8) return true;     // 2001:db8::/32 documentation
+    return false;
+  }
+  return true; // not an IP at all — fail closed
+}
+
+function expandIpv6(z) {
+  // Expand a compressed IPv6 address to 8 numeric hextets; null if invalid.
+  var parts = z.split('::');
+  if (parts.length > 2) return null;
+  function norm(list) {
+    var out = [];
+    for (var i = 0; i < list.length; i++) {
+      var seg = list[i];
+      if (/^\d+\.\d+\.\d+\.\d+$/.test(seg)) {
+        var o = seg.split('.').map(Number);
+        if (o.some(function (n) { return n < 0 || n > 255; })) return null;
+        out.push((o[0] << 8) + o[1], (o[2] << 8) + o[3]);
+      } else if (/^[0-9a-f]{1,4}$/.test(seg)) {
+        out.push(parseInt(seg, 16));
+      } else return null;
+    }
+    return out;
+  }
+  var head = parts[0] ? parts[0].split(':') : [];
+  var tail = (parts.length === 2 && parts[1]) ? parts[1].split(':') : [];
+  var h = norm(head), t = norm(tail);
+  if (!h || !t) return null;
+  if (parts.length === 1) return h.length === 8 ? h : null;
+  var zeros = 8 - h.length - t.length;
+  if (zeros < 0) return null;
+  var g = h.slice();
+  for (var k = 0; k < zeros; k++) g.push(0);
+  return g.concat(t);
+}
+
+async function isPublicUrl(u) {
   try {
     var p = new URL(u);
     if (p.protocol !== 'http:' && p.protocol !== 'https:') return false;
     var h = p.hostname.toLowerCase();
     if (h === 'localhost' || h.endsWith('.local') || h.endsWith('.internal')) return false;
-    if (/^(127|10|192\.168|172\.(1[6-9]|2\d|3[01]))\./.test(h)) return false;
-    if (h === '169.254.169.254' || h === 'metadata.google.internal') return false;
+    if (h === 'metadata.google.internal') return false;
+    // Literal IP in the URL — judge it directly, no DNS needed.
+    if (net.isIP(h)) return !isPrivateIp(h);
+    // Resolve and judge every address the name points at. A name that looks
+    // public but resolves to a private/loopback/link-local address (DNS
+    // rebinding) is blocked. Unresolvable names fail closed.
+    var addrs;
+    try { addrs = await dns.lookup(h, { all: true, verbatim: true }); }
+    catch (e) { return false; }
+    if (!addrs || !addrs.length) return false;
+    for (var i = 0; i < addrs.length; i++) {
+      if (isPrivateIp(addrs[i].address)) return false;
+    }
     return true;
   } catch (e) { return false; }
 }
@@ -509,10 +596,11 @@ function looksLikeArticle(u) {
   return false;
 }
 
-function cleanResultUrls(urls) {
+async function cleanResultUrls(urls) {
   var seen = {}, out = [];
-  urls.forEach(function (u) {
-    if (!u || !isPublicUrl(u)) return;
+  var checks = await Promise.all(urls.map(function (u) { return u ? isPublicUrl(u) : Promise.resolve(false); }));
+  urls.forEach(function (u, idx) {
+    if (!u || !checks[idx]) return;
     var d = domainFromUrl(u);
     if (!d || SOCIAL_HOSTS.indexOf(d) !== -1) return;
     // Muck Rack blocks automated reads; author/profile/directory pages are
@@ -535,7 +623,7 @@ async function ddgSearch(query, ms) {
     while ((m = re.exec(f.html))) {
       try { links.push(decodeURIComponent(m[1])); } catch (e) { /* bad encoding */ }
     }
-    return cleanResultUrls(links);
+    return await cleanResultUrls(links);
   } catch (e) { return []; }
 }
 
@@ -550,7 +638,7 @@ async function bingSearch(query, ms) {
       if (u.indexOf('bing.com') !== -1 || u.indexOf('microsoft.com') !== -1) continue;
       links.push(u);
     }
-    return cleanResultUrls(links);
+    return await cleanResultUrls(links);
   } catch (e) { return []; }
 }
 
@@ -590,7 +678,7 @@ function authorPageUrl(outletDomain, name) {
   return null;
 }
 
-function articleUrlsFromPage(html, domain) {
+async function articleUrlsFromPage(html, domain) {
   var out = [];
   var re = new RegExp('https?://(?:www\\.)?' + domain.replace(/\./g, '\\.') + '/[^"\'\\s<>]+', 'gi');
   var m;
@@ -605,7 +693,7 @@ function articleUrlsFromPage(html, domain) {
     if (domain === 'apnews.com' && u.indexOf('/article/') === -1) continue;
     out.push(u);
   }
-  return cleanResultUrls(out);
+  return await cleanResultUrls(out);
 }
 
 /* Find more articles by (name, outlet domain): author page first, then a
@@ -619,7 +707,7 @@ async function discoverMore(name, outletDomain, deadline) {
       var remain = function () { return Math.max(1000, deadline - Date.now()); };
       var f = await fetchText(pageUrl, remain());
       if (!f.ok) f = await fetchText(pageUrl, remain()); // one retry: author pages are the richest source
-      if (f.ok) return articleUrlsFromPage(f.html, outletDomain);
+      if (f.ok) return await articleUrlsFromPage(f.html, outletDomain);
       return [];
     })() });
   }
@@ -642,11 +730,11 @@ async function discoverMore(name, outletDomain, deadline) {
   parts.forEach(function (p, idx) { if (jobs[idx].kind !== 'author') ordered = ordered.concat(p); });
   parts.forEach(function (p, idx) { if (jobs[idx].kind === 'author') ordered = ordered.concat(p); });
   found = ordered;
-  found = cleanResultUrls(found);
+  found = await cleanResultUrls(found);
   // Top up if discovery came back thin: one more search, no site restriction.
   if (found.length < 5 && deadline - Date.now() > 2000) {
     var extra = await ddgSearch('"' + name + '" reporter', Math.max(1000, deadline - Date.now()));
-    found = cleanResultUrls(found.concat(extra));
+    found = await cleanResultUrls(found.concat(extra));
   }
   return found.slice(0, MAX_ARTICLES);
 }
@@ -686,6 +774,7 @@ async function scoreUrls(urls, targetName, deadline) {
       if (isOpinionUrl(u)) return { url: u, status: 'unreadable', reason: 'opinion piece — opinion is never scored as news' };
       var f = await fetchText(u, Math.min(FETCH_TIMEOUT_MS, remain));
       if (!f.ok) return { url: u, status: 'unreadable', reason: 'could not open the page (' + (f.note || 'HTTP ' + f.status) + ')' };
+      if (f.finalUrl && f.finalUrl !== u && !(await isPublicUrl(f.finalUrl))) return { url: u, status: 'unreadable', reason: 'redirects to a non-public address' };
       if (isOpinionUrl(f.finalUrl || u)) return { url: u, status: 'unreadable', reason: 'opinion piece — opinion is never scored as news' };
       var a = extractArticle(f.html, f.finalUrl || u);
       if (a.videoOnly && a.text.length < 400) return { url: u, status: 'unreadable', headline: a.headline, reason: 'video — no text article to score' };
@@ -760,9 +849,10 @@ module.exports = async function (req, res) {
     /* ---- mode: url — paste an article link; the link settles identity ---- */
     if (mode === 'url') {
       var url = String(body.url || '').trim();
-      if (!url || !isPublicUrl(url)) return json(res, 400, { ok: false, error: 'That does not look like a public article link. Paste the full link, starting with https://.' });
+      if (!url || !(await isPublicUrl(url))) return json(res, 400, { ok: false, error: 'That does not look like a public article link. Paste the full link, starting with https://.' });
       var seed = await fetchText(url, Math.min(FETCH_TIMEOUT_MS, deadline - Date.now()));
       if (!seed.ok) return json(res, 200, { ok: false, error: 'Could not open that link (' + (seed.note || 'HTTP ' + seed.status) + '). The page may block automated reading, or the link may be wrong.' });
+      if (seed.finalUrl && seed.finalUrl !== url && !(await isPublicUrl(seed.finalUrl))) return json(res, 200, { ok: false, error: 'That link redirects somewhere that is not a public article page.' });
       var art = extractArticle(seed.html, seed.finalUrl || url);
       if (art.videoOnly && art.text.length < 400) return json(res, 200, { ok: false, error: 'That link is a video page, not a text article — there is nothing to score without a transcript.' });
       if (art.text.length < 400) return json(res, 200, { ok: false, error: 'That page would not give up its text (paywalled or blocked), so there is nothing to score.' });
@@ -881,8 +971,9 @@ module.exports = async function (req, res) {
       // shown 23. Passed URLs are seeded first; discovery only tops up.
       var seeded = [];
       if (Array.isArray(body.urls)) {
-        body.urls.forEach(function (u) {
-          if (typeof u === 'string' && isPublicUrl(u) && seeded.indexOf(u) === -1) seeded.push(u);
+        var seedChecks = await Promise.all(body.urls.map(function (u) { return (typeof u === 'string') ? isPublicUrl(u) : Promise.resolve(false); }));
+        body.urls.forEach(function (u, idx) {
+          if (typeof u === 'string' && seedChecks[idx] && seeded.indexOf(u) === -1) seeded.push(u);
         });
         seeded = seeded.slice(0, 10);
       }
