@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="voterlens-version" content="2026-11-17-v1">
+<title>Lame-Duck Judicial Tracker — VoterLens</title>
+<!--
+===== TRACKER DATA — UPDATE THIS BLOCK EVERY TWO WEEKS =====
+Next update: ~December 1, 2026. Change the numbers below AND the matching
+visible text in the page. Never present a stale number as current: if a count
+cannot be re-verified, label it "as of" its last verified date.
+  LAST_UPDATED: November 17, 2026
+  PAGE_VERSION: 2026-11-17-v1
+  PENDING_JUDICIAL_NOMINEES: 21 (Reuters, Nov 17, 2026)
+  CONFIRMED_THIS_TERM: 59 (58 through Nov 16 + Anna St. John, Nov 17)
+  NOMINATIONS_ASKED: 161 total, incl. 25 federal judges (White House, Nov 9)
+  TRUMP_APPOINTEES_TOTAL: 234 (first term) + 59 = 293 of ~870 seats
+  CONFIRMED_LAME_DUCK: Daniel Domenico (Nov 16, 51-46); Anna St. John (Nov 17, 52-46)
+  ADVANCED_TO_FLOOR: Nov 10 — Reardon, Ballou, Bennett, Coker.
+                      Nov 17 — Long (12-10), Mansfield (14-8), Osete (12-10)
+  BLOCKED: West + Pemberton (Oklahoma) — committee votes postponed again Nov 17.
+           Gaiser (Dallas) — hearing Nov 18, Cornyn withholding blue slip.
+  WITHDRAWN: Rudofsky (8th Cir., Nov 10) — replaced by J. Cody Hiland.
+  NAMED_PENDING: 12 of 21. 9 more are pending in committee with no verified
+  public status in this update — they get named when their status is verified.
+=============================================================
+-->
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f2f5f7;color:#111820;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.55}
+  .site-head{background:#102b46;color:#fff;padding:1.2rem 1rem 1.4rem;border-bottom:5px solid #9d3a25}
+  .site-head .inner{max-width:860px;margin:0 auto}
+  .eyebrow{font-size:.85rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#dbe6ef;margin:0 0 .3rem}
+  .site-head h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1}
+  .tagline{margin:.5rem 0 0;font-size:1.15rem;color:#f5a18e;font-style:italic}
+  main{max-width:860px;margin:0 auto;padding:1.2rem 1rem 3rem;background:#fff}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:1.5rem;line-height:1.2;margin:1.8rem 0 .6rem}
+  h3{font-size:1.15rem;margin:1.2rem 0 .4rem}
+  p{margin:.5rem 0}
+  .countdown{background:#102b46;color:#fff;padding:1rem 1.2rem;margin:1rem 0;text-align:center}
+  .countdown .days{font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;font-weight:700;line-height:1.1}
+  .countdown p{margin:.2rem 0}
+  .numbers{background:#eef7ee;border:2px solid #2e7d32;padding:.9rem 1rem;margin:1rem 0}
+  .numbers .big{font-size:1.6rem;font-weight:800;color:#1b5e20}
+  .note{background:#e7edf1;border:1px solid #bac5ce;padding:.8rem 1rem;margin:1rem 0}
+  .flag{background:#fdf0e6;border:2px solid #b45309;padding:.8rem 1rem;margin:.8rem 0}
+  .flag b{color:#92400e}
+  .good{background:#eef7ee;border:2px solid #2e7d32;padding:.8rem 1rem;margin:.8rem 0}
+  .good b{color:#1b5e20}
+  .card{border:2px solid #102b46;padding:.9rem 1rem;margin:.6rem 0;background:#fff}
+  .card h3{margin-top:0;color:#102b46}
+  .field{margin:.45em 0}
+  .src{font-size:.85rem;color:#46515e}
+  .status{display:inline-block;font-weight:800;padding:.1rem .5rem;border-radius:3px;font-size:.9rem}
+  .status.floor{background:#dff1e6;color:#17633a}
+  .status.blocked{background:#fde3df;color:#8d261d}
+  .status.hearing{background:#fff0bd;color:#6f4d00}
+  .status.confirmed{background:#102b46;color:#fff}
+  .status.withdrawn{background:#e7edf1;color:#46515e}
+  details{border:1px solid #bac5ce;padding:.7rem .9rem;margin:.6rem 0;background:#fff}
+  summary{cursor:pointer;font-size:1.05rem}
+  a{color:#9d3a25}
+  ul,ol{margin:.4rem 0 .8rem 1.2rem;padding:0}
+  li{margin:.3rem 0}
+  .meta{font-size:.92rem;color:#46515e}
+  .meta strong{color:#111820}
+  blockquote{margin:.6rem 0 .6rem 1rem;padding:.5rem .8rem;border-left:4px solid #102b46;background:#f2f5f7;font-style:italic}
+  footer{margin-top:2rem;border-top:2px solid #bac5ce;padding-top:.8rem;color:#46515e;font-size:.9rem}
+  .small{font-size:.9rem;color:#46515e}
+  select.goto{font-size:1rem;padding:.5em .6em;border:2px solid #102b46;border-radius:6px;background:#fff;color:#111820;max-width:100%}
+</style>
+</head>
+<body>
+<header class="site-head"><div class="inner">
+<p class="eyebrow">VoterLens &middot; Judicial Scoreboard</p>
+<h1>Lame-Duck Judicial Tracker</h1>
+<p class="tagline">Who is holding up the judges, and how much time is left.</p>
+</div></header>
+<main>
+<p><a href="../index.html">&larr; Back to VoterLens</a></p>
+
+<p><label for="goto"><strong>Go to&hellip;</strong></label>
+<select class="goto" id="goto" onchange="if(this.value){document.getElementById(this.value).scrollIntoView({behavior:'smooth'});this.selectedIndex=0;}">
+<option value="">Jump to a section&hellip;</option>
+<option value="countdown">The countdown</option>
+<option value="numbers">The numbers</option>
+<option value="watch">The three to watch</option>
+<option value="all">Where every pending nominee stands</option>
+<option value="confirmed">Confirmed in the lame duck</option>
+<option value="blueslip">How the blue slip works</option>
+<option value="notin">What is not on this tracker</option>
+<option value="sources">Sources</option>
+</select></p>
+
+<p>The Senate changes hands on January 3, 2027. Until then, the outgoing majority is trying to confirm as many lifetime judges as it can. This page tracks every pending judicial nominee: where they stand, who is holding them up and how, and what the holder said in their own words. One sentence per fact. Every claim carries its source. If something could not be verified, it says so — it is never filled in.</p>
+
+<div class="countdown" id="countdown">
+<p class="days"><span id="days-left">&hellip;</span> days left</p>
+<p>until January 3, 2027, when the new Senate takes over. A judge confirmed before then serves for life. A nominee still pending on January 3 goes back to the start.</p>
+</div>
+
+<h2 id="numbers">The numbers</h2>
+<div class="numbers">
+<p><span class="big">21</span> &mdash; judicial nominees still pending, as of November 17, 2026.</p>
+<p><span class="big">59</span> &mdash; judges confirmed in this term so far (234 were confirmed in the first term).</p>
+<p><span class="big">161</span> &mdash; total nominations the White House asked the Senate to confirm, including 25 federal judges.</p>
+<p>About <strong>one in three</strong> active federal judges is a Trump appointee: 234 from the first term plus 59 from this term, out of about 870 seats.</p>
+<p class="small">Pending count: Reuters, November 17, 2026. Confirmations: Senate roll calls, November 16 and 17. The 161 figure: White House, November 9. The count moves daily &mdash; this page is updated every two weeks, and the date of the last check is at the bottom.</p>
+</div>
+
+<h2 id="watch">The three to watch</h2>
+<p>Three nominees are stuck, and the reason in each case is a fellow Republican. These are the cases that show how the lame duck actually works.</p>
+
+<div class="card">
+<h3>Zach West &mdash; Eastern District of Oklahoma <span class="status blocked">BLOCKED IN COMMITTEE</span></h3>
+<p class="field"><b>Who he is:</b> A lawyer in the Oklahoma Attorney General&rsquo;s office, formerly the state&rsquo;s solicitor general. Nominated September 14, 2026.</p>
+<p class="field"><b>Who is holding him:</b> Senator Alan Armstrong of Oklahoma. Armstrong first returned a favorable blue slip for West, then withdrew it. His stated reason: <q>just purely qualification, versus the other candidates that we&rsquo;ve suggested.</q> Senator Thom Tillis of North Carolina, on the Judiciary Committee, backed Armstrong &mdash; and with the committee split 12&ndash;10, one Republican defection stops a nominee.</p>
+<p class="field"><b>Where it stands:</b> The committee vote on West has been postponed twice, most recently on November 17, with no reason given. The White House would rather West and Trevor Pemberton, the other Oklahoma nominee, move together &mdash; so both are stuck.</p>
+<p class="field"><b>What could change it:</b> Armstrong leaves the Senate on November 30. Senator-elect Kevin Hern, who succeeds him, has said he would support West &mdash; and Tillis has said he would drop his opposition if Hern wants West advanced.</p>
+<p class="src">Sources: Reuters, November 15 and 17, 2026; Bloomberg Law, November 17, 2026; Senate Judiciary Committee agenda and releases, November 17, 2026.</p>
+</div>
+
+<div class="card">
+<h3>T. Elliot Gaiser &mdash; Northern District of Texas (Dallas) <span class="status blocked">BLOCKED BEFORE A HEARING</span></h3>
+<p class="field"><b>Who he is:</b> Head of the Justice Department&rsquo;s Office of Legal Counsel. Nominated for a federal bench in Dallas.</p>
+<p class="field"><b>Who is holding him:</b> Senator John Cornyn of Texas is withholding the blue slip Gaiser needs for a hearing. Without it, Gaiser cannot appear at the committee hearing scheduled for November 18.</p>
+<p class="field"><b>Where it stands:</b> No hearing, no committee vote, no floor vote &mdash; the nomination cannot move until Cornyn signs off or the chairman moves it without him.</p>
+<p class="src">Sources: Reuters, November 15, 2026; Senate Judiciary Committee hearing schedule, November 18, 2026.</p>
+</div>
+
+<div class="card">
+<h3>Lee Rudofsky &rarr; J. Cody Hiland &mdash; Eighth Circuit <span class="status withdrawn">WITHDRAWN, REPLACED</span></h3>
+<p class="field"><b>What happened:</b> The White House withdrew Rudofsky&rsquo;s nomination to the Eighth Circuit on November 10, and replaced him with Arkansas Supreme Court Justice J. Cody Hiland.</p>
+<p class="field"><b>Why:</b> Senators John Boozman and Tom Cotton of Arkansas opposed Rudofsky. Tillis and Cornyn had also privately told the chairman they would vote against him. Rudofsky&rsquo;s own words: <q>without the support of my home-state senators, confirmation is simply not a practical possibility in today&rsquo;s Senate.</q></p>
+<p class="field"><b>Where it stands:</b> Hiland is now the nominee for the Eighth Circuit seat. No hearing has been scheduled yet.</p>
+<p class="src">Sources: Reuters, November 15, 2026; Bloomberg Law, November 17, 2026.</p>
+</div>
+
+<h2 id="all">Where every pending nominee stands</h2>
+<p class="small">21 nominees are pending. Twelve are named below with a verified status. Nine more are pending in committee with no verified public status in this update &mdash; they will be named here when their status is verified, not before.</p>
+
+<h3>On the Senate floor &mdash; waiting on a vote</h3>
+<p>These seven were voted out of the Judiciary Committee and are waiting on the full Senate.</p>
+<ul>
+<li><strong>Robert E. Long, Jr.</strong> &mdash; Middle District of Florida. Advanced 12&ndash;10 on November 17.</li>
+<li><strong>Peter M. Mansfield</strong> &mdash; Eastern District of Louisiana. Advanced 14&ndash;8 on November 17, with two Democrats joining.</li>
+<li><strong>Jesus A. Osete</strong> &mdash; Western District of Missouri. Advanced 12&ndash;10 on November 17.</li>
+<li><strong>Kyle Reardon</strong> &mdash; District of Alaska. Advanced 16&ndash;6 on November 10, with four Democrats joining.</li>
+<li><strong>Daniel Ballou</strong> &mdash; Eastern District of Kentucky. Advanced 12&ndash;10 on November 10.</li>
+<li><strong>Richard Bennett</strong> &mdash; Southern District of Texas. Advanced 12&ndash;10 on November 10.</li>
+<li><strong>Courtney Coker</strong> &mdash; Northern District of Texas. Advanced 12&ndash;10 on November 10.</li>
+</ul>
+
+<h3>Blocked in committee</h3>
+<ul>
+<li><strong>Zachary Paul West</strong> &mdash; Eastern District of Oklahoma. Blue slip withdrawn by Senator Armstrong; committee vote postponed twice. See the card above.</li>
+<li><strong>Trevor Scott Pemberton</strong> &mdash; Northern District of Oklahoma. Armstrong also withdrew his support, after previously signing off on him. Committee vote postponed November 17, with no reason given.</li>
+</ul>
+
+<h3>Waiting on a hearing or a committee vote</h3>
+<ul>
+<li><strong>T. Elliot Gaiser</strong> &mdash; Northern District of Texas. Hearing scheduled November 18; Senator Cornyn is withholding the blue slip. See the card above.</li>
+<li><strong>Todd Butler</strong> &mdash; Fifth Circuit. Hearing held November 10; waiting on a committee vote.</li>
+<li><strong>J. Cody Hiland</strong> &mdash; Eighth Circuit. Nominated November 10 after Rudofsky was withdrawn; no hearing scheduled yet.</li>
+</ul>
+
+<h3>Nine more, not yet named here</h3>
+<p>Nine further nominees are pending in committee. Their names and status will be added when verified &mdash; this page does not guess.</p>
+
+<h2 id="confirmed">Confirmed in the lame duck</h2>
+<div class="good">
+<p><b>Anna St. John</b> &mdash; confirmed November 17, 2026, 52&ndash;46, to the Fifth Circuit (New Orleans). She was a U.S. District Judge in the Eastern District of Louisiana.</p>
+<p><b>Daniel Domenico</b> &mdash; confirmed November 16, 2026, 51&ndash;46, to the Tenth Circuit.</p>
+</div>
+
+<h2 id="blueslip">How the blue slip works</h2>
+<div class="note">
+<p>The blue slip is <strong>not in the Constitution</strong>. It is a custom of the Senate Judiciary Committee.</p>
+<p>When a president nominates someone for a district court (trial court) seat, the committee asks both senators from that state whether they approve. If one withholds approval &mdash; the blue slip &mdash; the nominee usually does not get a hearing. For appeals-court nominees, the committee can move ahead without it.</p>
+<p>Senators say it protects their say in who judges their state. Critics say it lets one senator block a nominee over a list or a consultation dispute. Either way, it is a committee custom, not a law &mdash; how strictly it is applied is the chairman&rsquo;s call. And there is no filibuster for judicial nominees anymore, so a single senator&rsquo;s hold on the committee is often all it takes.</p>
+</div>
+
+<h2 id="notin">What is not on this tracker</h2>
+<div class="flag">
+<p><b>Two claims are left out on purpose, because neither is a verified fact:</b></p>
+<ul>
+<li>The claim that 11 Republican senators would vote to convict the president if the incoming Democratic House impeaches him. That is one person&rsquo;s count, with no source behind it, about a trial that has not happened.</li>
+<li>A remark about the nominees attributed to Senator Schumer. The attribution has not been independently verified.</li>
+</ul>
+<p>If either is verified, it will be added with its source. Until then, it stays out.</p>
+</div>
+
+<h2>How this tracker is kept</h2>
+<p>This page is updated <strong>every two weeks</strong>. Between updates the numbers can lag the news by a few days &mdash; during the lame duck the count moves daily &mdash; but what is shown here stays verified rather than fresh-but-wrong. If a fact on this page turns out to be wrong, it is fixed with a dated note saying what changed and why. A correction is not hidden.</p>
+<p class="meta"><strong>Last updated: November 17, 2026.</strong> Next update: about December 1, 2026. Page version 2026-11-17-v1.</p>
+
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Reuters, &ldquo;US Senate confirms Trump appellate judge pick as Oklahoma nominees stall,&rdquo; November 17, 2026 &mdash; <a href="https://www.reuters.com/legal/government/us-senate-confirms-trump-appellate-judge-pick-oklahoma-nominees-stall-2026-11-17/">reuters.com</a></li>
+<li>Reuters, &ldquo;Trump&rsquo;s judge appointment blitz faces Republican resistance,&rdquo; November 15, 2026</li>
+<li>Bloomberg Law, &ldquo;Republican Tensions Again Delay Judicial Nominees in Senate,&rdquo; November 17, 2026 &mdash; <a href="https://news.bloomberglaw.com/us-law-week/republican-tensions-again-delay-judicial-nominees-in-senate">news.bloomberglaw.com</a></li>
+<li>Senate Judiciary Committee, &ldquo;Senate Judiciary Committee Advances 11 Judicial and Executive Nominees,&rdquo; November 17, 2026 &mdash; <a href="https://www.judiciary.senate.gov/press/rep/releases/senate-judiciary-committee-advances-11-judicial-and-executive-nominees">judiciary.senate.gov</a></li>
+<li>Senate Judiciary Committee, Chairman Grassley&rsquo;s opening statement, executive business meeting, November 17, 2026 &mdash; <a href="https://www.judiciary.senate.gov/press/rep/releases/grassley-opens-judiciary-committee-executive-business-meeting-on-district-judges-and-executive-nominees">judiciary.senate.gov</a></li>
+<li>Nomination Notes, &ldquo;Three more of Trump&rsquo;s lifetime judicial nominees advance to the Senate floor,&rdquo; November 17, 2026 &mdash; <a href="https://nominationnotes.substack.com/p/three-more-of-trumps-lifetime-judicial">nominationnotes.substack.com</a></li>
+<li>Washington Examiner, &ldquo;Senate Judiciary Committee advances 11 nominees as key Trump picks remain in limbo,&rdquo; November 17, 2026 &mdash; <a href="https://www.washingtonexaminer.com/news/justice/4805922/senate-judiciary-committee-advances-11-nominees-as-key-trump-picks-remain-in-limbo/">washingtonexaminer.com</a></li>
+<li>Glenn Beck Program, &ldquo;Why Republicans Are Sabotaging Trump&rsquo;s Judges On Their Way Out,&rdquo; YouTube, November 17, 2026 &mdash; <a href="https://www.youtube.com/watch?v=YkYPLjsLow8">youtube.com</a> (the segment that raised the story; claims from it are used here only where independently verified)</li>
+<li>U.S. Courts, judicial vacancies and authorized judgeships &mdash; <a href="https://www.uscourts.gov/judges-judgeships/judicial-vacancies">uscourts.gov</a></li>
+</ul>
+
+<footer>
+<p>VoterLens is an independent civic project. It is not affiliated with the Oregon Secretary of State or any county elections office. Grades come from the 16-vote Oregon Legislature scorecard; what candidates say is quoted in their own words &mdash; never twisted; sponsors never affect the grades.</p>
+<p>Lame-Duck Judicial Tracker, live November 17, 2026. Page version 2026-11-17-v1. <a href="../index.html">&larr; Back to VoterLens</a></p>
+</footer>
+</main>
+<script>
+(function(){
+  // Live countdown to January 3, 2027 (new Senate seated).
+  var target = new Date(2027, 0, 3, 12, 0, 0);
+  var now = new Date();
+  var days = Math.max(0, Math.ceil((target.getTime() - now.getTime()) / 86400000));
+  var el = document.getElementById('days-left');
+  if (el) el.textContent = days;
+  // Cache freshness: same mechanism as the rest of the site (sw.js v4,
+  // network-first navigations). Reload on bfcache restore so a page
+  // reopened from memory never shows a stale tracker.
+  window.addEventListener('pageshow', function(e){ if (e.persisted) { window.location.reload(); } });
+  try {
+    if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js').catch(function(){}); }
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
