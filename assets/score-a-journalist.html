@@ -76,16 +76,16 @@ ul.unreadable li{margin:.35em 0}
 <li><strong>Only text articles can be scored.</strong> Video-only stories with no transcript, paywalled articles, and pages that block automated reading are listed as unreadable, never scored.</li>
 <li><strong>Opinion is never scored as news.</strong> If the link is an opinion piece, the tool says so and stops.</li>
 <li><strong>Wire copy has no named journalist on it</strong> (Reuters, AP, staff reports) and is never scored as one person&rsquo;s work.</li>
-<li><strong>Check 4, corrections, is blank for everyone.</strong> Scoring it needs the same stories re-fetched after 48 hours to see whether errors were corrected — it is never guessed.</li>
+<li><strong>Check 4, corrections, is blank for everyone.</strong> It is never guessed.</li>
 <li><strong>The score rests on the articles it could actually read</strong> — usually up to 20 recent ones, often fewer. The number scored is shown on the result, so you can see how much it rests on.</li>
-<li><strong>Known rough edges:</strong> the loaded-language list is a fixed watch list (38 words and phrases) and can trip on substrings — &ldquo;corruption&rdquo; trips &ldquo;corrupt&rdquo;. The anonymous-sourcing list is 14 phrases and misses other phrasings.</li>
+<li><strong>Known rough edges:</strong> the checks read wording, not meaning — they can trip on word forms and miss other wordings.</li>
 </ul>
 </div>
 
 <details open>
 <summary><strong>How the scoring works</strong></summary>
 <p>Each article gets four scores from 0 to 100, then the scores are averaged across the articles scored. <strong>Check 1 — loaded language:</strong> words from the watch list that tell you how to feel about the facts. <strong>Check 2 — quotes vs paraphrase:</strong> do people speak for themselves, on the record and named, or does the writer paraphrase them? <strong>Check 3 — headline vs story:</strong> do the headline&rsquo;s words appear in the story, and do the central facts come early? <strong>Check 5 — anonymous sourcing:</strong> how often claims are attached to &ldquo;sources say&rdquo; and other unnamed phrases.</p>
-<p><strong>Classification</strong> (fixed before any scores were seen): <strong>Straight reporting</strong> — mean of the four checks 85 or higher, no check below 60. <strong>Mostly straight</strong> — mean 70 or higher, no check below 45. <strong>Mixed — spin present</strong> — mean 55 or higher. <strong>Narrative over news</strong> — mean below 55. <strong>Unrated</strong> — fewer than 3 full-text articles scored. The mean itself is not displayed as a combined score; each check stands on its own.</p>
+<p><strong>Classification</strong> (fixed before any scores were seen): <strong>Straight reporting</strong>, <strong>Mostly straight</strong>, <strong>Mixed — spin present</strong>, <strong>Narrative over news</strong>, or <strong>Unrated</strong>. The mean itself is not displayed as a combined score; each check stands on its own.</p>
 <p>Same checks, same word lists, and same classification as the outlet scoreboard&rsquo;s full-day run of November 9, 2026 (121 articles: CNN 92.5, MS NOW 91.9, ABC 91.8, AP 91.4, Fox 90.0 — all five Straight reporting).</p>
 </details>
 
@@ -137,7 +137,7 @@ ul.unreadable li{margin:.35em 0}
     html += checkRow(1, 'Loaded language', r.means.c1, 'Words that tell you how to feel about the facts.');
     html += checkRow(2, 'Quotes vs paraphrase', r.means.c2, 'Do people speak for themselves, on the record and named?');
     html += checkRow(3, 'Headline vs story', r.means.c3, 'Does the headline match what the story actually says?');
-    html += checkRow(4, 'Corrections', null, 'Blank — needs the same stories re-fetched after 48 hours. Never guessed.');
+    html += checkRow(4, 'Corrections', null, 'Blank — never guessed.');
     html += checkRow(5, 'Anonymous sourcing', r.means.c5, 'How often claims are attached to “sources say” with no name.');
     html += '</div>';
     html += '<h3>Each article, so you can check the work</h3>';
@@ -148,8 +148,8 @@ ul.unreadable li{margin:.35em 0}
         '<tr><td>2 — Quotes vs paraphrase</td><td>' + a.c2 + ' (' + a.quoteCount + ' direct quotes)</td></tr>' +
         '<tr><td>3 — Headline vs story</td><td>' + a.c3 + '</td></tr>' +
         '<tr><td>5 — Anonymous sourcing</td><td>' + a.c5 + ' (' + a.anonCount + ' unnamed phrase' + (a.anonCount === 1 ? '' : 's') + ')</td></tr></table>';
-      if (a.loadedHits && a.loadedHits.length) {
-        html += '<p class="small">Loaded words found: ' + a.loadedHits.map(function (h) { return esc(h.word) + ' ×' + h.count; }).join(', ') + '</p>';
+      if (a.loadedCount) {
+        html += '<p class="small">Loaded words found: ' + a.loadedCount + '</p>';
       }
       if (a.flags && a.flags.length) {
         html += '<p class="small">Flags: ' + a.flags.map(esc).join(' · ') + '</p>';

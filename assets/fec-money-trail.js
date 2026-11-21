@@ -14,8 +14,7 @@ function badgeHtml(name) {
   function fmt(n) {
     return n == null ? "\u2014" : "$" + Math.round(n).toLocaleString("en-US");
   }
-  var h = "<div class=\"badge-check\"><strong>\u2611 No fundraising consultants</strong> \u2014 checked against the full filing: every recipient in this campaign's 2026 filings was checked (" + b.rows + " rows, 100% coverage), and none was paid for fundraising (through the Oct 14, 2026 filing).</div>"
-    + "<p>No firm was paid $25,000 or more, so no vendor list shows here \u2014 the badge check covered the full filing anyway, not just the top five.</p>";
+  var h = "<div class=\"badge-check\"><strong>\u2611 No fundraising consultants</strong> \u2014 every recipient in the campaign's 2026 FEC filings was checked; the badge means no firm was paid for fundraising. The check runs on the filings as filed, through the Oct 14, 2026 quarterly filing.</div>";
   if (b.paid && b.paid.length) {
     var items = b.paid.map(function (p) {
       return "<li><strong>" + p.n + "</strong>" + (p.p ? " \u2014 " + p.p : "") + ": <strong>" + fmt(p.a) + "</strong></li>";

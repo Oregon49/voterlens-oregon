@@ -5,40 +5,34 @@
  * same four checks the Journalist Scoreboard uses for outlets. Nothing is
  * invented: an article that can't be read (paywall, blocked, video-only,
  * wire copy with no named byline) is listed as unreadable, never scored.
+ * Check 4 (Corrections) is blank for everyone — it is never guessed.
  *
- * Scoring logic is a verbatim port of
- * ~/workspace/journalist-scoreboard/preview/score5.js (analyze5), the scorer
- * behind the Nov 9, 2026 full-day run (121 articles). Classification rule
- * from preview/run_full.js. Check 4 (Corrections) is BLANK by design — it
- * needs the same stories re-fetched after 48 hours, so it is never guessed.
- *
- * Discovery uses only free, no-key sources: DuckDuckGo HTML search and Bing
- * news search (direct result links) and Google News RSS (titles/outlets/
- * dates only — its redirect links can't be followed server-side). Two search
- * engines are used because results vary by where the request comes from.
+ * Word lists are provided by server configuration (environment variables),
+ * not stored in this file.
  */
 'use strict';
 
 var dns = require('dns').promises;
 var net = require('net');
 
-/* ================= scoring (verbatim port of preview/score5.js) ================= */
+/* ================= scoring ================= */
 
-var LOADED_WORDS = [
-  'slammed', 'blasted', 'admitted', 'regime', 'scheme', 'controversial',
-  'far-right', 'far-left', 'radical', 'stunning', 'bombshell', 'destroyed',
-  'humiliating', 'shameless', 'disastrous', 'chaos', 'furious', 'embattled',
-  'slush fund', 'backroom', 'corrupt', 'incompetent', 'outrage', 'fury',
-  'erupted', 'explosive', 'devastating', 'catastrophic', 'nightmare',
-  'cronies', 'elites', 'swamp', 'stole', 'rigged', 'hoax', 'witch hunt'
-];
+/* Word lists come from environment variables (JSON arrays) set on the
+ * server — they are not stored in this file. Missing or invalid lists
+ * fail closed: the handler returns 503 and scores nothing. */
+function loadWordList(name) {
+  var raw = process.env[name];
+  if (!raw) return null;
+  try {
+    var arr = JSON.parse(raw);
+    if (!Array.isArray(arr)) return null;
+    return arr.filter(function (w) { return typeof w === 'string' && w.length > 0; })
+      .map(function (w) { return w.toLowerCase(); });
+  } catch (e) { return null; }
+}
+var LOADED_WORDS = loadWordList('JOURNALIST_LOADED_WORDS');
 
-var ANON_PHRASES = [
-  'critics say', 'sources say', 'many believe', 'some say', 'experts say',
-  'observers say', 'analysts say', 'it is said', 'reportedly',
-  'people familiar with', 'according to sources', 'insiders say',
-  'opponents say', 'supporters say'
-];
+var ANON_PHRASES = loadWordList('JOURNALIST_ANON_PHRASES');
 
 var IMPACT_VERBS = [
   'announced', 'decided', 'voted', 'ruled', 'signed', 'approved',
@@ -174,7 +168,7 @@ function scoreQuotesOnly(text, sentences) {
   return { score: Math.max(0, Math.min(100, score)), flags: flags, quoteCount: quotes.length, namedSay: namedSay };
 }
 
-/* Check 5: Anonymous sources ("sources say") — standalone */
+/* Check 5: Anonymous sources — standalone */
 function scoreAnon(text) {
   var flags = [];
   var lower = text.toLowerCase();
@@ -226,7 +220,7 @@ function scoreLoaded(text) {
 
 /* Check 4: Corrections — NOT scoreable from a one-day article sample */
 function scoreCorrections() {
-  return { score: null, reason: 'Corrections cannot be scored from a one-day article sample. Scoring it needs the same stories re-fetched after 48 hours to see whether errors were corrected, how fast, and where the correction ran — plus an audit of the outlet\u2019s corrections page. Left blank, not guessed.' };
+  return { score: null, reason: 'Corrections cannot be scored from a one-day article sample. Left blank, not guessed.' };
 }
 
 function analyze5(headline, text) {
@@ -253,7 +247,7 @@ function analyze5(headline, text) {
     namedSay: q.namedSay,
     anonCount: a.anonCount,
     anonPhrases: a.anonPhrases,
-    loadedHits: l.hits,
+    loadedCount: l.hits.reduce(function (s, h) { return s + h.count; }, 0),
     flags: [
       { check: 1, kind: l.flags[0].kind, label: l.flags[0].label },
       { check: 2, kind: q.flags[0].kind, label: q.flags[0].label },
@@ -741,12 +735,12 @@ async function discoverMore(name, outletDomain, deadline) {
 
 /* ================= scoring run ================= */
 
-var METHOD_NOTE = 'Four checks, each scored 0–100 per article, then averaged across the articles scored. Check 1 loaded language (words that tell you how to feel). Check 2 quotes vs paraphrase (do people speak for themselves, on the record). Check 3 headline vs story (does the headline match what the story actually says). Check 5 anonymous sourcing ("sources say" with no name). Check 4 corrections is blank for everyone — it needs the same stories re-fetched after 48 hours, so it is never guessed.';
+var METHOD_NOTE = 'Four checks, each scored 0–100 per article, then averaged across the articles scored. Check 1 loaded language (words that tell you how to feel). Check 2 quotes vs paraphrase (do people speak for themselves, on the record). Check 3 headline vs story (does the headline match what the story actually says). Check 5 anonymous sourcing (unnamed sources). Check 4 corrections is blank for everyone — it is never guessed.';
 var LIMITS = [
   'The score measures wording and spin, not whether the underlying facts are true. It is a bias and flavor signal — whether opinion is dressed as news, and what a journalist\u2019s habits are — not a credibility verdict.',
   'Only text articles can be scored. Video-only stories with no transcript, paywalled articles, and pages that block automated reading are listed as unreadable, never scored.',
   'Wire copy (Reuters, AP, staff reports) has no named journalist on it and is never scored as one person\u2019s work.',
-  'The loaded-language list is a fixed watch list (38 words and phrases) — it can trip on substrings, e.g. "corruption" trips "corrupt". The anonymous-sourcing list is 14 phrases and misses other phrasings.',
+  'The checks read wording, not meaning — they can trip on word forms and miss other wordings.',
   'This run scores the recent articles it could actually read — usually up to 20, often fewer. The number scored is shown on the result, so you can see how much it rests on.'
 ];
 
@@ -790,7 +784,7 @@ async function scoreUrls(urls, targetName, deadline) {
         author: a.author, words: r.words,
         c1: r.check1_loaded, c2: r.check2_quotes, c3: r.check3_headline, c5: r.check5_anon,
         quoteCount: r.quoteCount, anonCount: r.anonCount,
-        loadedHits: (r.loadedHits || []).slice(0, 4),
+        loadedCount: r.loadedCount || 0,
         flags: (r.flags || []).map(function (fl) { return fl.label; })
       };
     })();
@@ -840,6 +834,9 @@ function json(res, code, obj) {
 module.exports = async function (req, res) {
   var started = Date.now();
   var deadline = started + GLOBAL_BUDGET_MS;
+  if (!LOADED_WORDS || !LOADED_WORDS.length || !ANON_PHRASES || !ANON_PHRASES.length) {
+    return json(res, 503, { ok: false, error: 'The scorer is not configured. Try again later.' });
+  }
   if (req.method !== 'POST') return json(res, 405, { ok: false, error: 'Use POST.' });
   var body = req.body || {};
   if (typeof body === 'string') { try { body = JSON.parse(body); } catch (e) { body = {}; } }
@@ -871,10 +868,8 @@ module.exports = async function (req, res) {
     if (mode === 'name') {
       var nameQ = String(body.name || '').trim().replace(/\s+/g, ' ');
       if (!nameQ || nameQ.split(' ').length < 2) return json(res, 400, { ok: false, error: 'Type a full name — first and last — so the right person can be found.' });
-      // Three sources in parallel: the news feed (reliable counts), plus the
-      // two web searches (real article URLs to hand to the score step).
-      // DuckDuckGo HTML currently answers empty from servers, so Bing is
-      // the leg that actually supplies URLs — keep both, use whichever answers.
+      // Search the news feed and the web in parallel for recent stories;
+      // use whichever answers.
       var found = await Promise.all([
         gnewsSearch(nameQ, 5000),
         ddgSearch('"' + nameQ + '" journalist', 3000),
