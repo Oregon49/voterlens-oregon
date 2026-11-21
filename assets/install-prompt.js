@@ -1,4 +1,9 @@
 (function(){
+  // Install tracking: report install-funnel events to VoterLens analytics.
+  function recordInstallEvent(type, detail){
+    try { if (window.VOTERLENS_ANALYTICS && window.VOTERLENS_ANALYTICS.recordEvent) window.VOTERLENS_ANALYTICS.recordEvent(type, detail || {}); } catch (e) {}
+  }
+  window.addEventListener('appinstalled', function(){ recordInstallEvent('pwa_installed', {}); });
   var headerBtn = document.getElementById('install-btn');
   var headerHint = document.getElementById('install-hint');
   var ctaBtns = Array.prototype.slice.call(document.querySelectorAll('.install-cta'));
@@ -22,6 +27,7 @@
   window.addEventListener('beforeinstallprompt', function(e){
     e.preventDefault();
     deferredPrompt = e;
+    recordInstallEvent('pwa_prompt_available', {});
   });
   function hintFor(btn){
     if (btn === headerBtn && headerHint) return headerHint;
@@ -34,7 +40,7 @@
     if (isIOS) return;
     if (deferredPrompt) {
       deferredPrompt.prompt();
-      deferredPrompt.userChoice.then(function(){ deferredPrompt = null; });
+      deferredPrompt.userChoice.then(function(choice){ if (choice && choice.outcome === 'accepted') recordInstallEvent('pwa_install_accepted', {}); else recordInstallEvent('pwa_install_dismissed', {}); deferredPrompt = null; });
       try { localStorage.setItem('vl-install-dismissed','1'); } catch(e){}
       hideAll();
     } else {
